@@ -1,0 +1,121 @@
+/* Ensure the landing components fill out the full layout container smoothly */
+.zensical-landing-wrap {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* Center and pad the main Hero text wrapper */
+.zensical-hero {
+    text-align: center;
+    padding: 5rem 1.5rem 4rem;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--md-accent-fg-color);
+    background-color: var(--md-accent-fg-color--transparent);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+}
+
+.zensical-hero h1 {
+    font-size: 2.75rem;
+    line-height: 1.15;
+    font-weight: 800;
+    margin: 1.5rem 0 1rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    color: var(--md-typeset-color);
+    opacity: 0.85;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+/* CTA Buttons styling matching modern framework design layout packages */
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-cta-group a {
+    padding: 0.75rem 1.75rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+.btn-primary {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color) !important;
+}
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--md-typeset-color);
+    color: var(--md-typeset-color) !important;
+}
+.btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Layout feature grid layout structure */
+.zensical-features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: var(--md-code-bg-color);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+}
+
+.card-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card h3 {
+    margin: 0 0 0.5rem 0 !important;
+    font-size: 1.2rem !important;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.zensical-markdown-body {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 0 1.5rem;
+}
