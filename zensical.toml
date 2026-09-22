@@ -5,3 +5,6 @@ site_description = "An autonomous, AI-native enterprise operating system."
 
 [project.theme]
 custom_dir = "overrides"
+features = [
+    "navigation.tabs"
+]
