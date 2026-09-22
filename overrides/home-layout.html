@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{# 1. Hide the documentation sidebars on the homepage #}
+{% block left_sidebar %}{% endblock %}
+{% block right_sidebar %}{% endblock %}
+
+{# 2. Insert custom landing page content layout #}
+{% block content %}
+<div class="homepage-hero">
+    <h1>{{ page.title }}</h1>
+    <p class="hero-tagline">Write your documentation in Markdown and create a professional static site.</p>
+    
+    <div class="hero-actions">
+        <a href="{{ base_url }}/docs/get-started/" class="btn btn-primary">Get started</a>
+        <a href="https://github.com" class="btn btn-secondary">GitHub</a>
+    </div>
+</div>
+
+<div class="homepage-features-grid">
+    <div class="feature-card">
+        <h3>⚡ Batteries Included</h3>
+        <p>Built-in search, localization, and rapid responsiveness across all viewing devices.</p>
+    </div>
+    <div class="feature-card">
+        <h3>🦀 Powered by Rust</h3>
+        <p>Utilizes MiniJinja under a pure Rust runtime to compile and render pages in parallel.</p>
+    </div>
+    <div class="feature-card">
+        <h3>🎨 Modular Architecture</h3>
+        <p>Easily override core HTML block layers to tailor the design explicitly to your brand.</p>
+    </div>
+</div>
+
+{# 3. Still preserve any fallback Markdown content you write inside index.md #}
+<div class="homepage-extra-content">
+    {{ page.content }}
+</div>
+{% endblock %}
