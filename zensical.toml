@@ -1,4 +1,3 @@
-[project]
 site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
@@ -8,24 +7,5 @@ theme = "zensical"
 theme_variant = "modern"
 theme_palette = "light"
 
-# Validated Navigation Dictionary Array Layout
-nav = [
-    { "Philosophy" = "index.md" },
-    { "Capabilities" = "features.md" },
-    { "Foundry" = "about.md" },
-    { "Inquire" = "contact.md" }
-]
-
-# High-Velocity Typography Fonts & Style Sheet Injections
-extra_css = [
-    "https://googleapis.com"
-]
-
-# Nested configurations must ALWAYS go at the absolute bottom of the file
-[project.theme]
-features = [
-    "navigation.tabs"
-]
-
-[project.meta]
-homepage_layout = "splash"
+# Force Zensical to display your navigation menus horizontally across the top header
+navigation_tabs = true
