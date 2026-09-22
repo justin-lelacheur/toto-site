@@ -2,7 +2,7 @@ site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 
-# Correct Theme Block Structure for the Official Zensical Engine
+# Correct Section Nesting for the Official Zensical Engine Features
 [theme]
 name = "zensical"
 variant = "modern"
