@@ -1,138 +1,129 @@
-/* Reset the master layout background block just for our landing container */
-.zensical-landing-wrap {
-    margin: 2rem auto 0;
+/* --- Master Wrapper Specificity Fix --- */
+.md-typeset .zensical-landing-wrap {
+    margin-top: 1.5rem;
     width: 100%;
-    background-color: #ffffff !important; /* Force true clean white canvas underneath */
-    color: #1a202c !important;
 }
 
-/* Center and pad the main Hero text wrapper */
-.zensical-hero {
-    text-align: center;
-    padding: 6rem 1.5rem 5rem;
+/* --- Hero Layout Styles --- */
+.md-typeset .zensical-hero {
+    text-align: center !important;
+    padding: 5.5rem 1rem 4.5rem !important;
     max-width: 850px;
     margin: 0 auto;
 }
 
-.hero-eyebrow {
-    font-size: 0.85rem;
-    font-weight: 700;
+.md-typeset .hero-inner .hero-eyebrow {
+    font-size: 0.825rem !important;
+    font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #0070f3 !important; /* Premium Royal Blue */
-    background-color: rgba(0, 112, 243, 0.1) !important; /* Translucent blue pill */
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
+    color: #0070f3 !important; /* Vivid Marketing Blue */
+    background-color: rgba(0, 112, 243, 0.1) !important;
+    padding: 0.4rem 0.85rem !important;
+    border-radius: 20px !important;
     display: inline-block;
 }
 
-.zensical-hero h1 {
-    font-size: 3.25rem !important;
-    line-height: 1.15 !important;
+.md-typeset .hero-inner h1 {
+    font-size: 3rem !important;
+    line-height: 1.2 !important;
     font-weight: 800 !important;
-    margin: 1.75rem 0 1.25rem !important;
-    letter-spacing: -0.04em !important;
-    color: #111111 !important; /* Solid dark text overriding the default theme text */
+    margin: 1.5rem 0 1rem !important;
+    letter-spacing: -0.03em !important;
+    color: #111111 !important; /* Solid Dark Text Overriding Defaults */
 }
 
-.hero-tagline {
+.md-typeset .hero-inner p.hero-tagline {
     font-size: 1.35rem !important;
-    color: #4a5568 !important; /* Deep charcoal gray for high-contrast legibility */
+    color: #555555 !important; /* Charcoal Readable Text */
     line-height: 1.6 !important;
-    margin-bottom: 2.75rem !important;
+    margin-bottom: 2.5rem !important;
 }
 
-/* CTA Buttons layout structural alignments */
-.hero-cta-group {
+/* --- CTA Marketing Layout Buttons --- */
+.md-typeset .hero-cta-group {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
-.hero-cta-group a {
-    padding: 0.9rem 2.25rem !important;
+.md-typeset .hero-cta-group a {
+    padding: 0.8rem 2rem !important;
     font-weight: 600 !important;
     border-radius: 8px !important;
-    transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease !important;
     text-decoration: none !important;
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
+    display: inline-block;
 }
 
-.btn-primary {
-    background-color: #111111 !important; /* Premium off-black marketing button */
+.md-typeset .hero-cta-group a.btn-primary {
+    background-color: #111111 !important;
     color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1) !important;
 }
-.btn-primary:hover {
-    background-color: #2d3748 !important;
-    transform: translateY(-2px) !important;
+.md-typeset .hero-cta-group a.btn-primary:hover {
+    background-color: #333333 !important;
+    transform: translateY(-1px);
 }
 
-.btn-secondary {
+.md-typeset .hero-cta-group a.btn-secondary {
     border: 1px solid #cbd5e0 !important;
     background-color: #ffffff !important;
     color: #2d3748 !important;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03) !important;
 }
-.btn-secondary:hover {
+.md-typeset .hero-cta-group a.btn-secondary:hover {
     background-color: #f7fafc !important;
-    border-color: #a0aec0 !important;
-    transform: translateY(-2px) !important;
 }
 
-/* Layout feature grid layout structure */
-.zensical-features {
-    max-width: 1140px;
+/* --- Feature Cards & Layout Architecture --- */
+.md-typeset .zensical-features {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 1.5rem;
+    padding: 3rem 1rem;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.md-typeset .features-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 1.5rem !important;
 }
 
-/* Feature cards explicit layout styling definitions */
-.feature-card {
-    background-color: #f8fafc !important; /* Explicit slate-gray background tint */
-    border: 1px solid #e2e8f0 !important;   /* Solid border outline */
-    padding: 2.5rem 2rem !important;
-    border-radius: 16px !important;
-    transition: all 0.2s ease-in-out !important;
+.md-typeset .features-grid .feature-card {
+    background-color: #f8fafc !important; /* Crisp Background Slate Offset tint */
+    border: 1px solid #e2e8f0 !important; /* Visual Box Separation outline border */
+    padding: 2.25rem 1.75rem !important;
+    border-radius: 14px !important;
     text-align: left;
+    transition: all 0.2s ease !important;
 }
 
-.feature-card:hover {
-    transform: translateY(-4px) !important;
+.md-typeset .features-grid .feature-card:hover {
+    transform: translateY(-3px) !important;
     background-color: #ffffff !important;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06) !important;
     border-color: #cbd5e0 !important;
 }
 
-.card-icon {
-    font-size: 2.25rem;
-    margin-bottom: 1.25rem;
+.md-typeset .feature-card .card-icon {
+    font-size: 2rem !important;
+    margin-bottom: 0.75rem !important;
     display: block;
 }
 
-.feature-card h3 {
-    margin: 0 0 0.75rem 0 !important;
-    font-size: 1.4rem !important;
-    color: #111111 !important; /* High contrast headings inside cards */
+.md-typeset .feature-card h3 {
+    margin: 0 0 0.5rem 0 !important;
+    font-size: 1.3rem !important;
+    color: #111111 !important;
     font-weight: 700 !important;
 }
 
-.feature-card p {
+.md-typeset .feature-card p {
     margin: 0 !important;
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
     line-height: 1.6 !important;
-    color: #4a5568 !important; /* Neutral paragraph readability text */
+    color: #4a5568 !important; /* Clear Slate Readability Tint */
 }
 
-.zensical-markdown-body {
-    max-width: 800px;
-    margin: 4rem auto 0;
-    padding: 0 1.5rem;
-}
