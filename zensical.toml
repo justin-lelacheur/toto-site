@@ -15,4 +15,5 @@ features = [
 
 [project.theme.palette]
 primary = "custom"
-accent = "blue"
+accent = "red"
+
