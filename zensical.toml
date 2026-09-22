@@ -4,26 +4,18 @@ site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 
 # Native Zensical Core Theme Configuration
-theme = "zensical"
-theme_variant = "modern"
-theme_palette = "light"
+[theme]
+name = "zensical"
+variant = "modern"
+palette = "light"
 
-# Fixed: Enabling the explicit navigation tabs feature flag under the theme scope
-[project.theme]
-features = [
-    "navigation.tabs"
-]
+# Fixed: Enabling horizontal navigation headers inside Zensical's explicit feature block
+[theme.features]
+navigation_tabs = true
 
 # Validated Navigation Dictionary Array
-[project]
-nav = [
-    { "Philosophy" = "index.md" },
-    { "Capabilities" = "features.md" },
-    { "Foundry" = "about.md" },
-    { "Inquire" = "contact.md" }
-]
-
-# High-Velocity Typography Fonts & Style Sheet Injections
-extra_css = [
-    "https://googleapis.com"
-]
+[nav]
+Philosophy = "index.md"
+Capabilities = "features.md"
+Foundry = "about.md"
+Inquire = "contact.md"
