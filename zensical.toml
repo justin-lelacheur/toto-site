@@ -2,10 +2,11 @@ site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 
-# Native Zensical Core Theme Configuration
-theme = "zensical"
-theme_variant = "modern"
-theme_palette = "light"
-
-# Force Zensical to display your navigation menus horizontally across the top header
-navigation_tabs = true
+# Correct Theme Block Structure for the Official Zensical Engine
+[theme]
+name = "zensical"
+variant = "modern"
+palette = "light"
+features = [
+    "navigation.tabs"
+]
