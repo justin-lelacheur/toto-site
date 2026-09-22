@@ -41,7 +41,7 @@
 /* --- Hero Typography Layout Elements --- */
 .brand-red-home .zensical-hero {
     text-align: center !important;
-    padding: 3rem 1.5rem 4rem !important;
+    padding: 4rem 1.5rem !important;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -52,7 +52,7 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: #ffffff !important; 
-    background-color: rgba(255, 255, 255, 0.15) !important; /* Translucent glass white pill */
+    background-color: rgba(255, 255, 255, 0.15) !important; 
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
     display: inline-block;
@@ -95,7 +95,7 @@
 
 .brand-red-home .hero-cta-group a.btn-primary {
     background-color: #ffffff !important; 
-    color: #8a2531 !important; /* Burgundy text inside button */
+    color: #8a2531 !important; 
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
 }
 .brand-red-home .hero-cta-group a.btn-primary:hover {
