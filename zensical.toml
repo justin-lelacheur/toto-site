@@ -33,3 +33,6 @@ url = "2-foundry.md"
 [[project.nav]]
 title = "Inquire"
 url = "3-inquire.md"
+
+[project.theme]
+custom_dir = "overrides"
