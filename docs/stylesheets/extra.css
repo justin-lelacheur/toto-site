@@ -1,11 +1,11 @@
 /* --- Escape Outer Zensical Layout Column Boundaries --- */
 .custom-homepage-container {
-    --md-default-bg-color: #f8fafc !important; /* Forces soft gray backdrop token */
+    --md-default-bg-color: #f8fafc !important; /* Soft gray backdrop token */
     background-color: #f8fafc !important;
     display: block;
-    width: 100vw !important;      /* Forces full window view width */
-    margin-left: 50% !important;   /* Centers relative container anchor points */
-    transform: translateX(-50%);   /* Strips parent grid boundaries completely */
+    width: 100vw !important;      
+    margin-left: 50% !important;   
+    transform: translateX(-50%);   
     position: relative;
     padding: 2rem 0;
 }
@@ -27,7 +27,7 @@ main.md-main,
 
 /* --- Master Landing Page Inner Alignment --- */
 .zensical-landing-wrap {
-    max-width: 1200px; /* Constrains text layouts beautifully without breaking canvas color */
+    max-width: 1200px; 
     margin: 0 auto;
     width: 100%;
     padding: 0 1.5rem;
@@ -37,7 +37,7 @@ main.md-main,
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
-    padding: 4rem 1.5rem 4srem !important;
+    padding: 4rem 1.5rem 4rem !important;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -47,8 +47,8 @@ main.md-main,
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #0070f3 !important;
-    background-color: rgba(0, 112, 243, 0.1) !important;
+    color: #8a2531 !important; /* BRAND ACCENT: Burgundy/Maroon Red */
+    background-color: rgba(138, 37, 49, 0.1) !important; /* Translucent Brand Tint */
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
     display: inline-block;
@@ -66,7 +66,7 @@ main.md-main,
 
 .hero-tagline {
     font-size: 1.35rem !important;
-    color: #4a5568 !important; 
+    color: #2d3748 !important; /* Deep Charcoal Body Text */
     line-height: 1.6 !important;
     margin-bottom: 2.75rem !important;
 }
@@ -90,12 +90,12 @@ main.md-main,
 }
 
 .hero-cta-group a.btn-primary {
-    background-color: #111111 !important;
+    background-color: #8a2531 !important; /* BRAND ACCENT: Primary Action Button */
     color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.12) !important;
+    box-shadow: 0 4px 14px rgba(138, 37, 49, 0.25) !important;
 }
 .hero-cta-group a.btn-primary:hover {
-    background-color: #2d3748 !important;
+    background-color: #6b1b24 !important; /* Darker Burgundy Hover */
     transform: translateY(-2px);
 }
 
@@ -124,7 +124,7 @@ main.md-main,
 }
 
 .features-grid .feature-card {
-    background-color: #ffffff !important; /* Pure white cards sitting on top of the gray canvas backdrop */
+    background-color: #ffffff !important; 
     border: 1px solid #e2e8f0 !important;   
     padding: 2.5rem 2rem !important;
     border-radius: 16px !important;
@@ -156,7 +156,7 @@ main.md-main,
     margin: 0 !important;
     font-size: 1rem !important;
     line-height: 1.6 !important;
-    color: #4a5568 !important;
+    color: #2d3748 !important; /* Deep Charcoal Body Text */
 }
 
 .zensical-markdown-body {
