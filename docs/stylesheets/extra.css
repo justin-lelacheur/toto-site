@@ -1,13 +1,15 @@
 /* --- Escape Outer Zensical Layout Column Boundaries --- */
 .custom-homepage-container {
-    --md-default-bg-color: #f8fafc !important; /* Soft gray backdrop token */
-    background-color: #f8fafc !important;
+    --md-default-bg-color: #8a2531 !important; /* BRAND ACCENT CANVAS: Deep Burgundy Red */
+    background-color: #8a2531 !important;
     display: block;
     width: 100vw !important;      
     margin-left: 50% !important;   
     transform: translateX(-50%);   
     position: relative;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    min-height: 100vh;
+    color: #ffffff !important; /* Force high-contrast text by default */
 }
 
 /* --- Wipe Header Margin & Underlying Layout Gaps --- */
@@ -20,9 +22,9 @@ main.md-main,
     padding-top: 0 !important;
 }
 
-/* Ensure global grid alignment doesn't force a white border frame box */
+/* Ensure global grid alignment natively matches the brand backdrop */
 :root [data-md-color-primary="custom"] {
-    --md-default-bg-color: #f8fafc !important;
+    --md-default-bg-color: #8a2531 !important;
 }
 
 /* --- Master Landing Page Inner Alignment --- */
@@ -37,7 +39,7 @@ main.md-main,
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
-    padding: 4rem 1.5rem 4rem !important;
+    padding: 4rem 1.5rem;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -47,28 +49,28 @@ main.md-main,
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #8a2531 !important; /* BRAND ACCENT: Burgundy/Maroon Red */
-    background-color: rgba(138, 37, 49, 0.1) !important; /* Translucent Brand Tint */
+    color: #ffffff !important; /* High contrast text */
+    background-color: rgba(255, 255, 255, 0.15) !important; /* Translucent glass white pill */
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .zensical-hero h1 {
-    font-size: 3.25rem !important;
+    font-size: 3.5rem !important;
     line-height: 1.15 !important;
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #111111 !important;
+    color: #ffffff !important; /* Crisp white title text */
 }
 
 .hero-tagline {
     font-size: 1.35rem !important;
-    color: #2d3748 !important; /* Deep Charcoal Body Text */
+    color: rgba(255, 255, 255, 0.85) !important; /* Highly legible soft white copy text */
     line-height: 1.6 !important;
-    margin-bottom: 2.75rem !important;
+    margin-bottom: 3rem !important;
 }
 
 /* --- CTA Buttons --- */
@@ -80,7 +82,7 @@ main.md-main,
 }
 
 .hero-cta-group a {
-    padding: 0.85rem 2.25rem !important;
+    padding: 0.9rem 2.5rem !important;
     font-weight: 600 !important;
     border-radius: 8px !important;
     transition: all 0.2s ease-in-out !important;
@@ -89,31 +91,32 @@ main.md-main,
     display: inline-block;
 }
 
+/* Solid high-contrast white button for primary action */
 .hero-cta-group a.btn-primary {
-    background-color: #8a2531 !important; /* BRAND ACCENT: Primary Action Button */
-    color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(138, 37, 49, 0.25) !important;
+    background-color: #ffffff !important; 
+    color: #8a2531 !important; /* Burgundy text inside button */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
 }
 .hero-cta-group a.btn-primary:hover {
-    background-color: #6b1b24 !important; /* Darker Burgundy Hover */
+    background-color: rgba(255, 255, 255, 0.9) !important;
     transform: translateY(-2px);
 }
 
+/* Translucent border button for secondary option */
 .hero-cta-group a.btn-secondary {
-    border: 1px solid #cbd5e0 !important;
-    background-color: #ffffff !important;
-    color: #2d3748 !important;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
 }
 .hero-cta-group a.btn-secondary:hover {
-    background-color: #edf2f7 !important;
-    border-color: #a0aec0 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #ffffff !important;
     transform: translateY(-2px);
 }
 
 /* --- Features Grid Layout --- */
 .zensical-features {
-    padding: 4rem 0;
+    padding: 5rem 0 2rem;
     width: 100%;
 }
 
@@ -123,20 +126,21 @@ main.md-main,
     gap: 2rem !important;
 }
 
+/* Subtle, glassmorphic semi-transparent cards to sit elegantly on the burgundy base */
 .features-grid .feature-card {
-    background-color: #ffffff !important; 
-    border: 1px solid #e2e8f0 !important;   
+    background-color: rgba(255, 255, 255, 0.06) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;   
     padding: 2.5rem 2rem !important;
     border-radius: 16px !important;
     text-align: left;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
     transition: all 0.2s ease-in-out !important;
 }
 
 .features-grid .feature-card:hover {
     transform: translateY(-4px) !important;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
-    border-color: #cbd5e0 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15) !important;
 }
 
 .feature-card .card-icon {
@@ -148,7 +152,7 @@ main.md-main,
 .feature-card h3 {
     margin: 0 0 0.75rem 0 !important;
     font-size: 1.35rem !important;
-    color: #111111 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
 }
 
@@ -156,10 +160,11 @@ main.md-main,
     margin: 0 !important;
     font-size: 1rem !important;
     line-height: 1.6 !important;
-    color: #2d3748 !important; /* Deep Charcoal Body Text */
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .zensical-markdown-body {
     max-width: 800px;
     margin: 4rem auto 0;
+    color: #ffffff !important;
 }
