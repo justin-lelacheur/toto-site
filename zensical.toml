@@ -35,4 +35,5 @@ title = "Inquire"
 url = "3-inquire.md"
 
 [project.theme]
-custom_dir = "overrides"
+name = "default"         # Move the theme name inside the block if supported
+custom_dir = "overrides" # Your custom directory mapping
