@@ -1,25 +1,31 @@
-/* --- Force Theme Scaffolding to Clear Backgrounds on Homepage Only --- */
-.custom-homepage-container,
-.custom-homepage-container ~ * ,
-main.md-main,
-.md-main__inner,
-.md-content,
-.md-content__inner {
-    background-color: #fafbfc !important; /* Soft, modern off-white/light gray canvas background */
+/* --- Force Zensical Background Variable Tokens to Tint --- */
+.custom-homepage-container {
+    --md-default-bg-color: #f8fafc !important; /* Forces soft marketing gray behind everything */
+    background-color: #f8fafc !important;
+    display: block;
+    width: 100%;
 }
 
-/* Ensure the landing wrapper fills out space nicely */
+/* Ensure underlying documentation grids drop their white properties */
+.custom-homepage-container .md-content, 
+.custom-homepage-container .md-content__inner,
+.custom-homepage-container main.md-main,
+.custom-homepage-container .md-main__inner {
+    background-color: transparent !important;
+}
+
+/* --- Master Landing Page Wrapper Configuration --- */
 .zensical-landing-wrap {
     margin: 0 auto;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
-    padding: 5rem 1.5rem 4rem !important;
+    padding: 5.5rem 1.5rem 4.5rem !important;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -29,7 +35,7 @@ main.md-main,
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #0070f3 !important; /* Vivid Marketing Blue */
+    color: #0070f3 !important; /* Premium Royal Blue */
     background-color: rgba(0, 112, 243, 0.1) !important;
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
@@ -43,7 +49,7 @@ main.md-main,
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #111111 !important;
+    color: #111111 !important; /* Clear Dark High-Contrast Header */
 }
 
 .hero-tagline {
@@ -53,7 +59,7 @@ main.md-main,
     margin-bottom: 2.75rem !important;
 }
 
-/* --- CTA Marketing Layout Buttons --- */
+/* --- CTA Marketing Button Links --- */
 .hero-cta-group {
     display: flex;
     gap: 1.25rem;
@@ -88,7 +94,7 @@ main.md-main,
     box-shadow: 0 4px 14px rgba(0,0,0,0.02) !important;
 }
 .hero-cta-group a.btn-secondary:hover {
-    background-color: #f8fafc !important;
+    background-color: #edf2f7 !important;
     border-color: #a0aec0 !important;
     transform: translateY(-2px);
 }
@@ -107,7 +113,7 @@ main.md-main,
 }
 
 .features-grid .feature-card {
-    background-color: #ffffff !important; /* True white cards to contrast against the soft off-white background */
+    background-color: #ffffff !important; /* True white cards to contrast nicely against the gray backdrop */
     border: 1px solid #e2e8f0 !important;   
     padding: 2.5rem 2rem !important;
     border-radius: 16px !important;
@@ -142,6 +148,7 @@ main.md-main,
     color: #4a5568 !important;
 }
 
+.zensical-markdown-body {
     max-width: 800px;
     margin: 4rem auto 0;
     padding: 0 1.5rem;
