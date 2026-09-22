@@ -9,7 +9,7 @@ layout: page
   </h2>
   
   <p style="font-size: 1.05rem; color: #666666; font-weight: 300; max-width: 440px; margin: 0 auto 48px auto; line-height: 1.65;">
-    Whether you are an enterprise operator looking to deploy a private cloud, or an allocator mapping our SAFE investment, our doors are open.
+    Whether you are an enterprise looking to implement our enterprise OS or just a curious human, our doors are open.
   </p>
 
   <a href="mailto:hello@totofoundry.com" style="display: inline-block; font-size: 0.95rem; font-family: 'IBM Plex Mono', monospace; color: #6B2D38; text-decoration: none; border: 1px solid #6B2D38; padding: 12px 32px; border-radius: 24px; transition: all 0.2s;">
