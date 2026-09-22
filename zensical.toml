@@ -1,6 +1,6 @@
 [project]
 site_name = "toto"
-site_url = "https://pages.dev"
+site_url = "https://toto-site-3pm.pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 extra_css = [
     "stylesheets/extra.css"
