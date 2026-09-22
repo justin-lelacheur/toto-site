@@ -1,13 +1,28 @@
-# Engineered for systemic resilience.
+---
+layout: page
+---
 
-── The Foundry
+<div style="max-width: 600px; margin: 40px auto; padding: 0 16px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; line-height: 1.75;">
+  
+  <p style="font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: #6B2D38; font-weight: 500; margin-bottom: 40px; font-family: 'IBM Plex Mono', monospace;">
+    ── Systemic Alignment
+  </p>
 
-We treat software not as a collection of static, legacy code blocks, but as an active, self-healing organism that grows and adapts to the real-time requirements of the human operators running the business. 
+  <h1 style="font-size: 2.25rem; font-weight: 300; line-height: 1.25; color: #111111; letter-spacing: -0.01em; margin-bottom: 32px; border: none;">
+    The ultimate realization of top-down Model-Driven Architecture.
+  </h1>
 
-Traditional digital transformations fail because they add layers of uncoordinated complexity over fracturing code layers. This platform eliminates that architectural drift by making the live global process fabric and graph dictionaries the direct compilation guides for the core software codebase itself.
+  <p style="font-size: 1.05rem; color: #444444; margin-bottom: 32px;">
+    The fundamental failure of legacy digital transformation is architectural drift—the stark reality where physical base code inevitably diverges from design documentation. This platform eliminates drift by enforcing a single, common corporate language out of the box using <strong>TM Forum data and process frameworks (SID / eTOM)</strong>.
+  </p>
 
-### The Ultimate Realization of Top-Down MDA
-By establishing a rigid data and process dictionary before any code generation, the platform forces advanced AI software factory engines to write software within clear, systemic enterprise guardrails. Software cannot exist outside the verified boundaries of the central graph ontology.
+  <p style="font-size: 1.05rem; color: #444444; margin-bottom: 32px;">
+    By linking the data core, process engines, and AI code factories straight to these rigid dictionaries, software code cannot exist outside the schema parameters of the enterprise. Architects no longer police code structures manually; the automated evaluation runtime programmatically drops any contribution that violates the structural data invariants or contract profiles of the global enterprise model.
+  </p>
 
-### Streamlined Operational Scaling
-Instead of maintaining fragmented engineering pools for disconnected legacy modules, our operational model allows strategic manager paths to compile instantly into contract-driven microservices safely and efficiently. This paradigm cuts out the traditional engineering backlog, dramatically accelerates time-to-market for new core services, and drops software customization debt to zero.
+  <p style="font-size: 1.05rem; color: #444444; margin-bottom: 40px;">
+    IT transitions from an expensive operational cost center into a asset-light driver of extreme scale. Corporate software becomes structurally resilient against compliance shifts, decoupled from vendor lock-in, and capable of adapting to real-time user processes at the speed of business thought.
+  </p>
+
+</div>
+
