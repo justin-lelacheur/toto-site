@@ -1,19 +1,25 @@
-/* --- Global Structural Canvas Layers --- */
-body, .md-container, .md-content {
-    background-color: #ffffff !important;
+/* --- Force Theme Scaffolding to Clear Backgrounds on Homepage Only --- */
+.custom-homepage-container,
+.custom-homepage-container ~ * ,
+main.md-main,
+.md-main__inner,
+.md-content,
+.md-content__inner {
+    background-color: #fafbfc !important; /* Soft, modern off-white/light gray canvas background */
 }
 
-/* --- Master Landing Page Wrapper --- */
+/* Ensure the landing wrapper fills out space nicely */
 .zensical-landing-wrap {
-    margin: 1.5rem auto 0;
+    margin: 0 auto;
     width: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding-top: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
-    padding: 6rem 1.5rem 4.5rem !important;
+    padding: 5rem 1.5rem 4rem !important;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -23,7 +29,7 @@ body, .md-container, .md-content {
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #0070f3 !important; /* Premium Marketing Blue */
+    color: #0070f3 !important; /* Vivid Marketing Blue */
     background-color: rgba(0, 112, 243, 0.1) !important;
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
@@ -37,26 +43,22 @@ body, .md-container, .md-content {
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #111111 !important; /* Bold High-Contrast Text */
+    color: #111111 !important;
 }
 
 .hero-tagline {
     font-size: 1.35rem !important;
-    color: #4a5568 !important; /* Clean Charcoal Readability Text */
+    color: #4a5568 !important; 
     line-height: 1.6 !important;
     margin-bottom: 2.75rem !important;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* --- CTA Button Components --- */
+/* --- CTA Marketing Layout Buttons --- */
 .hero-cta-group {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem 0;
 }
 
 .hero-cta-group a {
@@ -91,7 +93,7 @@ body, .md-container, .md-content {
     transform: translateY(-2px);
 }
 
-/* --- Responsive Features Section --- */
+/* --- Layout Feature Grid Layout Structure --- */
 .zensical-features {
     max-width: 1200px;
     margin: 0 auto;
@@ -105,18 +107,18 @@ body, .md-container, .md-content {
 }
 
 .features-grid .feature-card {
-    background-color: #f8fafc !important; /* Soft Slate-Gray Background Card Tints */
-    border: 1px solid #e2e8f0 !important;   /* Defined Border Outline Boundary Boxes */
+    background-color: #ffffff !important; /* True white cards to contrast against the soft off-white background */
+    border: 1px solid #e2e8f0 !important;   
     padding: 2.5rem 2rem !important;
     border-radius: 16px !important;
     text-align: left;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
     transition: all 0.2s ease-in-out !important;
 }
 
 .features-grid .feature-card:hover {
     transform: translateY(-4px) !important;
-    background-color: #ffffff !important;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.06) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
     border-color: #cbd5e0 !important;
 }
 
@@ -137,10 +139,9 @@ body, .md-container, .md-content {
     margin: 0 !important;
     font-size: 1rem !important;
     line-height: 1.6 !important;
-    color: #4a5568 !important; /* Highly Legible Paragraph Text */
+    color: #4a5568 !important;
 }
 
-.zensical-markdown-body {
     max-width: 800px;
     margin: 4rem auto 0;
     padding: 0 1.5rem;
