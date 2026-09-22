@@ -3,20 +3,20 @@ site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 
-# Global Theme Attributes (Nested correctly under the project engine)
+# Native Zensical Core Theme Configuration Attributes
 theme = "zensical"
 theme_variant = "modern"
 theme_palette = "light"
 
-# Validated Sequential Link Arrays (Relative to your docs/ directory)
+# Validated Navigation Dictionary Array Layout
 nav = [
-    { Philosophy = "index.md" },
-    { Capabilities = "features.md" },
-    { Foundry = "about.md" },
-    { Inquire = "contact.md" }
+    { "Philosophy" = "index.md" },
+    { "Capabilities" = "features.md" },
+    { "Foundry" = "about.md" },
+    { "Inquire" = "contact.md" }
 ]
 
-# Custom Technical Typography Mapping Strings
+# High-Velocity Typography Fonts & Style Sheet Injections
 extra_css = [
     "https://googleapis.com"
 ]
