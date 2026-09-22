@@ -1,4 +1,8 @@
-# Philosophy
+---
+hide:
+  - navigation
+  - toc
+---
 
 <div style="max-width: 650px; margin: 100px auto 60px auto; padding: 0 16px; font-family: 'IBM Plex Sans', sans-serif; text-align: center; display: block; clear: both;">
 
@@ -17,10 +21,10 @@
 
   <!-- High-Contrast Monochrome Call-To-Action Button Links Group -->
   <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 80px;">
-    <a href="./features.html" style="background-color: #111111; color: #FFFFFF; padding: 12px 32px; font-weight: 400; font-size: 0.95rem; border-radius: 4px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: opacity 0.2s;">
+    <a href="./1-capabilities.html" style="background-color: #111111; color: #FFFFFF; padding: 12px 32px; font-weight: 400; font-size: 0.95rem; border-radius: 4px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: opacity 0.2s;">
       Get started
     </a>
-    <a href="./about.html" style="background-color: #FFFFFF; color: #111111; padding: 12px 32px; font-weight: 400; font-size: 0.95rem; border-radius: 4px; text-decoration: none; border: 1px solid #DDDDDD; transition: background-color 0.2s;">
+    <a href="./2-foundry.html" style="background-color: #FFFFFF; color: #111111; padding: 12px 32px; font-weight: 400; font-size: 0.95rem; border-radius: 4px; text-decoration: none; border: 1px solid #DDDDDD; transition: background-color 0.2s;">
       Learn more
     </a>
   </div>
