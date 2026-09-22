@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "docs:build": "vitepress build"
+  },
+  "devDependencies": {
+    "vitepress": "latest"
+  }
+}
