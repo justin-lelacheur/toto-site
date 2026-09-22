@@ -1,55 +1,57 @@
-/* --- Escape Outer Zensical Layout Column Boundaries --- */
-.custom-homepage-container {
-    --md-default-bg-color: #8a2531 !important; /* BRAND ACCENT CANVAS: Deep Burgundy Red */
-    background-color: #8a2531 !important;
+/* ==========================================================================
+   HOMEPAGE EXCLUSIVE OVERRIDES (Only runs on body[data-md-template="home-layout.html"])
+   ========================================================================== */
+
+/* --- Full Screen Brand Backdrop Transformation --- */
+body[data-md-template="home-layout.html"],
+body[data-md-template="home-layout.html"] .md-container,
+body[data-md-template="home-layout.html"] .md-main,
+body[data-md-template="home-layout.html"] .md-content,
+body[data-md-template="home-layout.html"] .md-content__inner {
+    background-color: #8a2531 !important; /* INVESTOR DECK BRAND RED */
+    color: #ffffff !important;
+}
+
+/* Force baseline theme token variables to shift strictly on home */
+body[data-md-template="home-layout.html"] {
+    --md-default-bg-color: #8a2531 !important;
+    --md-typeset-color: #ffffff !important;
+}
+
+/* --- Escape Outer Layout Container Borders --- */
+body[data-md-template="home-layout.html"] .custom-homepage-container {
     display: block;
     width: 100vw !important;      
     margin-left: 50% !important;   
     transform: translateX(-50%);   
     position: relative;
-    padding: 4rem 0;
-    min-height: 100vh;
-    color: #ffffff !important; /* Force high-contrast text by default */
-}
-
-/* --- Wipe Header Margin & Underlying Layout Gaps --- */
-.md-content__inner,
-.md-content,
-main.md-main,
-.md-main__inner {
+    padding: 3rem 0;
     background-color: transparent !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
 }
 
-/* Ensure global grid alignment natively matches the brand backdrop */
-:root [data-md-color-primary="custom"] {
-    --md-default-bg-color: #8a2531 !important;
-}
-
-/* --- Master Landing Page Inner Alignment --- */
-.zensical-landing-wrap {
-    max-width: 1200px; 
+/* --- Master Landing Page Inner Width --- */
+body[data-md-template="home-layout.html"] .zensical-landing-wrap {
+    max-width: 1140px; 
     margin: 0 auto;
     width: 100%;
     padding: 0 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* --- Hero Layout Styles --- */
-.zensical-hero {
+/* --- Hero Typography Layout Elements --- */
+body[data-md-template="home-layout.html"] .zensical-hero {
     text-align: center !important;
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem 4rem !important;
     max-width: 850px;
     margin: 0 auto;
 }
 
-.hero-inner .hero-eyebrow {
+body[data-md-template="home-layout.html"] .hero-inner .hero-eyebrow {
     font-size: 0.825rem !important;
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #ffffff !important; /* High contrast text */
+    color: #ffffff !important; 
     background-color: rgba(255, 255, 255, 0.15) !important; /* Translucent glass white pill */
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
@@ -57,31 +59,31 @@ main.md-main,
     margin-bottom: 1.5rem;
 }
 
-.zensical-hero h1 {
+body[data-md-template="home-layout.html"] .zensical-hero h1 {
     font-size: 3.5rem !important;
     line-height: 1.15 !important;
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #ffffff !important; /* Crisp white title text */
+    color: #ffffff !important; 
 }
 
-.hero-tagline {
+body[data-md-template="home-layout.html"] .hero-tagline {
     font-size: 1.35rem !important;
-    color: rgba(255, 255, 255, 0.85) !important; /* Highly legible soft white copy text */
+    color: rgba(255, 255, 255, 0.85) !important; 
     line-height: 1.6 !important;
     margin-bottom: 3rem !important;
 }
 
-/* --- CTA Buttons --- */
-.hero-cta-group {
+/* --- Hero CTA Button Triggers --- */
+body[data-md-template="home-layout.html"] .hero-cta-group {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.hero-cta-group a {
+body[data-md-template="home-layout.html"] .hero-cta-group a {
     padding: 0.9rem 2.5rem !important;
     font-weight: 600 !important;
     border-radius: 8px !important;
@@ -91,43 +93,40 @@ main.md-main,
     display: inline-block;
 }
 
-/* Solid high-contrast white button for primary action */
-.hero-cta-group a.btn-primary {
+body[data-md-template="home-layout.html"] .hero-cta-group a.btn-primary {
     background-color: #ffffff !important; 
     color: #8a2531 !important; /* Burgundy text inside button */
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
 }
-.hero-cta-group a.btn-primary:hover {
+body[data-md-template="home-layout.html"] .hero-cta-group a.btn-primary:hover {
     background-color: rgba(255, 255, 255, 0.9) !important;
     transform: translateY(-2px);
 }
 
-/* Translucent border button for secondary option */
-.hero-cta-group a.btn-secondary {
+body[data-md-template="home-layout.html"] .hero-cta-group a.btn-secondary {
     border: 1px solid rgba(255, 255, 255, 0.4) !important;
     background-color: transparent !important;
     color: #ffffff !important;
 }
-.hero-cta-group a.btn-secondary:hover {
+body[data-md-template="home-layout.html"] .hero-cta-group a.btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.1) !important;
     border-color: #ffffff !important;
     transform: translateY(-2px);
 }
 
-/* --- Features Grid Layout --- */
-.zensical-features {
-    padding: 5rem 0 2rem;
+/* --- Semi-Transparent Features Deck Columns --- */
+body[data-md-template="home-layout.html"] .zensical-features {
+    padding: 4rem 0 2rem;
     width: 100%;
 }
 
-.features-grid {
+body[data-md-template="home-layout.html"] .features-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
     gap: 2rem !important;
 }
 
-/* Subtle, glassmorphic semi-transparent cards to sit elegantly on the burgundy base */
-.features-grid .feature-card {
+body[data-md-template="home-layout.html"] .features-grid .feature-card {
     background-color: rgba(255, 255, 255, 0.06) !important; 
     border: 1px solid rgba(255, 255, 255, 0.1) !important;   
     padding: 2.5rem 2rem !important;
@@ -136,34 +135,39 @@ main.md-main,
     transition: all 0.2s ease-in-out !important;
 }
 
-.features-grid .feature-card:hover {
+body[data-md-template="home-layout.html"] .features-grid .feature-card:hover {
     transform: translateY(-4px) !important;
     background-color: rgba(255, 255, 255, 0.1) !important;
     border-color: rgba(255, 255, 255, 0.25) !important;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15) !important;
 }
 
-.feature-card .card-icon {
+body[data-md-template="home-layout.html"] .feature-card .card-icon {
     font-size: 2.25rem !important;
     margin-bottom: 1rem !important;
     display: block;
 }
 
-.feature-card h3 {
+body[data-md-template="home-layout.html"] .feature-card h3 {
     margin: 0 0 0.75rem 0 !important;
     font-size: 1.35rem !important;
     color: #ffffff !important;
     font-weight: 700 !important;
 }
 
-.feature-card p {
+body[data-md-template="home-layout.html"] .feature-card p {
     margin: 0 !important;
     font-size: 1rem !important;
     line-height: 1.6 !important;
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
-.zensical-markdown-body {
+body[data-md-template="home-layout.html"] .zensical-markdown-body {
+    max-width: 800px;
+    margin: 4rem auto 0;
+    color: #ffffff !important;
+}
+
     max-width: 800px;
     margin: 4rem auto 0;
     color: #ffffff !important;
