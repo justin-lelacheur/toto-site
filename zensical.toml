@@ -3,19 +3,23 @@ site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 
-# Native Zensical Core Theme Configuration
-[theme]
-name = "zensical"
-variant = "modern"
-palette = "light"
+theme = "zensical"
+theme_variant = "modern"
+theme_palette = "light"
 
-# Fixed: Enabling horizontal navigation headers inside Zensical's explicit feature block
-[theme.features]
-navigation_tabs = true
+# Fixed: This dictionary array maps your custom navigation options cleanly
+nav = [
+    { "Philosophy" = "index.md" },
+    { "Capabilities" = "features.md" },
+    { "Foundry" = "about.md" },
+    { "Inquire" = "contact.md" }
+]
 
-# Validated Navigation Dictionary Array
-[nav]
-Philosophy = "index.md"
-Capabilities = "features.md"
-Foundry = "about.md"
-Inquire = "contact.md"
+# Tell Zensical to strip the sidebar and render a hero splash layout on index.md
+[project.theme]
+features = [
+    "navigation.tabs"
+]
+
+[project.meta]
+homepage_layout = "splash"
