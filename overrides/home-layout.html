@@ -1,26 +1,16 @@
 {% extends "base.html" %}
 
-{# Hide sidebars on the homepage #}
 {% block left_sidebar %}{% endblock %}
 {% block right_sidebar %}{% endblock %}
 
 {% block content %}
-<!-- Use a highly specific custom layout container wrapper -->
 <div class="custom-homepage-container">
     <div class="zensical-landing-wrap">
+         <!-- Rest of your hero and cards go here -->
+    </div>
+</div>
+{% endblock %}
 
-        <!-- Hero Block -->
-        <header class="zensical-hero">
-            <div class="hero-inner">
-                <span class="hero-eyebrow">🚀 Production Ready</span>
-                <h1>{{ page.title }}</h1>
-                <p class="hero-tagline">Write in Markdown, compile at lightning speeds, and build a beautiful web home.</p>
-                <div class="hero-cta-group">
-                    <a href="{{ base_url }}/docs/get-started/" class="btn-primary">Get Started in 5 Mins</a>
-                    <a href="https://github.com" class="btn-secondary">View on GitHub</a>
-                </div>
-            </div>
-        </header>
 
         <!-- Features Section -->
         <section class="zensical-features">
