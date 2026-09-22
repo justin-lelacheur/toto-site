@@ -1,85 +1,91 @@
-/* Ensure the landing components fill out the full layout container smoothly */
+/* Reset the master layout background block just for our landing container */
 .zensical-landing-wrap {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     width: 100%;
+    background-color: #ffffff !important; /* Force true clean white canvas underneath */
+    color: #1a202c !important;
 }
 
 /* Center and pad the main Hero text wrapper */
 .zensical-hero {
     text-align: center;
-    padding: 5rem 1.5rem 4rem;
+    padding: 6rem 1.5rem 5rem;
     max-width: 850px;
     margin: 0 auto;
 }
 
 .hero-eyebrow {
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #0070f3; /* Explicit Premium Royal Blue Eyebrow */
-    background-color: rgba(0, 112, 243, 0.1);
-    padding: 0.35rem 0.75rem;
+    letter-spacing: 0.06em;
+    color: #0070f3 !important; /* Premium Royal Blue */
+    background-color: rgba(0, 112, 243, 0.1) !important; /* Translucent blue pill */
+    padding: 0.4rem 0.9rem;
     border-radius: 20px;
+    display: inline-block;
 }
 
 .zensical-hero h1 {
-    font-size: 3rem;
-    line-height: 1.15;
-    font-weight: 800;
-    margin: 1.5rem 0 1rem;
-    letter-spacing: -0.04em;
-    color: #111111; /* Clean high-contrast header */
+    font-size: 3.25rem !important;
+    line-height: 1.15 !important;
+    font-weight: 800 !important;
+    margin: 1.75rem 0 1.25rem !important;
+    letter-spacing: -0.04em !important;
+    color: #111111 !important; /* Solid dark text overriding the default theme text */
 }
 
 .hero-tagline {
-    font-size: 1.35rem;
-    color: #666666; /* Elegant marketing gray text */
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
+    font-size: 1.35rem !important;
+    color: #4a5568 !important; /* Deep charcoal gray for high-contrast legibility */
+    line-height: 1.6 !important;
+    margin-bottom: 2.75rem !important;
 }
 
-/* CTA Buttons styling matching modern framework design layout packages */
+/* CTA Buttons layout structural alignments */
 .hero-cta-group {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .hero-cta-group a {
-    padding: 0.85rem 2rem;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.2s ease;
+    padding: 0.9rem 2.25rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease-in-out !important;
     text-decoration: none !important;
+    font-size: 1rem !important;
 }
 
 .btn-primary {
-    background-color: #111111 !important; /* Premium dark primary button */
+    background-color: #111111 !important; /* Premium off-black marketing button */
     color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
 }
 .btn-primary:hover {
-    background-color: #333333 !important;
-    transform: translateY(-1px);
+    background-color: #2d3748 !important;
+    transform: translateY(-2px) !important;
 }
 
 .btn-secondary {
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cbd5e0 !important;
     background-color: #ffffff !important;
-    color: #1a202c !important;
+    color: #2d3748 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03) !important;
 }
 .btn-secondary:hover {
     background-color: #f7fafc !important;
-    border-color: #cbd5e0;
+    border-color: #a0aec0 !important;
+    transform: translateY(-2px) !important;
 }
 
 /* Layout feature grid layout structure */
 .zensical-features {
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
 }
 
 .features-grid {
@@ -88,44 +94,45 @@
     gap: 2rem;
 }
 
+/* Feature cards explicit layout styling definitions */
 .feature-card {
-    background: #f7f9fa; /* Explicit light gray background for the cards */
-    border: 1px solid #eef2f5;
-    padding: 2.5rem 2rem;
-    border-radius: 12px;
-    transition: all 0.2s ease;
+    background-color: #f8fafc !important; /* Explicit slate-gray background tint */
+    border: 1px solid #e2e8f0 !important;   /* Solid border outline */
+    padding: 2.5rem 2rem !important;
+    border-radius: 16px !important;
+    transition: all 0.2s ease-in-out !important;
+    text-align: left;
 }
 
 .feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    background: #ffffff;
+    transform: translateY(-4px) !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05) !important;
+    border-color: #cbd5e0 !important;
 }
 
 .card-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+    display: block;
 }
 
 .feature-card h3 {
     margin: 0 0 0.75rem 0 !important;
-    font-size: 1.35rem !important;
-    color: #111111 !important;
-    font-weight: 700;
+    font-size: 1.4rem !important;
+    color: #111111 !important; /* High contrast headings inside cards */
+    font-weight: 700 !important;
 }
 
 .feature-card p {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #4a5568;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: #4a5568 !important; /* Neutral paragraph readability text */
 }
 
 .zensical-markdown-body {
     max-width: 800px;
-    margin: 3rem auto 0;
-    padding: 0 1.5rem;
-}
-
+    margin: 4rem auto 0;
     padding: 0 1.5rem;
 }
