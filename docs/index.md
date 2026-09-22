@@ -1,4 +1,4 @@
-# 
+# Philosophy
 
 <div style="max-width: 650px; margin: 100px auto 60px auto; padding: 0 16px; font-family: 'IBM Plex Sans', sans-serif; text-align: center; display: block; clear: both;">
 
