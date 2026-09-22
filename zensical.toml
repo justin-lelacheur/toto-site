@@ -7,9 +7,12 @@ extra_css = [
 ]
 
 [project.theme]
-custom_dir = "overrides"
 name = "material"
+custom_dir = "overrides"
 features = [
     "navigation.tabs"
 ]
-palette = { primary = "white", accent = "blue" } # Forces white premium header styling
+
+[project.theme.palette]
+primary = "custom"
+accent = "blue"
