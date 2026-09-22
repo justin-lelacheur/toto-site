@@ -1,31 +1,43 @@
-/* --- Force Zensical Background Variable Tokens to Tint --- */
+/* --- Escape Outer Zensical Layout Column Boundaries --- */
 .custom-homepage-container {
-    --md-default-bg-color: #f8fafc !important; /* Forces soft marketing gray behind everything */
+    --md-default-bg-color: #f8fafc !important; /* Forces soft gray backdrop token */
     background-color: #f8fafc !important;
     display: block;
-    width: 100%;
+    width: 100vw !important;      /* Forces full window view width */
+    margin-left: 50% !important;   /* Centers relative container anchor points */
+    transform: translateX(-50%);   /* Strips parent grid boundaries completely */
+    position: relative;
+    padding: 2rem 0;
 }
 
-/* Ensure underlying documentation grids drop their white properties */
-.custom-homepage-container .md-content, 
-.custom-homepage-container .md-content__inner,
-.custom-homepage-container main.md-main,
-.custom-homepage-container .md-main__inner {
+/* --- Wipe Header Margin & Underlying Layout Gaps --- */
+.md-content__inner,
+.md-content,
+main.md-main,
+.md-main__inner {
     background-color: transparent !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
-/* --- Master Landing Page Wrapper Configuration --- */
+/* Ensure global grid alignment doesn't force a white border frame box */
+:root [data-md-color-primary="custom"] {
+    --md-default-bg-color: #f8fafc !important;
+}
+
+/* --- Master Landing Page Inner Alignment --- */
 .zensical-landing-wrap {
+    max-width: 1200px; /* Constrains text layouts beautifully without breaking canvas color */
     margin: 0 auto;
     width: 100%;
-    padding-top: 1.5rem;
+    padding: 0 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
-    padding: 5.5rem 1.5rem 4.5rem !important;
+    padding: 4rem 1.5rem 4srem !important;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -35,7 +47,7 @@
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #0070f3 !important; /* Premium Royal Blue */
+    color: #0070f3 !important;
     background-color: rgba(0, 112, 243, 0.1) !important;
     padding: 0.4rem 0.9rem !important;
     border-radius: 20px !important;
@@ -49,7 +61,7 @@
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #111111 !important; /* Clear Dark High-Contrast Header */
+    color: #111111 !important;
 }
 
 .hero-tagline {
@@ -59,7 +71,7 @@
     margin-bottom: 2.75rem !important;
 }
 
-/* --- CTA Marketing Button Links --- */
+/* --- CTA Buttons --- */
 .hero-cta-group {
     display: flex;
     gap: 1.25rem;
@@ -99,11 +111,10 @@
     transform: translateY(-2px);
 }
 
-/* --- Layout Feature Grid Layout Structure --- */
+/* --- Features Grid Layout --- */
 .zensical-features {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 1.5rem;
+    padding: 4rem 0;
+    width: 100%;
 }
 
 .features-grid {
@@ -113,18 +124,18 @@
 }
 
 .features-grid .feature-card {
-    background-color: #ffffff !important; /* True white cards to contrast nicely against the gray backdrop */
+    background-color: #ffffff !important; /* Pure white cards sitting on top of the gray canvas backdrop */
     border: 1px solid #e2e8f0 !important;   
     padding: 2.5rem 2rem !important;
     border-radius: 16px !important;
     text-align: left;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
     transition: all 0.2s ease-in-out !important;
 }
 
 .features-grid .feature-card:hover {
     transform: translateY(-4px) !important;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
     border-color: #cbd5e0 !important;
 }
 
@@ -151,5 +162,4 @@
 .zensical-markdown-body {
     max-width: 800px;
     margin: 4rem auto 0;
-    padding: 0 1.5rem;
 }
