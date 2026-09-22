@@ -2,9 +2,14 @@
 site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
+extra_css = [
+    "stylesheets/extra.css"
+]
 
 [project.theme]
 custom_dir = "overrides"
+name = "material"
 features = [
     "navigation.tabs"
 ]
+palette = { primary = "white", accent = "blue" } # Forces white premium header styling
