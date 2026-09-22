@@ -1,20 +1,31 @@
-# Deep-Dive Platform Features
+---
+layout: page
+---
 
-<!-- 3-Column Hero Feature Block Format Style -->
-<div style="display: flex; flex-direction: row; gap: 16px; margin: 32px 0; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 250px; background-color: #D66853; color: #FFFFFF; padding: 24px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <h3 style="color: #FFFFFF; margin-top: 0; font-size: 1.3rem;">Semantic Ontology</h3>
-    <p style="font-size: 0.95rem; opacity: 0.9;">Decouples core identity from standard relational layouts using an immutable, graph-theoretic digital twin map built on TM Forum SID models.</p>
+<div style="max-width: 600px; margin: 60px auto; padding: 0 16px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; line-height: 1.7;">
+
+  <h2 style="font-size: 1.75rem; font-weight: 400; color: #111111; margin-bottom: 40px; border: none;">
+    Systemic Pillars
+  </h2>
+
+  <div style="margin-bottom: 48px;">
+    <h3 style="font-size: 1.05rem; font-weight: 400; color: #111111; margin-bottom: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">01 //</span> Semantic Ontology Fabric</h3>
+    <p style="color: #555555; margin: 0; font-size: 0.95rem;">Completely decouples core corporate identity from standard relational database limits using a live, graph-theoretic digital twin of the business model.</p>
   </div>
-  <div style="flex: 1; min-width: 250px; background-color: #D66853; color: #FFFFFF; padding: 24px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <h3 style="color: #FFFFFF; margin-top: 0; font-size: 1.3rem;">AI Agent Factory</h3>
-    <p style="font-size: 0.95rem; opacity: 0.9;">An automated compilation loop that takes visual or vocal intent adjustments and auto-injects methods into isolated staging sandboxes.</p>
+
+  <div style="margin-bottom: 48px;">
+    <h3 style="font-size: 1.05rem; font-weight: 400; color: #111111; margin-bottom: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">02 //</span> Autonomous AI Software Factory</h3>
+    <p style="color: #555555; margin: 0; font-size: 0.95rem;">An automated compilation loop that parses conversational layout specifications and auto-injects type-safe code into secure container sandboxes.</p>
   </div>
-  <div style="flex: 1; min-width: 250px; background-color: #D66853; color: #FFFFFF; padding: 24px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <h3 style="color: #FFFFFF; margin-top: 0; font-size: 1.3rem;">Runtime Chassis</h3>
-    <p style="font-size: 0.95rem; opacity: 0.9;">Guarantees complete system stability by enforcing multi-tier parameter validation and sealed, unmodifiable egress response data maps.</p>
+
+  <div style="margin-bottom: 48px;">
+    <h3 style="font-size: 1.05rem; font-weight: 400; color: #111111; margin-bottom: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">03 //</span> Defensive Runtime Chassis</h3>
+    <p style="color: #555555; margin: 0; font-size: 0.95rem;">Enforces strict pointer null-safety guarding, context typing isolation, and virtual execution thread allocation boundaries across the runtime mesh.</p>
   </div>
+
+  <div style="margin-bottom: 48px;">
+    <h3 style="font-size: 1.05rem; font-weight: 400; color: #111111; margin-bottom: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">04 //</span> Scale-to-Zero Event Mesh</h3>
+    <p style="color: #555555; margin: 0; font-size: 0.95rem;">Treats enterprise state changes as immutable system events. When internal transaction task queues run empty, compute scale automatically drops to zero.</p>
+  </div>
+
 </div>
-
-### Scale-to-Zero Event Mesh
-Leverages a high-speed event backbone running on Apache Kafka and Redpanda. When task queues run empty, the system automatically scales down to zero nodes to eliminate baseline infrastructure compute costs across your enterprise cloud environment.
