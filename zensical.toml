@@ -7,11 +7,12 @@ name = "zensical"
 variant = "modern"
 palette = "light"
 
+# Fixed: Using lowercase tracking parameters maps the Zensical navbar cleanly
 [nav]
-Philosophy = "index.md"
-Capabilities = "features.md"
-Foundry = "about.md"
-Inquire = "contact.md"
+philosophy = "index.md"
+capabilities = "features.md"
+foundry = "about.md"
+inquire = "contact.md"
 
 [project]
 font_family = "IBM Plex Sans"
