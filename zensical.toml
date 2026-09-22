@@ -3,37 +3,5 @@ site_name = "toto"
 site_url = "https://pages.dev"
 site_description = "An autonomous, AI-native enterprise operating system."
 
-theme = "zensical"
-theme_variant = "modern"
-theme_palette = "light"
-
-# Explicit layout feature array to force tabs across the top navbar
-theme_features = [
-    "navigation.tabs"
-]
-
-# High-Velocity Typography Fonts & Style Sheet Injections
-extra_css = [
-    "https://googleapis.com"
-]
-
-# Explicit Array of Tables formatting prevents parser overwriting drops
-[[project.nav]]
-title = "Philosophy"
-url = "index.md"
-
-[[project.nav]]
-title = "Capabilities"
-url = "1-capabilities.md"
-
-[[project.nav]]
-title = "Foundry"
-url = "2-foundry.md"
-
-[[project.nav]]
-title = "Inquire"
-url = "3-inquire.md"
-
 [project.theme]
-name = "default"         # Move the theme name inside the block if supported
-custom_dir = "overrides" # Your custom directory mapping
+custom_dir = "overrides"
