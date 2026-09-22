@@ -1,52 +1,53 @@
 {% extends "base.html" %}
 
-{# Completely hide the sidebars #}
+{# Hide sidebars on the homepage #}
 {% block left_sidebar %}{% endblock %}
 {% block right_sidebar %}{% endblock %}
 
 {% block content %}
-<!-- Main Landing Page Container -->
-<div class="zensical-landing-wrap">
+<!-- Use a highly specific custom layout container wrapper -->
+<div class="custom-homepage-container">
+    <div class="zensical-landing-wrap">
 
-    <!-- 1. Hero Block -->
-    <header class="zensical-hero">
-        <div class="hero-inner">
-            <span class="hero-eyebrow">🚀 Production Ready</span>
-            <h1>{{ page.title }}</h1>
-            <p class="hero-tagline">Write in Markdown, compile at lightning speeds, and build a beautiful web home.</p>
-            <div class="hero-cta-group">
-                <a href="{{ base_url }}/docs/get-started/" class="btn-primary">Get Started in 5 Mins</a>
-                <a href="https://github.com" class="btn-secondary">View on GitHub</a>
+        <!-- Hero Block -->
+        <header class="zensical-hero">
+            <div class="hero-inner">
+                <span class="hero-eyebrow">🚀 Production Ready</span>
+                <h1>{{ page.title }}</h1>
+                <p class="hero-tagline">Write in Markdown, compile at lightning speeds, and build a beautiful web home.</p>
+                <div class="hero-cta-group">
+                    <a href="{{ base_url }}/docs/get-started/" class="btn-primary">Get Started in 5 Mins</a>
+                    <a href="https://github.com" class="btn-secondary">View on GitHub</a>
+                </div>
             </div>
+        </header>
+
+        <!-- Features Section -->
+        <section class="zensical-features">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Batteries Included</h3>
+                    <p>Built-in client search, localization tools, and instant asset responsiveness natively out of the box.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">🦀</div>
+                    <h3>Rust Compilations</h3>
+                    <p>Powered by MiniJinja to compile and cache static page modifications concurrently in parallel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Fully Custom</h3>
+                    <p>Effortlessly strip grid structural layers and inject absolute tailored styles directly inside themes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fallback Area -->
+        <div class="zensical-markdown-body">
+            {{ page.content }}
         </div>
-    </header>
 
-    <!-- 2. Responsive 3-Column Features Section -->
-    <section class="zensical-features">
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="card-icon">⚡</div>
-                <h3>Batteries Included</h3>
-                <p>Built-in client search, localization tools, and instant asset responsiveness natively out of the box.</p>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">🦀</div>
-                <h3>Rust Compilations</h3>
-                <p>Powered by MiniJinja to compile and cache static page modifications concurrently in parallel.</p>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">🎨</div>
-                <h3>Fully Custom</h3>
-                <p>Effortlessly strip grid structural layers and inject absolute tailored styles directly inside themes.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Standard Markdown Stream Fallback Area -->
-    <div class="zensical-markdown-body">
-        {{ page.content }}
     </div>
-
 </div>
 {% endblock %}
-
