@@ -1,25 +1,27 @@
 {% extends "base.html" %}
 
-{# 1. Hide the sidebars ONLY if the landing page wrapper class is active #}
+{# 1. Hide the sidebars ONLY on the Home landing page view #}
 {% block left_sidebar %}
-  {% if "zensical-landing-wrap" not in page.content %}
+  {% if page.title != "Home" %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
 {% block right_sidebar %}
-  {% if "zensical-landing-wrap" not in page.content %}
+  {% if page.title != "Home" %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
 {# 2. Dynamic Content Block Framework #}
 {% block content %}
-  {% if "zensical-landing-wrap" in page.content %}
-    {# On the homepage, just dump the Markdown code which already has your wrapper #}
-    {{ page.content }}
+  {% if page.title == "Home" %}
+    {# If home, wrap the page cleanly using your marketing styling container #}
+    <div class="zensical-landing-wrap">
+      {{ page.content }}
+    </div>
   {% else %}
-    {# On standard docs pages, render the default look with sidebars restored #}
+    {# If documentation page, render the default look with sidebars perfectly intact #}
     {{ super() }}
   {% endif %}
 {% endblock %}
