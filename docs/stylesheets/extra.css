@@ -68,6 +68,10 @@
     display: inline-block !important;
 }
 
+.md-header__button.md-logo {
+    display: inline-block !important;
+}
+
 .md-header__title,
 .zensical-header__title {
     margin-left: 0.75rem;
