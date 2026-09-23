@@ -326,4 +326,14 @@
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
+/* ==========================================
+   13. LANDING PAGE ONLY: RESTORE BLACK CARD TEXT
+   ========================================== */
 
+/* Target the typography strictly inside your feature cards to make them black */
+.zensical-landing-wrap .features-grid .feature-card h3,
+.zensical-landing-wrap .feature-card h3,
+.zensical-landing-wrap .features-grid .feature-card p,
+.zensical-landing-wrap .feature-card p {
+    color: #111111 !important; /* Forces the card text back to dark slate/black */
+}
