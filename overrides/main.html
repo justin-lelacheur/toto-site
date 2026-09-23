@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
-{# 1. Hide Left Sidebar Menu ONLY on the Home Page #}
+{# 1. Hide the Left Navigation Sidebar ONLY on the Home Page #}
 {% block nav %}
   {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 2. Hide Right Table of Contents Sidebar ONLY on the Home Page #}
+{# 2. Hide the Right Table of Contents Sidebar ONLY on the Home Page #}
 {% block toc %}
   {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 3. Apply the custom home landing page wrapper #}
+{# 3. Render Page Content Layout #}
 {% block content %}
   {% if page.meta.is_homepage %}
     <div class="zensical-landing-wrap">
@@ -24,6 +24,7 @@
     {{ super() }}
   {% endif %}
 {% endblock %}
+
 
 
 
