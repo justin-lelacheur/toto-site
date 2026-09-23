@@ -17,6 +17,7 @@
 {# 3. Render Page Content Layout #}
 {% block content %}
   {% if page.meta.is_homepage %}
+    <!-- CRITICAL: This class matches your CSS hooks perfectly -->
     <div class="zensical-landing-wrap">
       {{ page.content }}
     </div>
