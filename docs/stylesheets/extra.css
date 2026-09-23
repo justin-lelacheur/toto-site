@@ -357,6 +357,64 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
 /* ==========================================
    8. SIDEBAR VISIBILITY BY PAGE TYPE
    ========================================== */
+/* Documentation navigation styling inspired by Zensical's restrained rails */
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary {
+    border-right: 1px solid rgba(25, 25, 25, 0.1);
+    padding-right: 1rem !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
+    border-left: 1px solid rgba(25, 25, 25, 0.1);
+    padding-left: 1rem !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-nav__title {
+    min-height: 2rem;
+    padding: 0 0.75rem 0.6rem !important;
+    color: rgba(25, 25, 25, 0.55) !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em;
+    line-height: 1.3 !important;
+    text-transform: uppercase;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link,
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
+    border-radius: 0.35rem;
+    color: rgba(25, 25, 25, 0.68) !important;
+    font-size: 0.78rem !important;
+    line-height: 1.35 !important;
+    margin: 0.12rem 0;
+    padding: 0.45rem 0.75rem !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link:hover,
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link:hover {
+    background-color: rgba(25, 25, 25, 0.06) !important;
+    color: #111111 !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link--active {
+    background-color: rgba(198, 74, 36, 0.12) !important;
+    color: #a23b1f !important;
+    font-weight: 700 !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
+    border-left: 2px solid transparent;
+    border-radius: 0;
+    color: rgba(25, 25, 25, 0.52) !important;
+    font-size: 0.72rem !important;
+    padding: 0.3rem 0.65rem !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link--active {
+    border-left-color: #c64a24;
+    color: #a23b1f !important;
+}
+
 body:has(.zensical-landing-wrap) .md-sidebar,
 body:has(.zensical-landing-wrap) [data-md-component="sidebar"] {
     display: none !important;
