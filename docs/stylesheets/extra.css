@@ -270,3 +270,18 @@
 :has(.zensical-landing-wrap) .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important; /* Softens the "Next" / "Previous" sub-labels */
 }
+/* ==========================================
+   11. LANDING PAGE ONLY: WHITE NAVIGATION UNDERLINE
+   ========================================== */
+
+/* Target the indicator border on the active tab item */
+:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
+:has(.zensical-landing-wrap) .md-tabs__link--active,
+:has(.zensical-landing-wrap) .md-tabs__item {
+    border-bottom-color: #ffffff !important;
+}
+
+/* Forces the theme accent color to render as white for the header navigation line */
+:has(.zensical-landing-wrap) {
+    --md-accent-fg-color: #ffffff !important;
+}
