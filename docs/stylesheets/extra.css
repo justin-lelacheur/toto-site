@@ -11,7 +11,7 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
-/* Locks your brand logo to a crisp 4.5rem height universally across all view tracks */
+/* Locks your brand logo to a crisp 4.5rem height universally across all layouts */
 .md-header__button.md-logo img,
 .zensical-header__logo img, 
 .header-logo img,
@@ -30,7 +30,7 @@
 }
 
 /* ==========================================
-   3. SITE NAME & PAGE NAME OVERRIDES (FIXED COLLISION)
+   3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
    ========================================== */
 /* Locks your Master Site Title large and bold on all layouts */
 .md-header__ellipsis span:first-child,
@@ -57,7 +57,7 @@ div[data-md-component="header-topic"] + div[data-md-component="header-topic"] {
     margin-left: 0 !important;
 }
 
-/* Draws a clean vertical separator line ONLY when both text blocks are active */
+/* Draws a clean vertical separator line ONLY between the two words when both are active */
 .md-header__ellipsis span:first-child + span:nth-child(2),
 .md-header__topic:first-child + .md-header__topic {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
@@ -278,7 +278,7 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
 /* ==========================================
    8. DOCUMENTATION PAGES ONLY: FORCE SIDEBARS LIVE
    ========================================== */
-/* Overrides Zensical's sidebar collapsing rules to force layout columns on documentation subpages */
+/* Explicitly forces the sidebars back to life on all standard documentation subpages */
 body:not(:has(.zensical-landing-wrap)) .md-sidebar,
 body:not(:has(.zensical-landing-wrap)) [data-md-component="sidebar"],
 body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary,
@@ -287,5 +287,6 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
 
 
