@@ -72,6 +72,11 @@ body:has(.zensical-landing-wrap) .md-logo img {
     opacity: 0.85 !important;
 }
 
+/* Keeps only the site name visible in the home landing header */
+body:has(.zensical-landing-wrap) .md-header__topic[data-md-component="header-topic"] {
+    display: none !important;
+}
+
 /* Separates the site and page names on documentation pages only */
 body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
