@@ -26,10 +26,6 @@ custom_dir = "overrides"
 logo = "images/toto-site-logo-black-med.png"
 favicon = "images/toto-favicon-48.png"
 
-[project.theme.font]
-text = "IBM Plex Sans"
-code = "IBM Plex Mono"
-
 features = [
     "navigation.tabs",
     "navigation.sections",
@@ -37,3 +33,7 @@ features = [
     "navigation.footer",
     "content.code.copy"
 ]
+
+[project.theme.font]
+text = "IBM Plex Sans"
+code = "IBM Plex Mono"
