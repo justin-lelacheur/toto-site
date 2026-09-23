@@ -15,5 +15,5 @@ features = [
 
 [project.theme.assets]
 extra_css = [
-    "stylesheets/custom.css"
+    "stylesheets/extra.css"
 ]
