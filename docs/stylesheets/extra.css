@@ -235,3 +235,38 @@
 .zensical-landing-wrap .feature-card p {
     color: rgba(255, 255, 255, 0.85) !important;
 }
+/* ==========================================
+   10. LANDING PAGE ONLY: NAV, SEARCH, & FOOTER WHITE TEXT
+   ========================================== */
+
+/* 1. Target Top Navigation Links & Header Icons */
+:has(.zensical-landing-wrap) .md-tabs__link,
+:has(.zensical-landing-wrap) .md-nav__link,
+:has(.zensical-landing-wrap) .md-header__button,
+:has(.zensical-landing-wrap) .md-nav__link--active {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* 2. Target the Search Bar Input & Placeholder Text */
+:has(.zensical-landing-wrap) .md-search__input {
+    color: #ffffff !important;
+}
+:has(.zensical-landing-wrap) .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important; /* Soft white placeholder */
+}
+:has(.zensical-landing-wrap) .md-search__icon {
+    color: #ffffff !important; /* Makes the search magnifying glass icon white */
+}
+
+/* 3. Target the Footer Text, Links, and Labels */
+:has(.zensical-landing-wrap) .md-footer,
+:has(.zensical-landing-wrap) .md-footer__link,
+:has(.zensical-landing-wrap) .md-footer__title,
+:has(.zensical-landing-wrap) .md-footer-meta,
+:has(.zensical-landing-wrap) .md-footer-meta__inner {
+    color: #ffffff !important;
+}
+:has(.zensical-landing-wrap) .md-footer__direction {
+    color: rgba(255, 255, 255, 0.6) !important; /* Softens the "Next" / "Previous" sub-labels */
+}
