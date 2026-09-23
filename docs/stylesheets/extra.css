@@ -110,6 +110,17 @@ body:has(.zensical-landing-wrap) .md-logo img {
     line-height: 1.2 !important;
 }
 
+.md-header__topic:first-child .md-ellipsis::after,
+.md-sidebar--primary .md-nav__title::after {
+    content: "TM";
+    display: inline-block;
+    font-size: 0.45em;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 0.12em;
+    vertical-align: super;
+}
+
 /* Keeps the current page name visually subordinate */
 .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
     font-size: 0.83rem !important;
