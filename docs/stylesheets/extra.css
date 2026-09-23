@@ -337,3 +337,20 @@
 .zensical-landing-wrap .feature-card p {
     color: #111111 !important; /* Forces the card text back to dark slate/black */
 }
+/* ==========================================
+   14. LANDING PAGE ONLY: TRANSPARENT FOOTER FIX
+   ========================================== */
+
+/* Remove the white overlay blending layer from Zensical's footer structure */
+:has(.zensical-landing-wrap) .md-footer,
+:has(.zensical-landing-wrap) .md-footer-meta {
+    background-color: rgba(0, 0, 0, 0.25) !important; /* Changes pink to a rich, darkened red */
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; /* Soft white border line instead of dark */
+}
+
+/* Ensure the absolute inner footer container stays transparent */
+:has(.zensical-landing-wrap) .md-footer__inner,
+:has(.zensical-landing-wrap) .md-footer-meta__inner {
+    background-color: transparent !important;
+    background: transparent !important;
+}
