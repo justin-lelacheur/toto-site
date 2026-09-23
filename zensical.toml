@@ -29,5 +29,6 @@ features = [
     "navigation.tabs",
     "navigation.sections",
     "navigation.tracking",
+    "navigation.footer",
     "content.code.copy"
 ]
