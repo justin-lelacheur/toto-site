@@ -107,15 +107,15 @@ body:has(.zensical-landing-wrap) .md-logo img {
 
 .md-header__topic {
     position: absolute !important;
-        font-size: 12px !important;
     left: 0 !important;
     display: flex !important;
     max-width: 100% !important;
 }
 
 /* Keeps the site name larger than the current page name */
-        font-size: 9px !important;
-    font-size: 18px !important;
+.md-header__topic:first-child .md-ellipsis {
+    font-family: "IBM Plex Sans", sans-serif !important;
+    font-size: 1.33rem !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
 }
