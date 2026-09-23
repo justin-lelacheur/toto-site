@@ -150,18 +150,28 @@ body:not(:has(.zensical-landing-wrap)) .md-header__inner {
 }
 
 /* ==========================================
-   5. LAYOUT FEATURE GRID STRUCTURE
+   5. LAYOUT FEATURE GRID STRUCTURE (FIXED)
    ========================================== */
 .zensical-features {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 1.5rem;
+    width: 100% !important;
 }
 
+/* Force the grid to stay side-by-side on desktop views */
 .features-grid {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* Forces a strict 3-column horizontal split */
     gap: 2rem !important;
+    width: 100% !important;
+}
+
+/* Responsive fallback: Stack cards ONLY on smaller mobile phone screens */
+@media screen and (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr !important; /* Smoothly snaps to vertical stack on tablets/mobile */
+    }
 }
 
 .features-grid .feature-card {
@@ -172,18 +182,13 @@ body:not(:has(.zensical-landing-wrap)) .md-header__inner {
     text-align: left;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
     transition: all 0.2s ease-in-out !important;
+    box-sizing: border-box !important;
 }
 
 .features-grid .feature-card:hover {
     transform: translateY(-4px) !important;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
     border-color: #cbd5e0 !important;
-}
-
-.feature-card .card-icon {
-    font-size: 2.25rem !important;
-    margin-bottom: 1rem !important;
-    display: block;
 }
 
 .feature-card h3 {
@@ -199,6 +204,7 @@ body:not(:has(.zensical-landing-wrap)) .md-header__inner {
     line-height: 1.6 !important;
     color: #4a5568 !important;
 }
+
 
 /* ==========================================
    6. LANDING PAGE ONLY: AUTOMATIC PNG & TEXT SWAP
