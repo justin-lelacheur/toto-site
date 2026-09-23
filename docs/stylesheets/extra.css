@@ -27,6 +27,8 @@
 .md-header__title,
 .zensical-header__title {
     margin-left: 0.75rem;
+    width: auto !important;
+    justify-content: flex-start !important;
 }
 
 /* Uses the white logo only against the landing page's red background */
@@ -43,6 +45,8 @@ body:has(.zensical-landing-wrap) .md-logo img {
     flex-direction: row !important;
     align-items: center !important;
     gap: 0.85rem !important;
+    width: auto !important;
+    justify-content: flex-start !important;
     overflow: visible !important;
 }
 
