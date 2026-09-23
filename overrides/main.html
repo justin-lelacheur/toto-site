@@ -1,22 +1,22 @@
 {% extends "base.html" %}
 
-{# 1. Hide the Left Sidebar Menu ONLY on pages using the marketing layout #}
+{# 1. Hide the Left Navigation Sidebar ONLY on the Home Page #}
 {% block nav %}
-  {% if page.meta.template != "marketing" %}
+  {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 2. Hide the Right Table of Contents ONLY on pages using the marketing layout #}
+{# 2. Hide the Right Table of Contents Sidebar ONLY on the Home Page #}
 {% block toc %}
-  {% if page.meta.template != "marketing" %}
+  {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 3. Apply the custom body wrapper to the marketing homepage layout #}
+{# 3. Render Page Content Layout #}
 {% block content %}
-  {% if page.meta.template == "marketing" %}
+  {% if page.meta.is_homepage %}
     <div class="zensical-landing-wrap">
       {{ page.content }}
     </div>
