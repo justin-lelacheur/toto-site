@@ -1,36 +1,45 @@
-/* --- Master Landing Page Wrapper --- */
+/* ==========================================
+   1. MASTER LANDING PAGE WRAPPER 
+   ========================================== */
 .zensical-landing-wrap {
     margin: 0 auto;
     width: 100%;
     padding-top: 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-/* Scale up the header logo image */
+
+/* ==========================================
+   2. GLOBAL HEADER LOGO OVERRIDES 
+   ========================================== */
 .zensical-header__logo img, 
 .header-logo img,
 [class*="header"] img {
-    height: 4.5rem !important; /* Increase this number to make it larger */
+    height: 4.5rem !important; /* Large logo scaling */
     max-height: 72px !important; 
     width: auto !important;     /* Keeps the aspect ratio perfectly intact */
 }
 
-/* Optional: Add spacing between the larger logo and your site text if needed */
+/* Add spacing between the larger logo and your site text */
 .zensical-header__title {
     margin-left: 0.75rem;
 }
+
 /* ==========================================
    3. SITE NAME / HEADER TITLE OVERRIDES
    ========================================== */
 .md-header__title,
 .zensical-header__title,
 [class*="header__title"] {
-    font-size: 2.0rem !important; /* Increase this (e.g., 1.6rem, 1.8rem) to make it larger */
-    font-weight: 700 !important;  /* Bolds the text for better visibility */
+    font-size: 2.0rem !important; /* Large bold text scaling */
+    font-weight: 700 !important;  
     line-height: 1.2 !important;
     display: flex !important;
     align-items: center !important;
 }
-/* --- Hero Layout Styles --- */
+
+/* ==========================================
+   4. HERO LAYOUT STYLES
+   ========================================== */
 .zensical-hero {
     text-align: center !important;
     padding: 5.5rem 1.5rem 4.5rem !important;
@@ -101,7 +110,9 @@
     color: #2d3748 !important;
 }
 
-/* --- Layout Feature Grid Structure --- */
+/* ==========================================
+   5. LAYOUT FEATURE GRID STRUCTURE
+   ========================================== */
 .zensical-features {
     max-width: 1200px;
     margin: 0 auto;
@@ -149,46 +160,38 @@
     line-height: 1.6 !important;
     color: #4a5568 !important;
 }
+
 /* ==========================================
-   5. LANDING PAGE ONLY: PNG LOGO SWAP
+   6. LANDING PAGE ONLY: AUTOMATIC PNG & TEXT SWAP
    ========================================== */
 
-/* 1. Target the home landing page wrapper context and hide the default physical image */
-:has(.marketing-landing-page) .zensical-header__logo img,
-:has(.marketing-landing-page) [class*="header"] a img {
-    display: none !important; /* Forces the default logo to vanish */
+/* Swaps out the main logo image on the landing page automatically */
+:has(.zensical-landing-wrap) .zensical-header__logo img,
+:has(.zensical-landing-wrap) .md-header__button.md-logo img,
+:has(.zensical-landing-wrap) [class*="header"] img {
+    content: url("../images/toto-site-logo-white-med.png") !important;
+    content-visibility: auto !important;
 }
 
-/* 2. Target the link container holding the image and swap it with your alternate background */
-:has(.marketing-landing-page) .zensical-header__logo,
-:has(.marketing-landing-page) [class*="header__logo"] {
-    display: inline-block !important;
-    content: "" !important;
-    
-    /* Pull the alternate landing logo */
-    background-image: url("../images/toto-site-logo-white-med.png") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+/* Adjusts the text color of the site name on the landing page */
+:has(.zensical-landing-wrap) .md-header__title,
+:has(.zensical-landing-wrap) .zensical-header__title,
+:has(.zensical-landing-wrap) [class*="header__title"] {
+    color: #ffffff !important; /* Swapped to white text for dark background visibility */
 }
+
 /* ==========================================
-   6. LANDING PAGE ONLY: BACKGROUND COLOR
+   7. LANDING PAGE ONLY: BACKGROUND COLOR
    ========================================== */
-
-/* Target the core layout containers only when they contain your marketing wrapper */
-:has(.marketing-landing-page) {
-    /* 1. Sets the global base background */
-    background-color: #0d1117 !important; /* Update to your preferred landing page hex color */
+:has(.zensical-landing-wrap) {
+    background-color: #B30B00 !important; /* Main layout background */
 }
 
-:has(.marketing-landing-page) .md-container,
-:has(.marketing-landing-page) .md-main,
-:has(.marketing-landing-page) .md-content,
-:has(.marketing-landing-page) .md-content__inner {
-    /* 2. Forces Zensical's inner layout grid blocks to be completely transparent */
+:has(.zensical-landing-wrap) .md-container,
+:has(.zensical-landing-wrap) .md-main,
+:has(.zensical-landing-wrap) .md-content,
+:has(.zensical-landing-wrap) .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
-    
-    /* 3. Overrides the system color variable locally so text containers scale smoothly */
-    --md-default-bg-color: #B30B00 !important; 
+    --md-default-bg-color: #B30B00 !important; /* Prevents white structural masking boxes */
 }
