@@ -433,6 +433,10 @@ body:not(:has(.zensical-landing-wrap)) .md-nav__title {
     text-transform: uppercase;
 }
 
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav--primary > .md-nav__title {
+    display: none !important;
+}
+
 body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link,
 body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
     border-radius: 0.35rem;
