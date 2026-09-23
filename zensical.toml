@@ -1,8 +1,8 @@
 # zensical.toml
 
 [project]
-site_name = "toto-site"
-site_url = "https://example.com"
+site_name = "toto"
+site_url = "https://toto-site-3pm.pages.dev"
 extra_css = [
     "stylesheets/extra.css"
 ]
