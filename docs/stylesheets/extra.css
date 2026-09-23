@@ -119,6 +119,34 @@ body:has(.zensical-landing-wrap) .md-header__topic:first-child {
     pointer-events: auto !important;
 }
 
+/* Keep both header names visible on documentation pages while scrolling */
+body:not(:has(.zensical-landing-wrap)) .md-header[hidden] {
+    display: block !important;
+    transform: none !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    width: auto !important;
+    justify-content: flex-start !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-header__topic {
+    position: static !important;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+    z-index: 0 !important;
+    pointer-events: auto !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
+    font-size: 0.55rem !important;
+}
+
 /* Separates the site and page names on documentation pages only */
 body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
