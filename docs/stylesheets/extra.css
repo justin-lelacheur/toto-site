@@ -16,6 +16,14 @@
     font-size: 0.64rem !important;
 }
 
+.footer-content .md-copyright,
+.footer-content .md-footer__brand,
+.footer-content .md-footer__brand a {
+    font-size: 0.64rem !important;
+    line-height: 1.4 !important;
+    font-weight: 400 !important;
+}
+
 .md-footer__brand {
     text-align: right;
 }
