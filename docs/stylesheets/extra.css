@@ -25,14 +25,22 @@
 }
 
 /* ==========================================
-   3. SITE NAME / HEADER TITLE OVERRIDES
+   3. SITE NAME / HEADER TITLE OVERRIDES (FIXED)
    ========================================== */
+/* Target strictly the first topic layer (Your Site Name) so it stays large and unaffected */
+.md-header__title .md-header__topic:first-child,
+.zensical-header__title .md-header__topic:first-child {
+    font-size: 2.0rem !important; /* Forces your Site Name to remain exactly 2.0rem */
+    font-weight: 700 !important;  
+    line-weight: 1.2 !important;
+    display: inline-block !important;
+}
+
+/* Ensure the main container holding the items doesn't compress or shrink text */
 .md-header__title,
 .zensical-header__title,
-[class*="header__title"] {
-    font-size: 2.0rem !important; /* Large bold text scaling */
-    font-weight: 700 !important;  
-    line-height: 1.2 !important;
+.md-header__ellipsis {
+    font-size: unset !important; /* Prevents the container from overriding child text sizes */
     display: flex !important;
     align-items: center !important;
 }
@@ -355,14 +363,17 @@
     background: transparent !important;
 }
 /* ==========================================
-   15. SCROLLING HEADER: SMALLER PAGE TITLE
+   15. SCROLLING HEADER: FIX OVERLAPPING PAGE TITLE
    ========================================== */
-
-/* Target the specific title container text layer that reveals itself on scroll */
+/* Target strictly the second topic layer (The Page Title that triggers on scroll) */
 .md-header__title .md-header__topic + .md-header__topic,
-[class*="header__title"] span:nth-child(2),
-.md-header__ellipsis {
-    font-size: 1.25rem !important; /* Makes the active page subtitle smaller on scroll */
-    font-weight: 500 !important;   /* Softens the bold weight slightly for cleaner text hierarchy */
-    opacity: 0.9 !important;       /* Gives it a slightly softer contrast */
+.zensical-header__title .md-header__topic + .md-header__topic,
+div[data-md-component="header-topic"] {
+    font-size: 1.25rem !important; /* Keeps the dynamic sub-title smaller */
+    font-weight: 500 !important;   
+    margin-left: 0.75rem !important; /* Pushes it horizontally to the right instead of stacking on top */
+    padding-left: 0.75rem !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.3) !important; /* Adds a clean separator line between them */
+    display: inline-block !important;
 }
+
