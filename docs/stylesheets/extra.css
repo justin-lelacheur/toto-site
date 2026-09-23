@@ -9,8 +9,8 @@
 .zensical-header__logo img, 
 .header-logo img,
 [class*="header"] img {
-    height: 2.5rem !important; /* Increase this number to make it larger */
-    max-height: 48px !important; 
+    height: 3.5rem !important; /* Increase this number to make it larger */
+    max-height: 60px !important; 
     width: auto !important;     /* Keeps the aspect ratio perfectly intact */
 }
 
