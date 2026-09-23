@@ -16,13 +16,9 @@ extra_css = [
     # Nested sub-sections use standard TOML indentation paths
     [project.nav."Platform Specifications"]
     "Ontology Fabric" = "ontology-fabric.md"
-    "Structural Matrix" = "structural-matrix.md"
-    "CRM MVP Specs" = "crm-mvp-specs.md"
 
     [project.nav."Company & Insights"]
     "About Us" = "about-us.md"
-    "Technical Blog" = "blog-index.md"
-    "Careers" = "careers.md"
 
 "Communication Hub" = "contact.md"
 
