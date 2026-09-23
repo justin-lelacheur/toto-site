@@ -11,7 +11,8 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES 
    ========================================== */
-/* Scoped ONLY to the homepage to keep standard sidebars intact elsewhere */
+
+/* ── HOMEPAGE ONLY: Giant Logo Sizing ── */
 :has(.zensical-landing-wrap) .zensical-header__logo img, 
 :has(.zensical-landing-wrap) .header-logo img,
 :has(.zensical-landing-wrap) [class*="header"] img {
@@ -20,25 +21,26 @@
     width: auto !important;     
 }
 
-/* Base style fallback for other documentation subpages */
-.zensical-header__logo img {
-    height: 2.0rem;
-    width: auto;
+/* ── DOCUMENTATION PAGES: Standard Crisp Logo Sizing ── */
+body:not(:has(.zensical-landing-wrap)) .md-header__button.md-logo img,
+body:not(:has(.zensical-landing-wrap)) .zensical-header__logo img,
+body:not(:has(.zensical-landing-wrap)) [class*="header"] a img {
+    height: 2.25rem !important; /* Noticeably larger than standard text, but fits perfectly in the header */
+    max-height: 36px !important;
+    width: auto !important;
+    display: inline-block !important;
 }
 
-.zensical-header__title {
+/* Universal text spacing */
+.zensical-header__title,
+.md-header__title {
     margin-left: 0.75rem;
 }
-
-/* Add spacing between the larger logo and your site text */
-.zensical-header__title {
-    margin-left: 0.75rem;
-}
-
 /* ==========================================
    3. SITE NAME / HEADER TITLE OVERRIDES
    ========================================== */
-/* Target strictly the first topic layer (Your Site Name) inside the landing layout */
+
+/* ── HOMEPAGE ONLY: Giant Site Name ── */
 :has(.zensical-landing-wrap) .md-header__title .md-header__topic:first-child,
 :has(.zensical-landing-wrap) .zensical-header__title .md-header__topic:first-child {
     font-size: 2.0rem !important; 
@@ -46,12 +48,24 @@
     line-height: 1.2 !important;
     display: inline-block !important;
 }
-
-/* Prevents layout box collapsing only on the homepage */
 :has(.zensical-landing-wrap) .md-header__title,
 :has(.zensical-landing-wrap) .zensical-header__title,
 :has(.zensical-landing-wrap) .md-header__ellipsis {
     font-size: unset !important; 
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* ── DOCUMENTATION PAGES: Clean Reader-Friendly Site Name ── */
+body:not(:has(.zensical-landing-wrap)) .md-header__topic:first-child,
+body:not(:has(.zensical-landing-wrap)) .zensical-header__title .md-header__topic:first-child {
+    font-size: 1.35rem !important; /* Clear, professional headline size */
+    font-weight: 600 !important;
+    color: inherit;
+    display: inline-block !important;
+}
+body:not(:has(.zensical-landing-wrap)) .md-header__title,
+body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis {
     display: flex !important;
     align-items: center !important;
 }
