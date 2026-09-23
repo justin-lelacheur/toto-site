@@ -34,28 +34,32 @@
     font-size: unset !important; /* Prevents container from compressing text sizes */
 }
 /* ==========================================
-   3. SITE NAME & PAGE NAME OVERRIDES (FULLY FIXED)
+   3. SITE NAME & PAGE NAME OVERRIDES (SPECIFICITY FIX)
    ========================================== */
 
 /* ── 1. GLOBAL SITE NAME: Large and Bold everywhere ── */
 .md-header__title .md-header__topic:first-child,
 .zensical-header__title .md-header__topic:first-child,
-.md-header__ellipsis span:first-child {
+.md-header__ellipsis span:first-child,
+.md-header__ellipsis .md-header__topic:first-child {
     font-size: 2.0rem !important; /* Matches your landing home page text size */
     font-weight: 700 !important;  
     line-height: 1.2 !important;
     display: inline-block !important;
 }
 
-/* ── 2. GLOBAL PAGE NAME: Smaller text everywhere ── */
-.md-header__title .md-header__topic + .md-header__topic,
-.zensical-header__title .md-header__topic + .md-header__topic,
-.md-header__ellipsis span:nth-child(2),
-div[data-md-component="header-topic"] {
+/* ── 2. GLOBAL PAGE NAME: Forced Small on Scroll (High Specificity) ── */
+/* Adding deep structural parent classes ensures the browser forces this text small */
+html body .md-header .md-header__title .md-header__topic + .md-header__topic,
+html body .zensical-header__title .md-header__topic + .md-header__topic,
+html body .md-header__ellipsis span:nth-child(2),
+html body .md-header__ellipsis .md-header__topic:nth-child(2),
+html body div[data-md-component="header-topic"] {
     font-size: 1.25rem !important; /* Explicitly locks the page name smaller */
     font-weight: 500 !important;   
     margin-left: 0.75rem !important; 
     display: inline-block !important;
+    opacity: 0.85 !important;      /* Slightly softens the contrast for better visual hierarchy */
 }
 
 /* ==========================================
