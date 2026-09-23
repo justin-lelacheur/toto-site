@@ -153,16 +153,21 @@
    5. LANDING PAGE ONLY: PNG LOGO SWAP
    ========================================== */
 
-/* 1. Target the main landing page wrapper context */
+/* 1. Target the home landing page wrapper context and hide the default physical image */
 :has(.marketing-landing-page) .zensical-header__logo img,
-:has(.marketing-landing-page) [class*="header"] img {
-    /* Hide the default global docs/images/logo.png graphic */
-    content: url("../images/toto-site-logo-white-med.png") !important;
+:has(.marketing-landing-page) [class*="header"] a img {
+    display: none !important; /* Forces the default logo to vanish */
 }
 
-/* 2. Target the main landing page Site Name text color */
-:has(.marketing-landing-page) .md-header__title,
-:has(.marketing-landing-page) .zensical-header__title,
-:has(.marketing-landing-page) [class*="header__title"] {
-    color: #FFFFFF !important; /* Update this hex code to your custom color */
+/* 2. Target the link container holding the image and swap it with your alternate background */
+:has(.marketing-landing-page) .zensical-header__logo,
+:has(.marketing-landing-page) [class*="header__logo"] {
+    display: inline-block !important;
+    content: "" !important;
+    
+    /* Pull the alternate landing logo */
+    background-image: url("../images/toto-site-logo-white-med.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
