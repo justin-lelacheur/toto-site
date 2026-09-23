@@ -21,17 +21,18 @@
     width: auto !important;     
 }
 
-/* ── DOCUMENTATION PAGES: Standard Crisp Logo Sizing ── */
+/* ── DOCUMENTATION PAGES: Standalone Crisp Logo Sizing (FIXED) ── */
 body:not(:has(.zensical-landing-wrap)) .md-header__button.md-logo img,
 body:not(:has(.zensical-landing-wrap)) .zensical-header__logo img,
+body:not(:has(.zensical-landing-wrap)) .md-header__logo img,
 body:not(:has(.zensical-landing-wrap)) [class*="header"] a img {
-    height: 2.25rem !important; /* Noticeably larger than standard text, but fits perfectly in the header */
+    height: 2.25rem !important; /* Locks size distinct from subtitle */
     max-height: 36px !important;
     width: auto !important;
     display: inline-block !important;
 }
 
-/* Universal text spacing */
+/* Universal text margin adjustments */
 .zensical-header__title,
 .md-header__title {
     margin-left: 0.75rem;
@@ -56,16 +57,21 @@ body:not(:has(.zensical-landing-wrap)) [class*="header"] a img {
     align-items: center !important;
 }
 
-/* ── DOCUMENTATION PAGES: Clean Reader-Friendly Site Name ── */
+/* ── DOCUMENTATION PAGES: Reader-Friendly Site Name (FIXED) ── */
+/* Target the title text directly rather than letting the structural container scale it down */
 body:not(:has(.zensical-landing-wrap)) .md-header__topic:first-child,
-body:not(:has(.zensical-landing-wrap)) .zensical-header__title .md-header__topic:first-child {
-    font-size: 1.35rem !important; /* Clear, professional headline size */
+body:not(:has(.zensical-landing-wrap)) .zensical-header__title .md-header__topic:first-child,
+body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis span:first-child {
+    font-size: 1.35rem !important; /* Locks text size firmly above page name text metrics */
     font-weight: 600 !important;
-    color: inherit;
+    color: inherit !important;
     display: inline-block !important;
 }
+
+/* Forces structural alignment grid to expand rather than squish text layers */
 body:not(:has(.zensical-landing-wrap)) .md-header__title,
-body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis {
+body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis,
+body:not(:has(.zensical-landing-wrap)) .md-header__inner {
     display: flex !important;
     align-items: center !important;
 }
