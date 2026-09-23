@@ -17,16 +17,11 @@
 }
 
 .footer-content .md-copyright,
-        font-size: 32px !important;
-        line-height: 1.2 !important;
-        font-weight: 700 !important;
-        margin: 0.75rem 0 !important;
-        letter-spacing: normal !important;
-        color: #ffffff !important;
+.footer-content .md-footer__brand,
 .footer-content .md-footer__brand a {
     font-family: inherit !important;
     font-size: 12px !important;
-        font-size: 12px !important;
+    line-height: 17px !important;
     font-weight: 400 !important;
 }
 
@@ -46,7 +41,6 @@
         align-items: flex-start !important;
         flex-direction: column;
     }
-        font-size: 9px !important;
     .md-footer__brand {
         text-align: left;
     }
@@ -74,14 +68,13 @@
 
 .md-header__title,
 .zensical-header__title {
-    margin-left: 0.75rem;
+    margin-left: 0.375rem;
     width: auto !important;
     justify-content: flex-start !important;
 }
 
 /* Keep the logo size while removing the theme's extra header whitespace */
-    font-family: "IBM Plex Sans", sans-serif !important;
-    font-size: 18px !important;
+.md-header__inner {
     padding: 0 0.15rem !important;
 }
 
@@ -124,10 +117,10 @@ body:has(.zensical-landing-wrap) .md-logo img {
 .md-sidebar--primary .md-nav__title::after {
     content: "TM";
     display: inline-block;
-    font-size: 0.45em;
-    font-weight: 700;
+    font-size: 0.225em;
+    font-weight: 400;
     line-height: 1;
-    margin-left: 0.12em;
+    margin-left: 0;
     vertical-align: super;
 }
 
@@ -154,6 +147,19 @@ body:has(.zensical-landing-wrap) .md-header__topic:first-child {
     transform: none !important;
     z-index: 0 !important;
     pointer-events: auto !important;
+}
+
+body:has(.zensical-landing-wrap) .md-header__inner {
+    position: relative !important;
+}
+
+body:has(.zensical-landing-wrap) .md-header__title {
+    position: absolute !important;
+    left: 50% !important;
+    top: 0 !important;
+    width: auto !important;
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
 }
 
 /* Keep both header names visible on documentation pages while scrolling */
