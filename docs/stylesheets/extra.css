@@ -8,6 +8,28 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.footer-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1rem;
+}
+
+.md-footer__brand {
+    text-align: right;
+}
+
+@media screen and (max-width: 44.984375em) {
+    .footer-content {
+        align-items: flex-start !important;
+        flex-direction: column;
+    }
+
+    .md-footer__brand {
+        text-align: left;
+    }
+}
+
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
