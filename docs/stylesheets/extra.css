@@ -44,7 +44,7 @@ body:has(.zensical-landing-wrap) .md-logo img {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 0.85rem !important;
+    gap: 0 !important;
     width: auto !important;
     justify-content: flex-start !important;
     overflow: visible !important;
@@ -75,7 +75,7 @@ body:has(.zensical-landing-wrap) .md-logo img {
 /* Separates the site and page names on documentation pages only */
 body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
-    padding-left: 0.85rem !important;
+    padding-left: 0.5rem !important;
 }
 
 /* ==========================================
