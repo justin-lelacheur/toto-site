@@ -1,5 +1,5 @@
-# Foundry
 ---
+title: "Foundry"
 layout: page
 ---
 
