@@ -7,73 +7,55 @@
     padding-top: 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-
 /* ==========================================
-   2. GLOBAL HEADER LOGO OVERRIDES 
+   2. GLOBAL HEADER LOGO OVERRIDES (FULLY FIXED)
    ========================================== */
 
-/* ── HOMEPAGE ONLY: Giant Logo Sizing ── */
-:has(.zensical-landing-wrap) .zensical-header__logo img, 
-:has(.zensical-landing-wrap) .header-logo img,
-:has(.zensical-landing-wrap) [class*="header"] img {
+/* Target the header logo across ALL views (Home and Document Pages) to lock it large */
+.zensical-header__logo img, 
+.header-logo img,
+.md-header__button.md-logo img,
+.md-header__logo img,
+[class*="header"] a img,
+[class*="header"] img {
     height: 4.5rem !important; 
     max-height: 72px !important; 
     width: auto !important;     
-}
-
-/* ── DOCUMENTATION PAGES: Standalone Crisp Logo Sizing (FIXED) ── */
-body:not(:has(.zensical-landing-wrap)) .md-header__button.md-logo img,
-body:not(:has(.zensical-landing-wrap)) .zensical-header__logo img,
-body:not(:has(.zensical-landing-wrap)) .md-header__logo img,
-body:not(:has(.zensical-landing-wrap)) [class*="header"] a img {
-    height: 2.25rem !important; /* Locks size distinct from subtitle */
-    max-height: 36px !important;
-    width: auto !important;
     display: inline-block !important;
 }
 
-/* Universal text margin adjustments */
+/* Universal layout title margins */
 .zensical-header__title,
-.md-header__title {
+.md-header__title,
+.md-header__ellipsis {
     margin-left: 0.75rem;
+    display: flex !important;
+    align-items: center !important;
+    font-size: unset !important; /* Prevents container from compressing text sizes */
 }
 /* ==========================================
-   3. SITE NAME / HEADER TITLE OVERRIDES
+   3. SITE NAME & PAGE NAME OVERRIDES (FULLY FIXED)
    ========================================== */
 
-/* ── HOMEPAGE ONLY: Giant Site Name ── */
-:has(.zensical-landing-wrap) .md-header__title .md-header__topic:first-child,
-:has(.zensical-landing-wrap) .zensical-header__title .md-header__topic:first-child {
-    font-size: 2.0rem !important; 
+/* ── 1. GLOBAL SITE NAME: Large and Bold everywhere ── */
+.md-header__title .md-header__topic:first-child,
+.zensical-header__title .md-header__topic:first-child,
+.md-header__ellipsis span:first-child {
+    font-size: 2.0rem !important; /* Matches your landing home page text size */
     font-weight: 700 !important;  
     line-height: 1.2 !important;
     display: inline-block !important;
 }
-:has(.zensical-landing-wrap) .md-header__title,
-:has(.zensical-landing-wrap) .zensical-header__title,
-:has(.zensical-landing-wrap) .md-header__ellipsis {
-    font-size: unset !important; 
-    display: flex !important;
-    align-items: center !important;
-}
 
-/* ── DOCUMENTATION PAGES: Reader-Friendly Site Name (FIXED) ── */
-/* Target the title text directly rather than letting the structural container scale it down */
-body:not(:has(.zensical-landing-wrap)) .md-header__topic:first-child,
-body:not(:has(.zensical-landing-wrap)) .zensical-header__title .md-header__topic:first-child,
-body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis span:first-child {
-    font-size: 1.35rem !important; /* Locks text size firmly above page name text metrics */
-    font-weight: 600 !important;
-    color: inherit !important;
+/* ── 2. GLOBAL PAGE NAME: Smaller text everywhere ── */
+.md-header__title .md-header__topic + .md-header__topic,
+.zensical-header__title .md-header__topic + .md-header__topic,
+.md-header__ellipsis span:nth-child(2),
+div[data-md-component="header-topic"] {
+    font-size: 1.25rem !important; /* Explicitly locks the page name smaller */
+    font-weight: 500 !important;   
+    margin-left: 0.75rem !important; 
     display: inline-block !important;
-}
-
-/* Forces structural alignment grid to expand rather than squish text layers */
-body:not(:has(.zensical-landing-wrap)) .md-header__title,
-body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis,
-body:not(:has(.zensical-landing-wrap)) .md-header__inner {
-    display: flex !important;
-    align-items: center !important;
 }
 
 /* ==========================================
