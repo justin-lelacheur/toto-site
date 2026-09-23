@@ -11,7 +11,7 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
-/* Locks your brand logo to a crisp 4.5rem height universally across all layouts */
+/* Locks your main header logo image container scale crisp across all views */
 .md-header__button.md-logo img,
 .zensical-header__logo img, 
 .header-logo img,
@@ -32,7 +32,7 @@
 /* ==========================================
    3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
    ========================================== */
-/* Locks your Master Site Title large and bold on all layouts */
+/* Forces Master Site Title to remain large and clear universally */
 .md-header__ellipsis span:first-child,
 .md-header__ellipsis .md-header__topic:first-child,
 [data-md-component="header-topic"]:first-child {
@@ -43,11 +43,11 @@
     white-space: nowrap !important;
 }
 
-/* Forces dynamic Page Titles to stay smaller and side-by-side */
+/* Forces dynamic secondary Page Titles to remain small and side-by-side */
 .md-header__ellipsis span:nth-child(2),
 .md-header__ellipsis .md-header__topic:nth-child(2),
 div[data-md-component="header-topic"] + div[data-md-component="header-topic"] {
-    font-size: 1.25rem !important; 
+    font-size: 1.25rem !important; /* Explicitly keeps page title text small */
     font-weight: 500 !important;   
     opacity: 0.85 !important;
     white-space: nowrap !important;
@@ -57,7 +57,7 @@ div[data-md-component="header-topic"] + div[data-md-component="header-topic"] {
     margin-left: 0 !important;
 }
 
-/* Draws a clean vertical separator line ONLY between the two words when both are active */
+/* Draws a clean vertical separator line ONLY between the two strings when active */
 .md-header__ellipsis span:first-child + span:nth-child(2),
 .md-header__topic:first-child + .md-header__topic {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
@@ -65,11 +65,11 @@ div[data-md-component="header-topic"] + div[data-md-component="header-topic"] {
     margin-left: 0.85rem !important;
 }
 
-/* Hard-forces horizontal grid rows so elements never overlap vertically */
+/* Prevents text overlap by hard-forcing horizontal flex positioning blocks */
 .md-header__ellipsis,
 .md-header__title {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: row !important; /* Forces side-by-side execution layout */
     align-items: center !important;
     flex-wrap: nowrap !important;
     overflow: visible !important;
@@ -186,24 +186,26 @@ div[data-md-component="header-topic"] + div[data-md-component="header-topic"] {
 /* ==========================================
    6. HOMEPAGE VIEW FRAMEWORK (ISOLATED RED)
    ========================================== */
+/* Binds globally to root layers ONLY when the home container class is present */
+html:has(.zensical-landing-wrap),
 body:has(.zensical-landing-wrap) {
     background-color: #B30B00 !important;
 }
 
-body:has(.zensical-landing-wrap) .md-container,
-body:has(.zensical-landing-wrap) .md-main,
-body:has(.zensical-landing-wrap) .md-content,
-body:has(.zensical-landing-wrap) .md-content__inner {
+:has(.zensical-landing-wrap) .md-container,
+:has(.zensical-landing-wrap) .md-main,
+:has(.zensical-landing-wrap) .md-content,
+:has(.zensical-landing-wrap) .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
     --md-default-bg-color: #B30B00 !important; 
 }
 
-/* Force white logo asset variant strictly within the home page layout grid context */
+/* 💡 ROOT ROOT FIX: Absolute forward slash path prevent relative subpage breaks */
 body:has(.zensical-landing-wrap) .md-header .md-header__button.md-logo img,
 body:has(.zensical-landing-wrap) .md-header .zensical-header__logo img,
 body:has(.zensical-landing-wrap) .md-header img {
-    content: url("../images/toto-site-logo-white-med.png") !important;
+    content: url("/images/toto-site-logo-white-med.png") !important;
     content-visibility: auto !important;
 }
 
@@ -276,9 +278,9 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
 }
 
 /* ==========================================
-   8. DOCUMENTATION PAGES ONLY: FORCE SIDEBARS LIVE
+   8. DOCUMENTATION PAGES ONLY: HARD SIDEBAR UNLOCK
    ========================================== */
-/* Explicitly forces the sidebars back to life on all standard documentation subpages */
+/* Bypasses theme compression scripts to ensure sidebars render visibly on guide routes */
 body:not(:has(.zensical-landing-wrap)) .md-sidebar,
 body:not(:has(.zensical-landing-wrap)) [data-md-component="sidebar"],
 body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary,
