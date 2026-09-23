@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{# 1. Hide the sidebars ONLY on the Home landing page view #}
+{# Hide sidebars ONLY when on the literal homepage view #}
 {% block left_sidebar %}
   {% if page.title != "Home" %}
     {{ super() }}
@@ -13,16 +13,15 @@
   {% endif %}
 {% endblock %}
 
-{# 2. Dynamic Content Block Framework #}
+{# Render Layout Content #}
 {% block content %}
   {% if page.title == "Home" %}
-    {# If home, wrap the page cleanly using your marketing styling container #}
     <div class="zensical-landing-wrap">
       {{ page.content }}
     </div>
   {% else %}
-    {# If documentation page, render the default look with sidebars perfectly intact #}
     {{ super() }}
   {% endif %}
 {% endblock %}
+
 
