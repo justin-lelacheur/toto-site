@@ -32,47 +32,41 @@
 /* ==========================================
    3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
    ========================================== */
-/* Forces Master Site Title to remain large and clear universally */
-.md-header__ellipsis span:first-child,
-.md-header__ellipsis .md-header__topic:first-child,
-[data-md-component="header-topic"]:first-child {
+/* Keeps the site name and page name in a stable horizontal layout */
+.md-header__ellipsis {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.85rem !important;
+    overflow: visible !important;
+}
+
+.md-header__topic {
+    position: static !important;
+    display: block !important;
+    flex: 0 0 auto !important;
+    transform: none !important;
+    white-space: nowrap !important;
+}
+
+/* Keeps the site name larger than the current page name */
+.md-header__topic:first-child .md-ellipsis {
     font-size: 2.0rem !important; 
     font-weight: 700 !important;  
     line-height: 1.2 !important;
-    display: inline-block !important;
-    white-space: nowrap !important;
 }
 
-/* Forces dynamic secondary Page Titles to remain small and side-by-side */
-.md-header__ellipsis span:nth-child(2),
-.md-header__ellipsis .md-header__topic:nth-child(2),
-div[data-md-component="header-topic"] + div[data-md-component="header-topic"] {
+/* Keeps the current page name visually subordinate */
+.md-header__topic[data-md-component="header-topic"] .md-ellipsis {
     font-size: 1.25rem !important; 
     font-weight: 500 !important;   
     opacity: 0.85 !important;
-    white-space: nowrap !important;
-    display: inline-block !important;
-    border-left: none !important;
-    padding-left: 0 !important;
-    margin-left: 0 !important;
 }
 
 /* Draws a clean vertical separator line ONLY between the two strings when active */
-.md-header__ellipsis span:first-child + span:nth-child(2),
-.md-header__topic:first-child + .md-header__topic {
+.md-header__topic[data-md-component="header-topic"] {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
     padding-left: 0.85rem !important;
-    margin-left: 0.85rem !important;
-}
-
-/* Prevents text overlap by hard-forcing horizontal flex positioning blocks */
-.md-header__ellipsis,
-.md-header__title {
-    display: flex !important;
-    flex-direction: row !important; 
-    align-items: center !important;
-    flex-wrap: nowrap !important;
-    overflow: visible !important;
 }
 
 /* ==========================================
