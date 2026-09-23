@@ -382,6 +382,17 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
+/* Keep named top navigation visible above narrow-mobile widths */
+@media screen and (min-width: 45em) {
+    .md-tabs {
+        display: block !important;
+    }
+
+    .md-header__button[for="__drawer"] {
+        display: none !important;
+    }
+}
+
 /* ==========================================
    8. SIDEBAR VISIBILITY BY PAGE TYPE
    ========================================== */
