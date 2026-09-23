@@ -1,9 +1,30 @@
+# zensical.toml
+
 [project]
-site_name = "toto"
-site_url = "https://toto-site-3pm.pages.dev"
+site_name = "toto-site"
+site_url = "https://example.com"
 extra_css = [
     "stylesheets/extra.css"
 ]
+
+# ── THIS IS YOUR ZENSICAL NAVIGATION MATRIX ──
+# Instead of a mkdocs.yml file, Zensical processes your page trees inside this TOML table block.
+[project.nav]
+"Home" = "index.md"
+"Strategic Vision" = "strategic-vision.md"
+
+    # Nested sub-sections use standard TOML indentation paths
+    [project.nav."Platform Specifications"]
+    "Ontology Fabric" = "ontology-fabric.md"
+    "Structural Matrix" = "structural-matrix.md"
+    "CRM MVP Specs" = "crm-mvp-specs.md"
+
+    [project.nav."Company & Insights"]
+    "About Us" = "about-us.md"
+    "Technical Blog" = "blog-index.md"
+    "Careers" = "careers.md"
+
+"Communication Hub" = "contact.md"
 
 [project.theme]
 name = "zensical"
