@@ -393,6 +393,19 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
     }
 }
 
+body:not(:has(.zensical-landing-wrap)) .md-tabs {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-tabs__link {
+    color: #111111 !important;
+    opacity: 1 !important;
+}
+
 /* ==========================================
    8. SIDEBAR VISIBILITY BY PAGE TYPE
    ========================================== */
