@@ -1,5 +1,5 @@
 /* ==========================================
-   1. MASTER LANDING PAGE WRAPPER 
+   1. MASTER LANDING PAGE STRUCTURAL WRAPPER 
    ========================================== */
 .zensical-landing-wrap {
     margin: 0 auto;
@@ -11,7 +11,7 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
-/* Targets the header logo across ALL views to lock it large and crisp */
+/* Locks your site header logo large and crisp across all view states */
 .zensical-header__logo img, 
 .header-logo img,
 .md-header__button.md-logo img,
@@ -105,7 +105,7 @@
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #ffffff !important; 
+    color: #ffffff !important; /* Locks header text to clean white contrast */
 }
 
 .hero-tagline {
@@ -199,8 +199,9 @@
 }
 
 /* ==========================================
-   6. LANDING PAGE ONLY: THEME ADJUSTMENTS
+   6. LANDING PAGE ONLY: THEME RED BACKGROUND ADJUSTMENTS
    ========================================== */
+/* Targets the layout safely using the top-level parent wrapper element */
 :has(.zensical-landing-wrap),
 body:has(.zensical-landing-wrap) {
     background-color: #B30B00 !important; /* Restores your solid red background color */
@@ -248,14 +249,14 @@ body:has(.zensical-landing-wrap) {
     --md-default-fg-color--lightest: rgba(255, 255, 255, 0.6) !important;
 }
 
-/* Top Nav Active Bars */
+/* Top Nav Active Indicator Underlines */
 :has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
 :has(.zensical-landing-wrap) .md-tabs__link--active,
 :has(.zensical-landing-wrap) .md-tabs__item {
     border-bottom-color: #ffffff !important;
 }
 
-/* Search Box Form Items */
+/* Search Box Form Elements & Magnifying Glass Vector Color Scaling */
 :has(.zensical-landing-wrap) .md-search__icon[for="__search"],
 :has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
 :has(.zensical-landing-wrap) .md-search__inner svg path {
@@ -272,7 +273,7 @@ body:has(.zensical-landing-wrap) {
     -webkit-text-fill-color: #ffffff !important;
 }
 
-/* Footer Fixes */
+/* Footer Container Alignment Overrides */
 :has(.zensical-landing-wrap) .md-footer,
 :has(.zensical-landing-wrap) .md-footer-meta {
     background-color: rgba(0, 0, 0, 0.25) !important; 
