@@ -1,12 +1,6 @@
 ---
 title: "Home"
 template: "home-layout.html"
-hide:
-  - navigation
-  - toc
----
----
-template: home-layout.html
 ---
 
 <div class="zensical-landing-wrap">
