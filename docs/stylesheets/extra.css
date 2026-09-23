@@ -11,7 +11,6 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
-/* Locks your site header logo large and crisp across all view states */
 .zensical-header__logo img, 
 .header-logo img,
 .md-header__button.md-logo img,
@@ -51,7 +50,7 @@
     font-weight: 500 !important;   
     opacity: 0.85 !important;
     white-space: nowrap !important;
-    border-left: none !important; /* Strips the stray line from showing up next to your logo */
+    border-left: none !important;
     padding-left: 0 !important;
     margin-left: 0 !important;
 }
@@ -86,26 +85,13 @@
     margin: 0 auto;
 }
 
-.hero-inner .hero-eyebrow {
-    font-size: 0.825rem !important;
-    font-weight: 700 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #0070f3 !important; 
-    background-color: rgba(0, 112, 243, 0.1) !important;
-    padding: 0.4rem 0.9rem !important;
-    border-radius: 20px !important;
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
 .zensical-hero h1 {
     font-size: 3.25rem !important;
     line-height: 1.15 !important;
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #ffffff !important; /* Locks header text to clean white contrast */
+    color: #ffffff !important;
 }
 
 .hero-tagline {
@@ -159,7 +145,6 @@
     width: 100% !important;
 }
 
-/* Restores responsive horizontal card grouping using auto-fitting grid widths */
 .features-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; 
@@ -201,10 +186,9 @@
 /* ==========================================
    6. LANDING PAGE ONLY: THEME RED BACKGROUND ADJUSTMENTS
    ========================================== */
-/* Targets the layout safely using the top-level parent wrapper element */
 :has(.zensical-landing-wrap),
 body:has(.zensical-landing-wrap) {
-    background-color: #B30B00 !important; /* Restores your solid red background color */
+    background-color: #B30B00 !important;
 }
 
 :has(.zensical-landing-wrap) .md-container,
@@ -216,7 +200,6 @@ body:has(.zensical-landing-wrap) {
     --md-default-bg-color: #B30B00 !important; 
 }
 
-/* Swaps out the main logo image on the landing page automatically */
 :has(.zensical-landing-wrap) .zensical-header__logo img,
 :has(.zensical-landing-wrap) .md-header__button.md-logo img,
 :has(.zensical-landing-wrap) [class*="header"] img {
@@ -224,7 +207,6 @@ body:has(.zensical-landing-wrap) {
     content-visibility: auto !important;
 }
 
-/* Adjusts the text color of the site name on the landing page */
 :has(.zensical-landing-wrap) .md-header__title,
 :has(.zensical-landing-wrap) .zensical-header__title,
 :has(.zensical-landing-wrap) [class*="header__title"] {
@@ -256,7 +238,7 @@ body:has(.zensical-landing-wrap) {
     border-bottom-color: #ffffff !important;
 }
 
-/* Search Box Form Elements & Magnifying Glass Vector Color Scaling */
+/* Search Box Form Elements */
 :has(.zensical-landing-wrap) .md-search__icon[for="__search"],
 :has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
 :has(.zensical-landing-wrap) .md-search__inner svg path {
