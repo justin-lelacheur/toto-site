@@ -1,6 +1,9 @@
 [project]
 site_name = "toto-site"
 site_url = "https://example.com"
+extra_css = [
+    "stylesheets/extra.css"
+]
 
 [project.theme]
 name = "zensical"
@@ -11,9 +14,4 @@ features = [
     "navigation.sections",
     "navigation.tracking",
     "content.code.copy"
-]
-
-[project.theme.assets]
-extra_css = [
-    "stylesheets/extra.css"
 ]
