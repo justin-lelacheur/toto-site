@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
-{# 1. Hide the Left Navigation Sidebar ONLY on the Home Page #}
+{# 1. Show Left Sidebar Navigation Tree on documentation subpages ONLY #}
 {% block nav %}
   {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 2. Hide the Right Table of Contents Sidebar ONLY on the Home Page #}
+{# 2. Show Right Table of Contents Panel on documentation subpages ONLY #}
 {% block toc %}
   {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 3. Render Page Content Layout #}
+{# 3. Inject the wrapper container specifically around your home markdown data stream #}
 {% block content %}
   {% if page.meta.is_homepage %}
     <div class="zensical-landing-wrap">
