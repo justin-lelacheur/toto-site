@@ -11,12 +11,23 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES 
    ========================================== */
-.zensical-header__logo img, 
-.header-logo img,
-[class*="header"] img {
-    height: 4.5rem !important; /* Large logo scaling */
+/* Scoped ONLY to the homepage to keep standard sidebars intact elsewhere */
+:has(.zensical-landing-wrap) .zensical-header__logo img, 
+:has(.zensical-landing-wrap) .header-logo img,
+:has(.zensical-landing-wrap) [class*="header"] img {
+    height: 4.5rem !important; 
     max-height: 72px !important; 
-    width: auto !important;     /* Keeps the aspect ratio perfectly intact */
+    width: auto !important;     
+}
+
+/* Base style fallback for other documentation subpages */
+.zensical-header__logo img {
+    height: 2.0rem;
+    width: auto;
+}
+
+.zensical-header__title {
+    margin-left: 0.75rem;
 }
 
 /* Add spacing between the larger logo and your site text */
@@ -25,22 +36,22 @@
 }
 
 /* ==========================================
-   3. SITE NAME / HEADER TITLE OVERRIDES (FIXED)
+   3. SITE NAME / HEADER TITLE OVERRIDES
    ========================================== */
-/* Target strictly the first topic layer (Your Site Name) so it stays large and unaffected */
-.md-header__title .md-header__topic:first-child,
-.zensical-header__title .md-header__topic:first-child {
-    font-size: 2.0rem !important; /* Forces your Site Name to remain exactly 2.0rem */
+/* Target strictly the first topic layer (Your Site Name) inside the landing layout */
+:has(.zensical-landing-wrap) .md-header__title .md-header__topic:first-child,
+:has(.zensical-landing-wrap) .zensical-header__title .md-header__topic:first-child {
+    font-size: 2.0rem !important; 
     font-weight: 700 !important;  
-    line-weight: 1.2 !important;
+    line-height: 1.2 !important;
     display: inline-block !important;
 }
 
-/* Ensure the main container holding the items doesn't compress or shrink text */
-.md-header__title,
-.zensical-header__title,
-.md-header__ellipsis {
-    font-size: unset !important; /* Prevents the container from overriding child text sizes */
+/* Prevents layout box collapsing only on the homepage */
+:has(.zensical-landing-wrap) .md-header__title,
+:has(.zensical-landing-wrap) .zensical-header__title,
+:has(.zensical-landing-wrap) .md-header__ellipsis {
+    font-size: unset !important; 
     display: flex !important;
     align-items: center !important;
 }
@@ -365,30 +376,24 @@
 /* ==========================================
    15. SCROLLING HEADER: FIX OVERLAPPING PAGE TITLE
    ========================================== */
-
-/* 1. Base styles for the scrolling page title */
-.md-header__title .md-header__topic + .md-header__topic,
-.zensical-header__title .md-header__topic + .md-header__topic,
-div[data-md-component="header-topic"] {
-    font-size: 1.25rem !important; /* Keeps the dynamic sub-title smaller */
+/* Isolates scroll transitions to the homepage view framework */
+:has(.zensical-landing-wrap) .md-header__title .md-header__topic + .md-header__topic,
+:has(.zensical-landing-wrap) .zensical-header__title .md-header__topic + .md-header__topic {
+    font-size: 1.25rem !important; 
     font-weight: 500 !important;   
     margin-left: 0.75rem !important;
     display: inline-block !important;
 }
 
-/* 2. ONLY apply the vertical separator line when the Site Name is visible in the viewport */
-.md-header__title[data-md-state="blur"] .md-header__topic + .md-header__topic,
-.md-header__ellipsis:not(:empty) .md-header__topic:first-child ~ .md-header__topic {
+:has(.zensical-landing-wrap) .md-header__title[data-md-state="blur"] .md-header__topic + .md-header__topic {
     padding-left: 0.75rem !important;
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
-/* 3. Safe fallback: If the engine hides the site name completely on scroll, strip the border away */
-.md-header__title[data-md-state="freeze"] .md-header__topic + .md-header__topic,
-[data-md-state="scroll"] .md-header__topic + .md-header__topic {
+:has(.zensical-landing-wrap) .md-header__title[data-md-state="freeze"] .md-header__topic + .md-header__topic {
     border-left: none !important;
     padding-left: 0 !important;
-    margin-left: 0.5rem !important; /* Clean margin directly next to the logo image */
+    margin-left: 0.5rem !important;
 }
 
 
