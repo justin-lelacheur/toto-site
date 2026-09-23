@@ -286,19 +286,44 @@
     --md-accent-fg-color: #ffffff !important;
 }
 /* ==========================================
-   12. LANDING PAGE ONLY: WHITE SEARCH BOX & ICON
+   11. LANDING PAGE ONLY: WHITE NAVIGATION UNDERLINE
+   ========================================== */
+:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
+:has(.zensical-landing-wrap) .md-tabs__link--active,
+:has(.zensical-landing-wrap) .md-tabs__item {
+    border-bottom-color: #ffffff !important;
+}
+:has(.zensical-landing-wrap) {
+    --md-accent-fg-color: #ffffff !important;
+}
+
+/* ==========================================
+   12. LANDING PAGE ONLY: SEARCH SYSTEM VARIABLES (UPDATED)
    ========================================== */
 
-/* 1. Force the magnifying glass SVG icon color to white */
-:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
-:has(.zensical-landing-wrap) .md-search__icon svg,
-:has(.zensical-landing-wrap) label[for="__search"] svg {
-    fill: #ffffff !important;
-    color: #ffffff !important;
+/* 1. Overwrite system design variables for the search block */
+:has(.zensical-landing-wrap) {
+    --md-default-fg-color: #ffffff !important;
+    --md-default-fg-color--light: rgba(255, 255, 255, 0.8) !important;
+    --md-default-fg-color--lightest: rgba(255, 255, 255, 0.6) !important;
 }
 
-/* 2. Force typed input text to white and override default theme text color rules */
+/* 2. Target the magnifying glass icon and vector paths directly */
+:has(.zensical-landing-wrap) .md-search__icon[for="__search"],
+:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
+:has(.zensical-landing-wrap) .md-search__inner svg path {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* 3. Force placeholder and active typed text to white */
+:has(.zensical-landing-wrap) .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
+}
 :has(.zensical-landing-wrap) .md-search__input {
     color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important; /* Fixes browser override issues */
+    -webkit-text-fill-color: #ffffff !important;
 }
+
