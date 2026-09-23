@@ -1,7 +1,8 @@
-# Capabilities
 ---
+title: "Capabilities"
 layout: page
 ---
+
 
 <div style="max-width: 600px; margin: 40px auto; padding: 0 16px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; line-height: 1.75;">
 
