@@ -354,3 +354,15 @@
     background-color: transparent !important;
     background: transparent !important;
 }
+/* ==========================================
+   15. SCROLLING HEADER: SMALLER PAGE TITLE
+   ========================================== */
+
+/* Target the specific title container text layer that reveals itself on scroll */
+.md-header__title .md-header__topic + .md-header__topic,
+[class*="header__title"] span:nth-child(2),
+.md-header__ellipsis {
+    font-size: 1.25rem !important; /* Makes the active page subtitle smaller on scroll */
+    font-weight: 500 !important;   /* Softens the bold weight slightly for cleaner text hierarchy */
+    opacity: 0.9 !important;       /* Gives it a slightly softer contrast */
+}
