@@ -1,19 +1,20 @@
 {% extends "base.html" %}
 
-{# Hide sidebars ONLY when on the literal homepage view #}
-{% block left_sidebar %}
+{# 1. Hide the Left Navigation Sidebar ONLY on the Home Page #}
+{% block nav %}
   {% if page.title != "Home" %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{% block right_sidebar %}
+{# 2. Hide the Right Table of Contents Sidebar ONLY on the Home Page #}
+{% block toc %}
   {% if page.title != "Home" %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# Render Layout Content #}
+{# 3. Render Layout Content #}
 {% block content %}
   {% if page.title == "Home" %}
     <div class="zensical-landing-wrap">
@@ -23,5 +24,6 @@
     {{ super() }}
   {% endif %}
 {% endblock %}
+
 
 
