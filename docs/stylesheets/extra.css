@@ -17,11 +17,16 @@
 }
 
 .footer-content .md-copyright,
-.footer-content .md-footer__brand,
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        font-weight: 700 !important;
+        margin: 0.75rem 0 !important;
+        letter-spacing: normal !important;
+        color: #ffffff !important;
 .footer-content .md-footer__brand a {
     font-family: inherit !important;
     font-size: 12px !important;
-    line-height: 17px !important;
+        font-size: 12px !important;
     font-weight: 400 !important;
 }
 
@@ -41,7 +46,7 @@
         align-items: flex-start !important;
         flex-direction: column;
     }
-
+        font-size: 9px !important;
     .md-footer__brand {
         text-align: left;
     }
@@ -97,14 +102,14 @@ body:has(.zensical-landing-wrap) .md-logo img {
 
 .md-header__topic {
     position: absolute !important;
-    top: 0 !important;
+        font-size: 12px !important;
     left: 0 !important;
     display: flex !important;
     max-width: 100% !important;
 }
 
 /* Keeps the site name larger than the current page name */
-.md-header__topic:first-child .md-ellipsis {
+        font-size: 9px !important;
     font-size: 18px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
@@ -190,8 +195,12 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
     margin: 0 auto;
 }
 
+.hero-eyebrow {
+    font-size: 12px !important;
+}
+
 .zensical-hero h1 {
-    font-size: 48px !important;
+    font-size: 32px !important;
     line-height: 1.2 !important;
     font-weight: 700 !important;
     margin: 0.75rem 0 !important;
@@ -200,7 +209,7 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 }
 
 .hero-tagline {
-    font-size: 18px !important;
+    font-size: 12px !important;
     color: rgba(255, 255, 255, 0.85) !important;
     line-height: 1.5 !important;
     margin-bottom: 1.75rem !important;
@@ -220,7 +229,7 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
     border-radius: 4px !important;
     transition: all 0.2s ease-in-out !important;
     text-decoration: none !important;
-    font-size: 13px !important;
+    font-size: 9px !important;
     display: inline-block;
 }
 
@@ -276,14 +285,14 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 
 .features-grid .feature-card h3 {
     margin: 0 0 0.75rem 0 !important;
-    font-size: 18px !important;
+    font-size: 12px !important;
     color: #111111 !important;
     font-weight: 700 !important;
 }
 
 .features-grid .feature-card p {
     margin: 0 !important;
-    font-size: 14px !important;
+    font-size: 9px !important;
     line-height: 1.5 !important;
     color: #4a5568 !important;
 }
