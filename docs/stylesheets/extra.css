@@ -272,8 +272,13 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
 }
 
 /* ==========================================
-   8. DOCUMENTATION PAGES ONLY: HARD SIDEBAR UNLOCK
+   8. SIDEBAR VISIBILITY BY PAGE TYPE
    ========================================== */
+body:has(.zensical-landing-wrap) .md-sidebar,
+body:has(.zensical-landing-wrap) [data-md-component="sidebar"] {
+    display: none !important;
+}
+
 body:not(:has(.zensical-landing-wrap)) .md-sidebar,
 body:not(:has(.zensical-landing-wrap)) [data-md-component="sidebar"],
 body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary,
@@ -281,6 +286,20 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
+    position: sticky !important;
+    top: 4.8rem !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    height: auto !important;
+    width: 12.1rem !important;
+    flex: 0 0 12.1rem !important;
+}
+
+body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
+    order: 2 !important;
+    padding: 1.1rem 0 !important;
 }
 
 
