@@ -6,7 +6,6 @@ is_homepage: true
 <!-- Hero Section -->
 <div class="zensical-hero">
   <div class="hero-inner">
-    <span class="hero-eyebrow">🚀 Production Ready Blueprint v4.0.0</span>
     <h1>The Autonomous, AI-Native Enterprise Operating System</h1>
     <p class="hero-tagline">
       Eradicate technical fragmentation and multi-million dollar customization debt. Transition your organization onto an emergent system of stateless, domain-scoped microservice layers dynamically generated, tested, and evolved inside isolated virtual sandboxes by an automated AI Software Factory.
