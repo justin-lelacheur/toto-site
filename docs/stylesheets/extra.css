@@ -11,6 +11,7 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
+/* Locks your main header logo to a large crisp size across all views */
 .zensical-header__logo img, 
 .header-logo img,
 .md-header__button.md-logo img,
@@ -29,23 +30,23 @@
 }
 
 /* ==========================================
-   3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
+   3. SITE NAME & PAGE NAME OVERRIDES (FIXED COLLISION)
    ========================================== */
-.md-header__topic {
-    display: inline-block !important;
-    vertical-align: middle !important;
-}
-
-/* Forces Master Site Title to remain large universally */
-.md-header__topic:first-child {
+/* Isolates the first text node (Site Name) so it stays large and bold */
+.md-header__topic:first-child,
+.md-header__ellipsis span:first-child,
+.md-header__ellipsis .md-header__topic:first-child {
     font-size: 2.0rem !important; 
     font-weight: 700 !important;  
     line-height: 1.2 !important;
+    display: inline-block !important;
     white-space: nowrap !important;
 }
 
-/* Forces secondary Page Titles to remain small and side-by-side */
-.md-header__topic + .md-header__topic {
+/* Isolates the second text node (Page Title) so it stays small and side-by-side */
+.md-header__topic + .md-header__topic,
+.md-header__ellipsis span:nth-child(2),
+.md-header__ellipsis .md-header__topic:nth-child(2) {
     font-size: 1.25rem !important; 
     font-weight: 500 !important;   
     opacity: 0.85 !important;
@@ -53,9 +54,10 @@
     border-left: none !important;
     padding-left: 0 !important;
     margin-left: 0 !important;
+    display: inline-block !important;
 }
 
-/* Places a clean vertical border line ONLY between the two words when both are active */
+/* Draws a clean separator line ONLY when both text segments are actively visible */
 .md-header__topic:first-child + .md-header__topic,
 .md-header__ellipsis span:first-child + span:nth-child(2) {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
@@ -63,7 +65,7 @@
     margin-left: 0.85rem !important;
 }
 
-/* Fixes text overlap by forcing standard horizontal flex positioning */
+/* Blocks Zensical from compressing or stacking header fields vertically */
 .md-header__ellipsis,
 .md-header__title,
 .zensical-header__title {
@@ -184,46 +186,46 @@
 }
 
 /* ==========================================
-   6. GLOBAL APP HOOKS: LANDING PAGE RED BACKGROUND
+   6. LANDING PAGE ONLY: THEME RED BACKGROUND ADJUSTMENTS
    ========================================== */
-html:has(.zensical-landing-wrap),
-body:has(.zensical-landing-wrap),
-.md-container:has(.zensical-landing-wrap) {
+/* Binds strictly to Zensical's HTML layout wrappers when the homepage is active */
+body:has(.zensical-landing-wrap) {
     background-color: #B30B00 !important;
 }
 
-.md-container:has(.zensical-landing-wrap) .md-main,
-.md-container:has(.zensical-landing-wrap) .md-content,
-.md-container:has(.zensical-landing-wrap) .md-content__inner {
+body:has(.zensical-landing-wrap) .md-container,
+body:has(.zensical-landing-wrap) .md-main,
+body:has(.zensical-landing-wrap) .md-content,
+body:has(.zensical-landing-wrap) .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
     --md-default-bg-color: #B30B00 !important; 
 }
 
-/* Logo and text formatting overrides on the landing layout */
-.md-container:has(.zensical-landing-wrap) ~ .md-header .zensical-header__logo img,
-.md-container:has(.zensical-landing-wrap) ~ .md-header .md-header__button.md-logo img,
-html:has(.zensical-landing-wrap) .md-header img {
+/* Swaps out the main logo graphic strictly inside the homepage layout scope */
+body:has(.zensical-landing-wrap) .zensical-header__logo img,
+body:has(.zensical-landing-wrap) .md-header__button.md-logo img,
+body:has(.zensical-landing-wrap) .md-header img {
     content: url("../images/toto-site-logo-white-med.png") !important;
     content-visibility: auto !important;
 }
 
-html:has(.zensical-landing-wrap) .md-header__title,
-html:has(.zensical-landing-wrap) .zensical-header__title,
-html:has(.zensical-landing-wrap) [class*="header__title"] {
+body:has(.zensical-landing-wrap) .md-header__title,
+body:has(.zensical-landing-wrap) .zensical-header__title,
+body:has(.zensical-landing-wrap) [class*="header__title"] {
     color: #ffffff !important; 
 }
 
 /* ==========================================
    7. LANDING PAGE ONLY: TRANSPARENT HEADER, UI & FOOTER
    ========================================== */
-html:has(.zensical-landing-wrap) .md-header {
+body:has(.zensical-landing-wrap) .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
     backdrop-filter: blur(10px) !important; 
     -webkit-backdrop-filter: blur(10px) !important;
 }
 
-html:has(.zensical-landing-wrap) {
+body:has(.zensical-landing-wrap) {
     --md-primary-fg-color: transparent !important;
     --md-primary-fg-color--dark: transparent !important;
     --md-accent-fg-color: #ffffff !important;
@@ -233,50 +235,61 @@ html:has(.zensical-landing-wrap) {
 }
 
 /* Top Nav Indicator Underlines */
-html:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
-html:has(.zensical-landing-wrap) .md-tabs__link--active,
-html:has(.zensical-landing-wrap) .md-tabs__item {
+body:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
+body:has(.zensical-landing-wrap) .md-tabs__link--active,
+body:has(.zensical-landing-wrap) .md-tabs__item {
     border-bottom-color: #ffffff !important;
 }
 
 /* Search Box Form Elements */
-html:has(.zensical-landing-wrap) .md-search__icon[for="__search"],
-html:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
-html:has(.zensical-landing-wrap) .md-search__inner svg path {
+body:has(.zensical-landing-wrap) .md-search__icon[for="__search"],
+body:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
+body:has(.zensical-landing-wrap) .md-search__inner svg path {
     fill: #ffffff !important;
     color: #ffffff !important;
     opacity: 1 !important;
 }
-html:has(.zensical-landing-wrap) .md-search__input::placeholder {
+body:has(.zensical-landing-wrap) .md-search__input::placeholder {
     color: rgba(255, 255, 255, 0.7) !important;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
 }
-html:has(.zensical-landing-wrap) .md-search__input {
+body:has(.zensical-landing-wrap) .md-search__input {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
 
 /* Footer Container Alignment Overrides */
-html:has(.zensical-landing-wrap) .md-footer,
-html:has(.zensical-landing-wrap) .md-footer-meta {
+body:has(.zensical-landing-wrap) .md-footer,
+body:has(.zensical-landing-wrap) .md-footer-meta {
     background-color: rgba(0, 0, 0, 0.25) !important; 
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; 
 }
-html:has(.zensical-landing-wrap) .md-footer__inner,
-html:has(.zensical-landing-wrap) .md-footer-meta__inner {
+body:has(.zensical-landing-wrap) .md-footer__inner,
+body:has(.zensical-landing-wrap) .md-footer-meta__inner {
     background-color: transparent !important;
 }
-html:has(.zensical-landing-wrap) .md-footer,
-html:has(.zensical-landing-wrap) .md-footer__link,
-html:has(.zensical-landing-wrap) .md-footer__title,
-html:has(.zensical-landing-wrap) .md-footer-meta,
-html:has(.zensical-landing-wrap) .md-footer-meta__inner,
-html:has(.zensical-landing-wrap) .md-tabs__link,
-html:has(.zensical-landing-wrap) .md-nav__link,
-html:has(.zensical-landing-wrap) .md-header__button {
+body:has(.zensical-landing-wrap) .md-footer,
+body:has(.zensical-landing-wrap) .md-footer__link,
+body:has(.zensical-landing-wrap) .md-footer__title,
+body:has(.zensical-landing-wrap) .md-footer-meta,
+body:has(.zensical-landing-wrap) .md-footer-meta__inner,
+body:has(.zensical-landing-wrap) .md-tabs__link,
+body:has(.zensical-landing-wrap) .md-nav__link,
+body:has(.zensical-landing-wrap) .md-header__button {
     color: #ffffff !important;
 }
-html:has(.zensical-landing-wrap) .md-footer__direction {
+body:has(.zensical-landing-wrap) .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ==========================================
+   8. DOCUMENTATION PAGES ONLY: SIDEBAR RESTORATION HARDENING
+   ========================================== */
+/* Ensures that if a page is NOT the homepage, the sidebars inherit strict framework layout grids */
+body:not(:has(.zensical-landing-wrap)) .md-sidebar,
+body:not(:has(.zensical-landing-wrap)) [data-md-component="sidebar"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
