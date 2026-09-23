@@ -1,17 +1,19 @@
 [project]
 site_name = "toto-site"
-site_url = "https://toto-site-3pm.pages.dev"
-extra_css = [
-    "stylesheets/custom.css"
-]
+site_url = "https://example.com"
 
 [project.theme]
-name = "material"
-logo = "images/toto-site-logo-white-med.png"
+name = "zensical"
 custom_dir = "overrides"
+logo = "images/toto-site-logo-white-med.png"
 features = [
     "navigation.tabs",
     "navigation.sections",
     "navigation.tracking",
     "content.code.copy"
+]
+
+[project.theme.assets]
+extra_css = [
+    "stylesheets/custom.css"
 ]
