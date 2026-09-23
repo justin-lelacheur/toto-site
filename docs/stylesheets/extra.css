@@ -285,3 +285,20 @@
 :has(.zensical-landing-wrap) {
     --md-accent-fg-color: #ffffff !important;
 }
+/* ==========================================
+   12. LANDING PAGE ONLY: WHITE SEARCH BOX & ICON
+   ========================================== */
+
+/* 1. Force the magnifying glass SVG icon color to white */
+:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
+:has(.zensical-landing-wrap) .md-search__icon svg,
+:has(.zensical-landing-wrap) label[for="__search"] svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+
+/* 2. Force typed input text to white and override default theme text color rules */
+:has(.zensical-landing-wrap) .md-search__input {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important; /* Fixes browser override issues */
+}
