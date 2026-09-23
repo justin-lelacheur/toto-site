@@ -7,11 +7,10 @@
     padding-top: 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-/* ==========================================
-   2. GLOBAL HEADER LOGO OVERRIDES (FULLY FIXED)
-   ========================================== */
 
-/* Target the header logo across ALL views (Home and Document Pages) to lock it large */
+/* ==========================================
+   2. GLOBAL HEADER LOGO OVERRIDES
+   ========================================== */
 .zensical-header__logo img, 
 .header-logo img,
 .md-header__button.md-logo img,
@@ -24,41 +23,42 @@
     display: inline-block !important;
 }
 
-/* Universal layout title margins */
 .zensical-header__title,
-.md-header__title,
-.md-header__ellipsis {
+.md-header__title {
     margin-left: 0.75rem;
-    display: flex !important;
-    align-items: center !important;
-    font-size: unset !important; /* Prevents container from compressing text sizes */
 }
-/* ==========================================
-   3. SITE NAME & PAGE NAME OVERRIDES (ULTRA SPECIFIC)
-   ========================================== */
 
-/* ── 1. SITE NAME: Forces your Master Site Title to remain large universally ── */
-.md-header__title .md-header__topic:first-child,
-.zensical-header__title .md-header__topic:first-child,
-.md-header__ellipsis span:first-child,
-.md-header__ellipsis .md-header__topic:first-child,
-[data-md-component="header-topic"]:first-child {
+/* ==========================================
+   3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
+   ========================================== */
+.md-header__topic {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Forces Site Title to remain large universally */
+.md-header__topic:first-child {
     font-size: 2.0rem !important; 
     font-weight: 700 !important;  
     line-height: 1.2 !important;
-    display: inline-block !important;
-    white-space: nowrap !important; /* Prevents text from breaking onto multiple lines */
+    white-space: nowrap !important;
 }
 
-/* Forces layout boxes to maintain flat row grids so titles sit side-by-side without stacking */
-.md-header__title,
-.zensical-header__title,
-.md-header__ellipsis,
-.md-header__inner {
-    font-size: unset !important; 
+/* Forces secondary Page Titles to remain small and side-by-side */
+.md-header__topic + .md-header__topic {
+    font-size: 1.25rem !important; 
+    font-weight: 500 !important;   
+    margin-left: 0.85rem !important; 
+    opacity: 0.85 !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding-left: 0.85rem !important;
+}
+
+/* Fixes the text overlap behavior by forcing standard flex positioning */
+.md-header__ellipsis {
     display: flex !important;
+    flex-direction: row !important;
     align-items: center !important;
-    flex-direction: row !important; /* Blocks elements from trying to sit on top of each other */
     flex-wrap: nowrap !important;
 }
 
@@ -91,12 +91,12 @@
     font-weight: 800 !important;
     margin: 1rem 0 !important;
     letter-spacing: -0.04em !important;
-    color: #111111 !important; 
+    color: #ffffff !important; 
 }
 
 .hero-tagline {
     font-size: 1.35rem !important;
-    color: #4a5568 !important; 
+    color: rgba(255, 255, 255, 0.85) !important; 
     line-height: 1.6 !important;
     margin-bottom: 2.75rem !important;
 }
@@ -136,7 +136,7 @@
 }
 
 /* ==========================================
-   5. LAYOUT FEATURE GRID STRUCTURE (FIXED)
+   5. LAYOUT FEATURE GRID STRUCTURE
    ========================================== */
 .zensical-features {
     max-width: 1200px;
@@ -145,18 +145,16 @@
     width: 100% !important;
 }
 
-/* Force the grid to stay side-by-side on desktop views */
 .features-grid {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important; /* Forces a strict 3-column horizontal split */
+    grid-template-columns: repeat(3, 1fr) !important; 
     gap: 2rem !important;
     width: 100% !important;
 }
 
-/* Responsive fallback: Stack cards ONLY on smaller mobile phone screens */
 @media screen and (max-width: 768px) {
     .features-grid {
-        grid-template-columns: 1fr !important; /* Smoothly snaps to vertical stack on tablets/mobile */
+        grid-template-columns: 1fr !important; 
     }
 }
 
@@ -177,254 +175,112 @@
     border-color: #cbd5e0 !important;
 }
 
-.feature-card h3 {
+.features-grid .feature-card h3 {
     margin: 0 0 0.75rem 0 !important;
     font-size: 1.35rem !important;
     color: #111111 !important;
     font-weight: 700 !important;
 }
 
-.feature-card p {
+.features-grid .feature-card p {
     margin: 0 !important;
     font-size: 1rem !important;
     line-height: 1.6 !important;
     color: #4a5568 !important;
 }
 
-
 /* ==========================================
-   6. LANDING PAGE ONLY: AUTOMATIC PNG & TEXT SWAP
+   6. LANDING PAGE ONLY: THEME ADJUSTMENTS
    ========================================== */
+body.landing-page-active {
+    background-color: #B30B00 !important; 
+}
 
-/* Swaps out the main logo image on the landing page automatically */
-:has(.zensical-landing-wrap) .zensical-header__logo img,
-:has(.zensical-landing-wrap) .md-header__button.md-logo img,
-:has(.zensical-landing-wrap) [class*="header"] img {
+body.landing-page-active .md-container,
+body.landing-page-active .md-main,
+body.landing-page-active .md-content,
+body.landing-page-active .md-content__inner {
+    background-color: transparent !important;
+    background: transparent !important;
+    --md-default-bg-color: #B30B00 !important; 
+}
+
+body.landing-page-active .zensical-header__logo img,
+body.landing-page-active .md-header__button.md-logo img,
+body.landing-page-active [class*="header"] img {
     content: url("../images/toto-site-logo-white-med.png") !important;
     content-visibility: auto !important;
 }
 
-/* Adjusts the text color of the site name on the landing page */
-:has(.zensical-landing-wrap) .md-header__title,
-:has(.zensical-landing-wrap) .zensical-header__title,
-:has(.zensical-landing-wrap) [class*="header__title"] {
-    color: #ffffff !important; /* Swapped to white text for dark background visibility */
+body.landing-page-active .md-header__title,
+body.landing-page-active .zensical-header__title,
+body.landing-page-active [class*="header__title"] {
+    color: #ffffff !important; 
 }
 
 /* ==========================================
-   7. LANDING PAGE ONLY: ISOLATED BACKGROUND COLOR
+   7. LANDING PAGE ONLY: TRANSPARENT HEADER & UI
    ========================================== */
-
-/* ── 1. Target the background strictly when looking at the Home page template structure ── */
-:has(.zensical-landing-wrap) {
-    background-color: #B30B00 !important; /* Forces your solid red color strictly onto the Home page root */
-}
-
-/* ── 2. Force transparency onto the homepage layout wrapper nodes ONLY ── */
-:has(.zensical-landing-wrap) .md-container,
-:has(.zensical-landing-wrap) .md-main,
-:has(.zensical-landing-wrap) .md-content,
-:has(.zensical-landing-wrap) .md-content__inner {
-    background-color: transparent !important;
-    background: transparent !important;
-    --md-default-bg-color: #B30B00 !important; /* Matches your background variable block inside the homepage */
-}
-
-/* ── 3. SAFETY RESET: Hardcode standard documentation background rules for all other pages ── */
-/* This prevents the homepage transparency variables from accidentally leaking out and blending your sidebars */
-body:not(:has(.zensical-landing-wrap)) .md-container,
-body:not(:has(.zensical-landing-wrap)) .md-main,
-body:not(:has(.zensical-landing-wrap)) .md-sidebar,
-body:not(:has(.zensical-landing-wrap)) .md-content {
-    background-color: var(--md-default-bg-color) !important;
-    opacity: 1 !important;
-    visibility: visible !important; /* Forces the structural sidebars back to life instantly */
-    display: block !important;
-}
-/* ==========================================
-   8. LANDING PAGE ONLY: TRANSPARENT HEADER FIX
-   ========================================== */
-
-/* Target the header blocks only within the home landing page scope */
-:has(.zensical-landing-wrap) .md-header {
-    /* Uses a dark/shadowed transparency instead of white to prevent pink blending */
+body.landing-page-active .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
-    
-    /* Adds a modern frosted-glass blur effect over your red background */
     backdrop-filter: blur(10px) !important; 
     -webkit-backdrop-filter: blur(10px) !important;
 }
 
-/* Override underlying theme color variables so text and shadows match seamlessly */
-:has(.zensical-landing-wrap) {
+body.landing-page-active {
     --md-primary-fg-color: transparent !important;
     --md-primary-fg-color--dark: transparent !important;
-    --md-default-bg-color: #B30B00 !important; /* Dynamically mirrors your target background */
-}
-/* ==========================================
-   9. LANDING PAGE ONLY: WHITE TEXT OVERRIDES
-   ========================================== */
-
-/* Target the typography elements inside the landing wrapper */
-.zensical-landing-wrap h1,
-.zensical-landing-wrap h2,
-.zensical-landing-wrap h3,
-.zensical-landing-wrap p,
-.zensical-landing-wrap .hero-tagline,
-.zensical-landing-wrap .feature-card p,
-.zensical-landing-wrap .feature-card h3 {
-    color: #ffffff !important;
-}
-
-/* Optional: Soften the description/tagline text slightly so it isn't piercing white */
-.zensical-landing-wrap .hero-tagline,
-.zensical-landing-wrap .feature-card p {
-    color: rgba(255, 255, 255, 0.85) !important;
-}
-/* ==========================================
-   10. LANDING PAGE ONLY: NAV, SEARCH, & FOOTER WHITE TEXT
-   ========================================== */
-
-/* 1. Target Top Navigation Links & Header Icons */
-:has(.zensical-landing-wrap) .md-tabs__link,
-:has(.zensical-landing-wrap) .md-nav__link,
-:has(.zensical-landing-wrap) .md-header__button,
-:has(.zensical-landing-wrap) .md-nav__link--active {
-    color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-/* 2. Target the Search Bar Input & Placeholder Text */
-:has(.zensical-landing-wrap) .md-search__input {
-    color: #ffffff !important;
-}
-:has(.zensical-landing-wrap) .md-search__input::placeholder {
-    color: rgba(255, 255, 255, 0.6) !important; /* Soft white placeholder */
-}
-:has(.zensical-landing-wrap) .md-search__icon {
-    color: #ffffff !important; /* Makes the search magnifying glass icon white */
-}
-
-/* 3. Target the Footer Text, Links, and Labels */
-:has(.zensical-landing-wrap) .md-footer,
-:has(.zensical-landing-wrap) .md-footer__link,
-:has(.zensical-landing-wrap) .md-footer__title,
-:has(.zensical-landing-wrap) .md-footer-meta,
-:has(.zensical-landing-wrap) .md-footer-meta__inner {
-    color: #ffffff !important;
-}
-:has(.zensical-landing-wrap) .md-footer__direction {
-    color: rgba(255, 255, 255, 0.6) !important; /* Softens the "Next" / "Previous" sub-labels */
-}
-/* ==========================================
-   11. LANDING PAGE ONLY: WHITE NAVIGATION UNDERLINE
-   ========================================== */
-
-/* Target the indicator border on the active tab item */
-:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
-:has(.zensical-landing-wrap) .md-tabs__link--active,
-:has(.zensical-landing-wrap) .md-tabs__item {
-    border-bottom-color: #ffffff !important;
-}
-
-/* Forces the theme accent color to render as white for the header navigation line */
-:has(.zensical-landing-wrap) {
     --md-accent-fg-color: #ffffff !important;
-}
-/* ==========================================
-   11. LANDING PAGE ONLY: WHITE NAVIGATION UNDERLINE
-   ========================================== */
-:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
-:has(.zensical-landing-wrap) .md-tabs__link--active,
-:has(.zensical-landing-wrap) .md-tabs__item {
-    border-bottom-color: #ffffff !important;
-}
-:has(.zensical-landing-wrap) {
-    --md-accent-fg-color: #ffffff !important;
-}
-
-/* ==========================================
-   12. LANDING PAGE ONLY: SEARCH SYSTEM VARIABLES (UPDATED)
-   ========================================== */
-
-/* 1. Overwrite system design variables for the search block */
-:has(.zensical-landing-wrap) {
     --md-default-fg-color: #ffffff !important;
     --md-default-fg-color--light: rgba(255, 255, 255, 0.8) !important;
     --md-default-fg-color--lightest: rgba(255, 255, 255, 0.6) !important;
 }
 
-/* 2. Target the magnifying glass icon and vector paths directly */
-:has(.zensical-landing-wrap) .md-search__icon[for="__search"],
-:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
-:has(.zensical-landing-wrap) .md-search__inner svg path {
+/* Top Nav Active Bars */
+body.landing-page-active .md-tabs__item--active .md-tabs__link,
+body.landing-page-active .md-tabs__link--active,
+body.landing-page-active .md-tabs__item {
+    border-bottom-color: #ffffff !important;
+}
+
+/* Search Box Form Items */
+body.landing-page-active .md-search__icon[for="__search"],
+body.landing-page-active .md-search__form label.md-search__icon svg,
+body.landing-page-active .md-search__inner svg path {
     fill: #ffffff !important;
     color: #ffffff !important;
     opacity: 1 !important;
 }
-
-/* 3. Force placeholder and active typed text to white */
-:has(.zensical-landing-wrap) .md-search__input::placeholder {
+body.landing-page-active .md-search__input::placeholder {
     color: rgba(255, 255, 255, 0.7) !important;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
 }
-:has(.zensical-landing-wrap) .md-search__input {
+body.landing-page-active .md-search__input {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
-/* ==========================================
-   13. LANDING PAGE ONLY: RESTORE BLACK CARD TEXT
-   ========================================== */
 
-/* Target the typography strictly inside your feature cards to make them black */
-.zensical-landing-wrap .features-grid .feature-card h3,
-.zensical-landing-wrap .feature-card h3,
-.zensical-landing-wrap .features-grid .feature-card p,
-.zensical-landing-wrap .feature-card p {
-    color: #111111 !important; /* Forces the card text back to dark slate/black */
+/* Footer Fixes */
+body.landing-page-active .md-footer,
+body.landing-page-active .md-footer-meta {
+    background-color: rgba(0, 0, 0, 0.25) !important; 
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; 
 }
-/* ==========================================
-   14. LANDING PAGE ONLY: TRANSPARENT FOOTER FIX
-   ========================================== */
-
-/* Remove the white overlay blending layer from Zensical's footer structure */
-:has(.zensical-landing-wrap) .md-footer,
-:has(.zensical-landing-wrap) .md-footer-meta {
-    background-color: rgba(0, 0, 0, 0.25) !important; /* Changes pink to a rich, darkened red */
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; /* Soft white border line instead of dark */
-}
-
-/* Ensure the absolute inner footer container stays transparent */
-:has(.zensical-landing-wrap) .md-footer__inner,
-:has(.zensical-landing-wrap) .md-footer-meta__inner {
+body.landing-page-active .md-footer__inner,
+body.landing-page-active .md-footer-meta__inner {
     background-color: transparent !important;
-    background: transparent !important;
 }
-/* ==========================================
-   15. SCROLLING HEADER: FIXED COMPACT PAGE TITLE
-   ========================================== */
-
-/* ── 2. PAGE TITLE: Forces secondary page titles to remain small and side-by-side ── */
-html body .md-header .md-header__title .md-header__topic + .md-header__topic,
-html body .zensical-header__title .md-header__topic + .md-header__topic,
-html body .md-header__ellipsis span:nth-child(2),
-html body .md-header__ellipsis .md-header__topic:nth-child(2),
-html body div[data-md-component="header-topic"] + div[data-md-component="header-topic"],
-html body [class*="header"] .md-header__topic--active {
-    font-size: 1.25rem !important; /* Permanently locks the text size small */
-    font-weight: 500 !important;   
-    margin-left: 0.85rem !important; /* Clean horizontal spacing to the right of your site name */
-    display: inline-block !important;
-    opacity: 0.85 !important;
-    border-left: none !important; /* Completely strips out the white vertical line error next to the logo */
-    padding-left: 0 !important;
+body.landing-page-active .md-footer,
+body.landing-page-active .md-footer__link,
+body.landing-page-active .md-footer__title,
+body.landing-page-active .md-footer-meta,
+body.landing-page-active .md-footer-meta__inner,
+body.landing-page-active .md-tabs__link,
+body.landing-page-active .md-nav__link,
+body.landing-page-active .md-header__button {
+    color: #ffffff !important;
 }
-
-/* ── 3. OPTIONAL SUBTLE PAGE SEPARATOR ── */
-/* If you want a vertical line separator, this targets it safely BETWEEN the text chunks ONLY */
-html body .md-header__ellipsis span:first-child + span:nth-child(2),
-html body .md-header__topic:first-child + .md-header__topic {
-    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
-    padding-left: 0.85rem !important;
+body.landing-page-active .md-footer__direction {
+    color: rgba(255, 255, 255, 0.6) !important;
 }
 
