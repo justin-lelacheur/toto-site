@@ -31,6 +31,16 @@
     justify-content: flex-start !important;
 }
 
+/* Keep the logo size while removing the theme's extra header whitespace */
+.md-header__inner {
+    padding: 0 0.15rem !important;
+}
+
+.md-header__button.md-logo {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 /* Uses the white logo only against the landing page's red background */
 body:has(.zensical-landing-wrap) .md-logo img {
     content: url("../images/toto-site-logo-white-med.png") !important;
