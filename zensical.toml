@@ -2,7 +2,7 @@
 site_name = "toto"
 site_url = "https://toto-site-3pm.pages.dev"
 extra_css = [
-    "stylesheets/custom.css"
+    "stylesheets/extra.css"
 ]
 
 [project.theme]
@@ -15,3 +15,4 @@ features = [
     "navigation.tracking",
     "content.code.copy"
 ]
+
