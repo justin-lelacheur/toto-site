@@ -79,6 +79,13 @@ body:has(.zensical-landing-wrap) .md-header[hidden] {
     transform: none !important;
 }
 
+body:has(.zensical-landing-wrap) .md-header__topic:first-child {
+    opacity: 1 !important;
+    transform: none !important;
+    z-index: 0 !important;
+    pointer-events: auto !important;
+}
+
 /* Separates the site and page names on documentation pages only */
 body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
