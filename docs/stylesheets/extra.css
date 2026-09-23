@@ -482,5 +482,21 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
     padding: 1.1rem 0 !important;
 }
 
+@media screen and (min-width: 45em) {
+    body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-sidebar__scrollwrap,
+    body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-sidebar__inner,
+    body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-sidebar__scrollwrap,
+    body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-sidebar__inner {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
+    }
+}
+
 
 
