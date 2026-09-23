@@ -18,6 +18,18 @@
 .zensical-header__title {
     margin-left: 0.75rem;
 }
+/* ==========================================
+   3. SITE NAME / HEADER TITLE OVERRIDES
+   ========================================== */
+.md-header__title,
+.zensical-header__title,
+[class*="header__title"] {
+    font-size: 2.0rem !important; /* Increase this (e.g., 1.6rem, 1.8rem) to make it larger */
+    font-weight: 700 !important;  /* Bolds the text for better visibility */
+    line-height: 1.2 !important;
+    display: flex !important;
+    align-items: center !important;
+}
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
