@@ -1,6 +1,6 @@
 [project]
-site_name = "Your Brand Name"
-site_url = "https://example.com"
+site_name = "toto"
+site_url = "https://toto-site-3pm.pages.dev"
 extra_css = [
     "stylesheets/custom.css"
 ]
@@ -8,7 +8,7 @@ extra_css = [
 [project.theme]
 name = "material"
 logo = "images/toto-site-logo-white-med.png"
-# 💡 CRITICAL: These features force Zensical to generate the sidebar layout blocks!
+# CRITICAL: These features force Zensical to generate the sidebar layout blocks
 features = [
     "navigation.tabs",
     "navigation.sections",
