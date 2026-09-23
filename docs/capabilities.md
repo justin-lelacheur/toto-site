@@ -1,6 +1,5 @@
 ---
 title: "Capabilities"
-layout: page
 ---
 
 
