@@ -166,42 +166,42 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
    ========================================== */
 .zensical-hero {
     text-align: center !important;
-    padding: 5.5rem 1.5rem 4.5rem !important;
-    max-width: 850px;
+    padding: 3.5rem 1.5rem 3rem !important;
+    max-width: 760px;
     margin: 0 auto;
 }
 
 .zensical-hero h1 {
-    font-size: 3.25rem !important;
-    line-height: 1.15 !important;
-    font-weight: 800 !important;
-    margin: 1rem 0 !important;
-    letter-spacing: -0.04em !important;
+    font-size: 48px !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    margin: 0.75rem 0 !important;
+    letter-spacing: normal !important;
     color: #ffffff !important;
 }
 
 .hero-tagline {
-    font-size: 1.35rem !important;
+    font-size: 18px !important;
     color: rgba(255, 255, 255, 0.85) !important;
-    line-height: 1.6 !important;
-    margin-bottom: 2.75rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.75rem !important;
 }
 
 /* --- CTA Buttons --- */
 .hero-cta-group {
     display: flex;
-    gap: 1.25rem;
+    gap: 0.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .hero-cta-group a {
-    padding: 0.85rem 2.25rem !important;
-    font-weight: 600 !important;
-    border-radius: 8px !important;
+    padding: 0.5rem 1.65rem !important;
+    font-weight: 700 !important;
+    border-radius: 4px !important;
     transition: all 0.2s ease-in-out !important;
     text-decoration: none !important;
-    font-size: 1rem !important;
+    font-size: 13px !important;
     display: inline-block;
 }
 
@@ -227,22 +227,22 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 .zensical-features {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     width: 100% !important;
 }
 
 .features-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-    gap: 2rem !important;
+    gap: 1.25rem !important;
     width: 100% !important;
 }
 
 .features-grid .feature-card {
     background-color: #ffffff !important;
     border: 1px solid #e2e8f0 !important;
-    padding: 2.5rem 2rem !important;
-    border-radius: 16px !important;
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 8px !important;
     text-align: left;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
     transition: all 0.2s ease-in-out !important;
@@ -257,15 +257,15 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 
 .features-grid .feature-card h3 {
     margin: 0 0 0.75rem 0 !important;
-    font-size: 1.35rem !important;
+    font-size: 18px !important;
     color: #111111 !important;
     font-weight: 700 !important;
 }
 
 .features-grid .feature-card p {
     margin: 0 !important;
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
     color: #4a5568 !important;
 }
 
