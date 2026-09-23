@@ -34,7 +34,7 @@
     font-size: unset !important; /* Prevents container from compressing text sizes */
 }
 /* ==========================================
-   3. SITE NAME & PAGE NAME OVERRIDES (SPECIFICITY FIX)
+   3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
    ========================================== */
 
 /* ── 1. GLOBAL SITE NAME: Large and Bold everywhere ── */
@@ -42,24 +42,20 @@
 .zensical-header__title .md-header__topic:first-child,
 .md-header__ellipsis span:first-child,
 .md-header__ellipsis .md-header__topic:first-child {
-    font-size: 2.0rem !important; /* Matches your landing home page text size */
+    font-size: 2.0rem !important; /* Forces your Site Name to remain exactly 2.0rem */
     font-weight: 700 !important;  
     line-height: 1.2 !important;
     display: inline-block !important;
 }
 
-/* ── 2. GLOBAL PAGE NAME: Forced Small on Scroll (High Specificity) ── */
-/* Adding deep structural parent classes ensures the browser forces this text small */
-html body .md-header .md-header__title .md-header__topic + .md-header__topic,
-html body .zensical-header__title .md-header__topic + .md-header__topic,
-html body .md-header__ellipsis span:nth-child(2),
-html body .md-header__ellipsis .md-header__topic:nth-child(2),
-html body div[data-md-component="header-topic"] {
-    font-size: 1.25rem !important; /* Explicitly locks the page name smaller */
-    font-weight: 500 !important;   
-    margin-left: 0.75rem !important; 
-    display: inline-block !important;
-    opacity: 0.85 !important;      /* Slightly softens the contrast for better visual hierarchy */
+/* Ensure the main container holding the items doesn't compress or overlap text layers */
+.md-header__title,
+.zensical-header__title,
+.md-header__ellipsis {
+    font-size: unset !important; /* Prevents the container from overriding child text sizes */
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important; /* Forces items side-by-side instead of stacking */
 }
 
 /* ==========================================
@@ -388,24 +384,27 @@ html body div[data-md-component="header-topic"] {
 /* ==========================================
    15. SCROLLING HEADER: FIX OVERLAPPING PAGE TITLE
    ========================================== */
-/* Isolates scroll transitions to the homepage view framework */
-:has(.zensical-landing-wrap) .md-header__title .md-header__topic + .md-header__topic,
-:has(.zensical-landing-wrap) .zensical-header__title .md-header__topic + .md-header__topic {
-    font-size: 1.25rem !important; 
+
+/* ── 2. GLOBAL PAGE NAME: Forced Small and Spaced Out (High Specificity) ── */
+html body .md-header .md-header__title .md-header__topic + .md-header__topic,
+html body .zensical-header__title .md-header__topic + .md-header__topic,
+html body .md-header__ellipsis span:nth-child(2),
+html body .md-header__ellipsis .md-header__topic:nth-child(2),
+html body div[data-md-component="header-topic"] {
+    font-size: 1.25rem !important; /* Explicitly locks the page name smaller */
     font-weight: 500 !important;   
-    margin-left: 0.75rem !important;
-    display: inline-block !important;
-}
-
-:has(.zensical-landing-wrap) .md-header__title[data-md-state="blur"] .md-header__topic + .md-header__topic {
+    margin-left: 0.75rem !important; /* Pushes it horizontally to the right instead of stacking on top */
     padding-left: 0.75rem !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.3) !important; /* Adds a clean separator line between them */
+    display: inline-block !important;
+    opacity: 0.85 !important;
 }
 
-:has(.zensical-landing-wrap) .md-header__title[data-md-state="freeze"] .md-header__topic + .md-header__topic {
+/* If the theme hides the site name completely on certain scroll states, safely format the spacing */
+.md-header__title[data-md-state="freeze"] .md-header__topic + .md-header__topic,
+[data-md-state="scroll"] .md-header__topic + .md-header__topic {
     border-left: none !important;
     padding-left: 0 !important;
-    margin-left: 0.5rem !important;
+    margin-left: 0.5rem !important; 
 }
-
 
