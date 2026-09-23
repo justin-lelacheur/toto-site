@@ -171,3 +171,24 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
+/* ==========================================
+   6. LANDING PAGE ONLY: BACKGROUND COLOR
+   ========================================== */
+
+/* Target the core layout containers only when they contain your marketing wrapper */
+:has(.marketing-landing-page) {
+    /* 1. Sets the global base background */
+    background-color: #0d1117 !important; /* Update to your preferred landing page hex color */
+}
+
+:has(.marketing-landing-page) .md-container,
+:has(.marketing-landing-page) .md-main,
+:has(.marketing-landing-page) .md-content,
+:has(.marketing-landing-page) .md-content__inner {
+    /* 2. Forces Zensical's inner layout grid blocks to be completely transparent */
+    background-color: transparent !important;
+    background: transparent !important;
+    
+    /* 3. Overrides the system color variable locally so text containers scale smoothly */
+    --md-default-bg-color: #B30B00 !important; 
+}
