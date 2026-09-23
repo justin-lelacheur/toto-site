@@ -365,15 +365,30 @@
 /* ==========================================
    15. SCROLLING HEADER: FIX OVERLAPPING PAGE TITLE
    ========================================== */
-/* Target strictly the second topic layer (The Page Title that triggers on scroll) */
+
+/* 1. Base styles for the scrolling page title */
 .md-header__title .md-header__topic + .md-header__topic,
 .zensical-header__title .md-header__topic + .md-header__topic,
 div[data-md-component="header-topic"] {
     font-size: 1.25rem !important; /* Keeps the dynamic sub-title smaller */
     font-weight: 500 !important;   
-    margin-left: 0.75rem !important; /* Pushes it horizontally to the right instead of stacking on top */
-    padding-left: 0.75rem !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.3) !important; /* Adds a clean separator line between them */
+    margin-left: 0.75rem !important;
     display: inline-block !important;
 }
+
+/* 2. ONLY apply the vertical separator line when the Site Name is visible in the viewport */
+.md-header__title[data-md-state="blur"] .md-header__topic + .md-header__topic,
+.md-header__ellipsis:not(:empty) .md-header__topic:first-child ~ .md-header__topic {
+    padding-left: 0.75rem !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 3. Safe fallback: If the engine hides the site name completely on scroll, strip the border away */
+.md-header__title[data-md-state="freeze"] .md-header__topic + .md-header__topic,
+[data-md-state="scroll"] .md-header__topic + .md-header__topic {
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-left: 0.5rem !important; /* Clean margin directly next to the logo image */
+}
+
 
