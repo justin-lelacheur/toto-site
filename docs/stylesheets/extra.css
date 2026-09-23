@@ -1,5 +1,5 @@
 /* ==========================================
-   1. MASTER LANDING PAGE STRUCTURAL WRAPPER 
+   1. MASTER LANDING PAGE STRUCTURAL WRAPPER
    ========================================== */
 .zensical-landing-wrap {
     margin: 0 auto;
@@ -13,6 +13,7 @@
     align-items: center !important;
     justify-content: space-between !important;
     gap: 1rem;
+    font-size: 0.64rem !important;
 }
 
 .md-footer__brand {
@@ -35,14 +36,14 @@
    ========================================== */
 /* Locks your main header logo image container scale crisp across all views */
 .md-header__button.md-logo img,
-.zensical-header__logo img, 
+.zensical-header__logo img,
 .header-logo img,
 .md-header__logo img,
 [class*="header"] a img,
 [class*="header"] img {
-    height: 4.5rem !important; 
-    max-height: 72px !important; 
-    width: auto !important;     
+    height: 3rem !important;
+    max-height: 48px !important;
+    width: auto !important;
     display: inline-block !important;
 }
 
@@ -88,15 +89,15 @@ body:has(.zensical-landing-wrap) .md-logo img {
 
 /* Keeps the site name larger than the current page name */
 .md-header__topic:first-child .md-ellipsis {
-    font-size: 2.0rem !important; 
-    font-weight: 700 !important;  
+    font-size: 1.33rem !important;
+    font-weight: 700 !important;
     line-height: 1.2 !important;
 }
 
 /* Keeps the current page name visually subordinate */
 .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
-    font-size: 1.25rem !important; 
-    font-weight: 500 !important;   
+    font-size: 0.83rem !important;
+    font-weight: 500 !important;
     opacity: 0.85 !important;
 }
 
@@ -145,7 +146,7 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 
 .hero-tagline {
     font-size: 1.35rem !important;
-    color: rgba(255, 255, 255, 0.85) !important; 
+    color: rgba(255, 255, 255, 0.85) !important;
     line-height: 1.6 !important;
     margin-bottom: 2.75rem !important;
 }
@@ -196,14 +197,14 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 
 .features-grid {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
     gap: 2rem !important;
     width: 100% !important;
 }
 
 .features-grid .feature-card {
-    background-color: #ffffff !important; 
-    border: 1px solid #e2e8f0 !important;   
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
     padding: 2.5rem 2rem !important;
     border-radius: 16px !important;
     text-align: left;
@@ -246,12 +247,12 @@ body:has(.zensical-landing-wrap) {
 :has(.zensical-landing-wrap) .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
-    --md-default-bg-color: #B30B00 !important; 
+    --md-default-bg-color: #B30B00 !important;
 }
 
 html:has(.zensical-landing-wrap) .md-header__title,
 html:has(.zensical-landing-wrap) [class*="header__title"] {
-    color: #ffffff !important; 
+    color: #ffffff !important;
 }
 
 /* ==========================================
@@ -259,7 +260,7 @@ html:has(.zensical-landing-wrap) [class*="header__title"] {
    ========================================== */
 body:has(.zensical-landing-wrap) .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
-    backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
 }
 
@@ -296,8 +297,8 @@ body:has(.zensical-landing-wrap) .md-search__input {
 
 body:has(.zensical-landing-wrap) .md-footer,
 body:has(.zensical-landing-wrap) .md-footer-meta {
-    background-color: rgba(0, 0, 0, 0.25) !important; 
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; 
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 body:has(.zensical-landing-wrap) .md-footer__inner,
 body:has(.zensical-landing-wrap) .md-footer-meta__inner {
