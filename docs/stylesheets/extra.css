@@ -136,7 +136,7 @@
 }
 
 /* ==========================================
-   5. LAYOUT FEATURE GRID STRUCTURE
+   5. LAYOUT FEATURE GRID STRUCTURE (FIXED SQUEEZING)
    ========================================== */
 .zensical-features {
     max-width: 1200px;
@@ -145,17 +145,12 @@
     width: 100% !important;
 }
 
+/* Restores responsive horizontal card grouping using automatic grid widths */
 .features-grid {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; /* Spreads cards wider dynamically */
     gap: 2rem !important;
     width: 100% !important;
-}
-
-@media screen and (max-width: 768px) {
-    .features-grid {
-        grid-template-columns: 1fr !important; 
-    }
 }
 
 .features-grid .feature-card {
@@ -190,44 +185,48 @@
 }
 
 /* ==========================================
-   6. LANDING PAGE ONLY: THEME ADJUSTMENTS
+   6. LANDING PAGE ONLY: THEME ADJUSTMENTS (FIXED RED BACKGROUND)
    ========================================== */
-body.landing-page-active {
-    background-color: #B30B00 !important; 
+/* Targets the layout safely whether the page metadata class maps instantly or not */
+:has(.zensical-landing-wrap),
+body:has(.zensical-landing-wrap) {
+    background-color: #B30B00 !important; /* Restores your solid red background color */
 }
 
-body.landing-page-active .md-container,
-body.landing-page-active .md-main,
-body.landing-page-active .md-content,
-body.landing-page-active .md-content__inner {
+:has(.zensical-landing-wrap) .md-container,
+:has(.zensical-landing-wrap) .md-main,
+:has(.zensical-landing-wrap) .md-content,
+:has(.zensical-landing-wrap) .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
     --md-default-bg-color: #B30B00 !important; 
 }
 
-body.landing-page-active .zensical-header__logo img,
-body.landing-page-active .md-header__button.md-logo img,
-body.landing-page-active [class*="header"] img {
+/* Swaps out the main logo image on the landing page automatically */
+:has(.zensical-landing-wrap) .zensical-header__logo img,
+:has(.zensical-landing-wrap) .md-header__button.md-logo img,
+:has(.zensical-landing-wrap) [class*="header"] img {
     content: url("../images/toto-site-logo-white-med.png") !important;
     content-visibility: auto !important;
 }
 
-body.landing-page-active .md-header__title,
-body.landing-page-active .zensical-header__title,
-body.landing-page-active [class*="header__title"] {
+/* Adjusts the text color of the site name on the landing page */
+:has(.zensical-landing-wrap) .md-header__title,
+:has(.zensical-landing-wrap) .zensical-header__title,
+:has(.zensical-landing-wrap) [class*="header__title"] {
     color: #ffffff !important; 
 }
 
 /* ==========================================
    7. LANDING PAGE ONLY: TRANSPARENT HEADER & UI
    ========================================== */
-body.landing-page-active .md-header {
+:has(.zensical-landing-wrap) .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
     backdrop-filter: blur(10px) !important; 
     -webkit-backdrop-filter: blur(10px) !important;
 }
 
-body.landing-page-active {
+:has(.zensical-landing-wrap) {
     --md-primary-fg-color: transparent !important;
     --md-primary-fg-color--dark: transparent !important;
     --md-accent-fg-color: #ffffff !important;
@@ -237,50 +236,50 @@ body.landing-page-active {
 }
 
 /* Top Nav Active Bars */
-body.landing-page-active .md-tabs__item--active .md-tabs__link,
-body.landing-page-active .md-tabs__link--active,
-body.landing-page-active .md-tabs__item {
+:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
+:has(.zensical-landing-wrap) .md-tabs__link--active,
+:has(.zensical-landing-wrap) .md-tabs__item {
     border-bottom-color: #ffffff !important;
 }
 
 /* Search Box Form Items */
-body.landing-page-active .md-search__icon[for="__search"],
-body.landing-page-active .md-search__form label.md-search__icon svg,
-body.landing-page-active .md-search__inner svg path {
+:has(.zensical-landing-wrap) .md-search__icon[for="__search"],
+:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
+:has(.zensical-landing-wrap) .md-search__inner svg path {
     fill: #ffffff !important;
     color: #ffffff !important;
     opacity: 1 !important;
 }
-body.landing-page-active .md-search__input::placeholder {
+:has(.zensical-landing-wrap) .md-search__input::placeholder {
     color: rgba(255, 255, 255, 0.7) !important;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
 }
-body.landing-page-active .md-search__input {
+:has(.zensical-landing-wrap) .md-search__input {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
 
 /* Footer Fixes */
-body.landing-page-active .md-footer,
-body.landing-page-active .md-footer-meta {
+:has(.zensical-landing-wrap) .md-footer,
+:has(.zensical-landing-wrap) .md-footer-meta {
     background-color: rgba(0, 0, 0, 0.25) !important; 
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; 
 }
-body.landing-page-active .md-footer__inner,
-body.landing-page-active .md-footer-meta__inner {
+:has(.zensical-landing-wrap) .md-footer__inner,
+:has(.zensical-landing-wrap) .md-footer-meta__inner {
     background-color: transparent !important;
 }
-body.landing-page-active .md-footer,
-body.landing-page-active .md-footer__link,
-body.landing-page-active .md-footer__title,
-body.landing-page-active .md-footer-meta,
-body.landing-page-active .md-footer-meta__inner,
-body.landing-page-active .md-tabs__link,
-body.landing-page-active .md-nav__link,
-body.landing-page-active .md-header__button {
+:has(.zensical-landing-wrap) .md-footer,
+:has(.zensical-landing-wrap) .md-footer__link,
+:has(.zensical-landing-wrap) .md-footer__title,
+:has(.zensical-landing-wrap) .md-footer-meta,
+:has(.zensical-landing-wrap) .md-footer-meta__inner,
+:has(.zensical-landing-wrap) .md-tabs__link,
+:has(.zensical-landing-wrap) .md-nav__link,
+:has(.zensical-landing-wrap) .md-header__button {
     color: #ffffff !important;
 }
-body.landing-page-active .md-footer__direction {
+:has(.zensical-landing-wrap) .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
