@@ -76,7 +76,8 @@
 }
 
 /* Keep the logo size while removing the theme's extra header whitespace */
-.md-header__inner {
+    font-family: "IBM Plex Sans", sans-serif !important;
+    font-size: 18px !important;
     padding: 0 0.15rem !important;
 }
 
@@ -421,6 +422,7 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
 }
 
 body:not(:has(.zensical-landing-wrap)) .md-nav__title {
+    font-family: "IBM Plex Sans", sans-serif !important;
     min-height: 2rem;
     padding: 0 0.75rem 0.6rem !important;
     color: rgba(25, 25, 25, 0.55) !important;
