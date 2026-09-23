@@ -195,3 +195,43 @@
     background: transparent !important;
     --md-default-bg-color: #B30B00 !important; /* Prevents white structural masking boxes */
 }
+/* ==========================================
+   8. LANDING PAGE ONLY: TRANSPARENT HEADER FIX
+   ========================================== */
+
+/* Target the header blocks only within the home landing page scope */
+:has(.zensical-landing-wrap) .md-header {
+    /* Uses a dark/shadowed transparency instead of white to prevent pink blending */
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    
+    /* Adds a modern frosted-glass blur effect over your red background */
+    backdrop-filter: blur(10px) !important; 
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Override underlying theme color variables so text and shadows match seamlessly */
+:has(.zensical-landing-wrap) {
+    --md-primary-fg-color: transparent !important;
+    --md-primary-fg-color--dark: transparent !important;
+    --md-default-bg-color: #B30B00 !important; /* Dynamically mirrors your target background */
+}
+/* ==========================================
+   9. LANDING PAGE ONLY: WHITE TEXT OVERRIDES
+   ========================================== */
+
+/* Target the typography elements inside the landing wrapper */
+.zensical-landing-wrap h1,
+.zensical-landing-wrap h2,
+.zensical-landing-wrap h3,
+.zensical-landing-wrap p,
+.zensical-landing-wrap .hero-tagline,
+.zensical-landing-wrap .feature-card p,
+.zensical-landing-wrap .feature-card h3 {
+    color: #ffffff !important;
+}
+
+/* Optional: Soften the description/tagline text slightly so it isn't piercing white */
+.zensical-landing-wrap .hero-tagline,
+.zensical-landing-wrap .feature-card p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
