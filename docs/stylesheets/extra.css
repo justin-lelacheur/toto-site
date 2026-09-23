@@ -11,6 +11,7 @@
 /* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
+/* Targets the header logo across ALL views to lock it large and crisp */
 .zensical-header__logo img, 
 .header-logo img,
 .md-header__button.md-logo img,
@@ -36,7 +37,7 @@
     vertical-align: middle !important;
 }
 
-/* Forces Site Title to remain large universally */
+/* Forces Master Site Title to remain large universally */
 .md-header__topic:first-child {
     font-size: 2.0rem !important; 
     font-weight: 700 !important;  
@@ -48,18 +49,31 @@
 .md-header__topic + .md-header__topic {
     font-size: 1.25rem !important; 
     font-weight: 500 !important;   
-    margin-left: 0.85rem !important; 
     opacity: 0.85 !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
-    padding-left: 0.85rem !important;
+    white-space: nowrap !important;
+    border-left: none !important; /* Strips the stray line from showing up next to your logo */
+    padding-left: 0 !important;
+    margin-left: 0 !important;
 }
 
-/* Fixes the text overlap behavior by forcing standard flex positioning */
-.md-header__ellipsis {
+/* Places a clean vertical border line ONLY between the two words when both are active */
+.md-header__topic:first-child + .md-header__topic,
+.md-header__ellipsis span:first-child + span:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding-left: 0.85rem !important;
+    margin-left: 0.85rem !important;
+}
+
+/* Fixes text overlap by forcing standard horizontal flex positioning */
+.md-header__ellipsis,
+.md-header__title,
+.zensical-header__title {
+    font-size: unset !important; 
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
     flex-wrap: nowrap !important;
+    overflow: visible !important;
 }
 
 /* ==========================================
@@ -136,7 +150,7 @@
 }
 
 /* ==========================================
-   5. LAYOUT FEATURE GRID STRUCTURE (FIXED SQUEEZING)
+   5. LAYOUT FEATURE GRID STRUCTURE
    ========================================== */
 .zensical-features {
     max-width: 1200px;
@@ -145,10 +159,10 @@
     width: 100% !important;
 }
 
-/* Restores responsive horizontal card grouping using automatic grid widths */
+/* Restores responsive horizontal card grouping using auto-fitting grid widths */
 .features-grid {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; /* Spreads cards wider dynamically */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; 
     gap: 2rem !important;
     width: 100% !important;
 }
@@ -185,9 +199,8 @@
 }
 
 /* ==========================================
-   6. LANDING PAGE ONLY: THEME ADJUSTMENTS (FIXED RED BACKGROUND)
+   6. LANDING PAGE ONLY: THEME ADJUSTMENTS
    ========================================== */
-/* Targets the layout safely whether the page metadata class maps instantly or not */
 :has(.zensical-landing-wrap),
 body:has(.zensical-landing-wrap) {
     background-color: #B30B00 !important; /* Restores your solid red background color */
@@ -218,7 +231,7 @@ body:has(.zensical-landing-wrap) {
 }
 
 /* ==========================================
-   7. LANDING PAGE ONLY: TRANSPARENT HEADER & UI
+   7. LANDING PAGE ONLY: TRANSPARENT HEADER, UI & FOOTER
    ========================================== */
 :has(.zensical-landing-wrap) .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
@@ -282,4 +295,3 @@ body:has(.zensical-landing-wrap) {
 :has(.zensical-landing-wrap) .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
 }
-
