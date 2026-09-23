@@ -149,3 +149,20 @@
     line-height: 1.6 !important;
     color: #4a5568 !important;
 }
+/* ==========================================
+   5. LANDING PAGE ONLY: PNG LOGO SWAP
+   ========================================== */
+
+/* 1. Target the main landing page wrapper context */
+:has(.marketing-landing-page) .zensical-header__logo img,
+:has(.marketing-landing-page) [class*="header"] img {
+    /* Hide the default global docs/images/logo.png graphic */
+    content: url("../images/toto-site-logo-white-med.png") !important;
+}
+
+/* 2. Target the main landing page Site Name text color */
+:has(.marketing-landing-page) .md-header__title,
+:has(.marketing-landing-page) .zensical-header__title,
+:has(.marketing-landing-page) [class*="header__title"] {
+    color: #FFFFFF !important; /* Update this hex code to your custom color */
+}
