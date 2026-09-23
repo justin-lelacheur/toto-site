@@ -5,7 +5,19 @@
     padding-top: 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
+/* Scale up the header logo image */
+.zensical-header__logo img, 
+.header-logo img,
+[class*="header"] img {
+    height: 2.5rem !important; /* Increase this number to make it larger */
+    max-height: 48px !important; 
+    width: auto !important;     /* Keeps the aspect ratio perfectly intact */
+}
 
+/* Optional: Add spacing between the larger logo and your site text if needed */
+.zensical-header__title {
+    margin-left: 0.75rem;
+}
 /* --- Hero Layout Styles --- */
 .zensical-hero {
     text-align: center !important;
