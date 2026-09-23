@@ -1,5 +1,5 @@
 ---
-title: "toto"
+title: "Home"
 is_homepage: true
 ---
 
