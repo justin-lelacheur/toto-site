@@ -29,6 +29,11 @@
     margin-left: 0.75rem;
 }
 
+/* Uses the white logo only against the landing page's red background */
+body:has(.zensical-landing-wrap) .md-logo img {
+    content: url("../images/toto-site-logo-white-med.png") !important;
+}
+
 /* ==========================================
    3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
    ========================================== */
