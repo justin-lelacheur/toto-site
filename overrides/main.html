@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
-{# 1. Show the Left Sidebar Tree on subpages ONLY #}
+{# 1. Hide the Left Navigation Sidebar ONLY on the Home Page #}
 {% block nav %}
   {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 2. Show the Right Table of Contents Panel on subpages ONLY #}
+{# 2. Hide the Right Table of Contents Sidebar ONLY on the Home Page #}
 {% block toc %}
   {% if not page.meta.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{# 3. Apply the layout wrapper wrapper directly around your home content #}
+{# 3. Render Page Content Layout #}
 {% block content %}
   {% if page.meta.is_homepage %}
     <div class="zensical-landing-wrap">
