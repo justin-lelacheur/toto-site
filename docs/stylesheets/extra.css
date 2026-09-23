@@ -34,28 +34,32 @@
     font-size: unset !important; /* Prevents container from compressing text sizes */
 }
 /* ==========================================
-   3. SITE NAME & PAGE NAME OVERRIDES (FIXED OVERLAP)
+   3. SITE NAME & PAGE NAME OVERRIDES (ULTRA SPECIFIC)
    ========================================== */
 
-/* ── 1. GLOBAL SITE NAME: Large and Bold everywhere ── */
+/* ── 1. SITE NAME: Forces your Master Site Title to remain large universally ── */
 .md-header__title .md-header__topic:first-child,
 .zensical-header__title .md-header__topic:first-child,
 .md-header__ellipsis span:first-child,
-.md-header__ellipsis .md-header__topic:first-child {
-    font-size: 2.0rem !important; /* Forces your Site Name to remain exactly 2.0rem */
+.md-header__ellipsis .md-header__topic:first-child,
+[data-md-component="header-topic"]:first-child {
+    font-size: 2.0rem !important; 
     font-weight: 700 !important;  
     line-height: 1.2 !important;
     display: inline-block !important;
+    white-space: nowrap !important; /* Prevents text from breaking onto multiple lines */
 }
 
-/* Ensure the main container holding the items doesn't compress or overlap text layers */
+/* Forces layout boxes to maintain flat row grids so titles sit side-by-side without stacking */
 .md-header__title,
 .zensical-header__title,
-.md-header__ellipsis {
-    font-size: unset !important; /* Prevents the container from overriding child text sizes */
+.md-header__ellipsis,
+.md-header__inner {
+    font-size: unset !important; 
     display: flex !important;
     align-items: center !important;
-    flex-direction: row !important; /* Forces items side-by-side instead of stacking */
+    flex-direction: row !important; /* Blocks elements from trying to sit on top of each other */
+    flex-wrap: nowrap !important;
 }
 
 /* ==========================================
@@ -208,19 +212,34 @@
 }
 
 /* ==========================================
-   7. LANDING PAGE ONLY: BACKGROUND COLOR
+   7. LANDING PAGE ONLY: ISOLATED BACKGROUND COLOR
    ========================================== */
+
+/* ── 1. Target the background strictly when looking at the Home page template structure ── */
 :has(.zensical-landing-wrap) {
-    background-color: #B30B00 !important; /* Main layout background */
+    background-color: #B30B00 !important; /* Forces your solid red color strictly onto the Home page root */
 }
 
+/* ── 2. Force transparency onto the homepage layout wrapper nodes ONLY ── */
 :has(.zensical-landing-wrap) .md-container,
 :has(.zensical-landing-wrap) .md-main,
 :has(.zensical-landing-wrap) .md-content,
 :has(.zensical-landing-wrap) .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
-    --md-default-bg-color: #B30B00 !important; /* Prevents white structural masking boxes */
+    --md-default-bg-color: #B30B00 !important; /* Matches your background variable block inside the homepage */
+}
+
+/* ── 3. SAFETY RESET: Hardcode standard documentation background rules for all other pages ── */
+/* This prevents the homepage transparency variables from accidentally leaking out and blending your sidebars */
+body:not(:has(.zensical-landing-wrap)) .md-container,
+body:not(:has(.zensical-landing-wrap)) .md-main,
+body:not(:has(.zensical-landing-wrap)) .md-sidebar,
+body:not(:has(.zensical-landing-wrap)) .md-content {
+    background-color: var(--md-default-bg-color) !important;
+    opacity: 1 !important;
+    visibility: visible !important; /* Forces the structural sidebars back to life instantly */
+    display: block !important;
 }
 /* ==========================================
    8. LANDING PAGE ONLY: TRANSPARENT HEADER FIX
@@ -382,29 +401,30 @@
     background: transparent !important;
 }
 /* ==========================================
-   15. SCROLLING HEADER: FIX OVERLAPPING PAGE TITLE
+   15. SCROLLING HEADER: FIXED COMPACT PAGE TITLE
    ========================================== */
 
-/* ── 2. GLOBAL PAGE NAME: Forced Small and Spaced Out (High Specificity) ── */
+/* ── 2. PAGE TITLE: Forces secondary page titles to remain small and side-by-side ── */
 html body .md-header .md-header__title .md-header__topic + .md-header__topic,
 html body .zensical-header__title .md-header__topic + .md-header__topic,
 html body .md-header__ellipsis span:nth-child(2),
 html body .md-header__ellipsis .md-header__topic:nth-child(2),
-html body div[data-md-component="header-topic"] {
-    font-size: 1.25rem !important; /* Explicitly locks the page name smaller */
+html body div[data-md-component="header-topic"] + div[data-md-component="header-topic"],
+html body [class*="header"] .md-header__topic--active {
+    font-size: 1.25rem !important; /* Permanently locks the text size small */
     font-weight: 500 !important;   
-    margin-left: 0.75rem !important; /* Pushes it horizontally to the right instead of stacking on top */
-    padding-left: 0.75rem !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.3) !important; /* Adds a clean separator line between them */
+    margin-left: 0.85rem !important; /* Clean horizontal spacing to the right of your site name */
     display: inline-block !important;
     opacity: 0.85 !important;
+    border-left: none !important; /* Completely strips out the white vertical line error next to the logo */
+    padding-left: 0 !important;
 }
 
-/* If the theme hides the site name completely on certain scroll states, safely format the spacing */
-.md-header__title[data-md-state="freeze"] .md-header__topic + .md-header__topic,
-[data-md-state="scroll"] .md-header__topic + .md-header__topic {
-    border-left: none !important;
-    padding-left: 0 !important;
-    margin-left: 0.5rem !important; 
+/* ── 3. OPTIONAL SUBTLE PAGE SEPARATOR ── */
+/* If you want a vertical line separator, this targets it safely BETWEEN the text chunks ONLY */
+html body .md-header__ellipsis span:first-child + span:nth-child(2),
+html body .md-header__topic:first-child + .md-header__topic {
+    border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding-left: 0.85rem !important;
 }
 
