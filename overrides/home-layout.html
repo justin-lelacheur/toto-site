@@ -1,53 +1,26 @@
 {% extends "base.html" %}
 
-{# Hide the documentation sidebars on the homepage #}
-{% block left_sidebar %}{% endblock %}
-{% block right_sidebar %}{% endblock %}
-
-{# Insert custom landing page content layout #}
-{% block content %}
-<div class="custom-homepage-container">
-    <div class="zensical-landing-wrap">
-
-        <!-- Hero Block -->
-        <header class="zensical-hero">
-            <div class="hero-inner">
-                <span class="hero-eyebrow">🚀 Production Ready</span>
-                <h1>Adaptive systems for evolving ideas</h1>
-                <p class="hero-tagline">Zensical builds scalable Open Source tools for technical writing – from static sites to connected content systems.</p>
-                <div class="hero-cta-group">
-                    <a href="{{ base_url }}/docs/get-started/" class="btn-primary">Get started</a>
-                    <a href="https://github.com" class="btn-secondary">GitHub</a>
-                </div>
-            </div>
-        </header>
-
-        <!-- Features Section -->
-        <section class="zensical-features">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Batteries Included</h3>
-                    <p>Built-in search, localization, and rapid responsiveness across all viewing devices.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="card-icon">🦀</div>
-                    <h3>Powered by Rust</h3>
-                    <p>Utilizes MiniJinja under a pure Rust runtime to compile and render pages in parallel.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="card-icon">🎨</div>
-                    <h3>Modular Architecture</h3>
-                    <p>Easily override core HTML block layers to tailor the design explicitly to your brand.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Fallback Area for Markdown content -->
-        <div class="zensical-markdown-body">
-            {{ page.content }}
-        </div>
-
-    </div>
-</div>
+{# 1. Hide the sidebars ONLY if the landing page wrapper class is active #}
+{% block left_sidebar %}
+  {% if "zensical-landing-wrap" not in page.content %}
+    {{ super() }}
+  {% endif %}
 {% endblock %}
+
+{% block right_sidebar %}
+  {% if "zensical-landing-wrap" not in page.content %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{# 2. Dynamic Content Block Framework #}
+{% block content %}
+  {% if "zensical-landing-wrap" in page.content %}
+    {# On the homepage, just dump the Markdown code which already has your wrapper #}
+    {{ page.content }}
+  {% else %}
+    {# On standard docs pages, render the default look with sidebars restored #}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
