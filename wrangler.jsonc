@@ -12,6 +12,14 @@
     {
       "pattern": "www.totofoundry.com",
       "custom_domain": true
+    },
+    {
+      "pattern": "totofoundry.net",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.totofoundry.net",
+      "custom_domain": true
     }
   ]
 }
