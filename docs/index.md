@@ -10,7 +10,7 @@ is_homepage: true
     <h1>The Autonomous Enterprise Operating System</h1>
     <p class="hero-tagline">Align people and AI agents around shared enterprise context, then move governed work across the systems your organization already runs.</p>
     <div class="hero-cta-group">
-      <a href="/docs/Ontology" class="btn-primary">Explore the platform</a>
+      <a href="/Ontology/" class="btn-primary">Explore the platform</a>
       <a href="/contact" class="btn-secondary">Start a conversation</a>
     </div>
   </div>
@@ -94,7 +94,7 @@ is_homepage: true
     <p class="landing-kicker">Go deeper</p>
     <h2>See how the operating model is built.</h2>
     <div class="hero-cta-group">
-      <a href="/docs/Ontology" class="btn-primary">Explore the architecture</a>
+      <a href="/Ontology/" class="btn-primary">Explore the architecture</a>
       <a href="/contact" class="btn-secondary">Start a conversation</a>
     </div>
   </div>
