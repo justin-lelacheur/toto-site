@@ -55,6 +55,48 @@
 
     
     
+  
+  
+    <style>
+      @media screen and (min-width: 45em) {
+        .md-main__inner {
+          display: grid !important;
+          grid-template-columns: 12.1rem minmax(0, 1fr) 12.1rem !important;
+          gap: 1rem !important;
+          align-items: start !important;
+        }
+
+        .md-sidebar,
+        [data-md-component="sidebar"] {
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          position: sticky !important;
+          top: 4.8rem !important;
+          height: auto !important;
+          width: 12.1rem !important;
+          flex: 0 0 12.1rem !important;
+        }
+
+        .md-sidebar--primary {
+          grid-column: 1 !important;
+          grid-row: 1 !important;
+        }
+
+        .md-content {
+          grid-column: 2 !important;
+          grid-row: 1 !important;
+          min-width: 0 !important;
+        }
+
+        .md-sidebar--secondary {
+          grid-column: 3 !important;
+          grid-row: 1 !important;
+        }
+      }
+    </style>
+  
+
   </head>
   
   
