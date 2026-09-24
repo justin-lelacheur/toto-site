@@ -730,6 +730,11 @@ html.is-document .md-sidebar--secondary {
         order: 1 !important;
     }
 
+    .md-header__button[for="__search"],
+    .md-search {
+        order: 2 !important;
+    }
+
     html.is-document .md-main__inner,
     html.is-homepage .md-main__inner {
         display: block !important;
