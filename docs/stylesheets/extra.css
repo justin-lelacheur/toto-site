@@ -162,8 +162,21 @@ html.is-homepage .md-header__title {
 }
 
 html.is-homepage .md-header__ellipsis {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
     width: auto !important;
     justify-content: flex-start !important;
+}
+
+html.is-homepage .md-header__topic {
+    position: static !important;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+    z-index: 0 !important;
+    pointer-events: auto !important;
 }
 
 html.is-homepage .md-header__topic:first-child {
