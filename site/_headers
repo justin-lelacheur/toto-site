@@ -10,8 +10,8 @@
   Expires: Thu, 24 Sep 2027 00:00:00 GMT
 
 /stylesheets/*
-  Cache-Control: public, max-age=31536000, immutable
-  Expires: Thu, 24 Sep 2027 00:00:00 GMT
+  Cache-Control: public, max-age=0, must-revalidate
+  Expires: 0
 
 /javascripts/*
   Cache-Control: public, max-age=31536000, immutable
