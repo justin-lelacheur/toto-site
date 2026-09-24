@@ -6,7 +6,11 @@
   },
   "routes": [
     {
-      "pattern": "totofoundry.com/*",
+      "pattern": "totofoundry.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.totofoundry.com",
       "custom_domain": true
     }
   ]
