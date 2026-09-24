@@ -4,6 +4,7 @@ set -eu
 zensical build
 
 find site -name '*.html' -print0 | xargs -0 perl -0pi -e 's#\s*<link rel="preconnect" href="https://fonts\.gstatic\.com" crossorigin>\s*##g; s#\s*<link rel="stylesheet" href="https://fonts\.googleapis\.com/[^>]+>\s*##g; s#\s*<style>:root\{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"\}</style>\s*##g'
+find site -name '*.html' -print0 | xargs -0 perl -0pi -e 's#<label class="md-overlay" for="__drawer" aria-label="Navigation"></label>#<label class="md-overlay" for="__drawer"></label>#g'
 
 python3 - <<'PY'
 from pathlib import Path

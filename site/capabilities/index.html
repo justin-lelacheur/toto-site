@@ -168,7 +168,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         <a href="#__skip" class="md-skip">
@@ -782,16 +782,30 @@
           sidebar.style.removeProperty("transform");
         }
       };
+      const normalizeAccessibility = () => {
+        document.querySelectorAll('[role="combobox"]').forEach((input) => {
+          input.setAttribute("aria-label", "Search");
+          input.setAttribute("aria-expanded", input.getAttribute("aria-expanded") || "false");
+          input.setAttribute("aria-autocomplete", input.getAttribute("aria-autocomplete") || "list");
+          input.setAttribute("aria-controls", input.getAttribute("aria-controls") || "__search-results");
+        });
+        document.querySelectorAll(".md-search button, [data-md-component=\"search\"] button").forEach((button) => {
+          if (!button.textContent.trim() && !button.getAttribute("aria-label")) {
+            button.setAttribute("aria-label", "Search");
+          }
+        });
+      };
       expandSidebar();
       syncDrawer();
+      normalizeAccessibility();
       document.querySelector("#__drawer")?.addEventListener("change", syncDrawer);
       window.matchMedia("(max-width: 44.984375em)").addEventListener("change", syncDrawer);
       new MutationObserver(() => {
         expandSidebar();
         syncDrawer();
+        normalizeAccessibility();
       }).observe(document.body, {
-        attributes: true,
-        attributeFilter: ["style"],
+        childList: true,
         subtree: true
       });
   </script>
