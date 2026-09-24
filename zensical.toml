@@ -4,6 +4,7 @@
 site_name = "toto"
 site_url = "https://toto-site-3pm.pages.dev"
 extra_css = [
+    "stylesheets/fonts.css",
     "stylesheets/extra.css"
 ]
 
@@ -34,6 +35,3 @@ features = [
     "content.code.copy"
 ]
 
-[project.theme.font]
-text = "IBM Plex Sans"
-code = "IBM Plex Mono"
