@@ -2,7 +2,14 @@
 title: "Ontology Fabric"
 ---
 
-# Granular Layer-by-Layer Architectural Specifications
+# Platform Architecture Overview
+
+This page is the architectural map for the platform. The focused specifications provide the detailed treatment for each major plane:
+
+* [Enterprise Ontology Fabric](./Ontology.md)
+* [Server-Driven Experience Studio](./Studio.md)
+* [Autonomous Software Factory](./Factory.md)
+* [Process Orchestration Mesh](./orchestration-mesh.md)
 
 ## 1. The Semantic Ontology Fabric
 The Semantic Ontology Fabric completely decouples the platform's core identity from standard relational database limitations. Rather than fracturing enterprise state data across hundreds of independent tables bound by complex foreign key indices, this layer leverages a graph-theoretic approach to run a live digital twin of the business. Every physical noun, digital asset, human identity, and business process is represented as a first-class vertex, while operational and lifecycle configurations are maintained as strongly typed edges.
