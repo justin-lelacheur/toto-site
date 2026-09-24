@@ -94,12 +94,13 @@
         visibility: visible !important;
         opacity: 1 !important;
         position: fixed !important;
-        top: 51px !important;
+        top: 96px !important;
         left: 0 !important;
         z-index: 20 !important;
         width: 12.1rem !important;
-        height: calc(100vh - 51px) !important;
+        height: calc(100vh - 96px) !important;
         background: #ffffff !important;
+        overflow: visible !important;
       }
 
       .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -109,6 +110,17 @@
       }
 
       .md-sidebar--primary .md-sidebar__inner {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .md-sidebar--primary .md-nav--primary,
+      .md-sidebar--primary .md-nav__list,
+      .md-sidebar--primary .md-nav__item {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         height: auto !important;
         max-height: none !important;
         overflow: visible !important;
@@ -179,11 +191,11 @@
         const sidebar = document.querySelector(".md-sidebar--primary");
         if (sidebar) {
           sidebar.style.setProperty("position", "fixed", "important");
-          sidebar.style.setProperty("top", "51px", "important");
+          sidebar.style.setProperty("top", "96px", "important");
           sidebar.style.setProperty("left", "0", "important");
           sidebar.style.setProperty("z-index", "20", "important");
           sidebar.style.setProperty("width", "12.1rem", "important");
-          sidebar.style.setProperty("height", "calc(100vh - 51px)", "important");
+          sidebar.style.setProperty("height", "calc(100vh - 96px)", "important");
         }
       };
       pinSidebar();
