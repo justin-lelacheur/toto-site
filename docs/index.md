@@ -37,26 +37,65 @@ is_homepage: true
   </div>
 </div>
 
-## From enterprise context to action
+<section class="landing-section landing-section--light">
+  <div class="landing-section__inner">
+    <p class="landing-kicker">A shared operating model</p>
+    <h2>Make enterprise work legible.</h2>
+    <p class="landing-lead">The platform connects the context people need, the decisions they make, and the work that follows. Teams operate from one evolving picture of the business instead of reconciling disconnected tools and handoffs.</p>
+  </div>
+</section>
 
-The platform connects the parts of enterprise work that are usually separated. A shared model gives teams context. Governed decisions turn that context into intent. Operational experiences make the intent usable. Orchestration carries the resulting work through to completion.
+<section class="landing-section landing-section--dark">
+  <div class="landing-section__inner">
+    <p class="landing-kicker">Model the enterprise</p>
+    <h2>Turn business reality into usable context.</h2>
+    <div class="landing-section__grid">
+      <div>
+        <h3>Objects and relationships</h3>
+        <p>Represent the people, assets, accounts, processes, and dependencies that shape each operational decision.</p>
+      </div>
+      <div>
+        <h3>Rules and expertise</h3>
+        <p>Capture policies, specialist reasoning, and operating constraints where they can be applied consistently.</p>
+      </div>
+      <div>
+        <h3>Evidence and change</h3>
+        <p>Keep the history and context behind each update visible to the teams and systems responsible for the outcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-### Connect
+<section class="landing-section landing-section--light">
+  <div class="landing-section__inner">
+    <p class="landing-kicker">From insight to action</p>
+    <h2>Help people and AI move work forward.</h2>
+    <div class="landing-section__grid landing-section__grid--steps">
+      <div><span>01</span><h3>Understand</h3><p>See the current state of the operation and the constraints that matter.</p></div>
+      <div><span>02</span><h3>Decide</h3><p>Apply policy, expertise, and human judgment to the same trusted context.</p></div>
+      <div><span>03</span><h3>Execute</h3><p>Launch governed actions and workflows across the systems where work gets done.</p></div>
+      <div><span>04</span><h3>Improve</h3><p>Use outcomes and feedback to refine the way the organization operates.</p></div>
+    </div>
+  </div>
+</section>
 
-Unify the business objects, relationships, events, and evidence that teams need to understand what is happening.
+<section class="landing-section landing-section--dark">
+  <div class="landing-section__inner landing-section__inner--split">
+    <div>
+      <p class="landing-kicker">Built for consequential work</p>
+      <h2>Coordinate the operations that cannot drift.</h2>
+    </div>
+    <p class="landing-lead">Use the platform across customer operations, financial controls, compliance programs, service delivery, and other workflows where context, accountability, and execution need to stay connected.</p>
+  </div>
+</section>
 
-### Decide
-
-Apply business rules, policies, and human judgment to the same context instead of passing decisions between disconnected tools.
-
-### Act
-
-Give people and AI assistants clear, governed ways to create updates, launch workflows, and coordinate the next step.
-
-### Learn
-
-Trace outcomes across the operating model so teams can improve processes without rebuilding the platform around every change.
-
-## Built for consequential work
-
-Use the platform to coordinate customer operations, financial controls, compliance programs, service delivery, and other workflows where context, accountability, and execution need to stay connected.
+<section class="landing-section landing-section--light landing-section--final">
+  <div class="landing-section__inner">
+    <p class="landing-kicker">Go deeper</p>
+    <h2>See how the operating model is built.</h2>
+    <div class="hero-cta-group">
+      <a href="/docs/Ontology" class="btn-primary">Explore the architecture</a>
+      <a href="/contact" class="btn-secondary">Start a conversation</a>
+    </div>
+  </div>
+</section>

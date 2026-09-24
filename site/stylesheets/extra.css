@@ -350,6 +350,114 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
     color: #4a5568 !important;
 }
 
+.landing-section {
+    width: 100%;
+    padding: 5rem 1.5rem;
+}
+
+.landing-section__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.landing-section--light {
+    background: #ffffff;
+    color: #111111;
+}
+
+.landing-section--dark {
+    background: #8f0a02;
+    color: #ffffff;
+}
+
+.landing-kicker {
+    margin: 0 0 0.75rem;
+    color: #c64a24;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.landing-section--dark .landing-kicker {
+    color: #ffd5ca;
+}
+
+.landing-section h2 {
+    max-width: 760px;
+    margin: 0 0 1.25rem;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: normal;
+}
+
+.landing-section h3 {
+    margin: 0 0 0.65rem;
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.landing-section p {
+    max-width: 680px;
+    margin: 0;
+    line-height: 1.65;
+}
+
+.landing-lead {
+    font-size: 1.2rem;
+}
+
+.landing-section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.landing-section__grid--steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.landing-section__grid--steps span {
+    display: block;
+    margin-bottom: 1.25rem;
+    color: #c64a24;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.landing-section__inner--split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    gap: 4rem;
+    align-items: end;
+}
+
+.landing-section--final {
+    text-align: center;
+}
+
+.landing-section--final h2,
+.landing-section--final p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 44.984375em) {
+    .landing-section {
+        padding: 3.5rem 1.25rem;
+    }
+
+    .landing-section__grid,
+    .landing-section__grid--steps,
+    .landing-section__inner--split {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 /* ==========================================
    6. HOMEPAGE VIEW FRAMEWORK (ISOLATED RED)
    ========================================== */
