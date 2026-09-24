@@ -27,12 +27,8 @@ is_homepage: true
       <p>Turn business rules, policies, and specialist knowledge into decisions that agents can prepare and people can understand, challenge, and approve.</p>
     </div>
     <div class="feature-card">
-      <h3>Experiences people can shape</h3>
-      <p>Give operators a collaborative workspace to set intent, shape processes, and work with agents in the flow of operations.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Work that moves across systems</h3>
-      <p>Coordinate long-running workflows, approvals, and actions across existing tools while keeping human authority and agent activity visible at every step.</p>
+      <h3>Experiences people and agents can shape</h3>
+      <p>Give operators and AI agents a collaborative workspace to set intent, shape processes, and improve the flow of operations together.</p>
     </div>
   </div>
 </div>
