@@ -4,6 +4,8 @@
 
 The **Process Orchestration Mesh** carries shared human and agent decisions through long-running enterprise work. It is designed to rethink the lifecycle around outcomes rather than replay inherited handoffs. People define goals, policies, and escalation boundaries; agents coordinate routine steps and adapt the path while the platform preserves state, approvals, and accountability.
 
+The Mesh is where the new human-agent operating model becomes observable in the business. It receives capabilities prepared by the **[Software Factory](./Factory.md)**, applies the context and constraints defined in the **[Ontology Fabric](./Ontology.md)**, and gives people clear points to supervise, intervene, or change the process itself.
+
 ## Reimplementing Proven Enterprise Logic
 
 The migration path preserves the durable business behavior already proven in Apache OFBiz while replacing its execution model. Existing OFBiz services, entity relationships, approval rules, and lifecycle transitions are mapped into the enterprise ontology and reimplemented as declarative Conductor workflows. Agents can help discover and translate the legacy behavior, but parity tests, policy review, and human approval determine what is allowed into production.

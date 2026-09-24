@@ -6,6 +6,8 @@ The **Autonomous Software Factory** is a governed compilation loop that turns hu
 
 The result is compounding delivery speed across business domains: proven OFBiz behavior supplies the starting logic, the ODA/SID model supplies shared meaning, and Conductor supplies the execution pattern. A new capability can therefore reuse the same domain concepts, controls, and workflow primitives instead of becoming another bespoke application.
 
+The Factory is the bridge between a team's intent and a reusable operational capability. It takes the designs shaped in the **[Experience Studio](./Studio.md)**, validates them against the **[Ontology Fabric](./Ontology.md)**, and prepares approved changes for the **[Orchestration Mesh](./orchestration-mesh.md)** to execute.
+
 ---
 
 ## Key Architectural Features

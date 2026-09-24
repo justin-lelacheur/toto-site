@@ -10,6 +10,8 @@ The traditional enterprise application stack is broken. For decades, organizatio
 
 We build systems where human intent and agent capability reinforce one another under explicit global constraints. People define the outcomes, policies, and exceptions; agents help interpret context, challenge inherited process assumptions, and carry work forward. By combining TM Forum Open Digital Architecture models with governed execution, we give corporations clearer decisions, stronger accountability, and the freedom to redesign how work gets done.
 
+Our platform is designed as a connected set of enablers rather than a collection of isolated features: shared context, human-directed design, agent-assisted development, and accountable execution. Together they help organizations redefine who does the work and how the work is organized.
+
 ---
 
 ## Core Competency Planes

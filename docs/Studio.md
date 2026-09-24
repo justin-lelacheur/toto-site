@@ -4,6 +4,8 @@
 
 The **Server-Driven Experience Studio** gives people and agents a shared workspace for shaping operational experiences. Operators describe the outcome they want through visual design or conversation; agents can propose a better sequence of work, identify missing context, and prepare changes for review without taking control away from the people accountable for the outcome.
 
+The Studio is where human expertise becomes an explicit operating design. That design becomes structured input for the **[Software Factory](./Factory.md)**, while the resulting approved experience remains grounded in the **[Ontology Fabric](./Ontology.md)**.
+
 ---
 
 ## Key Architectural Features

@@ -4,6 +4,8 @@
 
 The **Enterprise Ontology Fabric** gives people and AI agents a shared, evolving picture of the enterprise. It connects business objects, relationships, events, and evidence so teams can understand the same situation, challenge the same assumptions, and redesign work around the outcome instead of preserving every inherited handoff.
 
+This shared context is the foundation for the rest of the platform: people and agents can design against the same objects, evaluate the same constraints, and carry decisions into governed workflows without translating meaning between disconnected systems.
+
 ---
 
 ## Key Architectural Features
