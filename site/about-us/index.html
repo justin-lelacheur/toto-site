@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://toto-site-3pm.pages.dev/about-us/">
+        <link rel="canonical" href="https://www.totofoundry.com/about-us/">
       
       
         <link rel="prev" href="../ontology-fabric/">
@@ -143,6 +143,7 @@
           width: min(18rem, 85vw) !important;
           height: 100vh !important;
           transform: translateX(-105%) !important;
+          transition: none !important;
           background: #ffffff !important;
           overflow: hidden !important;
         }
@@ -895,8 +896,27 @@
           }
         });
       };
+      const syncDrawer = () => {
+        const drawer = document.querySelector("#__drawer");
+        const sidebar = document.querySelector(".md-sidebar--primary");
+        if (!drawer || !sidebar) return;
+        if (window.matchMedia("(max-width: 44.984375em)").matches) {
+          const transform = drawer.checked ? "translateX(0)" : "translateX(-105%)";
+          if (sidebar.style.getPropertyValue("transform") !== transform) {
+            sidebar.style.setProperty("transform", transform, "important");
+          }
+        } else {
+          sidebar.style.removeProperty("transform");
+        }
+      };
       expandSidebar();
-      new MutationObserver(expandSidebar).observe(document.body, {
+      syncDrawer();
+      document.querySelector("#__drawer")?.addEventListener("change", syncDrawer);
+      window.matchMedia("(max-width: 44.984375em)").addEventListener("change", syncDrawer);
+      new MutationObserver(() => {
+        expandSidebar();
+        syncDrawer();
+      }).observe(document.body, {
         attributes: true,
         attributeFilter: ["style"],
         subtree: true

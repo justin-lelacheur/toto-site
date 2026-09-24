@@ -573,6 +573,7 @@ html.is-document .md-sidebar--secondary {
         width: min(18rem, 85vw) !important;
         height: 100vh !important;
         transform: translateX(-105%) !important;
+        transition: none !important;
         background: #ffffff !important;
         overflow: hidden !important;
     }
