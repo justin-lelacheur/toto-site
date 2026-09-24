@@ -1,5 +1,14 @@
 /*
   Cache-Control: public, max-age=0, must-revalidate
 
-/docs/images/*
-  Cache-Control: public, max-age=31556952, immutable
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/stylesheets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/javascripts/*
+  Cache-Control: public, max-age=31536000, immutable
