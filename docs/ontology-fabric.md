@@ -13,6 +13,10 @@ This page is the architectural map for the platform. The focused specifications 
 
 The architecture also provides a controlled path for carrying forward proven Apache OFBiz logic. OFBiz entities, services, rules, and lifecycle semantics become migration inputs: the ontology preserves their business meaning, the Factory translates them, and Conductor executes the approved reimplementation as a versioned workflow.
 
+## Why the Combination Accelerates Delivery
+
+Apache OFBiz contributes proven ERP behavior instead of forcing every domain to start from a blank page. TM Forum Open Digital Architecture and SID provide a shared information model so that behavior can be expressed against reusable business concepts rather than one-off schemas. Conductor OSS turns those modeled capabilities into governed, long-running workflows. Together, the three layers let a team assemble and adapt features across domains—such as customer, billing, order, or service operations—without rebuilding the semantic model, process controls, and execution path each time.
+
 ## 1. The Semantic Ontology Fabric
 The Semantic Ontology Fabric completely decouples the platform's core identity from standard relational database limitations. Rather than fracturing enterprise state data across hundreds of independent tables bound by complex foreign key indices, this layer leverages a graph-theoretic approach to run a live digital twin of the business. Every physical noun, digital asset, human identity, and business process is represented as a first-class vertex, while operational and lifecycle configurations are maintained as strongly typed edges.
 
