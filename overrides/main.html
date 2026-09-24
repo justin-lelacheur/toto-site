@@ -175,8 +175,23 @@
           }
         });
       };
+      const pinSidebar = () => {
+        const sidebar = document.querySelector(".md-sidebar--primary");
+        if (sidebar) {
+          sidebar.style.setProperty("position", "fixed", "important");
+          sidebar.style.setProperty("top", "51px", "important");
+          sidebar.style.setProperty("left", "0", "important");
+          sidebar.style.setProperty("z-index", "20", "important");
+          sidebar.style.setProperty("width", "12.1rem", "important");
+          sidebar.style.setProperty("height", "calc(100vh - 51px)", "important");
+        }
+      };
+      pinSidebar();
       expandSidebar();
-      new MutationObserver(expandSidebar).observe(document.body, {
+      new MutationObserver(() => {
+        pinSidebar();
+        expandSidebar();
+      }).observe(document.body, {
         attributes: true,
         attributeFilter: ["style"],
         subtree: true
