@@ -458,12 +458,12 @@ html.is-document .md-tabs__link {
    ========================================== */
 /* Documentation navigation styling inspired by Zensical's restrained rails */
 html.is-document .md-sidebar--primary {
-    border-right: 1px solid rgba(25, 25, 25, 0.1);
+    border-right: none !important;
     padding-right: 1rem !important;
 }
 
 html.is-document .md-sidebar--secondary {
-    border-left: 1px solid rgba(25, 25, 25, 0.1);
+    border-left: none !important;
     padding-left: 1rem !important;
 }
 
