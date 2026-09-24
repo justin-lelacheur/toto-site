@@ -532,9 +532,11 @@ html.is-document .md-sidebar--secondary .md-nav__link--active {
     color: #a23b1f !important;
 }
 
-html.is-homepage .md-sidebar,
-html.is-homepage [data-md-component="sidebar"] {
-    display: none !important;
+@media screen and (min-width: 45em) {
+    html.is-homepage .md-sidebar,
+    html.is-homepage [data-md-component="sidebar"] {
+        display: none !important;
+    }
 }
 
 html.is-document .md-sidebar,
@@ -561,11 +563,13 @@ html.is-document .md-sidebar--secondary {
 }
 
 @media screen and (max-width: 44.984375em) {
-    html.is-document .md-main__inner {
+    html.is-document .md-main__inner,
+    html.is-homepage .md-main__inner {
         display: block !important;
     }
 
-    html.is-document .md-sidebar--primary {
+    html.is-document .md-sidebar--primary,
+    html.is-homepage .md-sidebar--primary {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -578,12 +582,15 @@ html.is-document .md-sidebar--secondary {
         overflow: hidden !important;
     }
 
-    html.is-document #__drawer:checked ~ .md-container .md-sidebar--primary {
+    html.is-document #__drawer:checked ~ .md-container .md-sidebar--primary,
+    html.is-homepage #__drawer:checked ~ .md-container .md-sidebar--primary {
         transform: translateX(0) !important;
     }
 
     html.is-document .md-sidebar--primary .md-sidebar__scrollwrap,
-    html.is-document .md-sidebar--primary .md-sidebar__inner {
+    html.is-document .md-sidebar--primary .md-sidebar__inner,
+    html.is-homepage .md-sidebar--primary .md-sidebar__scrollwrap,
+    html.is-homepage .md-sidebar--primary .md-sidebar__inner {
         width: 100% !important;
         height: 100% !important;
         max-height: none !important;
@@ -618,6 +625,8 @@ html.is-document .md-sidebar--secondary {
 
     html.is-document .md-sidebar--primary .md-sidebar__scrollwrap,
     html.is-document .md-sidebar--primary .md-sidebar__inner,
+    html.is-homepage .md-sidebar--primary .md-sidebar__scrollwrap,
+    html.is-homepage .md-sidebar--primary .md-sidebar__inner,
     html.is-document .md-sidebar--secondary .md-sidebar__scrollwrap,
     html.is-document .md-sidebar--secondary .md-sidebar__inner {
         position: static !important;

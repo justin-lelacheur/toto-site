@@ -49,6 +49,35 @@
           display: none !important;
         }
       }
+
+      @media screen and (max-width: 44.984375em) {
+        .md-sidebar--primary {
+          display: block !important;
+          position: fixed !important;
+          top: 0 !important;
+          left: 0 !important;
+          z-index: 10 !important;
+          width: min(18rem, 85vw) !important;
+          height: 100vh !important;
+          transform: translateX(-105%) !important;
+          transition: none !important;
+          background: #ffffff !important;
+          overflow: hidden !important;
+        }
+
+        #__drawer:checked ~ .md-container .md-sidebar--primary {
+          transform: translateX(0) !important;
+        }
+
+        .md-sidebar--primary .md-sidebar__scrollwrap,
+        .md-sidebar--primary .md-sidebar__inner {
+          width: 100% !important;
+          height: 100% !important;
+          max-height: none !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+        }
+      }
     </style>
   
 
@@ -645,7 +674,44 @@
     
   <script>
     document.documentElement.classList.add("is-homepage");
-    
+      const expandSidebar = () => {
+        document.querySelectorAll(".md-sidebar__scrollwrap, .md-sidebar__inner").forEach((element) => {
+          if (element.style.getPropertyValue("height") !== "auto") {
+            element.style.setProperty("height", "auto", "important");
+          }
+          if (element.style.getPropertyValue("max-height") !== "none") {
+            element.style.setProperty("max-height", "none", "important");
+          }
+          if (element.style.getPropertyValue("overflow") !== "visible") {
+            element.style.setProperty("overflow", "visible", "important");
+          }
+        });
+      };
+      const syncDrawer = () => {
+        const drawer = document.querySelector("#__drawer");
+        const sidebar = document.querySelector(".md-sidebar--primary");
+        if (!drawer || !sidebar) return;
+        if (window.matchMedia("(max-width: 44.984375em)").matches) {
+          const transform = drawer.checked ? "translateX(0)" : "translateX(-105%)";
+          if (sidebar.style.getPropertyValue("transform") !== transform) {
+            sidebar.style.setProperty("transform", transform, "important");
+          }
+        } else {
+          sidebar.style.removeProperty("transform");
+        }
+      };
+      expandSidebar();
+      syncDrawer();
+      document.querySelector("#__drawer")?.addEventListener("change", syncDrawer);
+      window.matchMedia("(max-width: 44.984375em)").addEventListener("change", syncDrawer);
+      new MutationObserver(() => {
+        expandSidebar();
+        syncDrawer();
+      }).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["style"],
+        subtree: true
+      });
   </script>
 
   </body>
