@@ -6,9 +6,9 @@ title: "Contact"
 
 ## 1. Technical Inbound Communication Gateways
 For active corporate partners, enterprise evaluation teams, or external procurement units exploring governed collaboration between people and AI agents, our communication channels are managed through specialized routing paths:
-* **General Architecture Inquiries:** `solutions@yourbrand.com`
-* **Cloud Infrastructure & Staging Support:** `mesh-ops@yourbrand.com`
-* **Security, Compliance, & Procurement Queries:** `trust-center@yourbrand.com`
+* **General Architecture Inquiries:** `contact@totofoundry.com`
+* **Cloud Infrastructure & Staging Support:** `contact@totofoundry.com`
+* **Security, Compliance, & Procurement Queries:** `contact@totofoundry.com`
 
 ## 2. Self-Service Support Deflection Sequence
 Before opening a high-priority assistance ticket, our platform infrastructure routes all inquiries through a automated self-service lookup matrix to accelerate issue resolution:
