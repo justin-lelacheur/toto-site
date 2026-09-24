@@ -532,6 +532,21 @@ html.is-document .md-sidebar--secondary .md-nav__link--active {
     color: #a23b1f !important;
 }
 
+html.is-homepage .md-sidebar--primary .md-nav__link {
+    color: rgba(25, 25, 25, 0.68) !important;
+}
+
+html.is-homepage .md-sidebar--primary .md-nav__link:hover {
+    background-color: rgba(25, 25, 25, 0.06) !important;
+    color: #111111 !important;
+}
+
+html.is-homepage .md-sidebar--primary .md-nav__link--active {
+    background-color: rgba(198, 74, 36, 0.12) !important;
+    color: #a23b1f !important;
+    font-weight: 700 !important;
+}
+
 @media screen and (min-width: 45em) {
     html.is-homepage .md-sidebar,
     html.is-homepage [data-md-component="sidebar"] {
