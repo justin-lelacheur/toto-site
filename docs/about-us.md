@@ -1,21 +1,24 @@
+# About Us
+
+We are a specialized collective of enterprise software architects, compiler engineers, and distributed systems pioneers dedicated to helping people and AI agents work together inside accountable enterprise systems.
+
 ---
-title: "About Us"
+
+## Our Engineering Philosophy
+
+The traditional enterprise application stack is broken. For decades, organizations have been forced to run fluid, complex adaptive businesses on top of static, hardcoded relational software blocks. Our laboratory was founded on a simple premise: **enterprise software should amplify human judgment, not hide it.**
+
+We build systems where human intent and agent capability reinforce one another under explicit global constraints. People define the outcomes, policies, and exceptions; agents help interpret context and carry work forward. By combining TM Forum Open Digital Architecture models with governed execution, we give corporations clearer decisions, stronger accountability, and more adaptable operations.
+
 ---
 
-# Corporate Identity, Team, & Strategic Mission
+## Core Competency Planes
 
-## 1. Executive Vision and Brand Roots
-Every scaling disruptive enterprise requires a foundational identity anchor that separates its long-term market trajectory from transient product features. This organization was built on a singular premise: to dismantle the structural computing inefficiencies that cripple modern technical operations. We view our mission not as a series of incremental software releases, but as a systematic campaign to rewrite the rules of infrastructure agility, system security, and organizational alignment.
+### 1. Model-Driven Architecture (MDA)
+We enforce strict mapping pipelines that convert abstract industry data dictionaries (TMF SID) straight into running transactional realities, completely neutralizing architecture drift.
 
-Our core core beliefs drive our product development tracks top-down:
-* **Radical Transparency:** We eliminate abstract technical masking or proprietary vendor lock-in by designing open, contract-driven, and fully auditable architectures.
-* **Continuous Partnership:** We believe technology must serve as a high-leverage utility extension of human intention rather than a black-box automated proxy.
-* **Engineering Rigor:** We enforce mathematical, unyielding verification constraints across all operational layers to assure total stability under load.
+### 2. Autonomous Compiler Engineering
+Our research focuses on building safe, contract-bound Abstract Syntax Tree manipulation loops that allow AI agents to write production-grade code without introducing human liabilities.
 
-## 2. Leadership and Core Domain Expertise
-Our execution matrix is guided by a cross-functional group of technical architects, systems engineers, and operational directors with decades of combined experience building high-density software environments. By blending abstract engineering discipline with real-world enterprise domain insights, our leadership circle bridges the gap between complex software primitives and clear, strategic business returns.
-
-We organize our internal product and research divisions across three specialized pillars to maintain complete project velocity:
-* **The Architecture Research Group:** Investigates graph-theoretic runtime twins, semantic ontology dictionaries, and top-down schema validation rules.
-* **The Software Factory Team:** Refines tokenized abstract syntax tree compilation pipelines and secure micro-virtual machine testing sandboxes.
-* **The Infrastructure Mesh Pool:** Manages cloud-native event fabrics, scale-to-zero compute meshes, and sub-second communication channels.
+### 3. Distributed Event Orchestration
+We specialize in high-density event mesh designs, CQRS state segregation, and fault-tolerant Saga orchestration models running over enterprise Kubernetes clusters.

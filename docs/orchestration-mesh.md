@@ -2,7 +2,7 @@
 
 ## High-Density, Scale-to-Zero Distributed Core Automation
 
-The **Process Orchestration Mesh** drives the physical execution of your core enterprise business logic, coordinating stateless microservice workloads and preserving operational states safely across long-running transactional lifecycles.
+The **Process Orchestration Mesh** carries shared human and agent decisions through long-running enterprise work. People define goals, policies, and escalation boundaries; agents coordinate routine steps while the platform preserves state, approvals, and accountability across each lifecycle.
 
 ---
 
@@ -20,7 +20,7 @@ The **Process Orchestration Mesh** drives the physical execution of your core en
 
 * **Massive Infrastructure Cost Reductions:** By compiling into native binaries and scaling compute clusters down to zero when idle, organization hosting fees drop to absolute minimums.
 * **Zero Cold-Start Bottlenecks:** Native GraalVM binaries bypass standard Java virtual machine initialization delays, processing surprise spikes in transaction volumes instantly with zero performance lag.
-* **Fault-Tolerant Operational Integrity:** Complex multi-stage business workflows—such as financial reconciliation audits or onboarding processes—are completely protected against middle-of-the-night server failures or distributed network drops.
+* **Accountable operational continuity:** Complex multi-stage workflows remain traceable through failures, escalations, agent actions, and human approvals, including financial reconciliation and onboarding processes.
 
 ---
 

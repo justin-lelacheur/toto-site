@@ -4,7 +4,7 @@ title: "Ontology Fabric"
 
 # Platform Architecture Overview
 
-This page is the architectural map for the platform. The focused specifications provide the detailed treatment for each major plane:
+This page is the architectural map for the platform. The focused specifications provide the detailed treatment for each major plane. Together, these layers let people and agents share context, make governed decisions, and carry work through to accountable outcomes:
 
 * [Enterprise Ontology Fabric](./Ontology.md)
 * [Server-Driven Experience Studio](./Studio.md)

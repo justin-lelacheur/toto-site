@@ -2,7 +2,7 @@
 
 ## Model-Driven Compilation with Hypervisor Isolation
 
-The **Autonomous Software Factory** is a continuous compilation loop that converts user intents into production-grade Java enterprise applications without human programming intervention.
+The **Autonomous Software Factory** is a governed compilation loop that turns human intent into production-grade software changes. Agents handle analysis, code preparation, and verification inside bounded environments; people define the goal, review the evidence, and authorize release.
 
 ---
 
@@ -17,6 +17,6 @@ The **Autonomous Software Factory** is a continuous compilation loop that conver
 
 ## Core Business Benefits
 
-* **Eradication of the Engineering Backlog:** Shifts development cycles from weeks of manual programming down to milliseconds of automated compilation, completely eliminating software engineering debt.
+* **Higher-leverage engineering work:** Shifts repetitive analysis and verification to bounded agents so engineers can focus on system intent, exceptions, and the decisions that require expertise.
 * **Total Infrastructure Immunity:** Because code generation runs inside hard microVM hypervisor boundaries, malformed methods or intentional code injection risks are safely contained and programmatically blocked.
 * **Flawless Functional Code Safety:** The software factory cannot build loose, undocumented APIs; it can only write logic routines that precisely fit within the pre-wired boundaries of your enterprise data contracts.
