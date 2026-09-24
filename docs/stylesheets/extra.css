@@ -56,8 +56,8 @@
 .md-header__logo img,
 [class*="header"] a img,
 [class*="header"] img {
-    height: 3rem !important;
-    max-height: 48px !important;
+    height: 4rem !important;
+    max-height: 64px !important;
     width: auto !important;
     display: inline-block !important;
 }
