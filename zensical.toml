@@ -24,7 +24,7 @@ nav = [
 [project.theme]
 name = "zensical"
 custom_dir = "overrides"
-logo = "images/toto-site-logo-black-med.png"
+logo = "images/toto-site-logo-black-med.webp"
 favicon = "images/toto-favicon-48.png"
 
 features = [
