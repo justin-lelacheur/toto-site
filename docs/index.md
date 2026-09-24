@@ -6,12 +6,12 @@ is_homepage: true
 
 <div class="zensical-hero">
   <div class="hero-inner">
-    <span class="hero-eyebrow">Production-ready enterprise architecture</span>
+    <span class="hero-eyebrow">A governed operating system for enterprise work</span>
     <h1>The Autonomous Enterprise Operating System</h1>
-    <p class="hero-tagline">Eliminating customization debt and accelerating operational velocity through model-driven execution.</p>
+    <p class="hero-tagline">Connect enterprise data, encode decisions, and execute governed workflows across the systems your organization already runs.</p>
     <div class="hero-cta-group">
-      <a href="/docs/Ontology" class="btn-primary">Explore Platform Specs</a>
-      <a href="/contact" class="btn-secondary">Initiative Briefing</a>
+      <a href="/docs/Ontology" class="btn-primary">Explore the platform</a>
+      <a href="/contact" class="btn-secondary">Start a conversation</a>
     </div>
   </div>
 </div>
@@ -19,34 +19,44 @@ is_homepage: true
 <div class="zensical-features">
   <div class="features-grid">
     <div class="feature-card">
-      <h3>The Enterprise Ontology Fabric</h3>
-      <p>A living graph-theoretic digital twin that gives the enterprise a shared operational language.</p>
+      <h3>One shared enterprise model</h3>
+      <p>Bring people, processes, assets, and relationships into a common operational picture that every team can trust.</p>
     </div>
     <div class="feature-card">
-      <h3>The Server-Driven Experience Studio</h3>
-      <p>A low-code, conversational canvas for designing governed operational experiences.</p>
+      <h3>Decisions with context</h3>
+      <p>Turn business rules, policies, and specialist knowledge into decisions that are explainable, repeatable, and ready to act.</p>
     </div>
     <div class="feature-card">
-      <h3>The Autonomous Software Factory</h3>
-      <p>A model-driven compilation loop that turns specifications into verified service changes.</p>
+      <h3>Experiences people can shape</h3>
+      <p>Give operators a collaborative workspace to design processes, adjust experiences, and work with AI in the flow of operations.</p>
     </div>
     <div class="feature-card">
-      <h3>The Process Orchestration Mesh</h3>
-      <p>A distributed workflow runtime for resilient, long-running enterprise processes.</p>
+      <h3>Work that moves across systems</h3>
+      <p>Coordinate long-running workflows, approvals, and actions across existing tools while keeping governance visible at every step.</p>
     </div>
   </div>
 </div>
 
-## Empowering the Modern Digital Enterprise
+## From enterprise context to action
 
-Traditional enterprise application suites trap organizations inside a compounding cycle of legacy technical debt. Every local customization breaks downstream upgrade paths, locking operations into costly engineering backlogs.
+The platform connects the parts of enterprise work that are usually separated. A shared model gives teams context. Governed decisions turn that context into intent. Operational experiences make the intent usable. Orchestration carries the resulting work through to completion.
 
-A-EOS treats software capabilities as an **emergent phenomenon**. Business parameters and workflow guidelines are no longer hardcoded into rigid software blocks. Instead, configurations exist as flexible, contract-bound specifications that are dynamically updated, validated, and orchestrated in response to active human operations.
+### Connect
 
----
+Unify the business objects, relationships, events, and evidence that teams need to understand what is happening.
 
-### Global Platform Invariants
+### Decide
 
-* **Contract-Bound Logic Construction:** AI software engines are strictly sandboxed by data models, completely eliminating unguided code mutations or API drift.
-* **CQRS Backbone Segregation:** Read operations sweep through unified, high-performance graph mappings, while write mutations publish straight to append-only message ledgers.
-* **Model-Process Language Alignment:** Standardizes cross-subsidiary communication pipelines out of the box using verified industry definitions to remove operational data silos from day one.
+Apply business rules, policies, and human judgment to the same context instead of passing decisions between disconnected tools.
+
+### Act
+
+Give people and AI assistants clear, governed ways to create updates, launch workflows, and coordinate the next step.
+
+### Learn
+
+Trace outcomes across the operating model so teams can improve processes without rebuilding the platform around every change.
+
+## Built for consequential work
+
+Use the platform to coordinate customer operations, financial controls, compliance programs, service delivery, and other workflows where context, accountability, and execution need to stay connected.
