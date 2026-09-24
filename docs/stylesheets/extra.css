@@ -413,6 +413,33 @@ html.is-homepage .md-footer__direction {
     }
 }
 
+/* Keep document rails visible even when a browser delays page-class scripts. */
+@media screen and (min-width: 45em) {
+    .md-sidebar,
+    [data-md-component="sidebar"] {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: sticky !important;
+        top: 4.8rem !important;
+        height: auto !important;
+        width: 12.1rem !important;
+        flex: 0 0 12.1rem !important;
+    }
+
+    .md-sidebar__scrollwrap,
+    .md-sidebar__inner {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
+    }
+}
+
 html.is-document .md-tabs {
     background-color: #ffffff !important;
     color: #111111 !important;
