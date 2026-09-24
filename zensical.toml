@@ -2,7 +2,7 @@
 
 [project]
 site_name = "toto"
-site_url = "https://toto-site-3pm.pages.dev"
+site_url = "https://www.totofoundry.com"
 extra_css = [
     "stylesheets/fonts.css",
     "stylesheets/extra.css"
