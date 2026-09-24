@@ -176,7 +176,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#granular-layer-by-layer-architectural-specifications" class="md-skip">
+        <a href="#platform-architecture-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -868,7 +868,14 @@
     
                   
 
-<h1 id="granular-layer-by-layer-architectural-specifications">Granular Layer-by-Layer Architectural Specifications<a class="headerlink" href="#granular-layer-by-layer-architectural-specifications" title="Permanent link">&para;</a></h1>
+<h1 id="platform-architecture-overview">Platform Architecture Overview<a class="headerlink" href="#platform-architecture-overview" title="Permanent link">&para;</a></h1>
+<p>This page is the architectural map for the platform. The focused specifications provide the detailed treatment for each major plane:</p>
+<ul>
+<li><a href=".././Ontology/">Enterprise Ontology Fabric</a></li>
+<li><a href=".././Studio/">Server-Driven Experience Studio</a></li>
+<li><a href=".././Factory/">Autonomous Software Factory</a></li>
+<li><a href=".././orchestration-mesh/">Process Orchestration Mesh</a></li>
+</ul>
 <h2 id="1-the-semantic-ontology-fabric">1. The Semantic Ontology Fabric<a class="headerlink" href="#1-the-semantic-ontology-fabric" title="Permanent link">&para;</a></h2>
 <p>The Semantic Ontology Fabric completely decouples the platform's core identity from standard relational database limitations. Rather than fracturing enterprise state data across hundreds of independent tables bound by complex foreign key indices, this layer leverages a graph-theoretic approach to run a live digital twin of the business. Every physical noun, digital asset, human identity, and business process is represented as a first-class vertex, while operational and lifecycle configurations are maintained as strongly typed edges.</p>
 <p>Data mutation events are never written directly to the active graph topology. Instead, inbound adjustments are published to an append-only mutation stream. A high-throughput streaming ingestion engine captures these records and executes strict validation rules using highly concurrent virtual threads. To support advanced search logic and allow AI agents or voice companions to navigate the system using natural language queries, the database platform layers a semantic vector module over the data cores, converting text definitions and node variables into high-dimensional vector coordinates.</p>

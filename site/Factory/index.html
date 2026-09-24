@@ -8,33 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://www.totofoundry.com/">
+        <link rel="canonical" href="https://www.totofoundry.com/Factory/">
       
       
-      
-        <link rel="next" href="./strategic-vision/">
       
       
         
       
       
-      <link rel="icon" href="./images/toto-favicon-48.png">
+      <link rel="icon" href="../images/toto-favicon-48.png">
       <meta name="generator" content="zensical-0.0.64">
     
     
       
-        <title>The Autonomous Enterprise Operating System (A-EOS) - toto</title>
+        <title>The Autonomous Software Factory - toto</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.40d3fdbb.min.css"><link rel="preload" href="./stylesheets/fonts.css?v=20260924" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./stylesheets/fonts.css?v=20260924"></noscript>
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.40d3fdbb.min.css"><link rel="preload" href="../stylesheets/fonts.css?v=20260924" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../stylesheets/fonts.css?v=20260924"></noscript>
     
-      <link rel="preload" href="./stylesheets/extra.css?v=20260924" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./stylesheets/extra.css?v=20260924"></noscript>
+      <link rel="preload" href="../stylesheets/extra.css?v=20260924" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../stylesheets/extra.css?v=20260924"></noscript>
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -44,15 +42,96 @@
   
     <style>
       @media screen and (min-width: 45em) {
+        .md-main__inner {
+          display: grid !important;
+          grid-template-columns: 12.1rem minmax(0, 1fr) 12.1rem !important;
+          gap: 1rem !important;
+          align-items: start !important;
+        }
+
         .md-sidebar,
         [data-md-component="sidebar"] {
-          display: none !important;
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          position: sticky !important;
+          top: 4.8rem !important;
+          height: auto !important;
+          width: 12.1rem !important;
+          flex: 0 0 12.1rem !important;
+        }
+
+        .md-sidebar__scrollwrap,
+        .md-sidebar__inner {
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+        }
+
+        .md-sidebar--primary {
+          grid-column: 1 !important;
+          grid-row: 1 !important;
+        }
+
+        .md-content {
+          grid-column: 2 !important;
+          grid-row: 1 !important;
+          min-width: 0 !important;
+        }
+
+        .md-sidebar--secondary {
+          grid-column: 3 !important;
+          grid-row: 1 !important;
         }
       }
 
+      .md-sidebar__scrollwrap,
+      .md-sidebar__inner {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .md-sidebar--primary {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: sticky !important;
+        top: 4.8rem !important;
+        width: 12.1rem !important;
+        height: auto !important;
+        flex: 0 0 12.1rem !important;
+      }
+
+      .md-sidebar--primary .md-sidebar__scrollwrap {
+        height: 100% !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .md-sidebar--primary .md-sidebar__inner {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .md-sidebar--primary .md-nav--primary,
+      .md-sidebar--primary .md-nav__list,
+      .md-sidebar--primary .md-nav__item {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
       @media screen and (max-width: 44.984375em) {
-        .md-sidebar--primary {
+        .md-main__inner {
           display: block !important;
+        }
+
+        .md-sidebar--primary {
           position: fixed !important;
           top: 0 !important;
           left: 0 !important;
@@ -77,15 +156,6 @@
           overflow-y: auto !important;
           overflow-x: hidden !important;
         }
-
-        .md-sidebar--primary .md-nav__link {
-          color: rgba(25, 25, 25, 0.68) !important;
-        }
-
-        .md-sidebar--primary .md-nav__link--active {
-          background-color: rgba(198, 74, 36, 0.12) !important;
-          color: #a23b1f !important;
-        }
       }
     </style>
   
@@ -102,7 +172,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#empowering-the-modern-digital-enterprise" class="md-skip">
+        <a href="#the-autonomous-software-factory" class="md-skip">
           Skip to content
         </a>
       
@@ -116,9 +186,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="" title="toto" class="md-header__button md-logo" aria-label="toto" data-md-component="logo">
+    <a href="./.." title="toto" class="md-header__button md-logo" aria-label="toto" data-md-component="logo">
       
-  <img src="./images/toto-site-logo-black-med.png" alt="toto">
+  <img src="../images/toto-site-logo-black-med.png" alt="toto">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -135,7 +205,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Autonomous Enterprise Operating System (A-EOS)
+              The Autonomous Software Factory
             
           </span>
         </div>
@@ -181,11 +251,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="./.." class="md-tabs__link">
         
   
   Home
@@ -201,7 +269,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./strategic-vision/" class="md-tabs__link">
+      <a href="../strategic-vision/" class="md-tabs__link">
         
   
   Strategic Vision
@@ -222,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="./ontology-fabric/" class="md-tabs__link">
+        <a href="../ontology-fabric/" class="md-tabs__link">
           
   
   Platform Specifications
@@ -244,7 +312,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="./about-us/" class="md-tabs__link">
+        <a href="../about-us/" class="md-tabs__link">
           
   
   Company & Insights
@@ -261,7 +329,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./contact/" class="md-tabs__link">
+      <a href="../contact/" class="md-tabs__link">
         
   
   Communication Hub
@@ -293,9 +361,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="" title="toto" class="md-nav__button md-logo" aria-label="toto" data-md-component="logo">
+    <a href="./.." title="toto" class="md-nav__button md-logo" aria-label="toto" data-md-component="logo">
       
-  <img src="./images/toto-site-logo-black-med.png" alt="toto">
+  <img src="../images/toto-site-logo-black-med.png" alt="toto">
 
     </a>
     toto
@@ -307,34 +375,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Home
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
         
   
   
@@ -349,53 +393,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#empowering-the-modern-digital-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Empowering the Modern Digital Enterprise
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Empowering the Modern Digital Enterprise">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#global-platform-invariants" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Global Platform Invariants
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -407,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./strategic-vision/" class="md-nav__link">
+      <a href="../strategic-vision/" class="md-nav__link">
         
   
   
@@ -484,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./ontology-fabric/" class="md-nav__link">
+      <a href="../ontology-fabric/" class="md-nav__link">
         
   
   
@@ -570,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./about-us/" class="md-nav__link">
+      <a href="../about-us/" class="md-nav__link">
         
   
   
@@ -605,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./contact/" class="md-nav__link">
+      <a href="../contact/" class="md-nav__link">
         
   
   
@@ -638,6 +635,8 @@
                     
                     
                     
+                      
+                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -653,6 +652,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -661,30 +662,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#empowering-the-modern-digital-enterprise" class="md-nav__link">
+  <a href="#model-driven-compilation-with-hypervisor-isolation" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Empowering the Modern Digital Enterprise
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Empowering the Modern Digital Enterprise">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#global-platform-invariants" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Global Platform Invariants
+        Model-Driven Compilation with Hypervisor Isolation
       </span>
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#key-architectural-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Key Architectural Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-business-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Core Business Benefits
+      </span>
+    </span>
+  </a>
   
 </li>
       
@@ -702,51 +708,42 @@
               <article class="md-content__inner md-typeset">
                 
   
-    <div class="zensical-landing-wrap">
-      <div class="zensical-hero">
-  <div class="hero-inner">
-    <span class="hero-eyebrow">Production-ready enterprise architecture</span>
-    <h1>The Autonomous Enterprise Operating System</h1>
-    <p class="hero-tagline">Eliminating customization debt and accelerating operational velocity through model-driven execution.</p>
-    <div class="hero-cta-group">
-      <a href="/docs/Ontology" class="btn-primary">Explore Platform Specs</a>
-      <a href="/contact" class="btn-secondary">Initiative Briefing</a>
-    </div>
-  </div>
-</div>
+    
+                  
 
-<div class="zensical-features">
-  <div class="features-grid">
-    <div class="feature-card">
-      <h3>The Enterprise Ontology Fabric</h3>
-      <p>A living graph-theoretic digital twin that gives the enterprise a shared operational language.</p>
-    </div>
-    <div class="feature-card">
-      <h3>The Server-Driven Experience Studio</h3>
-      <p>A low-code, conversational canvas for designing governed operational experiences.</p>
-    </div>
-    <div class="feature-card">
-      <h3>The Autonomous Software Factory</h3>
-      <p>A model-driven compilation loop that turns specifications into verified service changes.</p>
-    </div>
-    <div class="feature-card">
-      <h3>The Process Orchestration Mesh</h3>
-      <p>A distributed workflow runtime for resilient, long-running enterprise processes.</p>
-    </div>
-  </div>
-</div>
-
-<h2 id="empowering-the-modern-digital-enterprise">Empowering the Modern Digital Enterprise<a class="headerlink" href="#empowering-the-modern-digital-enterprise" title="Permanent link">&para;</a></h2>
-<p>Traditional enterprise application suites trap organizations inside a compounding cycle of legacy technical debt. Every local customization breaks downstream upgrade paths, locking operations into costly engineering backlogs.</p>
-<p>A-EOS treats software capabilities as an <strong>emergent phenomenon</strong>. Business parameters and workflow guidelines are no longer hardcoded into rigid software blocks. Instead, configurations exist as flexible, contract-bound specifications that are dynamically updated, validated, and orchestrated in response to active human operations.</p>
+<h1 id="the-autonomous-software-factory">The Autonomous Software Factory<a class="headerlink" href="#the-autonomous-software-factory" title="Permanent link">&para;</a></h1>
+<h2 id="model-driven-compilation-with-hypervisor-isolation">Model-Driven Compilation with Hypervisor Isolation<a class="headerlink" href="#model-driven-compilation-with-hypervisor-isolation" title="Permanent link">&para;</a></h2>
+<p>The <strong>Autonomous Software Factory</strong> is a continuous compilation loop that converts user intents into production-grade Java enterprise applications without human programming intervention.</p>
 <hr />
-<h3 id="global-platform-invariants">Global Platform Invariants<a class="headerlink" href="#global-platform-invariants" title="Permanent link">&para;</a></h3>
+<h2 id="key-architectural-features">Key Architectural Features<a class="headerlink" href="#key-architectural-features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Contract-Bound Logic Construction:</strong> AI software engines are strictly sandboxed by data models, completely eliminating unguided code mutations or API drift.</li>
-<li><strong>CQRS Backbone Segregation:</strong> Read operations sweep through unified, high-performance graph mappings, while write mutations publish straight to append-only message ledgers.</li>
-<li><strong>Model-Process Language Alignment:</strong> Standardizes cross-subsidiary communication pipelines out of the box using verified industry definitions to remove operational data silos from day one.</li>
+<li><strong>Flexmark Specs Parsing Engine:</strong> Monitors low-code repositories to parse layout adjustments and conversational blueprints, instantly translating text parameters into rigorous gRPC/Protobuf boundary contracts.</li>
+<li><strong>Abstract Syntax Tree (AST) Injection Loop:</strong> Uses <strong>JavaParser / Spoon toolkits</strong> to read existing microservice source repositories, manipulate code trees, and inject new business capabilities cleanly into established method footprints.</li>
+<li><strong>Firecracker MicroVM Security Sandbox:</strong> Isolates untrusted, AI-generated code by booting ultra-lightweight Linux kernel cells in milliseconds to run comprehensive compilation and execution checks outside production.</li>
+<li><strong>Automated Regression Integration:</strong> Uses <strong>Testcontainers</strong> to spawn local, sandboxed instances of Kafka and Neo4j inside the hypervisor cell, playing back recorded production data logs to verify algorithm safety.</li>
 </ul>
-    </div>
+<hr />
+<h2 id="core-business-benefits">Core Business Benefits<a class="headerlink" href="#core-business-benefits" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Eradication of the Engineering Backlog:</strong> Shifts development cycles from weeks of manual programming down to milliseconds of automated compilation, completely eliminating software engineering debt.</li>
+<li><strong>Total Infrastructure Immunity:</strong> Because code generation runs inside hard microVM hypervisor boundaries, malformed methods or intentional code injection risks are safely contained and programmatically blocked.</li>
+<li><strong>Flawless Functional Code Safety:</strong> The software factory cannot build loose, undocumented APIs; it can only write logic routines that precisely fit within the pre-wired boundaries of your enterprise data contracts.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
   
 
               </article>
@@ -784,15 +781,15 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.tabs","navigation.sections","navigation.tracking","navigation.footer","content.code.copy"],"redirect":null,"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.sections","navigation.tracking","navigation.footer","content.code.copy"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
   
-      <script src="./assets/javascripts/bundle.c04ba553.min.js"></script>
+      <script src="../assets/javascripts/bundle.c04ba553.min.js"></script>
       
     
   <script>
-    document.documentElement.classList.add("is-homepage");
+    document.documentElement.classList.add("is-document");
       const expandSidebar = () => {
         document.querySelectorAll(".md-sidebar__scrollwrap, .md-sidebar__inner").forEach((element) => {
           if (element.style.getPropertyValue("height") !== "auto") {
