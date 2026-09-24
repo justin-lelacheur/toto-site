@@ -415,6 +415,13 @@ html.is-homepage .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
+@media screen and (max-width: 44.984375em) {
+    html.is-document .md-footer__link--prev .md-footer__title,
+    html.is-homepage .md-footer__link--prev .md-footer__title {
+        display: block !important;
+    }
+}
+
 /* Keep named top navigation visible above narrow-mobile widths */
 @media screen and (min-width: 45em) {
     .md-tabs {
