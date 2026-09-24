@@ -136,6 +136,27 @@
   {{ super() }}
   <script>
     document.documentElement.classList.add("{% if page.meta is defined and page.meta.is_homepage %}is-homepage{% else %}is-document{% endif %}");
+    {% if not (page.meta is defined and page.meta.is_homepage) %}
+      const expandSidebar = () => {
+        document.querySelectorAll(".md-sidebar__scrollwrap, .md-sidebar__inner").forEach((element) => {
+          if (element.style.getPropertyValue("height") !== "auto") {
+            element.style.setProperty("height", "auto", "important");
+          }
+          if (element.style.getPropertyValue("max-height") !== "none") {
+            element.style.setProperty("max-height", "none", "important");
+          }
+          if (element.style.getPropertyValue("overflow") !== "visible") {
+            element.style.setProperty("overflow", "visible", "important");
+          }
+        });
+      };
+      expandSidebar();
+      new MutationObserver(expandSidebar).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["style"],
+        subtree: true
+      });
+    {% endif %}
   </script>
 {% endblock %}
 
