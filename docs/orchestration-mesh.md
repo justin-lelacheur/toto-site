@@ -2,7 +2,7 @@
 
 ## High-Density, Scale-to-Zero Distributed Core Automation
 
-The **Process Orchestration Mesh** carries shared human and agent decisions through long-running enterprise work. People define goals, policies, and escalation boundaries; agents coordinate routine steps while the platform preserves state, approvals, and accountability across each lifecycle.
+The **Process Orchestration Mesh** carries shared human and agent decisions through long-running enterprise work. It is designed to rethink the lifecycle around outcomes rather than replay inherited handoffs. People define goals, policies, and escalation boundaries; agents coordinate routine steps and adapt the path while the platform preserves state, approvals, and accountability.
 
 ---
 
@@ -20,7 +20,7 @@ The **Process Orchestration Mesh** carries shared human and agent decisions thro
 
 * **Massive Infrastructure Cost Reductions:** By compiling into native binaries and scaling compute clusters down to zero when idle, organization hosting fees drop to absolute minimums.
 * **Zero Cold-Start Bottlenecks:** Native GraalVM binaries bypass standard Java virtual machine initialization delays, processing surprise spikes in transaction volumes instantly with zero performance lag.
-* **Accountable operational continuity:** Complex multi-stage workflows remain traceable through failures, escalations, agent actions, and human approvals, including financial reconciliation and onboarding processes.
+* **Accountable operational continuity:** Complex multi-stage workflows remain traceable through failures, escalations, agent actions, and human approvals, including financial reconciliation and onboarding processes that can evolve as conditions change.
 
 ---
 

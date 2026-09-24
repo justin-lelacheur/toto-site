@@ -8,7 +8,7 @@ We are a specialized collective of enterprise software architects, compiler engi
 
 The traditional enterprise application stack is broken. For decades, organizations have been forced to run fluid, complex adaptive businesses on top of static, hardcoded relational software blocks. Our laboratory was founded on a simple premise: **enterprise software should amplify human judgment, not hide it.**
 
-We build systems where human intent and agent capability reinforce one another under explicit global constraints. People define the outcomes, policies, and exceptions; agents help interpret context and carry work forward. By combining TM Forum Open Digital Architecture models with governed execution, we give corporations clearer decisions, stronger accountability, and more adaptable operations.
+We build systems where human intent and agent capability reinforce one another under explicit global constraints. People define the outcomes, policies, and exceptions; agents help interpret context, challenge inherited process assumptions, and carry work forward. By combining TM Forum Open Digital Architecture models with governed execution, we give corporations clearer decisions, stronger accountability, and the freedom to redesign how work gets done.
 
 ---
 

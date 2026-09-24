@@ -14,7 +14,11 @@ The system functions as a governed partnership between human authority and agent
 * **The AI Agent:** Uses shared enterprise context to investigate options, prepare work, coordinate actions, and explain its reasoning.
 * **The Human-in-the-Loop:** Reviews consequential decisions, resolves ambiguity, and authorizes changes when judgment or accountability matters.
 
-## 2. Four-Tier Organizational Alignment Narratives
+## 2. Recompose the Workflow, Not Just the Task
+
+Traditional automation improves an isolated step inside a process designed for yesterday's constraints. An agentic operating model can reconsider the sequence itself: gather context once, identify the decision that matters, route routine work to agents, and bring exceptions to the people best equipped to resolve them. Humans define the desired outcome and the boundaries; agents explore the path, coordinate the work, and make the reasoning visible.
+
+## 3. Four-Tier Organizational Alignment Narratives
 
 ### The Executive and Leadership Perspective
 For senior executives, this platform transforms information technology from an expensive cost center into an agile driver of operational scale. Legacy digital transformations regularly fail because they introduce layers of complexity over uncoordinated software structures. Every new acquisition or product rollout requires months of manual data integration, leading to operational friction and missed market windows.
@@ -36,7 +40,7 @@ For software engineers and cloud infrastructure teams, this architecture provide
 
 The technical environment supports a clear division of responsibility: agents can read context, coordinate work, and prepare changes, while people retain authority over policy, approvals, and exceptions. The runtime records those interactions as traceable events and carries approved work through long-running processes without losing the reason a decision was made.
 
-## 3. Theoretical Framework of Emergence
+## 4. Theoretical Framework of Emergence
 
 ### The Primitives of Emergence
 Traditional software design views applications as solid machines constructed block-by-block by human programmers. This platform models software as an emergent phenomenon, where advanced business capabilities assemble themselves safely at runtime by following three unchangeable baseline primitives:

@@ -85,7 +85,7 @@ is_homepage: true
       <p class="landing-kicker">Built for consequential work</p>
       <h2>Coordinate the operations that cannot drift.</h2>
     </div>
-    <p class="landing-lead">Use the platform across customer operations, financial controls, compliance programs, service delivery, and other workflows where people and agents need shared context, clear accountability, and coordinated execution.</p>
+    <p class="landing-lead">Use the platform across customer operations, financial controls, compliance programs, service delivery, and other workflows where people and agents need shared context, clear accountability, and coordinated execution. The goal is not to digitize yesterday's handoffs, but to rethink how work should move when agents can reason across the whole process.</p>
   </div>
 </section>
 
