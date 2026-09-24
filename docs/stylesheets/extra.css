@@ -521,6 +521,29 @@ html.is-document .md-sidebar--secondary {
 }
 
 @media screen and (min-width: 45em) {
+    html.is-document .md-main__inner {
+        display: grid !important;
+        grid-template-columns: 12.1rem minmax(0, 1fr) 12.1rem !important;
+        gap: 1rem !important;
+        align-items: start !important;
+    }
+
+    html.is-document .md-sidebar--primary {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    html.is-document .md-content {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        min-width: 0 !important;
+    }
+
+    html.is-document .md-sidebar--secondary {
+        grid-column: 3 !important;
+        grid-row: 1 !important;
+    }
+
     html.is-document .md-sidebar--primary .md-sidebar__scrollwrap,
     html.is-document .md-sidebar--primary .md-sidebar__inner,
     html.is-document .md-sidebar--secondary .md-sidebar__scrollwrap,
