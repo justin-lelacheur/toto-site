@@ -62,7 +62,7 @@ is_homepage: true
   </div>
 </section>
 
-<section class="landing-section landing-section--light">
+<section class="landing-section landing-section--dark">
   <div class="landing-section__inner">
     <p class="landing-kicker">Open by design</p>
     <h2>Interoperable foundations. Accountable execution.</h2>
