@@ -4,6 +4,10 @@
 
 The **Process Orchestration Mesh** carries shared human and agent decisions through long-running enterprise work. It is designed to rethink the lifecycle around outcomes rather than replay inherited handoffs. People define goals, policies, and escalation boundaries; agents coordinate routine steps and adapt the path while the platform preserves state, approvals, and accountability.
 
+## Reimplementing Proven Enterprise Logic
+
+The migration path preserves the durable business behavior already proven in Apache OFBiz while replacing its execution model. Existing OFBiz services, entity relationships, approval rules, and lifecycle transitions are mapped into the enterprise ontology and reimplemented as declarative Conductor workflows. Agents can help discover and translate the legacy behavior, but parity tests, policy review, and human approval determine what is allowed into production.
+
 ---
 
 ## Key Architectural Features
@@ -13,6 +17,7 @@ The **Process Orchestration Mesh** carries shared human and agent decisions thro
 * **Ahead-of-Time (AOT) GraalVM Compilation:** Compiles application frameworks into standalone native platform binaries, achieving sub-millisecond startup times and up to a 90% reduction in memory overhead.
 * **Knative Scale-to-Zero Compute Profiles:** Integrates with underlying Kubernetes cluster states, automatically shutting down active container configurations to zero nodes when task execution queues run empty.
 * **Saga Orchestration Rollbacks:** Automatically routes explicit Failure Workflows or runs a series of Compensating Tasks across the Kafka event bus if an execution step fails permanently.
+* **OFBiz Logic Parity:** Reproduces validated OFBiz service semantics as versioned Conductor workflows, preserving business invariants while allowing the process to be redesigned around current outcomes.
 
 ---
 

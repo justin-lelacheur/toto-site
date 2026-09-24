@@ -673,6 +673,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#reimplementing-proven-enterprise-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reimplementing Proven Enterprise Logic
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#key-architectural-features" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -725,6 +736,8 @@
 <h1 id="the-process-orchestration-mesh">The Process Orchestration Mesh<a class="headerlink" href="#the-process-orchestration-mesh" title="Permanent link">&para;</a></h1>
 <h2 id="high-density-scale-to-zero-distributed-core-automation">High-Density, Scale-to-Zero Distributed Core Automation<a class="headerlink" href="#high-density-scale-to-zero-distributed-core-automation" title="Permanent link">&para;</a></h2>
 <p>The <strong>Process Orchestration Mesh</strong> carries shared human and agent decisions through long-running enterprise work. It is designed to rethink the lifecycle around outcomes rather than replay inherited handoffs. People define goals, policies, and escalation boundaries; agents coordinate routine steps and adapt the path while the platform preserves state, approvals, and accountability.</p>
+<h2 id="reimplementing-proven-enterprise-logic">Reimplementing Proven Enterprise Logic<a class="headerlink" href="#reimplementing-proven-enterprise-logic" title="Permanent link">&para;</a></h2>
+<p>The migration path preserves the durable business behavior already proven in Apache OFBiz while replacing its execution model. Existing OFBiz services, entity relationships, approval rules, and lifecycle transitions are mapped into the enterprise ontology and reimplemented as declarative Conductor workflows. Agents can help discover and translate the legacy behavior, but parity tests, policy review, and human approval determine what is allowed into production.</p>
 <hr />
 <h2 id="key-architectural-features">Key Architectural Features<a class="headerlink" href="#key-architectural-features" title="Permanent link">&para;</a></h2>
 <ul>
@@ -733,6 +746,7 @@
 <li><strong>Ahead-of-Time (AOT) GraalVM Compilation:</strong> Compiles application frameworks into standalone native platform binaries, achieving sub-millisecond startup times and up to a 90% reduction in memory overhead.</li>
 <li><strong>Knative Scale-to-Zero Compute Profiles:</strong> Integrates with underlying Kubernetes cluster states, automatically shutting down active container configurations to zero nodes when task execution queues run empty.</li>
 <li><strong>Saga Orchestration Rollbacks:</strong> Automatically routes explicit Failure Workflows or runs a series of Compensating Tasks across the Kafka event bus if an execution step fails permanently.</li>
+<li><strong>OFBiz Logic Parity:</strong> Reproduces validated OFBiz service semantics as versioned Conductor workflows, preserving business invariants while allowing the process to be redesigned around current outcomes.</li>
 </ul>
 <hr />
 <h2 id="core-business-benefits">Core Business Benefits<a class="headerlink" href="#core-business-benefits" title="Permanent link">&para;</a></h2>

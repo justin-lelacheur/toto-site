@@ -11,6 +11,8 @@ This page is the architectural map for the platform. The focused specifications 
 * [Autonomous Software Factory](./Factory.md)
 * [Process Orchestration Mesh](./orchestration-mesh.md)
 
+The architecture also provides a controlled path for carrying forward proven Apache OFBiz logic. OFBiz entities, services, rules, and lifecycle semantics become migration inputs: the ontology preserves their business meaning, the Factory translates them, and Conductor executes the approved reimplementation as a versioned workflow.
+
 ## 1. The Semantic Ontology Fabric
 The Semantic Ontology Fabric completely decouples the platform's core identity from standard relational database limitations. Rather than fracturing enterprise state data across hundreds of independent tables bound by complex foreign key indices, this layer leverages a graph-theoretic approach to run a live digital twin of the business. Every physical noun, digital asset, human identity, and business process is represented as a first-class vertex, while operational and lifecycle configurations are maintained as strongly typed edges.
 

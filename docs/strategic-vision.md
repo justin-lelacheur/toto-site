@@ -9,6 +9,8 @@ The modern enterprise is crippled by the compounding technical debt of its found
 
 To escape this loop, the enterprise must fundamentally redefine the nature of core software. In this architecture, the ERP functions as an emergent system. Its capabilities do not exist as hardcoded, static applications. Instead, they operate as a fleet of stateless, domain-scoped microservices that are dynamically generated, verified, orchestrated, and evolved by an automated AI Software Factory. 
 
+This is a reimplementation strategy, not a blind rewrite. Proven Apache OFBiz entity and service behavior becomes the reference baseline; the platform maps its meaning into the ontology, translates its process logic into Conductor workflows, and uses parity testing plus human approval to decide what should be preserved, improved, or retired.
+
 The system functions as a governed partnership between human authority and agent execution:
 * **The Human Operator:** Sets goals, priorities, policies, and approval boundaries through a visual workspace or natural conversation.
 * **The AI Agent:** Uses shared enterprise context to investigate options, prepare work, coordinate actions, and explain its reasoning.
