@@ -84,7 +84,7 @@
 }
 
 /* Uses the white logo only against the landing page's red background */
-body:has(.zensical-landing-wrap) .md-logo img {
+html.is-homepage .md-logo img {
     content: url("../images/toto-site-logo-white-med.png") !important;
 }
 
@@ -132,28 +132,28 @@ body:has(.zensical-landing-wrap) .md-logo img {
 }
 
 /* Keeps only the site name visible in the home landing header */
-body:has(.zensical-landing-wrap) .md-header__topic[data-md-component="header-topic"] {
+html.is-homepage .md-header__topic[data-md-component="header-topic"] {
     display: none !important;
 }
 
 /* Keeps the landing-page site name visible while the page scrolls */
-body:has(.zensical-landing-wrap) .md-header[hidden] {
+html.is-homepage .md-header[hidden] {
     display: block !important;
     transform: none !important;
 }
 
-body:has(.zensical-landing-wrap) .md-header__topic:first-child {
+html.is-homepage .md-header__topic:first-child {
     opacity: 1 !important;
     transform: none !important;
     z-index: 0 !important;
     pointer-events: auto !important;
 }
 
-body:has(.zensical-landing-wrap) .md-header__inner {
+html.is-homepage .md-header__inner {
     position: relative !important;
 }
 
-body:has(.zensical-landing-wrap) .md-header__title {
+html.is-homepage .md-header__title {
     position: static !important;
     width: auto !important;
     margin-left: 0.375rem !important;
@@ -161,23 +161,23 @@ body:has(.zensical-landing-wrap) .md-header__title {
     transform: none !important;
 }
 
-body:has(.zensical-landing-wrap) .md-header__ellipsis {
+html.is-homepage .md-header__ellipsis {
     width: auto !important;
     justify-content: flex-start !important;
 }
 
-body:has(.zensical-landing-wrap) .md-header__topic:first-child {
+html.is-homepage .md-header__topic:first-child {
     width: auto !important;
     justify-content: flex-start !important;
 }
 
 /* Keep both header names visible on documentation pages while scrolling */
-body:not(:has(.zensical-landing-wrap)) .md-header[hidden] {
+html.is-document .md-header[hidden] {
     display: block !important;
     transform: none !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis {
+html.is-document .md-header__ellipsis {
     display: flex !important;
     align-items: center !important;
     gap: 0.5rem !important;
@@ -185,7 +185,7 @@ body:not(:has(.zensical-landing-wrap)) .md-header__ellipsis {
     justify-content: flex-start !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-header__topic {
+html.is-document .md-header__topic {
     position: static !important;
     display: flex !important;
     flex: 0 0 auto !important;
@@ -195,12 +195,12 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic {
     pointer-events: auto !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
+html.is-document .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
     font-size: 15px !important;
 }
 
 /* Separates the site and page names on documentation pages only */
-body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="header-topic"] {
+html.is-document .md-header__topic[data-md-component="header-topic"] {
     border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
     padding-left: 0.5rem !important;
 }
@@ -320,35 +320,35 @@ body:not(:has(.zensical-landing-wrap)) .md-header__topic[data-md-component="head
 /* ==========================================
    6. HOMEPAGE VIEW FRAMEWORK (ISOLATED RED)
    ========================================== */
-html:has(.zensical-landing-wrap),
-body:has(.zensical-landing-wrap) {
+html.is-homepage,
+html.is-homepage body {
     background-color: #B30B00 !important;
 }
 
-:has(.zensical-landing-wrap) .md-container,
-:has(.zensical-landing-wrap) .md-main,
-:has(.zensical-landing-wrap) .md-content,
-:has(.zensical-landing-wrap) .md-content__inner {
+html.is-homepage .md-container,
+html.is-homepage .md-main,
+html.is-homepage .md-content,
+html.is-homepage .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
     --md-default-bg-color: #B30B00 !important;
 }
 
-html:has(.zensical-landing-wrap) .md-header__title,
-html:has(.zensical-landing-wrap) [class*="header__title"] {
+html.is-homepage .md-header__title,
+html.is-homepage [class*="header__title"] {
     color: #ffffff !important;
 }
 
 /* ==========================================
    7. LANDING PAGE ONLY: TRANSPARENT HEADER, UI & FOOTER
    ========================================== */
-body:has(.zensical-landing-wrap) .md-header {
+html.is-homepage .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
 }
 
-body:has(.zensical-landing-wrap) {
+html.is-homepage {
     --md-primary-fg-color: transparent !important;
     --md-primary-fg-color--dark: transparent !important;
     --md-accent-fg-color: #ffffff !important;
@@ -357,48 +357,48 @@ body:has(.zensical-landing-wrap) {
     --md-default-fg-color--lightest: rgba(255, 255, 255, 0.6) !important;
 }
 
-body:has(.zensical-landing-wrap) .md-tabs__item--active .md-tabs__link,
-body:has(.zensical-landing-wrap) .md-tabs__link--active,
-body:has(.zensical-landing-wrap) .md-tabs__item {
+html.is-homepage .md-tabs__item--active .md-tabs__link,
+html.is-homepage .md-tabs__link--active,
+html.is-homepage .md-tabs__item {
     border-bottom-color: #ffffff !important;
 }
 
-body:has(.zensical-landing-wrap) .md-search__icon[for="__search"],
-body:has(.zensical-landing-wrap) .md-search__form label.md-search__icon svg,
-body:has(.zensical-landing-wrap) .md-search__inner svg path {
+html.is-homepage .md-search__icon[for="__search"],
+html.is-homepage .md-search__form label.md-search__icon svg,
+html.is-homepage .md-search__inner svg path {
     fill: #ffffff !important;
     color: #ffffff !important;
     opacity: 1 !important;
 }
-body:has(.zensical-landing-wrap) .md-search__input::placeholder {
+html.is-homepage .md-search__input::placeholder {
     color: rgba(255, 255, 255, 0.7) !important;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
 }
-body:has(.zensical-landing-wrap) .md-search__input {
+html.is-homepage .md-search__input {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
 
-body:has(.zensical-landing-wrap) .md-footer,
-body:has(.zensical-landing-wrap) .md-footer-meta {
+html.is-homepage .md-footer,
+html.is-homepage .md-footer-meta {
     background-color: rgba(0, 0, 0, 0.25) !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
-body:has(.zensical-landing-wrap) .md-footer__inner,
-body:has(.zensical-landing-wrap) .md-footer-meta__inner {
+html.is-homepage .md-footer__inner,
+html.is-homepage .md-footer-meta__inner {
     background-color: transparent !important;
 }
-body:has(.zensical-landing-wrap) .md-footer,
-body:has(.zensical-landing-wrap) .md-footer__link,
-body:has(.zensical-landing-wrap) .md-footer__title,
-body:has(.zensical-landing-wrap) .md-footer-meta,
-body:has(.zensical-landing-wrap) .md-footer-meta__inner,
-body:has(.zensical-landing-wrap) .md-tabs__link,
-body:has(.zensical-landing-wrap) .md-nav__link,
-body:has(.zensical-landing-wrap) .md-header__button {
+html.is-homepage .md-footer,
+html.is-homepage .md-footer__link,
+html.is-homepage .md-footer__title,
+html.is-homepage .md-footer-meta,
+html.is-homepage .md-footer-meta__inner,
+html.is-homepage .md-tabs__link,
+html.is-homepage .md-nav__link,
+html.is-homepage .md-header__button {
     color: #ffffff !important;
 }
-body:has(.zensical-landing-wrap) .md-footer__direction {
+html.is-homepage .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
@@ -413,7 +413,7 @@ body:has(.zensical-landing-wrap) .md-footer__direction {
     }
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-tabs {
+html.is-document .md-tabs {
     background-color: #ffffff !important;
     color: #111111 !important;
     opacity: 1 !important;
@@ -421,7 +421,7 @@ body:not(:has(.zensical-landing-wrap)) .md-tabs {
     z-index: 5 !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-tabs__link {
+html.is-document .md-tabs__link {
     color: #111111 !important;
     opacity: 1 !important;
 }
@@ -430,17 +430,17 @@ body:not(:has(.zensical-landing-wrap)) .md-tabs__link {
    8. SIDEBAR VISIBILITY BY PAGE TYPE
    ========================================== */
 /* Documentation navigation styling inspired by Zensical's restrained rails */
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary {
+html.is-document .md-sidebar--primary {
     border-right: 1px solid rgba(25, 25, 25, 0.1);
     padding-right: 1rem !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
+html.is-document .md-sidebar--secondary {
     border-left: 1px solid rgba(25, 25, 25, 0.1);
     padding-left: 1rem !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-nav__title {
+html.is-document .md-nav__title {
     font-family: "IBM Plex Sans", sans-serif !important;
     min-height: 2rem;
     padding: 0 0.75rem 0.6rem !important;
@@ -452,12 +452,12 @@ body:not(:has(.zensical-landing-wrap)) .md-nav__title {
     text-transform: uppercase;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav--primary > .md-nav__title {
+html.is-document .md-sidebar--primary .md-nav--primary > .md-nav__title {
     display: none !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link,
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
+html.is-document .md-sidebar--primary .md-nav__link,
+html.is-document .md-sidebar--secondary .md-nav__link {
     border-radius: 0.35rem;
     color: rgba(25, 25, 25, 0.68) !important;
     font-size: 14px !important;
@@ -467,19 +467,19 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link:hover,
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link:hover {
+html.is-document .md-sidebar--primary .md-nav__link:hover,
+html.is-document .md-sidebar--secondary .md-nav__link:hover {
     background-color: rgba(25, 25, 25, 0.06) !important;
     color: #111111 !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-nav__link--active {
+html.is-document .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(198, 74, 36, 0.12) !important;
     color: #a23b1f !important;
     font-weight: 700 !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
+html.is-document .md-sidebar--secondary .md-nav__link {
     border-left: 2px solid transparent;
     border-radius: 0;
     color: rgba(25, 25, 25, 0.52) !important;
@@ -487,20 +487,20 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link {
     padding: 0.3rem 0.65rem !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-nav__link--active {
+html.is-document .md-sidebar--secondary .md-nav__link--active {
     border-left-color: #c64a24;
     color: #a23b1f !important;
 }
 
-body:has(.zensical-landing-wrap) .md-sidebar,
-body:has(.zensical-landing-wrap) [data-md-component="sidebar"] {
+html.is-homepage .md-sidebar,
+html.is-homepage [data-md-component="sidebar"] {
     display: none !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar,
-body:not(:has(.zensical-landing-wrap)) [data-md-component="sidebar"],
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary,
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
+html.is-document .md-sidebar,
+html.is-document [data-md-component="sidebar"],
+html.is-document .md-sidebar--primary,
+html.is-document .md-sidebar--secondary {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -515,16 +515,16 @@ body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
     flex: 0 0 12.1rem !important;
 }
 
-body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary {
+html.is-document .md-sidebar--secondary {
     order: 2 !important;
     padding: 1.1rem 0 !important;
 }
 
 @media screen and (min-width: 45em) {
-    body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-sidebar__scrollwrap,
-    body:not(:has(.zensical-landing-wrap)) .md-sidebar--primary .md-sidebar__inner,
-    body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-sidebar__scrollwrap,
-    body:not(:has(.zensical-landing-wrap)) .md-sidebar--secondary .md-sidebar__inner {
+    html.is-document .md-sidebar--primary .md-sidebar__scrollwrap,
+    html.is-document .md-sidebar--primary .md-sidebar__inner,
+    html.is-document .md-sidebar--secondary .md-sidebar__scrollwrap,
+    html.is-document .md-sidebar--secondary .md-sidebar__inner {
         position: static !important;
         width: auto !important;
         height: auto !important;

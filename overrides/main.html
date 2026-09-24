@@ -65,6 +65,13 @@
   </footer>
 {% endblock %}
 
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document.documentElement.classList.add("{% if page.meta is defined and page.meta.is_homepage %}is-homepage{% else %}is-document{% endif %}");
+  </script>
+{% endblock %}
+
 
 
 
