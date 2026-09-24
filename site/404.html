@@ -718,6 +718,9 @@
         const sidebar = document.querySelector(".md-sidebar--primary");
         if (!drawer || !sidebar) return;
         if (window.matchMedia("(max-width: 44.984375em)").matches) {
+          sidebar.querySelectorAll('input.md-nav__toggle[id^="__nav_"]').forEach((input) => {
+            input.checked = true;
+          });
           const transform = drawer.checked ? "translateX(0)" : "translateX(-105%)";
           if (sidebar.style.getPropertyValue("transform") !== transform) {
             sidebar.style.setProperty("transform", transform, "important");
