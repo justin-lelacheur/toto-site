@@ -117,14 +117,11 @@
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
-        position: fixed !important;
-        top: 128px !important;
-        left: 0 !important;
-        z-index: 20 !important;
+        position: sticky !important;
+        top: 4.8rem !important;
         width: 12.1rem !important;
-        height: calc(100vh - 128px) !important;
-        background: #ffffff !important;
-        overflow: visible !important;
+        height: auto !important;
+        flex: 0 0 12.1rem !important;
       }
 
       .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -979,23 +976,8 @@
           }
         });
       };
-      const pinSidebar = () => {
-        const sidebar = document.querySelector(".md-sidebar--primary");
-        if (sidebar) {
-          sidebar.style.setProperty("position", "fixed", "important");
-          sidebar.style.setProperty("top", "128px", "important");
-          sidebar.style.setProperty("left", "0", "important");
-          sidebar.style.setProperty("z-index", "20", "important");
-          sidebar.style.setProperty("width", "12.1rem", "important");
-          sidebar.style.setProperty("height", "calc(100vh - 128px)", "important");
-        }
-      };
-      pinSidebar();
       expandSidebar();
-      new MutationObserver(() => {
-        pinSidebar();
-        expandSidebar();
-      }).observe(document.body, {
+      new MutationObserver(expandSidebar).observe(document.body, {
         attributes: true,
         attributeFilter: ["style"],
         subtree: true
