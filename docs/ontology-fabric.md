@@ -13,6 +13,15 @@ This page is the architectural map for the platform. The focused specifications 
 
 The architecture also provides a controlled path for carrying forward proven Apache OFBiz logic. OFBiz entities, services, rules, and lifecycle semantics become migration inputs: the ontology preserves their business meaning, the Factory translates them, and Conductor executes the approved reimplementation as a versioned workflow.
 
+## Open by Design
+
+The platform is built for interoperability and long-term choice:
+
+* **Open standards** provide the contracts between systems, domains, and teams.
+* **Open-source projects** contribute proven capabilities such as Apache OFBiz, Apache Kafka, and Conductor OSS.
+* **Replaceable components** reduce architectural lock-in and keep implementation choices adaptable.
+* **Governed platform behavior** preserves policy, provenance, and accountability for enterprise operations.
+
 ## Why the Combination Accelerates Delivery
 
 Apache OFBiz contributes proven ERP behavior instead of forcing every domain to start from a blank page. TM Forum Open Digital Architecture and SID provide a shared information model so that behavior can be expressed against reusable business concepts rather than one-off schemas. Conductor OSS turns those modeled capabilities into governed, long-running workflows. Together, the three layers let a team assemble and adapt features across domains—such as customer, billing, order, or service operations—without rebuilding the semantic model, process controls, and execution path each time.

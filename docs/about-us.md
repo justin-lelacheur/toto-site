@@ -12,6 +12,8 @@ We build systems where human intent and agent capability reinforce one another u
 
 Our platform is designed as a connected set of enablers rather than a collection of isolated features: shared context, human-directed design, agent-assisted development, and accountable execution. Together they help organizations redefine who does the work and how the work is organized.
 
+We are open by design: we use open standards for interoperability, proven open-source projects for capability, replaceable components to reduce lock-in, and governed behavior to keep enterprise accountability intact.
+
 ---
 
 ## Core Competency Planes
