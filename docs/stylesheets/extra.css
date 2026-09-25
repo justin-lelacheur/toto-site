@@ -1205,7 +1205,6 @@ html.is-homepage .md-footer-meta {
     background-color: #000000 !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
-html.is-document .md-footer__inner,
 html.is-document .md-footer-meta__inner,
 html.is-homepage .md-footer__inner,
 html.is-homepage .md-footer-meta__inner {
@@ -1213,7 +1212,6 @@ html.is-homepage .md-footer-meta__inner {
 }
 html.is-document .md-footer,
 html.is-document .md-footer__link,
-html.is-document .md-footer__title,
 html.is-document .md-footer-meta,
 html.is-document .md-footer-meta__inner,
 html.is-document .md-copyright,
@@ -1228,6 +1226,15 @@ html.is-homepage .md-tabs__link,
 html.is-homepage .md-nav__link,
 html.is-homepage .md-header__button {
     color: #ffffff !important;
+}
+html.is-document .md-footer__inner {
+    background-color: #ffffff !important;
+}
+html.is-document .md-footer__link,
+html.is-document .md-footer__title,
+html.is-document .md-footer__button,
+html.is-document .md-footer__direction {
+    color: #111111 !important;
 }
 html.is-homepage .md-footer__direction {
     color: rgba(255, 255, 255, 0.6) !important;
