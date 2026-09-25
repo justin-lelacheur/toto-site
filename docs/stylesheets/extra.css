@@ -533,6 +533,10 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
     border-left-color: rgba(255, 255, 255, 0.36) !important;
 }
 
+html.is-document .md-header .md-header__topic[data-md-component="header-topic"] {
+    border-left: 0 !important;
+}
+
 /* Home sections use clear, tactile blocks instead of ruled cells. */
 .home-principles,
 .home-flow {
