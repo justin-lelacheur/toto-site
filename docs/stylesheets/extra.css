@@ -630,10 +630,6 @@ html.is-homepage .home-principles article:last-child {
     grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.78fr);
 }
 
-.home-open h2 {
-    max-width: 11ch;
-}
-
 .home-open__copy {
     max-width: 35rem;
 }
@@ -1571,10 +1567,10 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-hero h1 {
-    font-size: clamp(2.23rem, 4.87vw, 4.43rem);
-    line-height: 0.97;
+    font-size: clamp(1.25rem, 3.2vw, 3.2rem);
+    line-height: 1.05;
     margin: 0;
-    max-width: 11ch;
+    text-wrap: balance;
 }
 
 .home-hero__lead {
@@ -1793,10 +1789,11 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-section h2 {
-    font-size: clamp(1.6rem, 3.6vw, 3.47rem);
+    font-size: clamp(1.15rem, 2.7vw, 2.8rem);
     line-height: 1.01;
     margin: 0;
-    max-width: 16ch;
+    max-width: 30ch;
+    text-wrap: balance;
 }
 
 .home-copy {
@@ -1807,13 +1804,15 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-section__heading {
-    align-items: end;
+    align-items: flex-start;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
 }
 
-.home-section__heading--wide h2 {
-    max-width: 14ch;
+.home-section__heading .home-eyebrow {
+    margin-bottom: 0;
 }
 
 .home-principles {
@@ -1871,10 +1870,6 @@ html.is-homepage .md-content__inner::before {
     color: #c6ff4d;
 }
 
-.home-crm h2 {
-    max-width: 11ch;
-}
-
 .home-crm__copy {
     border-left: 1px solid rgba(255, 255, 255, 0.35);
     padding-left: 1.25rem;
@@ -1920,17 +1915,13 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-close {
-    text-align: center;
+    text-align: left;
 }
 
 .home-close h2,
 .home-close > p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.home-close h2 {
-    max-width: 13ch;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .home-close > p {
@@ -1938,7 +1929,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-close .home-actions {
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 62em) {
@@ -2003,7 +1994,7 @@ html.is-homepage .md-content__inner::before {
     .home-crm__copy {
         border-left: 0;
         border-top: 1px solid rgba(255, 255, 255, 0.35);
-        padding-left: 0;
+        padding-left: 1.25rem;
         padding-top: 1.25rem;
     }
 

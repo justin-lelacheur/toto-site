@@ -50,7 +50,7 @@ is_homepage: true
   <section class="home-section home-section--paper">
     <div class="home-section__inner home-intro">
       <p class="home-eyebrow">One operating model</p>
-      <h2>When the business changes, the system should move with it.</h2>
+      <h2>When the business changes,<br>the system should move with it.</h2>
       <p class="home-copy">toto foundry connects enterprise meaning to everyday execution. People, processes, policies, and AI work from the same current picture of the business, so change is an operating capability, not another rewrite.</p>
     </div>
   </section>
@@ -59,7 +59,7 @@ is_homepage: true
     <div class="home-section__inner">
       <div class="home-section__heading">
         <p class="home-eyebrow">Designed for consequential work</p>
-        <h2>Clarity at every step.</h2>
+        <h2>Clarity at<br>every step.</h2>
       </div>
       <div class="home-principles">
         <article>
@@ -82,7 +82,7 @@ is_homepage: true
     <div class="home-section__inner home-open">
       <div>
         <p class="home-eyebrow">100% open</p>
-        <h2>Open source. Forever.</h2>
+        <h2>Open source.<br>Forever.</h2>
       </div>
       <div class="home-open__copy">
         <p>toto commits toto foundry to a free and open-source core, so customers can inspect the foundation, avoid opaque lock-in, and retain a meaningful path to operate and extend it themselves.</p>
@@ -98,7 +98,7 @@ is_homepage: true
     <div class="home-section__inner home-crm">
       <div>
         <p class="home-eyebrow">First domain module</p>
-        <h2>CRM is where toto foundry begins.</h2>
+        <h2>CRM is where<br>toto foundry begins.</h2>
       </div>
       <div class="home-crm__copy">
         <p>Customer 360, account and contact relationships, consent-aware engagement, cases, tasks, and guided workflows in the first toto foundry module.</p>
@@ -111,7 +111,7 @@ is_homepage: true
     <div class="home-section__inner">
       <div class="home-section__heading home-section__heading--wide">
         <p class="home-eyebrow">From intent to outcome</p>
-        <h2>Business meaning in. Governed action out.</h2>
+        <h2>Business meaning in.<br>Governed action out.</h2>
       </div>
       <ol class="home-flow home-flow--cards">
         <li class="home-flow__card">
@@ -149,7 +149,7 @@ is_homepage: true
   <section class="home-section home-section--close">
     <div class="home-section__inner home-close">
       <p class="home-eyebrow">Built to evolve</p>
-      <h2>Modernize the operation. Keep control of the enterprise.</h2>
+      <h2>Modernize the operation.<br>Keep control of the enterprise.</h2>
       <p>Bring existing systems forward in stages, preserve the decisions that matter, and make the next capability easier to build than the last.</p>
       <div class="home-actions">
         <a class="home-action home-action--dark" href="/strategic-vision/">Why toto <span aria-hidden="true">&rarr;</span></a>
