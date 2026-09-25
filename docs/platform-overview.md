@@ -16,12 +16,12 @@ title: "Platform Overview"
 			<article class="product-grid__item">
 				<h3>Enterprise graph</h3>
 				<p>Defines the shared language of people, organizations, customers, relationships, policies, and business context.</p>
-				<a class="product-page__link" href="/Ontology/">Explore the graph <span aria-hidden="true">&rarr;</span></a>
+				<a class="product-page__link" href="/enterprise-graph/">Explore the graph <span aria-hidden="true">&rarr;</span></a>
 			</article>
 			<article class="product-grid__item">
 				<h3>Human studio</h3>
 				<p>Lets domain experts shape forms, workflows, policy-aware experiences, and releases from the business model.</p>
-				<a class="product-page__link" href="/Studio/">Explore the studio <span aria-hidden="true">&rarr;</span></a>
+				<a class="product-page__link" href="/studio/">Explore the studio <span aria-hidden="true">&rarr;</span></a>
 			</article>
 			<article class="product-grid__item">
 				<h3>Domain services and events</h3>
@@ -30,7 +30,7 @@ title: "Platform Overview"
 			<article class="product-grid__item">
 				<h3>Workflow and AI controls</h3>
 				<p>Keep long-running work durable and give agents bounded roles, typed tools, policy checks, and approval gates.</p>
-				<a class="product-page__link" href="/Factory/">Explore AI governance <span aria-hidden="true">&rarr;</span></a>
+				<a class="product-page__link" href="/ai-governance/">Explore AI governance <span aria-hidden="true">&rarr;</span></a>
 			</article>
 		</div>
 	</section>
@@ -55,7 +55,7 @@ title: "Platform Overview"
 		<p class="product-page__kicker">Open by design</p>
 		<h2>Interoperable foundations. Accountable execution.</h2>
 		<p class="product-page__body">Neo4j, Conductor OSS, Apache Kafka, GraphQL, FastAPI or Apollo, and LangGraph each own a clear concern. Open standards keep the platform connected, while versioned contracts and policy controls keep it governable.</p>
-		<a class="product-page__link" href="/orchestration-mesh/">See the workflow runtime <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/workflow-runtime/">See the workflow runtime <span aria-hidden="true">&rarr;</span></a>
 	</section>
 
 </main>

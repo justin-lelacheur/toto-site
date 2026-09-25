@@ -27,3 +27,4 @@ PY
 find site -name '*.html' -print0 | xargs -0 perl -0pi -e 's#(stylesheets/(?:fonts|extra)\.css)(?!\?v=)#$1?v=20260924#g'
 
 cp _headers site/_headers
+cp _redirects site/_redirects

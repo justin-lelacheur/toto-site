@@ -12,8 +12,8 @@ is_homepage: true
         <h1>toto foundry.<br>Enterprise, ready for change.</h1>
         <p class="home-hero__lead">The AI-native enterprise operating system from toto, starting with CRM.</p>
         <div class="home-actions">
-          <a class="home-action home-action--light" href="/capabilities/">Explore CRM</a>
-          <a class="home-text-link" href="/ontology-fabric/">Explore toto foundry <span aria-hidden="true">&rarr;</span></a>
+          <a class="home-action home-action--light" href="/crm-module/">Explore CRM</a>
+          <a class="home-text-link" href="/platform-overview/">Explore toto foundry <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="home-hero__signal" aria-label="toto operating model: customer, workflow, and execution">
@@ -110,7 +110,7 @@ is_homepage: true
       </div>
       <div class="home-crm__copy home-section__content">
         <p>Customer 360, account and contact relationships, consent-aware engagement, cases, tasks, and guided workflows in the first toto foundry module.</p>
-        <a class="home-text-link" href="/capabilities/">Explore the CRM module <span aria-hidden="true">&rarr;</span></a>
+        <a class="home-text-link" href="/crm-module/">Explore the CRM module <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </section>
@@ -163,7 +163,7 @@ is_homepage: true
       <div class="home-close__copy home-section__content">
         <p>Bring existing systems forward in stages, preserve the decisions that matter, and make the next capability easier to build than the last.</p>
         <div class="home-actions">
-          <a class="home-action home-action--dark" href="/strategic-vision/">Why toto <span aria-hidden="true">&rarr;</span></a>
+          <a class="home-action home-action--dark" href="/why-toto/">Why toto <span aria-hidden="true">&rarr;</span></a>
           <a class="home-text-link" href="/contact/">Start a conversation <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>

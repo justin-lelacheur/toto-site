@@ -48,6 +48,6 @@ title: "toto foundry Workflow Runtime"
 		<p class="product-page__kicker">Traceable by default</p>
 		<h2>Every outcome has a path back to its evidence.</h2>
 		<p class="product-page__body">Workflow history connects the initiating identity, event, policy, approvals, agent activity, exception handling, and result. Operations teams can intervene with context, and auditors can understand what happened without reconstructing the story from logs.</p>
-		<a class="product-page__link" href="/ontology-fabric/">Return to the platform overview <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/platform-overview/">Return to the platform overview <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>

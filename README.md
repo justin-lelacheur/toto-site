@@ -44,7 +44,7 @@ To accelerate enterprise adoption, the A-EOS architecture coordinates its value 
 
 Explore the granular architectural specifications of the platform across its four physical operation planes [0.1.1, cite: 1]:
 
-* **[The Enterprise Ontology Fabric](./docs/Ontology.md):** The Data & Digital Twin Plane.
-* **[The Server-Driven Experience Studio](./docs/Studio.md):** The Visual & Voice Design Plane.
-* **[The Autonomous Software Factory](./docs/Factory.md):** The AI Compiler & Staging Plane.
-* **[The Process Orchestration Mesh](./docs/orchestration-mesh.md):** The Distributed Process Plane.
+* **[Enterprise Graph](./docs/enterprise-graph.md):** The Data & Digital Twin Plane.
+* **[Studio](./docs/studio.md):** The Visual & Voice Design Plane.
+* **[AI Governance](./docs/ai-governance.md):** The AI Compiler & Staging Plane.
+* **[Workflow Runtime](./docs/workflow-runtime.md):** The Distributed Process Plane.

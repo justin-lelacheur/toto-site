@@ -48,7 +48,7 @@ title: "toto foundry Studio"
 		<p class="product-page__kicker">Designed to be governed</p>
 		<h2>The studio prepares a change. It does not silently promote one.</h2>
 		<p class="product-page__body">Every production release remains versioned, testable, approval-aware, and reversible. The result is faster business design without unaccountable production behavior.</p>
-		<a class="product-page__link" href="/Factory/">See how AI assists the process <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/ai-governance/">See how AI assists the process <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>
 

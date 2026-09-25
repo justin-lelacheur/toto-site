@@ -52,6 +52,6 @@ title: "toto foundry AI Governance"
 		<p class="product-page__kicker">Evidence by default</p>
 		<h2>Every run leaves a record worth reviewing.</h2>
 		<p class="product-page__body">toto foundry records the graph and prompt version, model, retrieval references, tools, policy decision, reviewer decision, and workflow outcome. Model or agent changes are governed releases with evaluation, security review, cost limits, and rollback.</p>
-		<a class="product-page__link" href="/orchestration-mesh/">See the durable control path <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/workflow-runtime/">See the durable control path <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>

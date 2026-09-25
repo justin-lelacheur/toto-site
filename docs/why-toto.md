@@ -38,13 +38,13 @@ title: "Why toto"
 		<p class="product-page__kicker">CRM is the first toto foundry module</p>
 		<h2>Begin where the business already feels the friction.</h2>
 		<p class="product-page__body">toto foundry starts with the customer relationship: trusted customer context, consent-aware engagement, case and task workflows, and AI assistance under human control. Once CRM is proven, the same operating model can extend to product, order, service, asset, billing, and finance modules.</p>
-		<a class="product-page__link" href="/capabilities/">Explore the CRM foundation <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/crm-module/">Explore the CRM foundation <span aria-hidden="true">&rarr;</span></a>
 	</section>
 
 	<section class="product-page__section product-page__section--ink">
 		<p class="product-page__kicker">The outcome</p>
 		<h2>Less translation. More movement.</h2>
 		<p class="product-page__body">toto helps an enterprise change with clearer business meaning, faster operating design, safer automation, and evidence that holds up when the work matters.</p>
-		<a class="product-page__link" href="/ontology-fabric/">See how the platform works <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/platform-overview/">See how the platform works <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>

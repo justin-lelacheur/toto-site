@@ -70,7 +70,7 @@ title: "CRM Module"
     <p class="product-page__kicker">AI stays assisted</p>
     <h2>Helpful by design. Controlled by policy.</h2>
     <p class="product-page__body">AI can summarize authorized interactions, classify requests, suggest next actions, surface likely duplicates, and prepare workflow changes. It cannot send an external message, change consent, merge a customer, close a case, or make a material decision without the required policy and human approval.</p>
-    <a class="product-page__link" href="/Factory/">How AI governance works <span aria-hidden="true">&rarr;</span></a>
+    <a class="product-page__link" href="/ai-governance/">How AI governance works <span aria-hidden="true">&rarr;</span></a>
   </section>
 
   <section class="product-page__closing">

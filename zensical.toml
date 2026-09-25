@@ -11,17 +11,17 @@ extra_css = [
 # Keep all ten product pages available through a small, legible navigation system.
 nav = [
     { "Home" = "index.md" },
-    { "Why toto" = "strategic-vision.md" },
+    { "Why toto" = "why-toto.md" },
     { "toto foundry" = [
-        { "Platform Overview" = "ontology-fabric.md" },
-        { "Enterprise Graph" = "Ontology.md" },
-        { "Studio" = "Studio.md" },
-        { "Workflow Runtime" = "orchestration-mesh.md" },
-        { "AI Governance" = "Factory.md" },
-        { "CRM Capabilities" = "capabilities.md" },
+        { "Platform Overview" = "platform-overview.md" },
+        { "Enterprise Graph" = "enterprise-graph.md" },
+        { "Studio" = "studio.md" },
+        { "Workflow Runtime" = "workflow-runtime.md" },
+        { "AI Governance" = "ai-governance.md" },
+        { "CRM Module" = "crm-module.md" },
     ] },
     { "Company" = [
-        { "About toto" = "about-us.md" },
+        { "About toto" = "about-toto.md" },
         { "Contact" = "contact.md" },
     ] },
 ]

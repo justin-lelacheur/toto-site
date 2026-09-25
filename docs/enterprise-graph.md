@@ -45,6 +45,6 @@ title: "toto foundry Enterprise Graph"
 		<p class="product-page__kicker">Context, not a bypass</p>
 		<h2>The graph informs action. It never quietly takes it.</h2>
 		<p class="product-page__body">Agents retrieve only authorized context. They cannot write directly to the graph or operational data. Material changes return to owned commands, policies, workflows, and accountable people.</p>
-		<a class="product-page__link" href="/Studio/">See how context becomes design <span aria-hidden="true">&rarr;</span></a>
+		<a class="product-page__link" href="/studio/">See how context becomes design <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>
