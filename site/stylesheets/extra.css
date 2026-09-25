@@ -77,25 +77,34 @@ html.is-document .md-content__inner {
 }
 
 html.is-document .md-header {
-    background-color: var(--toto-night) !important;
+    background-color: #000000 !important;
 }
 
 html.is-document .md-logo img {
     content: url("../images/toto-site-logo-white-med.webp") !important;
 }
 
-html.is-document .md-tabs {
-    background-color: var(--toto-paper) !important;
-    border-bottom: 1px solid var(--toto-line);
+html.is-document .md-tabs,
+html.is-homepage .md-tabs {
+    background-color: #000000 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-html.is-document .md-tabs__link {
-    color: var(--toto-ink) !important;
+html.is-document .md-tabs__link,
+html.is-homepage .md-tabs__link {
+    color: #ffffff !important;
 }
 
 html.is-document .md-tabs__link--active,
-html.is-document .md-tabs__link:hover {
-    color: var(--toto-cobalt) !important;
+html.is-document .md-tabs__link:hover,
+html.is-homepage .md-tabs__link--active,
+html.is-homepage .md-tabs__link:hover {
+    color: var(--toto-sky) !important;
+}
+
+html.is-document .md-tabs__item--active,
+html.is-homepage .md-tabs__item--active {
+    border-bottom-color: var(--toto-sky) !important;
 }
 
 html.is-document .md-sidebar--primary .md-nav__link--active,
@@ -111,7 +120,7 @@ html.is-document .md-sidebar--secondary .md-nav__link--active {
 
 html.is-document .md-footer,
 html.is-document .md-footer-meta {
-    background-color: var(--toto-night) !important;
+    background-color: #000000 !important;
 }
 
 html.is-homepage,
@@ -122,7 +131,7 @@ html.is-homepage body {
 html.is-homepage .md-header,
 html.is-homepage .md-footer,
 html.is-homepage .md-footer-meta {
-    background-color: rgba(7, 27, 54, 0.94) !important;
+    background-color: #000000 !important;
 }
 
 .home-product {
@@ -233,6 +242,89 @@ html.is-homepage .md-footer-meta {
 .product-contact__email a {
     color: var(--toto-cobalt) !important;
     text-decoration-color: var(--toto-sky);
+}
+
+/* Final visual overrides: preserve high contrast in the navy header. */
+html.is-document .md-header__topic .md-ellipsis,
+html.is-document .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
+    color: #ffffff !important;
+}
+
+html.is-document .md-header__topic[data-md-component="header-topic"] {
+    border-left-color: rgba(255, 255, 255, 0.36) !important;
+}
+
+/* Home sections use clear, tactile blocks instead of ruled cells. */
+.home-principles,
+.home-flow {
+    border: 0;
+    gap: 1rem;
+}
+
+.home-principles article,
+.home-principles article + article,
+.home-principles article:last-child,
+.home-flow li,
+.home-flow li:last-child {
+    border: 0;
+}
+
+.home-principles article {
+    background: var(--toto-paper);
+    box-shadow: 0 0.75rem 2.25rem rgba(7, 27, 54, 0.08);
+    min-height: 16rem;
+    padding: 1.5rem;
+}
+
+.home-principles article + article {
+    padding-left: 1.5rem;
+}
+
+.home-flow li {
+    background: var(--toto-mist);
+    box-shadow: 0 0.5rem 1.75rem rgba(7, 27, 54, 0.06);
+    min-height: 14.5rem;
+    padding: 1.5rem;
+}
+
+.home-crm__copy {
+    background: rgba(255, 255, 255, 0.12);
+    border: 0;
+    padding: 1.5rem;
+}
+
+.home-section--crm .home-crm__copy {
+    border: 0;
+}
+
+html.is-homepage .home-principles article,
+html.is-homepage .home-principles article + article,
+html.is-homepage .home-principles article:last-child,
+html.is-homepage .home-flow li,
+html.is-homepage .home-flow li:last-child {
+    border: 0;
+}
+
+@media screen and (max-width: 44.984375em) {
+    .home-principles article,
+    .home-principles article + article,
+    .home-principles article:last-child,
+    .home-flow li,
+    .home-flow li:last-child {
+        border: 0;
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .home-principles article + article,
+    .home-flow li + li {
+        border-top: 0;
+    }
+
+    .home-crm__copy {
+        border: 0;
+        padding: 1.5rem;
+    }
 }
 
 /* ==========================================
@@ -1839,7 +1931,7 @@ html.is-document .md-content__inner {
 }
 
 html.is-document .md-header {
-    background-color: var(--toto-night) !important;
+    background-color: #000000 !important;
 }
 
 html.is-document .md-logo img {
@@ -1860,6 +1952,24 @@ html.is-document .md-tabs__link:hover {
     color: var(--toto-cobalt) !important;
 }
 
+html.is-homepage .md-tabs {
+    background-color: #000000 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+html.is-homepage .md-tabs__link {
+    color: #ffffff !important;
+}
+
+html.is-homepage .md-tabs__link--active,
+html.is-homepage .md-tabs__link:hover {
+    color: var(--toto-sky) !important;
+}
+
+html.is-homepage .md-tabs__item--active {
+    border-bottom-color: var(--toto-sky) !important;
+}
+
 html.is-document .md-sidebar--primary .md-nav__link--active,
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(10, 95, 180, 0.11) !important;
@@ -1873,7 +1983,7 @@ html.is-document .md-sidebar--secondary .md-nav__link--active {
 
 html.is-document .md-footer,
 html.is-document .md-footer-meta {
-    background-color: var(--toto-night) !important;
+    background-color: #000000 !important;
 }
 
 html.is-homepage,
@@ -1884,7 +1994,7 @@ html.is-homepage body {
 html.is-homepage .md-header,
 html.is-homepage .md-footer,
 html.is-homepage .md-footer-meta {
-    background-color: rgba(7, 27, 54, 0.94) !important;
+    background-color: #000000 !important;
 }
 
 .home-product {
