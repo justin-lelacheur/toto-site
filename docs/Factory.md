@@ -1,12 +1,12 @@
 ---
-title: "AI Governance"
+title: "toto foundry AI Governance"
 ---
 
 <main class="product-page">
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">The AI software factory</p>
 		<h1>AI that can help. Never run ahead.</h1>
-		<p class="product-page__lead">toto treats AI as a bounded enterprise capability: useful enough to accelerate the work, controlled enough to earn a place in it.</p>
+		<p class="product-page__lead">toto foundry treats AI as a bounded enterprise capability: useful enough to accelerate the work, controlled enough to earn a place in it.</p>
 	</header>
 
 	<section class="product-page__section">
@@ -51,7 +51,7 @@ title: "AI Governance"
 	<section class="product-page__section product-page__section--ink">
 		<p class="product-page__kicker">Evidence by default</p>
 		<h2>Every run leaves a record worth reviewing.</h2>
-		<p class="product-page__body">toto records the graph and prompt version, model, retrieval references, tools, policy decision, reviewer decision, and workflow outcome. Model or agent changes are governed releases with evaluation, security review, cost limits, and rollback.</p>
+		<p class="product-page__body">toto foundry records the graph and prompt version, model, retrieval references, tools, policy decision, reviewer decision, and workflow outcome. Model or agent changes are governed releases with evaluation, security review, cost limits, and rollback.</p>
 		<a class="product-page__link" href="/orchestration-mesh/">See the durable control path <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>

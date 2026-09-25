@@ -1,6 +1,6 @@
 ---
 layout: home
-title: toto - The Enterprise Operating System
+title: toto foundry - The Enterprise Operating System
 is_homepage: true
 ---
 
@@ -9,11 +9,11 @@ is_homepage: true
     <div class="home-hero__inner">
       <div class="home-hero__copy">
         <p class="home-eyebrow">AI-native enterprise operating system</p>
-        <h1>toto.<br>Enterprise, ready for change.</h1>
-        <p class="home-hero__lead">A shared operating model for customer relationships, governed workflows, and AI that knows its limits.</p>
+        <h1>toto foundry.<br>Enterprise, ready for change.</h1>
+        <p class="home-hero__lead">The AI-native enterprise operating system from toto, starting with CRM.</p>
         <div class="home-actions">
           <a class="home-action home-action--light" href="/capabilities/">Explore CRM</a>
-          <a class="home-text-link" href="/ontology-fabric/">See the platform <span aria-hidden="true">&rarr;</span></a>
+          <a class="home-text-link" href="/ontology-fabric/">Explore toto foundry <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="home-hero__signal" aria-label="toto operating model">
@@ -52,7 +52,7 @@ is_homepage: true
     <div class="home-section__inner home-intro">
       <p class="home-eyebrow">One operating model</p>
       <h2>When the business changes, the system should move with it.</h2>
-      <p class="home-copy">toto connects enterprise meaning to everyday execution. People, processes, policies, and AI work from the same current picture of the business, so change is an operating capability, not another rewrite.</p>
+      <p class="home-copy">toto foundry connects enterprise meaning to everyday execution. People, processes, policies, and AI work from the same current picture of the business, so change is an operating capability, not another rewrite.</p>
     </div>
   </section>
 
@@ -85,12 +85,12 @@ is_homepage: true
   <section class="home-section home-section--crm">
     <div class="home-section__inner home-crm">
       <div>
-        <p class="home-eyebrow">CRM, first</p>
-        <h2>Start with the customer. Build from there.</h2>
+        <p class="home-eyebrow">First domain module</p>
+        <h2>CRM is where toto foundry begins.</h2>
       </div>
       <div class="home-crm__copy">
-        <p>Customer 360, account and contact relationships, consent-aware engagement, cases, tasks, and guided workflows in one governed foundation.</p>
-        <a class="home-text-link" href="/capabilities/">What CRM includes <span aria-hidden="true">&rarr;</span></a>
+        <p>Customer 360, account and contact relationships, consent-aware engagement, cases, tasks, and guided workflows in the first toto foundry module.</p>
+        <a class="home-text-link" href="/capabilities/">Explore the CRM module <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </section>
@@ -116,7 +116,7 @@ is_homepage: true
       <h2>Modernize the operation. Keep control of the enterprise.</h2>
       <p>Bring existing systems forward in stages, preserve the decisions that matter, and make the next capability easier to build than the last.</p>
       <div class="home-actions">
-        <a class="home-action home-action--dark" href="/strategic-vision/">Why toto</a>
+        <a class="home-action home-action--dark" href="/strategic-vision/">Why toto <span aria-hidden="true">&rarr;</span></a>
         <a class="home-text-link" href="/contact/">Start a conversation <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>

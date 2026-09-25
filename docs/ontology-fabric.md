@@ -4,9 +4,9 @@ title: "Platform Overview"
 
 <main class="product-page">
 	<header class="product-page__hero">
-		<p class="product-page__eyebrow">The toto platform</p>
+		<p class="product-page__eyebrow">toto foundry / platform</p>
 		<h1>One operating model. Six clear responsibilities.</h1>
-		<p class="product-page__lead">toto connects enterprise meaning, human design, governed AI, and durable execution without asking one layer to do every job.</p>
+		<p class="product-page__lead">toto foundry connects enterprise meaning, human design, governed AI, and durable execution without asking one layer to do every job.</p>
 	</header>
 
 	<section class="product-page__section">

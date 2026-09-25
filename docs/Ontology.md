@@ -1,12 +1,12 @@
 ---
-title: "Enterprise Graph"
+title: "toto foundry Enterprise Graph"
 ---
 
 <main class="product-page">
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">The semantic core</p>
 		<h1>A shared language for every move your enterprise makes.</h1>
-		<p class="product-page__lead">toto models the business as connected meaning: who is involved, what changed, which policy applies, and why an action is allowed.</p>
+		<p class="product-page__lead">toto foundry models the business as connected meaning: who is involved, what changed, which policy applies, and why an action is allowed.</p>
 	</header>
 
 	<section class="product-page__section">
@@ -38,7 +38,7 @@ title: "Enterprise Graph"
 	<section class="product-page__section">
 		<p class="product-page__kicker">Built for the present and the record</p>
 		<h2>Relationships can change without erasing history.</h2>
-		<p class="product-page__body">Organizations combine. Departments move. Authority is delegated, expires, or is revoked. toto treats these as effective-dated, versioned relationships, so an investigation can answer what was true at the time, not only what is true now.</p>
+		<p class="product-page__body">Organizations combine. Departments move. Authority is delegated, expires, or is revoked. toto foundry treats these as effective-dated, versioned relationships, so an investigation can answer what was true at the time, not only what is true now.</p>
 	</section>
 
 	<section class="product-page__section product-page__section--ink">

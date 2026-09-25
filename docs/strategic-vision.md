@@ -6,7 +6,7 @@ title: "Why toto"
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">Why toto</p>
 		<h1>Make change a native capability.</h1>
-		<p class="product-page__lead">The enterprise already knows how it works. toto gives that knowledge a governed operating model so it can become better software, better workflows, and better decisions.</p>
+		<p class="product-page__lead">The enterprise already knows how it works. toto creates toto foundry so that knowledge can become better software, better workflows, and better decisions.</p>
 	</header>
 
 	<section class="product-page__section">
@@ -35,9 +35,9 @@ title: "Why toto"
 	</section>
 
 	<section class="product-page__section">
-		<p class="product-page__kicker">CRM is the first proof</p>
+		<p class="product-page__kicker">CRM is the first toto foundry module</p>
 		<h2>Begin where the business already feels the friction.</h2>
-		<p class="product-page__body">toto starts with the customer relationship: trusted customer context, consent-aware engagement, case and task workflows, and AI assistance under human control. Once the foundation is proven, the same operating model can extend to product, order, service, asset, billing, and finance domains.</p>
+		<p class="product-page__body">toto foundry starts with the customer relationship: trusted customer context, consent-aware engagement, case and task workflows, and AI assistance under human control. Once CRM is proven, the same operating model can extend to product, order, service, asset, billing, and finance modules.</p>
 		<a class="product-page__link" href="/capabilities/">Explore the CRM foundation <span aria-hidden="true">&rarr;</span></a>
 	</section>
 

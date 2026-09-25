@@ -1,18 +1,18 @@
 ---
-title: "CRM Capabilities"
+title: "CRM Module"
 ---
 
 <main class="product-page">
   <header class="product-page__hero">
-    <p class="product-page__eyebrow">CRM, first</p>
+    <p class="product-page__eyebrow">toto foundry / first domain module</p>
     <h1>CRM that understands the whole relationship.</h1>
-    <p class="product-page__lead">toto begins with a governed view of the customer: the people, organizations, relationships, decisions, and work that make every next action make sense.</p>
+    <p class="product-page__lead">CRM is the first toto foundry module: a governed view of the customer, the people, organizations, relationships, decisions, and work that make every next action make sense.</p>
   </header>
 
   <section class="product-page__section">
     <p class="product-page__kicker">Customer 360</p>
     <h2>See the customer before you act.</h2>
-    <p class="product-page__body">Bring authorized profile, account, contact, relationship, interaction, consent, activity, task, and case context together in one working view. toto connects what matters without creating an uncontrolled duplicate master record.</p>
+    <p class="product-page__body">Bring authorized profile, account, contact, relationship, interaction, consent, activity, task, and case context together in one working view. toto foundry connects what matters without creating an uncontrolled duplicate master record.</p>
     <div class="product-grid product-grid--two">
       <article class="product-grid__item">
         <h3>People and organizations</h3>
@@ -75,8 +75,8 @@ title: "CRM Capabilities"
 
   <section class="product-page__closing">
     <p class="product-page__eyebrow">The first foundation</p>
-    <h2>Build CRM now. Expand with confidence.</h2>
-    <p>Once customer data, workflows, integration reliability, and governance are proven, toto provides the operating foundation for product, order, asset, billing, and finance domains.</p>
+    <h2>Build the first module. Expand with confidence.</h2>
+    <p>Once CRM data, workflows, integration reliability, and governance are proven, toto foundry provides the operating foundation for product, order, asset, billing, and finance modules.</p>
     <a class="product-page__link" href="/contact/">Plan the first journey <span aria-hidden="true">&rarr;</span></a>
   </section>
 </main>

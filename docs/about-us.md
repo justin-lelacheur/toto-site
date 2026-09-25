@@ -6,17 +6,17 @@ title: "About toto"
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">About toto</p>
 		<h1>Enterprise software should stay close to the enterprise it serves.</h1>
-		<p class="product-page__lead">toto is an AI-native enterprise operating system for organizations that need to change their operations without giving up clarity, control, or continuity.</p>
+		<p class="product-page__lead">toto is the company building toto foundry, an AI-native enterprise operating system for organizations that need to change their operations without giving up clarity, control, or continuity.</p>
 	</header>
 
 	<section class="product-page__section">
 		<p class="product-page__kicker">A product with a point of view</p>
 		<h2>Technology should express business intent, not obscure it.</h2>
-		<p class="product-page__body">toto is built around a simple conviction: people who are accountable for the business should be able to see, shape, and govern the software that carries the business forward. That requires shared semantics, durable processes, clear ownership, and AI that works within explicit boundaries.</p>
+		<p class="product-page__body">toto builds around a simple conviction: people who are accountable for the business should be able to see, shape, and govern the software that carries the business forward. toto foundry turns that conviction into shared semantics, durable processes, clear ownership, and AI that works within explicit boundaries.</p>
 	</section>
 
 	<section class="product-page__section product-page__section--tint">
-		<p class="product-page__kicker">How toto is built</p>
+		<p class="product-page__kicker">How toto foundry is built</p>
 		<h2>Four principles guide the platform.</h2>
 		<div class="product-grid product-grid--two">
 			<article class="product-grid__item">
@@ -41,13 +41,13 @@ title: "About toto"
 	<section class="product-page__section">
 		<p class="product-page__kicker">Open where it matters</p>
 		<h2>Built to connect. Designed to remain governable.</h2>
-		<p class="product-page__body">toto uses open standards and proven open-source foundations where they provide durable value. Components remain replaceable, but the business model, contracts, controls, and tenant boundaries stay explicit.</p>
+		<p class="product-page__body">toto foundry uses open standards and proven open-source foundations where they provide durable value. Components remain replaceable, but the business model, contracts, controls, and tenant boundaries stay explicit.</p>
 	</section>
 
 	<section class="product-page__section product-page__section--ink">
-		<p class="product-page__kicker">The next chapter starts with CRM</p>
+		<p class="product-page__kicker">The first toto foundry module</p>
 		<h2>Prove the model where relationships matter most.</h2>
-		<p class="product-page__body">Customer operations are the first complete toto vertical. It establishes the data, identity, workflow, agent, and support foundations that future domains can reuse with confidence.</p>
+		<p class="product-page__body">CRM is the first complete toto foundry domain module. It establishes the customer data, identity, workflow, agent, and support foundations that future domains can reuse with confidence.</p>
 		<a class="product-page__link" href="/contact/">Start a conversation <span aria-hidden="true">&rarr;</span></a>
 	</section>
 </main>

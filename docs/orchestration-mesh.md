@@ -1,12 +1,12 @@
 ---
-title: "Workflow Runtime"
+title: "toto foundry Workflow Runtime"
 ---
 
 <main class="product-page">
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">The workflow runtime</p>
 		<h1>Work that waits. Remembers. Recovers.</h1>
-		<p class="product-page__lead">toto keeps consequential work moving across people, systems, time, and failure without losing the reason a decision was made.</p>
+		<p class="product-page__lead">toto foundry keeps consequential work moving across people, systems, time, and failure without losing the reason a decision was made.</p>
 	</header>
 
 	<section class="product-page__section">
@@ -41,7 +41,7 @@ title: "Workflow Runtime"
 	<section class="product-page__section">
 		<p class="product-page__kicker">Correctness over appearances</p>
 		<h2>No false success.</h2>
-		<p class="product-page__body">When a dependency is unavailable, toto waits, retries, compensates, escalates, or makes the pending state clear. It does not invent a completed outcome, silently lose the work, or let a model choose an irreversible shortcut.</p>
+		<p class="product-page__body">When a dependency is unavailable, toto foundry waits, retries, compensates, escalates, or makes the pending state clear. It does not invent a completed outcome, silently lose the work, or let a model choose an irreversible shortcut.</p>
 	</section>
 
 	<section class="product-page__section product-page__section--ink">
