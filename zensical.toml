@@ -8,17 +8,22 @@ extra_css = [
     "stylesheets/extra.css"
 ]
 
-# Navigation uses page paths directly so each top-level item resolves to a real page.
+# Keep all ten product pages available through a small, legible navigation system.
 nav = [
     { "Home" = "index.md" },
-    { "Strategic Vision" = "strategic-vision.md" },
-    { "Platform Specifications" = [
-        { "Ontology Fabric" = "ontology-fabric.md" },
+    { "Why Toto" = "strategic-vision.md" },
+    { "Platform" = [
+        { "Platform Overview" = "ontology-fabric.md" },
+        { "Enterprise Graph" = "Ontology.md" },
+        { "Studio" = "Studio.md" },
+        { "Workflow Runtime" = "orchestration-mesh.md" },
+        { "AI Governance" = "Factory.md" },
+        { "CRM Capabilities" = "capabilities.md" },
     ] },
-    { "Company & Insights" = [
-        { "About Us" = "about-us.md" },
+    { "Company" = [
+        { "About Toto" = "about-us.md" },
+        { "Contact" = "contact.md" },
     ] },
-    { "Communication Hub" = "contact.md" },
 ]
 
 [project.theme]

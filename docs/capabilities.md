@@ -1,32 +1,82 @@
 ---
-title: "Capabilities"
+title: "CRM Capabilities"
 ---
 
+<main class="product-page">
+  <header class="product-page__hero">
+    <p class="product-page__eyebrow">CRM, first</p>
+    <h1>CRM that understands the whole relationship.</h1>
+    <p class="product-page__lead">Toto begins with a governed view of the customer: the people, organizations, relationships, decisions, and work that make every next action make sense.</p>
+  </header>
 
-<div style="max-width: 600px; margin: 40px auto; padding: 0 16px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; line-height: 1.75;">
+  <section class="product-page__section">
+    <p class="product-page__kicker">Customer 360</p>
+    <h2>See the customer before you act.</h2>
+    <p class="product-page__body">Bring authorized profile, account, contact, relationship, interaction, consent, activity, task, and case context together in one working view. Toto connects what matters without creating an uncontrolled duplicate master record.</p>
+    <div class="product-grid product-grid--two">
+      <article class="product-grid__item">
+        <h3>People and organizations</h3>
+        <p>Model customers, prospects, legal and operating organizations, contacts, partners, and households with stable identities and effective-dated relationships.</p>
+      </article>
+      <article class="product-grid__item">
+        <h3>Relationships that explain access</h3>
+        <p>Account teams, delegated access, contact roles, territories, parents, subsidiaries, and partners remain visible and governed.</p>
+      </article>
+      <article class="product-grid__item">
+        <h3>Consent that travels with the work</h3>
+        <p>Communication preferences, lawful purpose, suppression, and expiry stay connected to the customer before engagement begins.</p>
+      </article>
+      <article class="product-grid__item">
+        <h3>Data worth trusting</h3>
+        <p>Duplicate proposals, golden-record links, steward review, and data-quality status make uncertainty explicit instead of hiding it.</p>
+      </article>
+    </div>
+  </section>
 
-  <h2 style="font-size: 1.75rem; font-weight: 400; color: #111111; margin-bottom: 40px; border: none;">
-    Systemic Pillars
-  </h2>
+  <section class="product-page__section product-page__section--tint">
+    <p class="product-page__kicker">The work around the customer</p>
+    <h2>Move the relationship forward, with context.</h2>
+    <div class="product-grid product-grid--three">
+      <article class="product-grid__item">
+        <span class="product-grid__number">01</span>
+        <h3>Engagement</h3>
+        <p>Capture leads, opportunities, interactions, appointments, notes, and follow-ups in the lifecycle your team actually uses.</p>
+      </article>
+      <article class="product-grid__item">
+        <span class="product-grid__number">02</span>
+        <h3>Service</h3>
+        <p>Manage cases and requests with classification, ownership, service targets, escalation, resolution, and customer communication.</p>
+      </article>
+      <article class="product-grid__item">
+        <span class="product-grid__number">03</span>
+        <h3>Guided change</h3>
+        <p>Use low-code forms and workflows for onboarding, account changes, qualification, reassignment, and approved exceptions.</p>
+      </article>
+    </div>
+  </section>
 
-  <div style="margin-bottom: 48px;">
-    <h3 style="font-size: 1.1rem; font-weight: 400; color: #111111; margin-bottom: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">01 //</span> Semantic Ontology Fabric</h3>
-    <p style="color: #444444; margin: 0; font-size: 1rem;">Decouples enterprise state from standard table limits by managing a graph-theoretic digital twin. Built natively on the <strong>TM Forum Shared Information/Data (SID) model</strong> combined with the multi-tenant patterns of the <strong>Apache OFBiz Entity Engine</strong>, lookups scale seamlessly across Neo4j causal clusters while immutable state histories dump asynchronously into <strong>TimescaleDB hypertables</strong>.</p>
-  </div>
+  <section class="product-page__section">
+    <p class="product-page__kicker">A governed first journey</p>
+    <h2>Start where change is visible.</h2>
+    <p class="product-page__body">Choose a high-value CRM journey such as customer onboarding, account change, lead qualification, or case resolution. Toto gives that journey its own API, event, workflow, approval, and audit path, so a better experience arrives with operational proof.</p>
+    <ol class="product-steps">
+      <li><strong>Understand</strong><span>Bring the relevant customer context, ownership, policy, and data-quality signals into view.</span></li>
+      <li><strong>Decide</strong><span>Route the work through the right validation, exception, and human approval path.</span></li>
+      <li><strong>Complete</strong><span>Record the outcome, retain the evidence, and make the next interaction more informed.</span></li>
+    </ol>
+  </section>
 
-  <div style="margin-bottom: 48px;">
-    <h3 style="font-size: 1.1rem; font-weight: 400; color: #111111; margin-bottom: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">02 //</span> Autonomous AI Agent Factory</h3>
-    <p style="color: #444444; margin: 0; font-size: 1rem;">Operates as a hands-free compilation loop driven by conversational and visual studio interfaces. Visual configurations or real-time WebRTC audio inputs parse instantly into structured Markdown spec contracts. The underlying LangChain4j / Spring AI factory reviews structural gaps, translates parameters into <strong>Abstract Syntax Tree (AST) mutations</strong> via JavaParser, and executes safety tests inside isolated <strong>Firecracker MicroVM sandboxes</strong>.</p>
-  </div>
+  <section class="product-page__section product-page__section--ink">
+    <p class="product-page__kicker">AI stays assisted</p>
+    <h2>Helpful by design. Controlled by policy.</h2>
+    <p class="product-page__body">AI can summarize authorized interactions, classify requests, suggest next actions, surface likely duplicates, and prepare workflow changes. It cannot send an external message, change consent, merge a customer, close a case, or make a material decision without the required policy and human approval.</p>
+    <a class="product-page__link" href="/Factory/">How AI governance works <span aria-hidden="true">&rarr;</span></a>
+  </section>
 
-  <div style="margin-bottom: 48px;">
-    <h3 style="font-size: 1.1rem; font-weight: 400; color: #111111; margin-bottom: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">03 //</span> Defensive Runtime Chassis</h3>
-    <p style="color: #444444; margin: 0; font-size: 1rem;">Eliminates serverless cold starts and memory leakage by consolidating code into domain-scoped multifunction container wrappers. Logic executes on <strong>Java 21 Virtual Threads (Project Loom)</strong> and compiles into native platform binaries via <strong>GraalVM Native Image</strong>. The chassis isolates runtime logic by mandating an unmodifiable Map signature, wrapping untrusted calculations in strict parameters.</p>
-  </div>
-
-  <div style="margin-bottom: 48px;">
-    <h3 style="font-size: 1.1rem; font-weight: 400; color: #111111; margin-bottom: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #6B2D38; font-size: 0.9rem; margin-right: 8px;">04 //</span> Scale-to-Zero Event Mesh</h3>
-    <p style="color: #444444; margin: 0; font-size: 1rem;">Routes enterprise system updates asynchronously as immutable logs streaming through high-speed <strong>Apache Kafka and Redpanda event buses</strong>. Long-running transactions, complex multichassis state validation sequences, and Saga failure compensations are decoupled from stateless compute infrastructure using distributed <strong>Conductor OSS declarative JSON task graphs</strong> that scale computing footprints down to zero when queues run empty.</p>
-  </div>
-
-</div>
+  <section class="product-page__closing">
+    <p class="product-page__eyebrow">The first foundation</p>
+    <h2>Build CRM now. Expand with confidence.</h2>
+    <p>Once customer data, workflows, integration reliability, and governance are proven, Toto provides the operating foundation for product, order, asset, billing, and finance domains.</p>
+    <a class="product-page__link" href="/contact/">Plan the first journey <span aria-hidden="true">&rarr;</span></a>
+  </section>
+</main>

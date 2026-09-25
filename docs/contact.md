@@ -2,16 +2,42 @@
 title: "Contact"
 ---
 
-# Communication Hub & Support Routing
+<main class="product-page">
+	<header class="product-page__hero">
+		<p class="product-page__eyebrow">Contact</p>
+		<h1>Start with the journey that matters most.</h1>
+		<p class="product-page__lead">Toto begins with a real operational problem: one customer journey, one accountable owner, and one foundation that the organization can build on.</p>
+	</header>
 
-## 1. Technical Inbound Communication Gateways
-For active corporate partners, enterprise evaluation teams, or external procurement units exploring governed collaboration between people and AI agents, our communication channels are managed through specialized routing paths:
-* **General Architecture Inquiries:** `contact@totofoundry.com`
-* **Cloud Infrastructure & Staging Support:** `contact@totofoundry.com`
-* **Security, Compliance, & Procurement Queries:** `contact@totofoundry.com`
+	<section class="product-page__section product-page__section--tint">
+		<p class="product-page__kicker">Start the conversation</p>
+		<h2>Tell us where the work gets stuck.</h2>
+		<p class="product-page__body">For product conversations, architecture questions, implementation planning, security, or partnership inquiries, reach the Toto team at:</p>
+		<p class="product-contact__email"><a href="mailto:contact@totofoundry.com">contact@totofoundry.com</a></p>
+	</section>
 
-## 2. Self-Service Support Deflection Sequence
-Before opening a high-priority assistance ticket, our platform infrastructure routes all inquiries through a automated self-service lookup matrix to accelerate issue resolution:
-1. **Consult the Live Architecture Documentation:** Review our complete technical manual layout to trace deployment blueprints, schema rules, and configuration parameters.
-2. **Execute Local Sandbox Regressions:** Run automated test suites inside an isolated cell environment to verify that your local adjustments align with global system contracts.
-3. **Check the Active Network Status Bus:** Inspect our live stream metrics topic logs to assert that your cluster gateway nodes are actively communicating with the Kafka backbone.
+	<section class="product-page__section">
+		<p class="product-page__kicker">A useful first brief</p>
+		<h2>Begin with the business, not the software list.</h2>
+		<div class="product-grid product-grid--three">
+			<article class="product-grid__item">
+				<h3>The journey</h3>
+				<p>Customer onboarding, account change, lead qualification, case resolution, or another workflow where a better result can be measured.</p>
+			</article>
+			<article class="product-grid__item">
+				<h3>The context</h3>
+				<p>The customer, organization, consent, ownership, policy, and source systems that shape the decision today.</p>
+			</article>
+			<article class="product-grid__item">
+				<h3>The authority</h3>
+				<p>The executive sponsor, domain owner, data steward, security owner, and approvers who can make the journey real.</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="product-page__closing">
+		<p class="product-page__eyebrow">A clear way forward</p>
+		<h2>Find the first governed outcome.</h2>
+		<p>From there, Toto can establish the customer model, workflow, integration boundary, operating controls, and evidence needed to move safely into production.</p>
+	</section>
+</main>

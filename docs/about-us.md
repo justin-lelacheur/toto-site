@@ -1,28 +1,53 @@
-# About Us
-
-We are a specialized collective of enterprise software architects, compiler engineers, and distributed systems pioneers dedicated to helping people and AI agents work together inside accountable enterprise systems.
-
+---
+title: "About Toto"
 ---
 
-## Our Engineering Philosophy
+<main class="product-page">
+	<header class="product-page__hero">
+		<p class="product-page__eyebrow">About Toto</p>
+		<h1>Enterprise software should stay close to the enterprise it serves.</h1>
+		<p class="product-page__lead">Toto is an AI-native enterprise operating system for organizations that need to change their operations without giving up clarity, control, or continuity.</p>
+	</header>
 
-The traditional enterprise application stack is broken. For decades, organizations have been forced to run fluid, complex adaptive businesses on top of static, hardcoded relational software blocks. Our laboratory was founded on a simple premise: **enterprise software should amplify human judgment, not hide it.**
+	<section class="product-page__section">
+		<p class="product-page__kicker">A product with a point of view</p>
+		<h2>Technology should express business intent, not obscure it.</h2>
+		<p class="product-page__body">Toto is built around a simple conviction: people who are accountable for the business should be able to see, shape, and govern the software that carries the business forward. That requires shared semantics, durable processes, clear ownership, and AI that works within explicit boundaries.</p>
+	</section>
 
-We build systems where human intent and agent capability reinforce one another under explicit global constraints. People define the outcomes, policies, and exceptions; agents help interpret context, challenge inherited process assumptions, and carry work forward. By combining TM Forum Open Digital Architecture models with governed execution, we give corporations clearer decisions, stronger accountability, and the freedom to redesign how work gets done.
+	<section class="product-page__section product-page__section--tint">
+		<p class="product-page__kicker">How Toto is built</p>
+		<h2>Four principles guide the platform.</h2>
+		<div class="product-grid product-grid--two">
+			<article class="product-grid__item">
+				<h3>Meaning before interfaces</h3>
+				<p>Business entities, relationships, policy, and lifecycle are shared before screens, integrations, and automations are designed.</p>
+			</article>
+			<article class="product-grid__item">
+				<h3>Authority before automation</h3>
+				<p>Agents can help with the work, but owned commands, policy checks, and people remain in charge of material effects.</p>
+			</article>
+			<article class="product-grid__item">
+				<h3>Evolution before replacement</h3>
+				<p>Existing systems can be modernized in stages through clear contracts, migration evidence, and reversible change.</p>
+			</article>
+			<article class="product-grid__item">
+				<h3>Evidence before claims</h3>
+				<p>Every production capability needs accountable ownership, observability, recovery, security, and a way to prove it is ready.</p>
+			</article>
+		</div>
+	</section>
 
-Our platform is designed as a connected set of enablers rather than a collection of isolated features: shared context, human-directed design, agent-assisted development, and accountable execution. Together they help organizations redefine who does the work and how the work is organized.
+	<section class="product-page__section">
+		<p class="product-page__kicker">Open where it matters</p>
+		<h2>Built to connect. Designed to remain governable.</h2>
+		<p class="product-page__body">Toto uses open standards and proven open-source foundations where they provide durable value. Components remain replaceable, but the business model, contracts, controls, and tenant boundaries stay explicit.</p>
+	</section>
 
-We are open by design: we use open standards for interoperability, proven open-source projects for capability, replaceable components to reduce lock-in, and governed behavior to keep enterprise accountability intact.
-
----
-
-## Core Competency Planes
-
-### 1. Model-Driven Architecture (MDA)
-We enforce strict mapping pipelines that convert abstract industry data dictionaries (TMF SID) straight into running transactional realities, completely neutralizing architecture drift. We pair that shared information model with proven Apache OFBiz entities, services, rules, and lifecycle behavior, then reimplement the validated logic as governed Conductor workflows. This gives teams reusable business capability instead of isolated feature code, accelerating delivery across customer, billing, order, and service domains.
-
-### 2. Autonomous Compiler Engineering
-Our research focuses on building safe, contract-bound Abstract Syntax Tree manipulation loops that allow AI agents to write production-grade code without introducing human liabilities.
-
-### 3. Distributed Event Orchestration
-We specialize in high-density event mesh designs, CQRS state segregation, and fault-tolerant Saga orchestration models running over enterprise Kubernetes clusters.
+	<section class="product-page__section product-page__section--ink">
+		<p class="product-page__kicker">The next chapter starts with CRM</p>
+		<h2>Prove the model where relationships matter most.</h2>
+		<p class="product-page__body">Customer operations are the first complete Toto vertical. It establishes the data, identity, workflow, agent, and support foundations that future domains can reuse with confidence.</p>
+		<a class="product-page__link" href="/contact/">Start a conversation <span aria-hidden="true">&rarr;</span></a>
+	</section>
+</main>
