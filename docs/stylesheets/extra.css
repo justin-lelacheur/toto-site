@@ -421,18 +421,22 @@ html.is-homepage .home-flow--cards strong {
 .home-flow__tokens {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    align-items: flex-start;
+    gap: 0.45rem;
 }
 
 .home-flow__tokens code {
-    background: var(--toto-wash);
-    border: 1px solid rgba(10, 95, 180, 0.14);
-    border-radius: 0.2rem;
-    color: var(--toto-navy);
+    align-items: center;
+    background: #edf0f2;
+    border: 1px solid #d7dde1;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.18rem 0.55rem rgba(7, 27, 54, 0.06);
+    color: #34414a;
+    display: inline-flex !important;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.64rem;
     line-height: 1.2;
-    padding: 0.28rem 0.38rem;
+    padding: 0.32rem 0.42rem;
     white-space: nowrap;
 }
 
