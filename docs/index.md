@@ -16,7 +16,7 @@ is_homepage: true
           <a class="home-text-link" href="/ontology-fabric/">Explore toto foundry <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="home-hero__signal" aria-label="toto operating model">
+      <div class="home-hero__signal" aria-label="toto operating model: customer, workflow, and execution">
         <div class="home-signal__header">
           <span>Live operating context</span>
           <b aria-hidden="true">toto / 01</b>
@@ -34,10 +34,10 @@ is_homepage: true
             <small>policy + approval</small>
           </div>
           <div class="home-signal__path home-signal__path--two"><span></span></div>
-          <div class="home-signal__node home-signal__node--decision">
+          <div class="home-signal__node home-signal__node--execution">
             <span class="home-signal__node-dot"></span>
-            <strong>Decision</strong>
-            <small>evidence + action</small>
+            <strong>Execution</strong>
+            <small>approved outcome</small>
           </div>
         </div>
         <div class="home-signal__frame">
