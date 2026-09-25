@@ -979,10 +979,84 @@ html.is-homepage .md-content__inner {
     padding: 1.5rem;
 }
 
-.home-hero__mark {
-    height: auto;
-    max-width: 9rem;
+.home-signal__header {
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.home-signal__header span,
+.home-signal__header b {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.home-signal__header b {
+    color: #c6ff4d;
+    font-weight: 700;
+}
+
+.home-signal__diagram {
+    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 2.5rem minmax(0, 1fr) 2.5rem minmax(0, 1fr);
+    margin: auto 0;
+    min-height: 8rem;
+}
+
+.home-signal__node {
+    display: grid;
+    gap: 0.4rem;
+    min-width: 0;
+}
+
+.home-signal__node-dot {
+    background: #c6ff4d;
+    border: 0.35rem solid rgba(198, 255, 77, 0.18);
+    border-radius: 50%;
+    box-sizing: content-box;
+    height: 0.7rem;
+    margin-bottom: 0.5rem;
+    width: 0.7rem;
+}
+
+.home-signal__node strong {
+    font-size: 0.98rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.home-signal__node small {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.66rem;
+    line-height: 1.35;
+}
+
+.home-signal__path {
+    align-items: center;
+    display: flex;
+}
+
+.home-signal__path::before {
+    background: rgba(255, 255, 255, 0.35);
+    content: "";
+    height: 1px;
     width: 100%;
+}
+
+.home-signal__path span {
+    border-right: 1px solid #c6ff4d;
+    border-top: 1px solid #c6ff4d;
+    height: 0.35rem;
+    margin-left: -0.35rem;
+    transform: rotate(45deg);
+    width: 0.35rem;
 }
 
 .home-signal__frame {
@@ -1002,16 +1076,9 @@ html.is-homepage .md-content__inner {
 }
 
 .home-signal__frame span {
-    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.92rem;
     font-weight: 500;
-}
-
-.home-signal__frame i {
-    border-left: 1px solid #c6ff4d;
-    display: block;
-    height: 1.2rem;
-    margin-left: 0.25rem;
-    width: 1px;
 }
 
 .home-section {
@@ -1204,6 +1271,10 @@ html.is-homepage .md-content__inner {
     .home-hero__signal {
         min-height: 14rem;
     }
+
+    .home-signal__diagram {
+        min-height: 9rem;
+    }
 }
 
 @media screen and (max-width: 44.984375em) {
@@ -1255,6 +1326,22 @@ html.is-homepage .md-content__inner {
         border-top: 1px solid rgba(255, 255, 255, 0.35);
         padding-left: 0;
         padding-top: 1.5rem;
+    }
+
+    .home-hero__signal {
+        min-height: 18rem;
+    }
+
+    .home-signal__diagram {
+        grid-template-columns: minmax(0, 1fr) 1.4rem minmax(0, 1fr) 1.4rem minmax(0, 1fr);
+    }
+
+    .home-signal__node strong {
+        font-size: 0.82rem;
+    }
+
+    .home-signal__node small {
+        font-size: 0.58rem;
     }
 }
 

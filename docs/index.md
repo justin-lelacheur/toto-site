@@ -17,10 +17,32 @@ is_homepage: true
         </div>
       </div>
       <div class="home-hero__signal" aria-label="Toto operating model">
-        <img class="home-hero__mark" src="images/toto-site-logo-white-med.webp" alt="Toto">
+        <div class="home-signal__header">
+          <span>Live operating context</span>
+          <b aria-hidden="true">TOTO / 01</b>
+        </div>
+        <div class="home-signal__diagram" aria-hidden="true">
+          <div class="home-signal__node home-signal__node--customer">
+            <span class="home-signal__node-dot"></span>
+            <strong>Customer</strong>
+            <small>relationships + consent</small>
+          </div>
+          <div class="home-signal__path home-signal__path--one"><span></span></div>
+          <div class="home-signal__node home-signal__node--workflow">
+            <span class="home-signal__node-dot"></span>
+            <strong>Workflow</strong>
+            <small>policy + approval</small>
+          </div>
+          <div class="home-signal__path home-signal__path--two"><span></span></div>
+          <div class="home-signal__node home-signal__node--decision">
+            <span class="home-signal__node-dot"></span>
+            <strong>Decision</strong>
+            <small>evidence + action</small>
+          </div>
+        </div>
         <div class="home-signal__frame">
           <p>One trusted model</p>
-          <span>Customer</span><i></i><span>Workflow</span><i></i><span>Decision</span>
+          <span>Meaning stays connected to the work.</span>
         </div>
       </div>
     </div>
