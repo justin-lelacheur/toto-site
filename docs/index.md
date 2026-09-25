@@ -67,7 +67,7 @@ is_homepage: true
       </div>
       <div class="home-principles home-section__content">
         <article>
-          <h3>A standardized customer model</h3>
+          <h3>A standardized data model</h3>
           <p>The common data model is grounded in the enterprise ontology, connecting accounts, contacts, consent, cases, and ownership so every workflow and agent shares the same customer context.</p>
         </article>
         <article>
