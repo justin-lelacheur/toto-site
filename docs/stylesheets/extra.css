@@ -596,7 +596,7 @@ html.is-homepage .home-principles article:last-child {
 
 /* Open-source commitment band. */
 .home-section--open {
-    background: var(--toto-wash);
+    background: #e1eef3;
 }
 
 .home-section--open .home-eyebrow {
@@ -604,7 +604,7 @@ html.is-homepage .home-principles article:last-child {
 }
 
 .home-open {
-    align-items: end;
+    align-items: start;
     display: grid;
     gap: 4rem;
     grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.78fr);

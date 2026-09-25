@@ -81,7 +81,7 @@ is_homepage: true
   <section class="home-section home-section--open">
     <div class="home-section__inner home-open">
       <div>
-        <p class="home-eyebrow">100%</p>
+        <p class="home-eyebrow">100% open</p>
         <h2>Open source. Forever.</h2>
       </div>
       <div class="home-open__copy">
