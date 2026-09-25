@@ -372,7 +372,7 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 
 .landing-kicker {
     margin: 0 0 0.75rem;
-    color: #c64a24;
+    color: #B30B00;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -381,7 +381,7 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 }
 
 .landing-section--dark .landing-kicker {
-    color: #ffd5ca;
+    color: #B30B00;
 }
 
 .landing-section h2 {
