@@ -369,10 +369,6 @@ html.is-homepage .home-section--crm {
     color: var(--product-muted);
 }
 
-html.is-document .md-main {
-    overflow-x: clip;
-}
-
 html.is-document .product-page__section--tint,
 html.is-document .product-page__section--ink {
     background: transparent;
@@ -387,6 +383,11 @@ html.is-document .product-page__section:has(+ .product-page__section--ink) {
     border-bottom: 0;
 }
 
+html.is-document .product-page__hero:has(+ .product-page__section--tint),
+html.is-document .product-page__hero:has(+ .product-page__section--ink) {
+    border-bottom: 0;
+}
+
 html.is-document .product-page__section--tint .product-grid,
 html.is-document .product-page__section--ink .product-grid {
     border-bottom: 0;
@@ -398,10 +399,8 @@ html.is-document .product-page__section--ink::before {
     border-radius: inherit;
     content: "";
     inset-block: 0;
-    left: 50%;
+    inset-inline: 0;
     position: absolute;
-    transform: translateX(-50%);
-    width: 100vw;
     z-index: -1;
 }
 
@@ -1266,6 +1265,9 @@ html.is-homepage .md-footer-meta {
     background-color: #000000 !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
+html.is-document .md-footer {
+    background-color: #ffffff !important;
+}
 html.is-document .md-footer-meta__inner,
 html.is-homepage .md-footer__inner,
 html.is-homepage .md-footer-meta__inner {
@@ -1291,6 +1293,25 @@ html.is-homepage .md-header__button {
 html.is-document .md-footer__inner {
     background-color: #ffffff !important;
 }
+
+@media screen and (min-width: 45em) {
+    html.is-document .md-footer__inner {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 12.1rem minmax(0, 1fr) 12.1rem;
+        padding-inline: 0;
+    }
+
+    html.is-document .md-footer__link--prev {
+        grid-column: 1;
+    }
+
+    html.is-document .md-footer__link--next {
+        grid-column: 3;
+        margin-left: 0;
+    }
+}
+
 html.is-document .md-footer__link,
 html.is-document .md-footer__title,
 html.is-document .md-footer__button,
