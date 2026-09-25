@@ -622,7 +622,7 @@ html.is-homepage .home-principles article:last-child {
 
 /* Open-source commitment band. */
 .home-section--open {
-    background: var(--toto-air);
+    background: var(--toto-paper);
 }
 
 .home-section--open .home-eyebrow {
@@ -2568,7 +2568,7 @@ html.is-homepage body {
 
 .home-section--signal,
 .home-section--close {
-    background: var(--toto-wash);
+    background: var(--toto-air);
 }
 
 .home-section--crm {
