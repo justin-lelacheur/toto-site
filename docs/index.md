@@ -78,6 +78,22 @@ is_homepage: true
     </div>
   </section>
 
+  <section class="home-section home-section--open">
+    <div class="home-section__inner home-open">
+      <div>
+        <p class="home-eyebrow">100% open-source commitment</p>
+        <h2>Open source. By commitment.</h2>
+      </div>
+      <div class="home-open__copy">
+        <p>toto commits toto foundry to a free and open-source core, so customers can inspect the foundation, avoid opaque lock-in, and retain a meaningful path to operate and extend it themselves.</p>
+        <p>The core is built with platform-defining open-source programs: Apache Kafka for events, Temporal for durable workflows, Neo4j and Protégé for ontology work, LangGraph for bounded AI, and FastAPI, Keycloak, OpenFGA, and Open Policy Agent for the integration and control plane.</p>
+        <div class="home-open__examples" aria-label="Open-source foundations">
+          <code>Apache Kafka</code><code>Temporal</code><code>Neo4j</code><code>Protégé</code><code>LangGraph</code><code>FastAPI</code><code>Keycloak</code><code>OpenFGA</code><code>Open Policy Agent</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="home-section home-section--crm">
     <div class="home-section__inner home-crm">
       <div>

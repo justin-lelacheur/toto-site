@@ -590,6 +590,66 @@ html.is-homepage .home-principles article:last-child {
     padding: 1.75rem 1.875rem;
 }
 
+/* Open-source commitment band. */
+.home-section--open {
+    background: var(--toto-wash);
+}
+
+.home-section--open .home-eyebrow {
+    color: var(--toto-cobalt);
+}
+
+.home-open {
+    align-items: end;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.78fr);
+}
+
+.home-open h2 {
+    max-width: 11ch;
+}
+
+.home-open__copy {
+    max-width: 35rem;
+}
+
+.home-open__copy > p {
+    color: var(--toto-muted);
+    font-size: 1rem;
+    line-height: 1.62;
+    margin: 0;
+}
+
+.home-open__copy > p + p {
+    margin-top: 1rem;
+}
+
+.home-open__examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1.5rem;
+}
+
+.home-open__examples code {
+    background: #edf0f2;
+    border: 1px solid #d7dde1;
+    border-radius: 0.25rem;
+    color: #34414a;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    line-height: 1.2;
+    padding: 0.34rem 0.45rem;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 62em) {
+    .home-open {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 44.984375em) {
     .home-principles article,
     .home-principles article + article,
