@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Toto - The Enterprise Operating System
+title: toto - The Enterprise Operating System
 is_homepage: true
 ---
 
@@ -9,17 +9,17 @@ is_homepage: true
     <div class="home-hero__inner">
       <div class="home-hero__copy">
         <p class="home-eyebrow">AI-native enterprise operating system</p>
-        <h1>Toto.<br>Enterprise, ready for change.</h1>
+        <h1>toto.<br>Enterprise, ready for change.</h1>
         <p class="home-hero__lead">A shared operating model for customer relationships, governed workflows, and AI that knows its limits.</p>
         <div class="home-actions">
           <a class="home-action home-action--light" href="/capabilities/">Explore CRM</a>
           <a class="home-text-link" href="/ontology-fabric/">See the platform <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="home-hero__signal" aria-label="Toto operating model">
+      <div class="home-hero__signal" aria-label="toto operating model">
         <div class="home-signal__header">
           <span>Live operating context</span>
-          <b aria-hidden="true">TOTO / 01</b>
+          <b aria-hidden="true">toto / 01</b>
         </div>
         <div class="home-signal__diagram" aria-hidden="true">
           <div class="home-signal__node home-signal__node--customer">
@@ -52,7 +52,7 @@ is_homepage: true
     <div class="home-section__inner home-intro">
       <p class="home-eyebrow">One operating model</p>
       <h2>When the business changes, the system should move with it.</h2>
-      <p class="home-copy">Toto connects enterprise meaning to everyday execution. People, processes, policies, and AI work from the same current picture of the business, so change is an operating capability, not another rewrite.</p>
+      <p class="home-copy">toto connects enterprise meaning to everyday execution. People, processes, policies, and AI work from the same current picture of the business, so change is an operating capability, not another rewrite.</p>
     </div>
   </section>
 
@@ -116,7 +116,7 @@ is_homepage: true
       <h2>Modernize the operation. Keep control of the enterprise.</h2>
       <p>Bring existing systems forward in stages, preserve the decisions that matter, and make the next capability easier to build than the last.</p>
       <div class="home-actions">
-        <a class="home-action home-action--dark" href="/strategic-vision/">Why Toto</a>
+        <a class="home-action home-action--dark" href="/strategic-vision/">Why toto</a>
         <a class="home-text-link" href="/contact/">Start a conversation <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>

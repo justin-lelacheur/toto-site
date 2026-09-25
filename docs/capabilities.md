@@ -6,13 +6,13 @@ title: "CRM Capabilities"
   <header class="product-page__hero">
     <p class="product-page__eyebrow">CRM, first</p>
     <h1>CRM that understands the whole relationship.</h1>
-    <p class="product-page__lead">Toto begins with a governed view of the customer: the people, organizations, relationships, decisions, and work that make every next action make sense.</p>
+    <p class="product-page__lead">toto begins with a governed view of the customer: the people, organizations, relationships, decisions, and work that make every next action make sense.</p>
   </header>
 
   <section class="product-page__section">
     <p class="product-page__kicker">Customer 360</p>
     <h2>See the customer before you act.</h2>
-    <p class="product-page__body">Bring authorized profile, account, contact, relationship, interaction, consent, activity, task, and case context together in one working view. Toto connects what matters without creating an uncontrolled duplicate master record.</p>
+    <p class="product-page__body">Bring authorized profile, account, contact, relationship, interaction, consent, activity, task, and case context together in one working view. toto connects what matters without creating an uncontrolled duplicate master record.</p>
     <div class="product-grid product-grid--two">
       <article class="product-grid__item">
         <h3>People and organizations</h3>
@@ -58,7 +58,7 @@ title: "CRM Capabilities"
   <section class="product-page__section">
     <p class="product-page__kicker">A governed first journey</p>
     <h2>Start where change is visible.</h2>
-    <p class="product-page__body">Choose a high-value CRM journey such as customer onboarding, account change, lead qualification, or case resolution. Toto gives that journey its own API, event, workflow, approval, and audit path, so a better experience arrives with operational proof.</p>
+    <p class="product-page__body">Choose a high-value CRM journey such as customer onboarding, account change, lead qualification, or case resolution. toto gives that journey its own API, event, workflow, approval, and audit path, so a better experience arrives with operational proof.</p>
     <ol class="product-steps">
       <li><strong>Understand</strong><span>Bring the relevant customer context, ownership, policy, and data-quality signals into view.</span></li>
       <li><strong>Decide</strong><span>Route the work through the right validation, exception, and human approval path.</span></li>
@@ -76,7 +76,7 @@ title: "CRM Capabilities"
   <section class="product-page__closing">
     <p class="product-page__eyebrow">The first foundation</p>
     <h2>Build CRM now. Expand with confidence.</h2>
-    <p>Once customer data, workflows, integration reliability, and governance are proven, Toto provides the operating foundation for product, order, asset, billing, and finance domains.</p>
+    <p>Once customer data, workflows, integration reliability, and governance are proven, toto provides the operating foundation for product, order, asset, billing, and finance domains.</p>
     <a class="product-page__link" href="/contact/">Plan the first journey <span aria-hidden="true">&rarr;</span></a>
   </section>
 </main>

@@ -6,7 +6,7 @@ title: "Studio"
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">The human low-code studio</p>
 		<h1>Turn business intent into a working design.</h1>
-		<p class="product-page__lead">Toto Studio is a semantic workspace for the people who know the operation best. It makes process, policy, interface, and impact visible in the same place.</p>
+		<p class="product-page__lead">toto Studio is a semantic workspace for the people who know the operation best. It makes process, policy, interface, and impact visible in the same place.</p>
 	</header>
 
 	<section class="product-page__section">
