@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block htmltitle %}{% if page.meta is defined and page.meta.is_homepage %}<title>toto | enterprise operating system</title>{% else %}{{ super() }}{% endif %}{% endblock %}
+
 {# 1. Keep the navigation available in the mobile drawer on every page #}
 {% block nav %}
   {{ super() }}
