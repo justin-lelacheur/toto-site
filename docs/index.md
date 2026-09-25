@@ -70,7 +70,7 @@ is_homepage: true
   </div>
 </section>
 
-<section class="landing-section landing-section--light">
+<section class="landing-section landing-section--burgundy">
   <div class="landing-section__inner">
     <p class="landing-kicker">From insight to action</p>
     <h2>Help people and AI move work forward.</h2>
