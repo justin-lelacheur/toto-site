@@ -369,6 +369,59 @@ html.is-homepage .home-section--crm {
     color: var(--product-muted);
 }
 
+html.is-document {
+    --document-type-scale: 0.666667;
+}
+
+html.is-document .product-page__eyebrow,
+html.is-document .product-page__kicker,
+html.is-document .product-grid__number {
+    font-size: calc(0.72rem * var(--document-type-scale));
+}
+
+html.is-document .product-page h1 {
+    font-size: calc(clamp(2.9rem, 6vw, 5.5rem) * var(--document-type-scale));
+}
+
+html.is-document .product-page--why-toto h1 {
+    font-size: calc(clamp(2.2rem, 4.5vw, 4.5rem) * var(--document-type-scale));
+}
+
+html.is-document .product-page__lead {
+    font-size: calc(clamp(1.08rem, 1.8vw, 1.35rem) * var(--document-type-scale));
+}
+
+html.is-document .product-page__section h2,
+html.is-document .product-page__closing h2 {
+    font-size: calc(clamp(2rem, 4.4vw, 3.85rem) * var(--document-type-scale));
+}
+
+html.is-document .product-page__body,
+html.is-document .product-page__closing > p {
+    font-size: calc(1.08rem * var(--document-type-scale));
+}
+
+html.is-document .product-grid__item h3 {
+    font-size: calc(1.24rem * var(--document-type-scale));
+}
+
+html.is-document .product-grid__item p,
+html.is-document .product-steps span {
+    font-size: calc(0.94rem * var(--document-type-scale));
+}
+
+html.is-document .product-page__link {
+    font-size: calc(0.95rem * var(--document-type-scale));
+}
+
+html.is-document .product-steps strong {
+    font-size: calc(1.2rem * var(--document-type-scale));
+}
+
+html.is-document .product-contact__email {
+    font-size: calc(clamp(1.45rem, 3vw, 2.35rem) * var(--document-type-scale));
+}
+
 html.is-document .product-page__section--tint,
 html.is-document .product-page__section--ink {
     background: transparent;
