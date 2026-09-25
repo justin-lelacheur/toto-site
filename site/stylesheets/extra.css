@@ -406,7 +406,7 @@ html.is-homepage .home-flow--cards .home-flow__card:last-child {
     box-shadow: 0 0.8rem 2rem rgba(7, 27, 54, 0.08);
     display: grid;
     gap: 1.25rem;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     min-height: 15.5rem;
     padding: 1.5rem;
 }
@@ -416,6 +416,24 @@ html.is-homepage .home-flow--cards strong {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.15;
+}
+
+.home-flow__tokens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.home-flow__tokens code {
+    background: var(--toto-wash);
+    border: 1px solid rgba(10, 95, 180, 0.14);
+    border-radius: 0.2rem;
+    color: var(--toto-navy);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.64rem;
+    line-height: 1.2;
+    padding: 0.28rem 0.38rem;
+    white-space: nowrap;
 }
 
 html.is-homepage .home-flow--cards p {
