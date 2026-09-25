@@ -348,10 +348,6 @@ html.is-homepage .home-section--crm {
     --product-section-gutter: 1.5rem;
 }
 
-.product-page__section--rounded {
-    border-radius: var(--toto-shape-large);
-}
-
 .product-page__section--foundry .product-grid {
     margin-left: calc(-1 * var(--product-section-gutter));
     margin-right: calc(-1 * var(--product-section-gutter));
@@ -371,6 +367,50 @@ html.is-homepage .home-section--crm {
 
 .product-page__section--ink .product-page__body {
     color: var(--product-muted);
+}
+
+html.is-document .md-main {
+    overflow-x: clip;
+}
+
+html.is-document .product-page__section--tint,
+html.is-document .product-page__section--ink {
+    background: transparent;
+    border-bottom: 0;
+    border-radius: var(--toto-shape-large);
+    isolation: isolate;
+    position: relative;
+}
+
+html.is-document .product-page__section:has(+ .product-page__section--tint),
+html.is-document .product-page__section:has(+ .product-page__section--ink) {
+    border-bottom: 0;
+}
+
+html.is-document .product-page__section--tint .product-grid,
+html.is-document .product-page__section--ink .product-grid {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+html.is-document .product-page__section--tint::before,
+html.is-document .product-page__section--ink::before {
+    border-radius: inherit;
+    content: "";
+    inset-block: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+}
+
+html.is-document .product-page__section--tint::before {
+    background: var(--toto-wash);
+}
+
+html.is-document .product-page__section--ink::before {
+    background: var(--toto-air);
 }
 
 @media screen and (max-width: 44.984375em) {
