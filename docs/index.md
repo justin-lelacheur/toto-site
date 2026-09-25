@@ -19,7 +19,6 @@ is_homepage: true
       <div class="home-hero__signal" aria-label="toto operating model: customer, workflow, and execution">
         <div class="home-signal__header">
           <span>Live operating context</span>
-          <b aria-hidden="true">toto / 01</b>
         </div>
         <div class="home-signal__diagram" aria-hidden="true">
           <div class="home-signal__node home-signal__node--customer">
@@ -64,17 +63,14 @@ is_homepage: true
       </div>
       <div class="home-principles">
         <article>
-          <span>01</span>
           <h3>One version of the customer</h3>
           <p>Relationships, consent, activity, cases, and ownership stay connected without forcing a new source of truth overnight.</p>
         </article>
         <article>
-          <span>02</span>
           <h3>Work that stays accountable</h3>
           <p>Long-running processes retain their context, approvals, exceptions, and evidence from the first request to the final outcome.</p>
         </article>
         <article>
-          <span>03</span>
           <h3>AI with a defined role</h3>
           <p>Agents can prepare, classify, and recommend. Policy and people control material action.</p>
         </article>
@@ -103,22 +99,18 @@ is_homepage: true
       </div>
       <ol class="home-flow home-flow--cards">
         <li class="home-flow__card">
-          <div class="home-flow__card-top"><span class="home-flow__number">01</span><span class="home-flow__marker" aria-hidden="true"></span></div>
           <strong>Model</strong>
           <p>Define the customer, organization, policy, and relationship that make the work meaningful.</p>
         </li>
         <li class="home-flow__card">
-          <div class="home-flow__card-top"><span class="home-flow__number">02</span><span class="home-flow__marker" aria-hidden="true"></span></div>
           <strong>Design</strong>
           <p>Shape forms, workflows, approvals, and exceptions in a shared studio.</p>
         </li>
         <li class="home-flow__card">
-          <div class="home-flow__card-top"><span class="home-flow__number">03</span><span class="home-flow__marker" aria-hidden="true"></span></div>
           <strong>Operate</strong>
           <p>Run the work through durable processes, versioned events, and owned domain services.</p>
         </li>
         <li class="home-flow__card">
-          <div class="home-flow__card-top"><span class="home-flow__number">04</span><span class="home-flow__marker" aria-hidden="true"></span></div>
           <strong>Improve</strong>
           <p>Use evidence from real execution to refine the next change with confidence.</p>
         </li>

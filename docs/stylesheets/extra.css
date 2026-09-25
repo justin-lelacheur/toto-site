@@ -406,31 +406,9 @@ html.is-homepage .home-flow--cards .home-flow__card:last-child {
     box-shadow: 0 0.8rem 2rem rgba(7, 27, 54, 0.08);
     display: grid;
     gap: 1.25rem;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto 1fr;
     min-height: 15.5rem;
     padding: 1.5rem;
-}
-
-.home-flow__card-top {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home-flow__number {
-    color: var(--toto-cobalt);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-}
-
-.home-flow__marker {
-    background: var(--toto-sky);
-    border-radius: 50%;
-    box-shadow: 0 0 0 0.3rem rgba(99, 197, 236, 0.2);
-    height: 0.55rem;
-    width: 0.55rem;
 }
 
 html.is-homepage .home-flow--cards strong {
