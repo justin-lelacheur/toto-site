@@ -356,6 +356,75 @@ html.is-homepage body {
     color: var(--product-muted);
 }
 
+/* Home process sequence: four explicit cards rather than a divided process strip. */
+html.is-homepage .home-flow--cards {
+    border: 0;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+html.is-homepage .home-flow--cards .home-flow__card,
+html.is-homepage .home-flow--cards .home-flow__card:last-child {
+    background: var(--toto-paper);
+    border: 0;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.8rem 2rem rgba(7, 27, 54, 0.08);
+    display: grid;
+    gap: 1.25rem;
+    grid-template-rows: auto auto 1fr;
+    min-height: 15.5rem;
+    padding: 1.5rem;
+}
+
+.home-flow__card-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-flow__number {
+    color: var(--toto-cobalt);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.home-flow__marker {
+    background: var(--toto-sky);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.3rem rgba(99, 197, 236, 0.2);
+    height: 0.55rem;
+    width: 0.55rem;
+}
+
+html.is-homepage .home-flow--cards strong {
+    color: var(--toto-ink);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+html.is-homepage .home-flow--cards p {
+    align-self: end;
+    color: var(--toto-muted);
+    font-size: 0.94rem;
+    line-height: 1.58;
+    margin: 0;
+}
+
+@media screen and (max-width: 44.984375em) {
+    html.is-homepage .home-flow--cards {
+        grid-template-columns: 1fr;
+    }
+
+    html.is-homepage .home-flow--cards .home-flow__card,
+    html.is-homepage .home-flow--cards .home-flow__card:last-child {
+        min-height: 0;
+        padding: 1.4rem;
+    }
+}
+
 /* Final scroll-state chrome overrides. */
 html.is-scrolled .md-header {
     background-color: rgba(0, 0, 0, 0.72) !important;

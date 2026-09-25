@@ -101,11 +101,27 @@ is_homepage: true
         <p class="home-eyebrow">From intent to outcome</p>
         <h2>Business meaning in. Governed action out.</h2>
       </div>
-      <ol class="home-flow">
-        <li><strong>Model</strong><span>Define the customer, organization, policy, and relationship that make the work meaningful.</span></li>
-        <li><strong>Design</strong><span>Shape forms, workflows, approvals, and exceptions in a shared studio.</span></li>
-        <li><strong>Operate</strong><span>Run the work through durable processes, versioned events, and owned domain services.</span></li>
-        <li><strong>Improve</strong><span>Use evidence from real execution to refine the next change with confidence.</span></li>
+      <ol class="home-flow home-flow--cards">
+        <li class="home-flow__card">
+          <div class="home-flow__card-top"><span class="home-flow__number">01</span><span class="home-flow__marker" aria-hidden="true"></span></div>
+          <strong>Model</strong>
+          <p>Define the customer, organization, policy, and relationship that make the work meaningful.</p>
+        </li>
+        <li class="home-flow__card">
+          <div class="home-flow__card-top"><span class="home-flow__number">02</span><span class="home-flow__marker" aria-hidden="true"></span></div>
+          <strong>Design</strong>
+          <p>Shape forms, workflows, approvals, and exceptions in a shared studio.</p>
+        </li>
+        <li class="home-flow__card">
+          <div class="home-flow__card-top"><span class="home-flow__number">03</span><span class="home-flow__marker" aria-hidden="true"></span></div>
+          <strong>Operate</strong>
+          <p>Run the work through durable processes, versioned events, and owned domain services.</p>
+        </li>
+        <li class="home-flow__card">
+          <div class="home-flow__card-top"><span class="home-flow__number">04</span><span class="home-flow__marker" aria-hidden="true"></span></div>
+          <strong>Improve</strong>
+          <p>Use evidence from real execution to refine the next change with confidence.</p>
+        </li>
       </ol>
     </div>
   </section>
