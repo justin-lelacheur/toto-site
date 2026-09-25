@@ -637,7 +637,6 @@ html.is-homepage .home-principles article:last-child {
 }
 
 .home-open__copy {
-    max-width: 35rem;
 }
 
 .home-open__copy > p {
@@ -1599,7 +1598,6 @@ html.is-homepage .md-content__inner::before {
     font-size: clamp(1.05rem, 1.7vw, 1.33rem);
     line-height: 1.55;
     margin: 1.25rem 0 0;
-    max-width: 35rem;
 }
 
 .home-actions {
@@ -1805,14 +1803,10 @@ html.is-homepage .md-content__inner::before {
     color: #a8291d;
 }
 
-.home-intro {
-}
-
 .home-section h2 {
     font-size: clamp(1.15rem, 2.7vw, 2.8rem);
     line-height: 1.01;
     margin: 0;
-    max-width: 30ch;
     text-wrap: balance;
 }
 
@@ -1820,7 +1814,6 @@ html.is-homepage .md-content__inner::before {
     font-size: clamp(1.1rem, 1.8vw, 1.4rem);
     line-height: 1.55;
     margin: 1.25rem 0 0;
-    max-width: 46rem;
 }
 
 .home-section__heading {
@@ -1867,7 +1860,6 @@ html.is-homepage .md-content__inner::before {
     font-weight: 500;
     line-height: 1.15;
     margin: 1.75rem 0 0.75rem;
-    max-width: 12ch;
 }
 
 .home-principles p,
@@ -1876,11 +1868,6 @@ html.is-homepage .md-content__inner::before {
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
-    max-width: 28rem;
-}
-
-.home-crm__copy p {
-    max-width: 46rem;
 }
 
 .home-crm {
