@@ -987,9 +987,19 @@
           }
         });
       };
+      let scrollFrame = 0;
+      const syncHeaderScroll = () => {
+        if (scrollFrame) return;
+        scrollFrame = window.requestAnimationFrame(() => {
+          document.documentElement.classList.toggle("is-scrolled", window.scrollY > 24);
+          scrollFrame = 0;
+        });
+      };
       expandSidebar();
       syncDrawer();
       normalizeAccessibility();
+      syncHeaderScroll();
+      window.addEventListener("scroll", syncHeaderScroll, { passive: true });
       document.querySelector("#__drawer")?.addEventListener("change", syncDrawer);
       window.matchMedia("(max-width: 44.984375em)").addEventListener("change", syncDrawer);
       new MutationObserver(() => {
