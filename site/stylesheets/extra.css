@@ -345,8 +345,11 @@ html.is-homepage .home-section--crm {
 }
 
 .product-page__section--foundry {
-    border-radius: var(--toto-shape-large);
     --product-section-gutter: 1.5rem;
+}
+
+.product-page__section--rounded {
+    border-radius: var(--toto-shape-large);
 }
 
 .product-page__section--foundry .product-grid {
