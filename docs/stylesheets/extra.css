@@ -145,7 +145,11 @@ html.is-homepage .md-header {
 }
 
 .home-eyebrow {
-    color: var(--toto-cobalt);
+    color: var(--toto-sky);
+}
+
+.home-hero .home-eyebrow {
+    margin-bottom: 0.5rem;
 }
 
 .home-action--light {
@@ -2414,7 +2418,7 @@ html.is-homepage .md-header {
 }
 
 .home-eyebrow {
-    color: var(--toto-sky);
+    color: var(--toto-cobalt);
 }
 
 .home-action--light {
