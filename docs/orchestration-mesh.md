@@ -15,7 +15,7 @@ title: "toto foundry Workflow Runtime"
 		<div class="product-grid product-grid--three">
 			<article class="product-grid__item">
 				<h3>Durable state</h3>
-				<p>Temporal retains workflow progress, identity, policy decision, approval state, and correlation across the full life of the work.</p>
+				<p>Conductor OSS retains workflow progress, identity, policy decision, approval state, and correlation across the full life of the work.</p>
 			</article>
 			<article class="product-grid__item">
 				<h3>Human decisions</h3>
@@ -34,7 +34,7 @@ title: "toto foundry Workflow Runtime"
 		<ol class="product-steps">
 			<li><strong>Own the command</strong><span>A domain service validates, authorizes, and changes its authoritative business state.</span></li>
 			<li><strong>Publish the fact</strong><span>Kafka distributes a versioned event through a reliable outbox, ready for replay and correlation.</span></li>
-			<li><strong>Coordinate the outcome</strong><span>Temporal drives the durable process and invokes bounded AI only where reasoning is genuinely useful.</span></li>
+			<li><strong>Coordinate the outcome</strong><span>Conductor OSS drives the durable process and invokes bounded AI only where reasoning is genuinely useful.</span></li>
 		</ol>
 	</section>
 
