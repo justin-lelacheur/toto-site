@@ -344,8 +344,16 @@ html.is-homepage .home-section--crm {
     color: var(--toto-cobalt) !important;
 }
 
-.product-page__section--tint {
-    background: var(--toto-wash);
+.product-page__section--foundry {
+    border-radius: var(--toto-shape-large);
+    --product-section-gutter: 1.5rem;
+}
+
+.product-page__section--foundry .product-grid {
+    margin-left: calc(-1 * var(--product-section-gutter));
+    margin-right: calc(-1 * var(--product-section-gutter));
+    padding-left: var(--product-section-gutter);
+    padding-right: var(--product-section-gutter);
 }
 
 .product-page__section--ink {
@@ -360,6 +368,12 @@ html.is-homepage .home-section--crm {
 
 .product-page__section--ink .product-page__body {
     color: var(--product-muted);
+}
+
+@media screen and (max-width: 44.984375em) {
+    .product-page__section--foundry {
+        --product-section-gutter: 16px;
+    }
 }
 
 /* Material-inspired corner scale for surfaced homepage components. */

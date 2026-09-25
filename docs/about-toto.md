@@ -15,7 +15,7 @@ title: "About toto"
 		<p class="product-page__body">toto builds around a simple conviction: people who are accountable for the business should be able to see, shape, and govern the software that carries the business forward. toto foundry turns that conviction into shared semantics, durable processes, clear ownership, and AI that works within explicit boundaries.</p>
 	</section>
 
-	<section class="product-page__section product-page__section--tint">
+	<section class="product-page__section product-page__section--tint product-page__section--foundry">
 		<p class="product-page__kicker">How toto foundry is built</p>
 		<h2>Four principles guide the platform.</h2>
 		<div class="product-grid product-grid--two">
