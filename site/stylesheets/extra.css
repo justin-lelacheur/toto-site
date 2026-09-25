@@ -47,6 +47,195 @@
 }
 
 /* ==========================================
+   11. TOTO BLUE SYSTEM
+   ========================================== */
+:root {
+    --toto-night: #071b36;
+    --toto-navy: #0b2b50;
+    --toto-cobalt: #0a5fb4;
+    --toto-sky: #63c5ec;
+    --toto-mist: #f3f8fc;
+    --toto-cloud: #f6f8fa;
+    --toto-paper: #ffffff;
+    --toto-ink: #10233d;
+    --toto-muted: #526b84;
+    --toto-line: rgba(7, 27, 54, 0.18);
+    --md-primary-fg-color: var(--toto-night);
+    --md-primary-fg-color--light: var(--toto-navy);
+    --md-primary-bg-color: #ffffff;
+    --md-accent-fg-color: var(--toto-cobalt);
+    --md-typeset-a-color: var(--toto-cobalt);
+}
+
+/* Keep product pages light and editorial; blue is used as a structural accent. */
+html.is-document,
+html.is-document body,
+html.is-document .md-main,
+html.is-document .md-content,
+html.is-document .md-content__inner {
+    background-color: var(--toto-paper) !important;
+}
+
+html.is-document .md-header {
+    background-color: var(--toto-night) !important;
+}
+
+html.is-document .md-logo img {
+    content: url("../images/toto-site-logo-white-med.webp") !important;
+}
+
+html.is-document .md-tabs {
+    background-color: var(--toto-paper) !important;
+    border-bottom: 1px solid var(--toto-line);
+}
+
+html.is-document .md-tabs__link {
+    color: var(--toto-ink) !important;
+}
+
+html.is-document .md-tabs__link--active,
+html.is-document .md-tabs__link:hover {
+    color: var(--toto-cobalt) !important;
+}
+
+html.is-document .md-sidebar--primary .md-nav__link--active,
+html.is-homepage .md-sidebar--primary .md-nav__link--active {
+    background-color: rgba(10, 95, 180, 0.11) !important;
+    color: var(--toto-cobalt) !important;
+}
+
+html.is-document .md-sidebar--secondary .md-nav__link--active {
+    border-left-color: var(--toto-sky);
+    color: var(--toto-cobalt) !important;
+}
+
+html.is-document .md-footer,
+html.is-document .md-footer-meta {
+    background-color: var(--toto-night) !important;
+}
+
+html.is-homepage,
+html.is-homepage body {
+    background-color: var(--toto-night) !important;
+}
+
+html.is-homepage .md-header,
+html.is-homepage .md-footer,
+html.is-homepage .md-footer-meta {
+    background-color: rgba(7, 27, 54, 0.94) !important;
+}
+
+.home-product {
+    color: var(--toto-ink);
+}
+
+.home-hero {
+    background: var(--toto-night);
+}
+
+.home-eyebrow {
+    color: var(--toto-sky);
+}
+
+.home-action--light {
+    background: var(--toto-paper);
+    color: var(--toto-night) !important;
+}
+
+.home-action--light:hover,
+.home-action--light:focus-visible {
+    background: var(--toto-sky);
+}
+
+.home-action--dark {
+    background: var(--toto-cobalt);
+}
+
+.home-action--dark:hover,
+.home-action--dark:focus-visible {
+    background: var(--toto-navy);
+}
+
+.home-hero__signal {
+    background-color: rgba(99, 197, 236, 0.06);
+    border-color: rgba(99, 197, 236, 0.45);
+}
+
+.home-signal__header,
+.home-signal__frame {
+    border-color: rgba(99, 197, 236, 0.36);
+}
+
+.home-signal__header b {
+    color: var(--toto-sky);
+}
+
+.home-signal__node-dot {
+    background: var(--toto-sky);
+    border-color: rgba(99, 197, 236, 0.2);
+}
+
+.home-signal__path span {
+    border-right-color: var(--toto-sky);
+    border-top-color: var(--toto-sky);
+}
+
+.home-section--paper,
+.home-section--close {
+    background: var(--toto-paper);
+}
+
+.home-section--signal {
+    background: var(--toto-mist);
+}
+
+.home-section--crm {
+    background: var(--toto-cobalt);
+}
+
+.home-section--paper .home-eyebrow,
+.home-section--signal .home-eyebrow,
+.home-section--close .home-eyebrow,
+.home-principles span {
+    color: var(--toto-cobalt);
+}
+
+.home-crm .home-eyebrow {
+    color: var(--toto-sky);
+}
+
+.home-principles,
+.home-principles article,
+.home-flow,
+.home-flow li {
+    border-color: var(--toto-line);
+}
+
+.product-page {
+    --product-ink: var(--toto-ink);
+    --product-muted: var(--toto-muted);
+    --product-line: var(--toto-line);
+    --product-signal: var(--toto-cobalt);
+}
+
+.product-page__section--tint {
+    background: var(--toto-mist);
+}
+
+.product-page__section--ink {
+    background: var(--toto-night);
+}
+
+.product-page__section--ink .product-page__kicker {
+    color: var(--toto-sky);
+}
+
+.product-contact__email a {
+    color: var(--toto-cobalt) !important;
+    text-decoration-color: var(--toto-sky);
+}
+
+/* ==========================================
    2. GLOBAL HEADER LOGO OVERRIDES
    ========================================== */
 /* Locks your main header logo image container scale crisp across all views */
@@ -1638,6 +1827,174 @@ html.is-homepage .md-content__inner {
         padding-left: 16px;
         padding-right: 16px;
     }
+}
+
+/* Keep the visual palette after legacy compatibility rules in this stylesheet. */
+html.is-document,
+html.is-document body,
+html.is-document .md-main,
+html.is-document .md-content,
+html.is-document .md-content__inner {
+    background-color: var(--toto-paper) !important;
+}
+
+html.is-document .md-header {
+    background-color: var(--toto-night) !important;
+}
+
+html.is-document .md-logo img {
+    content: url("../images/toto-site-logo-white-med.webp") !important;
+}
+
+html.is-document .md-tabs {
+    background-color: var(--toto-paper) !important;
+    border-bottom: 1px solid var(--toto-line);
+}
+
+html.is-document .md-tabs__link {
+    color: var(--toto-ink) !important;
+}
+
+html.is-document .md-tabs__link--active,
+html.is-document .md-tabs__link:hover {
+    color: var(--toto-cobalt) !important;
+}
+
+html.is-document .md-sidebar--primary .md-nav__link--active,
+html.is-homepage .md-sidebar--primary .md-nav__link--active {
+    background-color: rgba(10, 95, 180, 0.11) !important;
+    color: var(--toto-cobalt) !important;
+}
+
+html.is-document .md-sidebar--secondary .md-nav__link--active {
+    border-left-color: var(--toto-sky);
+    color: var(--toto-cobalt) !important;
+}
+
+html.is-document .md-footer,
+html.is-document .md-footer-meta {
+    background-color: var(--toto-night) !important;
+}
+
+html.is-homepage,
+html.is-homepage body {
+    background-color: var(--toto-night) !important;
+}
+
+html.is-homepage .md-header,
+html.is-homepage .md-footer,
+html.is-homepage .md-footer-meta {
+    background-color: rgba(7, 27, 54, 0.94) !important;
+}
+
+.home-product {
+    color: var(--toto-ink);
+}
+
+.home-hero {
+    background: var(--toto-night);
+}
+
+.home-eyebrow {
+    color: var(--toto-sky);
+}
+
+.home-action--light {
+    background: var(--toto-paper);
+    color: var(--toto-night) !important;
+}
+
+.home-action--light:hover,
+.home-action--light:focus-visible {
+    background: var(--toto-sky);
+}
+
+.home-action--dark {
+    background: var(--toto-cobalt);
+}
+
+.home-action--dark:hover,
+.home-action--dark:focus-visible {
+    background: var(--toto-navy);
+}
+
+.home-hero__signal {
+    background-color: rgba(99, 197, 236, 0.06);
+    border-color: rgba(99, 197, 236, 0.45);
+}
+
+.home-signal__header,
+.home-signal__frame {
+    border-color: rgba(99, 197, 236, 0.36);
+}
+
+.home-signal__header b {
+    color: var(--toto-sky);
+}
+
+.home-signal__node-dot {
+    background: var(--toto-sky);
+    border-color: rgba(99, 197, 236, 0.2);
+}
+
+.home-signal__path span {
+    border-right-color: var(--toto-sky);
+    border-top-color: var(--toto-sky);
+}
+
+.home-section--paper,
+.home-section--close {
+    background: var(--toto-paper);
+}
+
+.home-section--signal {
+    background: var(--toto-mist);
+}
+
+.home-section--crm {
+    background: var(--toto-cobalt);
+}
+
+.home-section--paper .home-eyebrow,
+.home-section--signal .home-eyebrow,
+.home-section--close .home-eyebrow,
+.home-principles span {
+    color: var(--toto-cobalt);
+}
+
+.home-crm .home-eyebrow {
+    color: var(--toto-sky);
+}
+
+.home-principles,
+.home-principles article,
+.home-flow,
+.home-flow li {
+    border-color: var(--toto-line);
+}
+
+.product-page {
+    --product-ink: var(--toto-ink);
+    --product-muted: var(--toto-muted);
+    --product-line: var(--toto-line);
+    --product-signal: var(--toto-cobalt);
+}
+
+.product-page__section--tint {
+    background: var(--toto-mist);
+}
+
+.product-page__section--ink {
+    background: var(--toto-night);
+}
+
+.product-page__section--ink .product-page__kicker {
+    color: var(--toto-sky);
+}
+
+.product-contact__email a {
+    color: var(--toto-cobalt) !important;
+    text-decoration-color: var(--toto-sky);
 }
 
 
