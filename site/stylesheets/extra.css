@@ -370,6 +370,11 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
     color: #ffffff;
 }
 
+.landing-section--burgundy {
+    background: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
 .landing-kicker {
     margin: 0 0 0.75rem;
     color: #B30B00;
@@ -382,6 +387,11 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 
 .landing-section--dark .landing-kicker {
     color: #B30B00;
+}
+
+.landing-section--burgundy .landing-kicker,
+.landing-section--burgundy .landing-section__grid--steps span {
+    color: #ffffff;
 }
 
 .landing-section h2 {
