@@ -260,6 +260,10 @@ html.is-homepage body {
     color: var(--toto-ink);
 }
 
+.home-hero h1 {
+    color: #000000 !important;
+}
+
 .home-hero__lead {
     color: var(--toto-muted);
 }
