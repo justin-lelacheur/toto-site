@@ -2,7 +2,7 @@
 title: "Why toto"
 ---
 
-<main class="product-page">
+<main class="product-page product-page--why-toto">
 	<header class="product-page__hero">
 		<p class="product-page__eyebrow">Why toto</p>
 		<h1>Make change your first principal.</h1>
