@@ -50,11 +50,12 @@
     Toto color tokens
     ========================================== */
 :root {
-    --toto-blue-primary: #2B67AC;
-    --toto-blue-deep: #173B5F;
-    --toto-blue-light: #E6EFF8;
+    --toto-blue-primary: #006B96;
+    --toto-blue-deep: #003B5C;
+    --toto-blue-light: #E6F3F7;
+    --toto-sun-orange: #CA4D17;
     --toto-paper: #ffffff;
-    --toto-line: rgba(23, 59, 95, 0.18);
+    --toto-line: rgba(0, 59, 92, 0.18);
     --toto-shape-small: 0.4rem;
     --toto-shape-medium: 0.6rem;
     --toto-shape-large: 0.8rem;
@@ -2378,8 +2379,9 @@ html.is-homepage .md-tabs__link {
 }
 
 html.is-homepage .md-tabs__link--active,
+html.is-homepage .md-tabs__item--active .md-tabs__link,
 html.is-homepage .md-tabs__link:hover {
-    color: #000000;
+    color: var(--toto-blue-primary) !important;
 }
 
 html.is-homepage .md-tabs__item--active {
@@ -2739,6 +2741,36 @@ html.is-homepage .home-hero .home-action--light:hover,
 html.is-homepage .home-hero .home-action--light:focus-visible {
     background: var(--toto-blue-deep);
     color: #ffffff !important;
+}
+
+html.is-homepage .home-signal__node-dot {
+    background: var(--toto-sun-orange);
+    border-color: rgba(202, 77, 23, 0.2);
+}
+
+html.is-homepage .home-signal__path span {
+    border-right-color: var(--toto-blue-primary);
+    border-top-color: var(--toto-blue-primary);
+}
+
+html.is-homepage .home-section--crm .home-eyebrow,
+html.is-homepage .home-principles article span {
+    color: var(--toto-blue-light) !important;
+}
+
+html.is-homepage .home-section__heading .home-eyebrow {
+    color: var(--toto-blue-primary);
+}
+
+html.is-homepage .home-action--dark,
+html.is-homepage .home-action--dark span {
+    background: var(--toto-sun-orange);
+    color: #000000 !important;
+}
+
+html.is-homepage .home-action--dark:hover,
+html.is-homepage .home-action--dark:focus-visible {
+    background: var(--toto-blue-deep);
 }
 
 
