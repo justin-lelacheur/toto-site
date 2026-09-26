@@ -2378,14 +2378,17 @@ html.is-homepage .md-tabs__link {
     color: #ffffff !important;
 }
 
-html.is-homepage .md-tabs__link--active,
-html.is-homepage .md-tabs__item--active .md-tabs__link,
 html.is-homepage .md-tabs__link:hover {
-    color: var(--toto-blue-primary) !important;
+    color: var(--toto-sun-orange) !important;
+}
+
+html.is-homepage .md-tabs__link--active,
+html.is-homepage .md-tabs__item--active .md-tabs__link {
+    color: var(--toto-sun-orange) !important;
 }
 
 html.is-homepage .md-tabs__item--active {
-    border-bottom-color: var(--toto-blue-primary) !important;
+    border-bottom-color: var(--toto-sun-orange) !important;
 }
 
 html.is-document .md-sidebar--primary .md-nav__link--active,
@@ -2764,13 +2767,14 @@ html.is-homepage .home-section__heading .home-eyebrow {
 
 html.is-homepage .home-action--dark,
 html.is-homepage .home-action--dark span {
-    background: var(--toto-sun-orange);
-    color: #000000 !important;
+    background: var(--toto-blue-primary);
+    color: #ffffff !important;
 }
 
 html.is-homepage .home-action--dark:hover,
 html.is-homepage .home-action--dark:focus-visible {
-    background: var(--toto-blue-deep);
+    background: var(--toto-sun-orange);
+    color: #ffffff !important;
 }
 
 
