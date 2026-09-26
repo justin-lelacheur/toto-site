@@ -2749,15 +2749,27 @@ html.is-homepage body {
     border-top-color: var(--toto-cobalt);
 }
 
-.home-section--open,
+.home-section--open {
+    background: var(--toto-wash);
+}
+
 .home-section--paper {
-    background: var(--toto-air);
+    background: var(--toto-navy);
+    color: var(--toto-paper);
+}
+
+html.is-homepage .home-section--paper .home-eyebrow {
+    color: var(--toto-cloud);
 }
 
 .home-section--signal,
-html.is-homepage .home-section--crm,
 .home-section--close {
     background: var(--toto-paper);
+}
+
+html.is-homepage .home-section--crm {
+    background: var(--toto-paper);
+    color: var(--toto-ink);
 }
 
 .home-section--crm {
@@ -2765,7 +2777,7 @@ html.is-homepage .home-section--crm,
 }
 
 .home-crm .home-eyebrow {
-    color: var(--toto-cobalt);
+    color: var(--toto-navy);
 }
 
 .home-crm__copy,
@@ -2773,10 +2785,27 @@ html.is-homepage .home-section--crm,
     background: var(--toto-air);
     border: 0;
     box-shadow: 0 0.75rem 2rem rgba(7, 59, 131, 0.08);
+    color: var(--toto-ink);
 }
 
 .home-crm__copy .home-text-link {
-    color: var(--toto-cobalt) !important;
+    color: var(--toto-navy) !important;
+}
+
+html.is-homepage .home-principles article {
+    background: var(--toto-air);
+}
+
+html.is-homepage .home-open__examples code {
+    background: var(--toto-paper);
+    border-color: var(--toto-line);
+    color: var(--toto-ink);
+}
+
+html.is-homepage .home-flow__tokens code {
+    background: var(--toto-wash);
+    border-color: var(--toto-line);
+    color: var(--toto-ink);
 }
 
 .product-page__section--tint {
