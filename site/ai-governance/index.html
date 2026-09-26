@@ -941,6 +941,43 @@
     
   <script>
     document.documentElement.classList.add("is-document");
+      const buildDocumentToc = () => {
+        if (!document.documentElement.classList.contains("is-document")) return;
+        const toc = document.querySelector(".md-sidebar--secondary .md-nav--secondary");
+        const headings = Array.from(document.querySelectorAll(".md-content h2, .md-content h3"));
+        if (!toc || !headings.length) return;
+        const signature = headings.map((heading) => `${heading.tagName}:${heading.textContent.trim()}`).join("|");
+        if (toc.dataset.totoTocSignature === signature) return;
+
+        const usedIds = new Set(Array.from(document.querySelectorAll("[id]")).map((element) => element.id));
+        const items = document.createElement("ul");
+        items.className = "md-nav__list";
+        headings.forEach((heading) => {
+          if (!heading.id) {
+            const baseId = heading.textContent
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-|-$/g, "") || "section";
+            let id = baseId;
+            let suffix = 2;
+            while (usedIds.has(id)) id = `${baseId}-${suffix++}`;
+            heading.id = id;
+            usedIds.add(id);
+          }
+
+          const item = document.createElement("li");
+          item.className = "md-nav__item";
+          const link = document.createElement("a");
+          link.className = "md-nav__link";
+          link.href = `#${heading.id}`;
+          link.textContent = heading.textContent.trim();
+          item.append(link);
+          items.append(item);
+        });
+        toc.replaceChildren(items);
+        toc.dataset.totoTocSignature = signature;
+      };
       const expandSidebar = () => {
         document.querySelectorAll(".md-sidebar__scrollwrap, .md-sidebar__inner").forEach((element) => {
           if (element.style.getPropertyValue("height") !== "auto") {
@@ -992,6 +1029,7 @@
         });
       };
       expandSidebar();
+      buildDocumentToc();
       syncDrawer();
       normalizeAccessibility();
       syncHeaderScroll();
@@ -1000,6 +1038,7 @@
       window.matchMedia("(max-width: 44.984375em)").addEventListener("change", syncDrawer);
       new MutationObserver(() => {
         expandSidebar();
+        buildDocumentToc();
         syncDrawer();
         normalizeAccessibility();
       }).observe(document.body, {
