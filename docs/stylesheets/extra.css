@@ -373,10 +373,13 @@ html.is-document {
     --document-type-scale: 0.666667;
 }
 
-html.is-document .product-page__eyebrow,
+html.is-document .product-page__eyebrow {
+    font-size: calc(0.72rem * var(--document-type-scale));
+}
+
 html.is-document .product-page__kicker,
 html.is-document .product-grid__number {
-    font-size: calc(0.72rem * var(--document-type-scale));
+    font-size: 0.72rem;
 }
 
 html.is-document .product-page h1 {
@@ -393,29 +396,29 @@ html.is-document .product-page__lead {
 
 html.is-document .product-page__section h2,
 html.is-document .product-page__closing h2 {
-    font-size: calc(clamp(2rem, 4.4vw, 3.85rem) * var(--document-type-scale));
+    font-size: clamp(1.15rem, 2.7vw, 2.8rem);
 }
 
 html.is-document .product-page__body,
 html.is-document .product-page__closing > p {
-    font-size: calc(1.08rem * var(--document-type-scale));
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
 }
 
 html.is-document .product-grid__item h3 {
-    font-size: calc(1.24rem * var(--document-type-scale));
+    font-size: 1.24rem;
 }
 
 html.is-document .product-grid__item p,
 html.is-document .product-steps span {
-    font-size: calc(0.94rem * var(--document-type-scale));
+    font-size: 0.94rem;
 }
 
 html.is-document .product-page__link {
-    font-size: calc(0.95rem * var(--document-type-scale));
+    font-size: 0.95rem;
 }
 
 html.is-document .product-steps strong {
-    font-size: calc(1.2rem * var(--document-type-scale));
+    font-size: 1.2rem;
 }
 
 html.is-document .product-contact__email {
