@@ -47,23 +47,13 @@
 }
 
 /* ==========================================
-   11. TOTO BLUE SYSTEM
-   ========================================== */
+    Toto color tokens
+    ========================================== */
 :root {
     --toto-blue-primary: #2B67AC;
     --toto-blue-deep: #173B5F;
     --toto-blue-light: #E6EFF8;
-    --toto-night: var(--toto-blue-deep);
-    --toto-navy: var(--toto-blue-primary);
-    --toto-cobalt: var(--toto-blue-primary);
-    --toto-sky: var(--toto-blue-primary);
-    --toto-mist: var(--toto-blue-light);
-    --toto-cloud: var(--toto-blue-light);
     --toto-paper: #ffffff;
-    --toto-ink: var(--toto-blue-deep);
-    --toto-muted: var(--toto-blue-deep);
-    --toto-air: var(--toto-blue-light);
-    --toto-wash: var(--toto-blue-light);
     --toto-line: rgba(23, 59, 95, 0.18);
     --toto-shape-small: 0.4rem;
     --toto-shape-medium: 0.6rem;
@@ -71,10 +61,10 @@
     --home-content-max: 75rem;
     --home-gutter: clamp(1.25rem, 2.08vw, 1.5rem);
     --toto-body-size: 1rem;
-    --md-primary-fg-color: var(--toto-night);
-    --md-primary-fg-color--light: var(--toto-navy);
+    --md-primary-fg-color: var(--toto-blue-deep);
+    --md-primary-fg-color--light: var(--toto-blue-primary);
     --md-primary-bg-color: #ffffff;
-    --md-accent-fg-color: var(--toto-cobalt);
+    --md-accent-fg-color: var(--toto-blue-primary);
     --md-typeset-a-color: #000000;
 }
 
@@ -114,28 +104,28 @@ html.is-document .md-tabs__link--active,
 html.is-document .md-tabs__link:hover,
 html.is-homepage .md-tabs__link--active,
 html.is-homepage .md-tabs__link:hover {
-    color: #000000;
+    color: var(--toto-blue-primary) !important;
 }
 
 html.is-document .md-tabs__item--active,
 html.is-homepage .md-tabs__item--active {
-    border-bottom-color: var(--toto-sky) !important;
+    border-bottom-color: var(--toto-blue-primary) !important;
 }
 
 html.is-document .md-sidebar--primary .md-nav__link--active,
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(43, 103, 172, 0.12) !important;
-    color: #000000;
+    color: var(--toto-blue-primary) !important;
 }
 
 html.is-document .md-sidebar--secondary .md-nav__link--active {
-    border-left-color: var(--toto-sky);
-    color: #000000;
+    border-left-color: var(--toto-blue-primary);
+    color: var(--toto-blue-primary) !important;
 }
 
 html.is-homepage,
 html.is-homepage body {
-    background-color: var(--toto-night) !important;
+    background-color: var(--toto-blue-deep) !important;
 }
 
 html.is-homepage .md-header {
@@ -143,15 +133,15 @@ html.is-homepage .md-header {
 }
 
 .home-product {
-    color: #000000;
+    color: var(--toto-blue-deep);
 }
 
 .home-hero {
-    background: var(--toto-night);
+    background: var(--toto-blue-deep);
 }
 
 .home-eyebrow {
-    color: #000000;
+    color: var(--toto-blue-deep);
 }
 
 .home-hero .home-eyebrow {
@@ -160,21 +150,21 @@ html.is-homepage .md-header {
 
 .home-action--light {
     background: var(--toto-paper);
-    color: #000000;
+    color: var(--toto-blue-deep) !important;
 }
 
 .home-action--light:hover,
 .home-action--light:focus-visible {
-    background: var(--toto-sky);
+    background: var(--toto-blue-primary);
 }
 
 .home-action--dark {
-    background: var(--toto-cobalt);
+    background: var(--toto-blue-primary);
 }
 
 .home-action--dark:hover,
 .home-action--dark:focus-visible {
-    background: var(--toto-navy);
+    background: var(--toto-blue-primary);
 }
 
 .home-hero__signal {
@@ -188,17 +178,17 @@ html.is-homepage .md-header {
 }
 
 .home-signal__header b {
-    color: #000000;
+    color: var(--toto-blue-primary);
 }
 
 .home-signal__node-dot {
-    background: var(--toto-sky);
+    background: var(--toto-blue-primary);
     border-color: rgba(43, 103, 172, 0.2);
 }
 
 .home-signal__path span {
-    border-right-color: var(--toto-sky);
-    border-top-color: var(--toto-sky);
+    border-right-color: var(--toto-blue-primary);
+    border-top-color: var(--toto-blue-primary);
 }
 
 .home-section--paper,
@@ -207,22 +197,22 @@ html.is-homepage .md-header {
 }
 
 .home-section--signal {
-    background: var(--toto-mist);
+    background: var(--toto-blue-light);
 }
 
 .home-section--crm {
-    background: var(--toto-cobalt);
+    background: var(--toto-blue-primary);
 }
 
 .home-section--paper .home-eyebrow,
 .home-section--signal .home-eyebrow,
 .home-section--close .home-eyebrow,
 .home-principles span {
-    color: #000000;
+    color: var(--toto-blue-deep);
 }
 
 .home-crm .home-eyebrow {
-    color: #000000;
+    color: var(--toto-blue-light);
 }
 
 .home-principles,
@@ -233,36 +223,35 @@ html.is-homepage .md-header {
 }
 
 .product-page {
-    --product-ink: var(--toto-ink);
-    --product-muted: var(--toto-muted);
+    --product-ink: var(--toto-blue-deep);
     --product-line: var(--toto-line);
-    --product-signal: var(--toto-cobalt);
+    --product-signal: var(--toto-blue-primary);
 }
 
 .product-page__section--tint {
-    background: var(--toto-mist);
+    background: var(--toto-blue-light);
 }
 
 .product-page__section--ink {
-    background: var(--toto-night);
+    background: var(--toto-blue-deep);
 }
 
 .product-page__section--ink .product-page__kicker {
-    color: #000000;
+    color: var(--product-signal);
 }
 
 .product-contact__email a {
-    color: #000000;
-    text-decoration-color: var(--toto-sky);
+    color: var(--product-signal) !important;
+    text-decoration-color: var(--toto-blue-primary);
 }
 
 html.is-homepage,
 html.is-homepage body {
-    background-color: var(--toto-air) !important;
+    background-color: var(--toto-blue-light) !important;
 }
 
 .home-hero {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
     color: #000000;
 }
 
@@ -280,7 +269,7 @@ html.is-homepage body {
 }
 
 .home-action--dark {
-    background: var(--toto-navy);
+    background: var(--toto-blue-primary);
 }
 
 .home-hero__signal {
@@ -306,7 +295,7 @@ html.is-homepage body {
 }
 
 .home-signal__node-dot {
-    background: var(--toto-cobalt);
+    background: var(--toto-blue-primary);
     border-color: rgba(43, 103, 172, 0.14);
 }
 
@@ -315,17 +304,17 @@ html.is-homepage body {
 }
 
 .home-signal__path span {
-    border-right-color: var(--toto-cobalt);
-    border-top-color: var(--toto-cobalt);
+    border-right-color: var(--toto-blue-primary);
+    border-top-color: var(--toto-blue-primary);
 }
 
 .home-section--signal,
 .home-section--close {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
 }
 
 html.is-homepage .home-section--crm {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
     color: #000000;
 }
 
@@ -356,7 +345,7 @@ html.is-homepage .home-section--crm {
 }
 
 .product-page__section--ink {
-    background: var(--toto-air);
+    background: var(--toto-blue-light);
     color: #000000;
 }
 
@@ -369,17 +358,78 @@ html.is-homepage .home-section--crm {
     color: #000000;
 }
 
+html body :is(h1, h2, h3, h4, h5, h6) {
+    color: #000000 !important;
+}
+
+/* Keep body copy black while retaining color for display and interface text. */
+html.is-homepage .home-product {
+    color: var(--toto-blue-deep);
+}
+
+html.is-homepage .home-eyebrow,
+html.is-homepage .home-section__heading .home-eyebrow,
+html.is-homepage .home-principles span {
+    color: var(--toto-blue-deep);
+}
+
+html.is-homepage .home-section--crm h2,
+html.is-homepage .home-crm__copy {
+    color: #ffffff;
+}
+
+html.is-homepage .home-crm__copy {
+    background: var(--toto-paper);
+    color: #000000;
+}
+
+html.is-homepage .home-section--crm .home-eyebrow {
+    color: var(--toto-blue-light);
+}
+
+html.is-homepage .home-flow--cards strong {
+    color: var(--toto-blue-deep);
+}
+
+html.is-homepage .home-signal__header b {
+    color: var(--toto-blue-primary);
+}
+
+html.is-document .md-tabs__link--active,
+html.is-document .md-tabs__link:hover,
+html.is-homepage .md-tabs__link--active,
+html.is-homepage .md-tabs__link:hover {
+    color: var(--toto-blue-primary) !important;
+}
+
+html.is-document .md-sidebar--primary .md-nav__link--active,
+html.is-homepage .md-sidebar--primary .md-nav__link--active,
+html.is-document .md-sidebar--secondary .md-nav__link--active {
+    color: var(--toto-blue-primary) !important;
+}
+
+html.is-document .product-page {
+    color: var(--product-ink);
+}
+
+html.is-document .product-page__eyebrow,
+html.is-document .product-page__kicker,
+html.is-document .product-grid__number,
+html.is-document .product-steps--cards > li::before {
+    color: var(--product-signal);
+}
+
 html.is-homepage .home-eyebrow,
 html.is-homepage .home-principles span {
-    color: #000000;
+    color: var(--toto-blue-deep);
 }
 
 html.is-homepage .home-section--paper .home-eyebrow {
-    color: #000000;
+    color: var(--toto-blue-deep);
 }
 
 html.is-homepage .home-signal__node-dot {
-    background: var(--toto-navy);
+    background: var(--toto-blue-primary);
     border-color: rgba(43, 103, 172, 0.14);
 }
 
@@ -489,11 +539,11 @@ html.is-document .product-page__section--ink::before {
 }
 
 html.is-document .product-page__section--tint::before {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
 }
 
 html.is-document .product-page__section--ink::before {
-    background: var(--toto-air);
+    background: var(--toto-blue-light);
 }
 
 @media screen and (max-width: 44.984375em) {
@@ -580,7 +630,7 @@ html.is-homepage .home-flow--cards .home-flow__card:last-child {
 }
 
 html.is-homepage .home-flow--cards strong {
-    color: #000000;
+    color: var(--toto-blue-deep);
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.15;
@@ -595,11 +645,11 @@ html.is-homepage .home-flow--cards strong {
 
 .home-flow__tokens code {
     align-items: center;
-    background: #edf0f2;
-    border: 1px solid #d7dde1;
+    background: #f2f2f2;
+    border: 1px solid #d1d1d1;
     border-radius: 0.25rem;
     box-shadow: 0 0.18rem 0.55rem rgba(23, 59, 95, 0.06);
-    color: #34414a;
+    color: #444444;
     display: inline-flex !important;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.64rem;
@@ -693,7 +743,7 @@ html.is-document .md-header .md-header__topic[data-md-component="header-topic"] 
 }
 
 .home-flow li {
-    background: var(--toto-mist);
+    background: var(--toto-blue-light);
     box-shadow: 0 0.5rem 1.75rem rgba(23, 59, 95, 0.06);
     min-height: 13rem;
     padding: 1.25rem;
@@ -754,10 +804,10 @@ html.is-homepage .home-principles article:last-child {
 }
 
 .home-open__examples code {
-    background: #edf0f2;
-    border: 1px solid #d7dde1;
+    background: #f2f2f2;
+    border: 1px solid #d1d1d1;
     border-radius: 0.25rem;
-    color: #34414a;
+    color: #444444;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.68rem;
     line-height: 1.2;
@@ -844,7 +894,7 @@ h6:hover .headerlink,
     margin: 0 !important;
 }
 
-/* Uses the white logo only against the landing page's red background */
+/* Keep the white logo against the dark homepage header. */
 html.is-homepage .md-logo img {
     content: url("../images/toto-site-logo-white-animated.svg") !important;
 }
@@ -993,241 +1043,11 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 }
 
 /* ==========================================
-   4. HERO LAYOUT STYLES
-   ========================================== */
-.zensical-hero {
-    text-align: center !important;
-    padding: 3.5rem 1.5rem 3rem !important;
-    max-width: 760px;
-    margin: 0 auto;
-}
-
-.hero-eyebrow {
-    font-size: 13px !important;
-}
-
-.zensical-hero h1 {
-    font-size: 48px !important;
-    line-height: 1.2 !important;
-    font-weight: 700 !important;
-    margin: 0.75rem 0 !important;
-    letter-spacing: normal !important;
-    color: #ffffff !important;
-}
-
-.hero-tagline {
-    font-size: 18px !important;
-    color: rgba(255, 255, 255, 0.85) !important;
-    line-height: 1.5 !important;
-    margin-bottom: 1.75rem !important;
-}
-
-/* --- CTA Buttons --- */
-.hero-cta-group {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hero-cta-group a {
-    padding: 0.5rem 1.65rem !important;
-    font-weight: 700 !important;
-    border-radius: 4px !important;
-    transition: all 0.2s ease-in-out !important;
-    text-decoration: none !important;
-    font-size: 13px !important;
-    display: inline-block;
-}
-
-.hero-cta-group a.btn-primary {
-    background-color: #111111 !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.12) !important;
-}
-.hero-cta-group a.btn-primary:hover {
-    background-color: #2d3748 !important;
-    transform: translateY(-2px);
-}
-
-.hero-cta-group a.btn-secondary {
-    border: 1px solid #cbd5e0 !important;
-    background-color: #ffffff !important;
-    color: #2d3748 !important;
-}
-
-/* ==========================================
-   5. LAYOUT FEATURE GRID STRUCTURE
-   ========================================== */
-.zensical-features {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
-    width: 100% !important;
-}
-
-.features-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-    gap: 1.25rem !important;
-    width: 100% !important;
-}
-
-.features-grid .feature-card {
-    background-color: #ffffff !important;
-    border: 1px solid #e2e8f0 !important;
-    padding: 1.5rem 1.25rem !important;
-    border-radius: 8px !important;
-    text-align: left;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
-    transition: all 0.2s ease-in-out !important;
-    box-sizing: border-box !important;
-}
-
-.features-grid .feature-card:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
-    border-color: #cbd5e0 !important;
-}
-
-.features-grid .feature-card h3 {
-    margin: 0 0 0.75rem 0 !important;
-    font-size: 18px !important;
-    color: #111111 !important;
-    font-weight: 700 !important;
-}
-
-.features-grid .feature-card p {
-    margin: 0 !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    color: #4a5568 !important;
-}
-
-.landing-section {
-    width: 100%;
-    padding: 5rem 1.5rem;
-}
-
-.landing-section__inner {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.landing-section--light {
-    background: #ffffff;
-    color: #111111;
-}
-
-.landing-section--dark {
-    background: #000000;
-    color: #ffffff;
-}
-
-.landing-section--burgundy {
-    background: rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-}
-
-.landing-kicker {
-    margin: 0 0 0.75rem;
-    color: #000000;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.landing-section--dark .landing-kicker {
-    color: #000000;
-}
-
-.landing-section--burgundy .landing-kicker,
-.landing-section--burgundy .landing-section__grid--steps span {
-    color: #ffffff;
-}
-
-.landing-section h2 {
-    max-width: 760px;
-    margin: 0 0 1.25rem;
-    font-size: clamp(2rem, 4vw, 3.25rem);
-    line-height: 1.08;
-    letter-spacing: normal;
-}
-
-.landing-section h3 {
-    margin: 0 0 0.65rem;
-    font-size: 1.2rem;
-    line-height: 1.25;
-}
-
-.landing-section p {
-    max-width: 680px;
-    margin: 0;
-    line-height: 1.65;
-}
-
-.landing-lead {
-    font-size: 1.2rem;
-}
-
-.landing-section__grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
-    margin-top: 2.5rem;
-}
-
-.landing-section__grid--steps {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.landing-section__grid--steps span {
-    display: block;
-    margin-bottom: 1.25rem;
-    color: #000000;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-.landing-section__inner--split {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
-    gap: 4rem;
-    align-items: end;
-}
-
-.landing-section--final {
-    text-align: center;
-}
-
-.landing-section--final h2,
-.landing-section--final p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (max-width: 44.984375em) {
-    .landing-section {
-        padding: 3.5rem 1.25rem;
-    }
-
-    .landing-section__grid,
-    .landing-section__grid--steps,
-    .landing-section__inner--split {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-/* ==========================================
-   6. HOMEPAGE VIEW FRAMEWORK (ISOLATED RED)
+    Homepage framework
    ========================================== */
 html.is-homepage,
 html.is-homepage body {
-    background-color: #B30B00 !important;
+    background-color: var(--toto-blue-primary) !important;
 }
 
 html.is-homepage .md-container,
@@ -1236,7 +1056,7 @@ html.is-homepage .md-content,
 html.is-homepage .md-content__inner {
     background-color: transparent !important;
     background: transparent !important;
-    --md-default-bg-color: #B30B00 !important;
+    --md-default-bg-color: var(--toto-blue-primary) !important;
 }
 
 html.is-homepage .md-header__title,
@@ -1245,7 +1065,7 @@ html.is-homepage [class*="header__title"] {
 }
 
 /* ==========================================
-   7. LANDING PAGE ONLY: TRANSPARENT HEADER, UI & FOOTER
+    Homepage navigation and footer
    ========================================== */
 html.is-homepage .md-header {
     background-color: rgba(0, 0, 0, 0.25) !important;
@@ -1269,7 +1089,7 @@ html.is-homepage .md-tabs__item {
 }
 
 .md-search__button {
-    background-color: #151716 !important;
+    background-color: #111111 !important;
     border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: var(--toto-shape-medium) !important;
     color: #ffffff !important;
@@ -1286,7 +1106,7 @@ html.is-homepage .md-tabs__item {
 
 .md-search__button:focus,
 .md-search__button:hover {
-    background-color: #b53524 !important;
+    background-color: var(--toto-blue-deep) !important;
 }
 
 html.is-homepage .md-search__icon[for="__search"],
@@ -1475,7 +1295,7 @@ html.is-document .md-sidebar--secondary .md-nav__link:hover {
 }
 
 html.is-document .md-sidebar--primary .md-nav__link--active {
-    background-color: rgba(198, 74, 36, 0.12) !important;
+    background-color: rgba(43, 103, 172, 0.12) !important;
     color: #000000;
     font-weight: 700 !important;
 }
@@ -1489,7 +1309,7 @@ html.is-document .md-sidebar--secondary .md-nav__link {
 }
 
 html.is-document .md-sidebar--secondary .md-nav__link--active {
-    border-left-color: #c64a24;
+    border-left-color: var(--toto-blue-primary);
     color: #000000;
 }
 
@@ -1503,7 +1323,7 @@ html.is-homepage .md-sidebar--primary .md-nav__link:hover {
 }
 
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
-    background-color: rgba(198, 74, 36, 0.12) !important;
+    background-color: rgba(43, 103, 172, 0.12) !important;
     color: #000000;
     font-weight: 700 !important;
 }
@@ -1647,7 +1467,7 @@ html.is-document .md-sidebar--secondary {
    ========================================== */
 html.is-homepage,
 html.is-homepage body {
-    background-color: #151716 !important;
+    background-color: #111111 !important;
 }
 
 html.is-homepage .zensical-landing-wrap {
@@ -1672,12 +1492,12 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-product {
-    color: #171a19;
+    color: #111111;
     overflow: hidden;
 }
 
 .home-hero {
-    background: #151716;
+    background: #111111;
     color: #ffffff;
     padding: clamp(3.75rem, 6vw, 5.5rem) var(--home-gutter) 3.25rem;
 }
@@ -1758,22 +1578,22 @@ html.is-homepage .md-content__inner::before {
 
 .home-action--light {
     background: #ffffff;
-    color: #151716 !important;
+    color: #111111 !important;
 }
 
 .home-action--light:hover,
 .home-action--light:focus-visible {
-    background: #c6ff4d;
+    background: var(--toto-blue-light);
 }
 
 .home-action--dark {
-    background: #151716;
+    background: #111111;
     color: #ffffff !important;
 }
 
 .home-action--dark:hover,
 .home-action--dark:focus-visible {
-    background: #b53524;
+    background: var(--toto-blue-deep);
 }
 
 .home-text-link {
@@ -1844,8 +1664,8 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-signal__node-dot {
-    background: #c6ff4d;
-    border: 0.35rem solid rgba(198, 255, 77, 0.18);
+    background: var(--toto-blue-light);
+    border: 0.35rem solid rgba(230, 239, 248, 0.18);
     border-radius: 50%;
     box-sizing: content-box;
     height: 0.7rem;
@@ -1878,8 +1698,8 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-signal__path span {
-    border-right: 1px solid #c6ff4d;
-    border-top: 1px solid #c6ff4d;
+    border-right: 1px solid var(--toto-blue-light);
+    border-top: 1px solid var(--toto-blue-light);
     height: 0.35rem;
     margin-left: -0.35rem;
     transform: rotate(45deg);
@@ -1929,15 +1749,15 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-section--paper {
-    background: #f5f6f1;
+    background: #ffffff;
 }
 
 .home-section--signal {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
 }
 
 .home-section--crm {
-    background: #b53524;
+    background: var(--toto-blue-deep);
     color: #ffffff;
 }
 
@@ -1983,7 +1803,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-principles article {
-    border-left: 1px solid rgba(23, 26, 25, 0.25);
+    border-left: 1px solid rgba(17, 17, 17, 0.25);
     min-height: 16rem;
     padding: 1.4rem 1.5rem 0 0;
 }
@@ -1993,11 +1813,11 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-principles article:last-child {
-    border-right: 1px solid rgba(23, 26, 25, 0.25);
+    border-right: 1px solid rgba(17, 17, 17, 0.25);
 }
 
 .home-principles span {
-    color: #000000;
+    color: var(--toto-blue-deep);
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -2013,28 +1833,31 @@ html.is-homepage .md-content__inner::before {
 .home-principles p,
 .home-crm__copy p,
 .home-close__copy > p {
+    color: #000000;
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
 }
 
 .home-crm .home-eyebrow {
-    color: #000000;
+    color: var(--toto-blue-light);
 }
 
 .home-crm__copy {
+    background: var(--toto-paper);
     border: 0;
+    color: #000000;
     padding: 1.25rem;
 }
 
 .home-crm__copy .home-text-link {
-    color: #ffffff !important;
+    color: var(--toto-blue-deep) !important;
     margin-top: 1.25rem;
 }
 
 .home-flow {
-    border-bottom: 1px solid rgba(23, 26, 25, 0.2);
-    border-top: 1px solid rgba(23, 26, 25, 0.2);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+    border-top: 1px solid rgba(17, 17, 17, 0.2);
     counter-reset: flow;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2045,7 +1868,7 @@ html.is-homepage .md-content__inner::before {
 
 .home-flow li {
     align-content: space-between;
-    border-left: 1px solid rgba(23, 26, 25, 0.2);
+    border-left: 1px solid rgba(17, 17, 17, 0.2);
     display: grid;
     gap: 3.5rem;
     min-height: 14.5rem;
@@ -2053,15 +1876,17 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-flow li:last-child {
-    border-right: 1px solid rgba(23, 26, 25, 0.2);
+    border-right: 1px solid rgba(17, 17, 17, 0.2);
 }
 
 .home-flow strong {
+    color: var(--toto-blue-deep);
     font-size: 1.25rem;
     font-weight: 500;
 }
 
 .home-flow span {
+    color: #000000;
     font-size: 0.94rem;
     line-height: 1.55;
 }
@@ -2122,7 +1947,7 @@ html.is-homepage .md-content__inner::before {
     }
 
     .home-principles article {
-        border-bottom: 1px solid rgba(23, 26, 25, 0.25);
+        border-bottom: 1px solid rgba(17, 17, 17, 0.25);
     }
 
     .home-principles article:last-child {
@@ -2138,7 +1963,7 @@ html.is-homepage .md-content__inner::before {
     }
 
     .home-flow li + li {
-        border-top: 1px solid rgba(23, 26, 25, 0.2);
+        border-top: 1px solid rgba(17, 17, 17, 0.2);
     }
 
     .home-crm__copy {
@@ -2166,13 +1991,12 @@ html.is-homepage .md-content__inner::before {
 }
 
 /* ==========================================
-   10. PRODUCT PAGE EDITORIAL SYSTEM
-   ========================================== */
+    Product page editorial styles
+    ========================================== */
 .product-page {
-    color: #000000;
+    color: var(--product-ink);
     padding: 2rem 0 5.5rem;
 }
-
 .product-page__hero {
     border-bottom: 1px solid var(--product-line);
     padding: 2.25rem 0 4.5rem;
@@ -2232,6 +2056,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-page__body {
+    color: #000000;
     font-size: 1.08rem;
     line-height: 1.65;
     margin: 1.55rem 0 0;
@@ -2293,7 +2118,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-page__section--tint {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     padding-left: 1.5rem;
@@ -2301,7 +2126,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-page__section--ink {
-    background: #151716;
+    background: #111111;
     border-bottom: 0;
     color: #ffffff;
     margin-left: -1.5rem;
@@ -2558,7 +2383,7 @@ html.is-homepage .md-tabs__link:hover {
 }
 
 html.is-homepage .md-tabs__item--active {
-    border-bottom-color: var(--toto-sky) !important;
+    border-bottom-color: var(--toto-blue-primary) !important;
 }
 
 html.is-document .md-sidebar--primary .md-nav__link--active,
@@ -2568,13 +2393,13 @@ html.is-homepage .md-sidebar--primary .md-nav__link--active {
 }
 
 html.is-document .md-sidebar--secondary .md-nav__link--active {
-    border-left-color: var(--toto-sky);
+    border-left-color: var(--toto-blue-primary);
     color: #000000;
 }
 
 html.is-homepage,
 html.is-homepage body {
-    background-color: var(--toto-night) !important;
+    background-color: var(--toto-blue-deep) !important;
 }
 
 html.is-homepage .md-header {
@@ -2586,7 +2411,7 @@ html.is-homepage .md-header {
 }
 
 .home-hero {
-    background: var(--toto-night);
+    background: var(--toto-blue-deep);
 }
 
 .home-eyebrow {
@@ -2600,16 +2425,16 @@ html.is-homepage .md-header {
 
 .home-action--light:hover,
 .home-action--light:focus-visible {
-    background: var(--toto-sky);
+    background: var(--toto-blue-primary);
 }
 
 .home-action--dark {
-    background: var(--toto-cobalt);
+    background: var(--toto-blue-primary);
 }
 
 .home-action--dark:hover,
 .home-action--dark:focus-visible {
-    background: var(--toto-navy);
+    background: var(--toto-blue-primary);
 }
 
 .home-hero__signal {
@@ -2627,13 +2452,13 @@ html.is-homepage .md-header {
 }
 
 .home-signal__node-dot {
-    background: var(--toto-sky);
+    background: var(--toto-blue-primary);
     border-color: rgba(43, 103, 172, 0.2);
 }
 
 .home-signal__path span {
-    border-right-color: var(--toto-sky);
-    border-top-color: var(--toto-sky);
+    border-right-color: var(--toto-blue-primary);
+    border-top-color: var(--toto-blue-primary);
 }
 
 .home-section--paper,
@@ -2642,11 +2467,11 @@ html.is-homepage .md-header {
 }
 
 .home-section--signal {
-    background: var(--toto-mist);
+    background: var(--toto-blue-light);
 }
 
 .home-section--crm {
-    background: var(--toto-cobalt);
+    background: var(--toto-blue-primary);
 }
 
 .home-section--paper .home-eyebrow,
@@ -2668,11 +2493,11 @@ html.is-homepage .md-header {
 }
 
 .product-page__section--tint {
-    background: var(--toto-mist);
+    background: var(--toto-blue-light);
 }
 
 .product-page__section--ink {
-    background: var(--toto-night);
+    background: var(--toto-blue-deep);
 }
 
 .product-page__section--ink .product-page__kicker {
@@ -2681,16 +2506,16 @@ html.is-homepage .md-header {
 
 .product-contact__email a {
     color: #000000;
-    text-decoration-color: var(--toto-sky);
+    text-decoration-color: var(--toto-blue-primary);
 }
 
 html.is-homepage,
 html.is-homepage body {
-    background-color: var(--toto-air) !important;
+    background-color: var(--toto-blue-light) !important;
 }
 
 .home-hero {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
     color: #000000;
 }
 
@@ -2704,7 +2529,7 @@ html.is-homepage body {
 }
 
 .home-action--dark {
-    background: var(--toto-navy);
+    background: var(--toto-blue-primary);
 }
 
 .home-hero__signal {
@@ -2730,7 +2555,7 @@ html.is-homepage body {
 }
 
 .home-signal__node-dot {
-    background: var(--toto-cobalt);
+    background: var(--toto-blue-primary);
     border-color: rgba(43, 103, 172, 0.14);
 }
 
@@ -2739,21 +2564,21 @@ html.is-homepage body {
 }
 
 .home-signal__path span {
-    border-right-color: var(--toto-cobalt);
-    border-top-color: var(--toto-cobalt);
+    border-right-color: var(--toto-blue-primary);
+    border-top-color: var(--toto-blue-primary);
 }
 
 .home-section--open {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
 }
 
 .home-section--paper {
-    background: var(--toto-navy);
-    color: #000000;
+    background: var(--toto-blue-light);
+    color: var(--toto-blue-deep);
 }
 
 html.is-homepage .home-section--paper .home-eyebrow {
-    color: #000000;
+    color: var(--toto-blue-deep);
 }
 
 .home-section--signal,
@@ -2762,32 +2587,38 @@ html.is-homepage .home-section--paper .home-eyebrow {
 }
 
 html.is-homepage .home-section--crm {
-    background: var(--toto-paper);
-    color: #000000;
+    background: var(--toto-blue-deep);
+    color: #ffffff;
 }
 
 .home-section--crm {
-    color: #000000;
+    color: #ffffff;
 }
 
 .home-crm .home-eyebrow {
-    color: #000000;
+    color: var(--toto-blue-light);
 }
 
 .home-crm__copy,
 .home-section--crm .home-crm__copy {
-    background: var(--toto-air);
+    background: var(--toto-paper);
     border: 0;
     box-shadow: 0 0.75rem 2rem rgba(23, 59, 95, 0.08);
     color: #000000;
 }
 
 .home-crm__copy .home-text-link {
-    color: #000000;
+    color: var(--toto-blue-deep) !important;
 }
 
 html.is-homepage .home-principles article {
-    background: var(--toto-air);
+    background: var(--toto-blue-deep);
+}
+
+html.is-homepage .home-principles article h3,
+html.is-homepage .home-principles article p,
+html.is-homepage .home-principles article span {
+    color: #ffffff;
 }
 
 html.is-homepage .home-open__examples code {
@@ -2797,17 +2628,17 @@ html.is-homepage .home-open__examples code {
 }
 
 html.is-homepage .home-flow__tokens code {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
     border-color: var(--toto-line);
     color: #000000;
 }
 
 .product-page__section--tint {
-    background: var(--toto-wash);
+    background: var(--toto-blue-light);
 }
 
 .product-page__section--ink {
-    background: var(--toto-air);
+    background: var(--toto-blue-light);
     color: #000000;
 }
 
@@ -2818,6 +2649,96 @@ html.is-homepage .home-flow__tokens code {
 
 .product-page__section--ink .product-page__body {
     color: #000000;
+}
+
+/* Homepage band contrast and color rhythm. */
+html.is-homepage .home-section--crm :is(h1, h2, h3, h4, h5, h6),
+html.is-homepage .home-principles article :is(h1, h2, h3, h4, h5, h6) {
+    color: #ffffff !important;
+}
+
+html.is-homepage .home-section--crm .home-eyebrow,
+html.is-homepage .home-principles article span {
+    color: var(--toto-blue-light) !important;
+}
+
+html.is-homepage .home-section--signal,
+html.is-homepage .home-section--paper {
+    background: #ffffff;
+    color: #000000;
+}
+
+html.is-homepage .home-section--open,
+html.is-homepage .home-section--close {
+    background: var(--toto-blue-light);
+    color: #000000;
+}
+
+html.is-homepage .home-section--crm {
+    background: var(--toto-blue-deep);
+    color: #ffffff;
+}
+
+html.is-homepage .home-section__heading .home-eyebrow {
+    color: var(--toto-blue-primary);
+}
+
+html.is-homepage .home-principles article {
+    background: var(--toto-blue-deep);
+}
+
+html.is-homepage .home-principles article p {
+    color: #ffffff;
+}
+
+html.is-homepage .home-principles article h3 {
+    color: #ffffff !important;
+}
+
+html.is-homepage .home-crm__copy {
+    background: #ffffff;
+    color: #000000;
+}
+
+html.is-homepage .home-crm__copy .home-text-link {
+    color: var(--toto-blue-primary) !important;
+}
+
+html.is-homepage .home-open__examples code {
+    background: var(--toto-blue-light);
+    color: var(--toto-blue-deep);
+}
+
+html.is-homepage .home-flow__tokens code {
+    background: #f2f2f2;
+    border-color: #d1d1d1;
+    color: #444444;
+}
+
+html.is-homepage .home-action--dark {
+    background: var(--toto-blue-deep);
+    color: #ffffff !important;
+}
+
+html.is-homepage .home-product .home-text-link,
+html.is-homepage .home-action--light {
+    color: var(--toto-blue-primary) !important;
+}
+
+html.is-homepage .home-action--dark,
+html.is-homepage .home-action--dark span {
+    color: #ffffff !important;
+}
+
+html.is-homepage .home-hero .home-action--light {
+    background: var(--toto-blue-primary);
+    color: #ffffff !important;
+}
+
+html.is-homepage .home-hero .home-action--light:hover,
+html.is-homepage .home-hero .home-action--light:focus-visible {
+    background: var(--toto-blue-deep);
+    color: #ffffff !important;
 }
 
 
