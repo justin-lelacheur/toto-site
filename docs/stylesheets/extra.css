@@ -62,17 +62,20 @@
     --toto-paper: #ffffff;
     --toto-ink: var(--toto-blue-deep);
     --toto-muted: var(--toto-blue-deep);
+    --toto-air: var(--toto-blue-light);
+    --toto-wash: var(--toto-blue-light);
     --toto-line: rgba(23, 59, 95, 0.18);
     --toto-shape-small: 0.4rem;
     --toto-shape-medium: 0.6rem;
     --toto-shape-large: 0.8rem;
     --home-content-max: 75rem;
     --home-gutter: clamp(1.25rem, 2.08vw, 1.5rem);
+    --toto-body-size: 1rem;
     --md-primary-fg-color: var(--toto-night);
     --md-primary-fg-color--light: var(--toto-navy);
     --md-primary-bg-color: #ffffff;
     --md-accent-fg-color: var(--toto-cobalt);
-    --md-typeset-a-color: var(--toto-cobalt);
+    --md-typeset-a-color: #000000;
 }
 
 /* Keep product pages light and editorial; blue is used as a structural accent. */
@@ -111,7 +114,7 @@ html.is-document .md-tabs__link--active,
 html.is-document .md-tabs__link:hover,
 html.is-homepage .md-tabs__link--active,
 html.is-homepage .md-tabs__link:hover {
-    color: var(--toto-sky) !important;
+    color: #000000;
 }
 
 html.is-document .md-tabs__item--active,
@@ -122,12 +125,12 @@ html.is-homepage .md-tabs__item--active {
 html.is-document .md-sidebar--primary .md-nav__link--active,
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(43, 103, 172, 0.12) !important;
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 html.is-document .md-sidebar--secondary .md-nav__link--active {
     border-left-color: var(--toto-sky);
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 html.is-homepage,
@@ -140,7 +143,7 @@ html.is-homepage .md-header {
 }
 
 .home-product {
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-hero {
@@ -148,7 +151,7 @@ html.is-homepage .md-header {
 }
 
 .home-eyebrow {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .home-hero .home-eyebrow {
@@ -157,7 +160,7 @@ html.is-homepage .md-header {
 
 .home-action--light {
     background: var(--toto-paper);
-    color: var(--toto-night) !important;
+    color: #000000;
 }
 
 .home-action--light:hover,
@@ -185,7 +188,7 @@ html.is-homepage .md-header {
 }
 
 .home-signal__header b {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .home-signal__node-dot {
@@ -215,11 +218,11 @@ html.is-homepage .md-header {
 .home-section--signal .home-eyebrow,
 .home-section--close .home-eyebrow,
 .home-principles span {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-crm .home-eyebrow {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .home-principles,
@@ -245,18 +248,12 @@ html.is-homepage .md-header {
 }
 
 .product-page__section--ink .product-page__kicker {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .product-contact__email a {
-    color: var(--toto-cobalt) !important;
+    color: #000000;
     text-decoration-color: var(--toto-sky);
-}
-
-/* Color-area hierarchy: light blue expands; darker blues concentrate in controls. */
-:root {
-    --toto-air: var(--toto-blue-light);
-    --toto-wash: var(--toto-blue-light);
 }
 
 html.is-homepage,
@@ -266,7 +263,7 @@ html.is-homepage body {
 
 .home-hero {
     background: var(--toto-wash);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-hero h1 {
@@ -274,7 +271,7 @@ html.is-homepage body {
 }
 
 .home-hero__lead {
-    color: var(--toto-muted);
+    color: #000000;
 }
 
 .home-action--light {
@@ -300,12 +297,12 @@ html.is-homepage body {
 .home-signal__header span,
 .home-signal__frame p,
 .home-signal__node small {
-    color: var(--toto-muted);
+    color: #000000;
 }
 
 .home-signal__header b,
 .home-signal__frame span {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-signal__node-dot {
@@ -329,11 +326,11 @@ html.is-homepage body {
 
 html.is-homepage .home-section--crm {
     background: var(--toto-wash);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-crm .home-eyebrow {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-crm__copy,
@@ -344,7 +341,7 @@ html.is-homepage .home-section--crm {
 }
 
 .home-crm__copy .home-text-link {
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 .product-page__section--foundry {
@@ -360,25 +357,25 @@ html.is-homepage .home-section--crm {
 
 .product-page__section--ink {
     background: var(--toto-air);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .product-page__section--ink .product-page__kicker,
 .product-page__section--ink .product-page__link {
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 .product-page__section--ink .product-page__body {
-    color: var(--product-muted);
+    color: #000000;
 }
 
 html.is-homepage .home-eyebrow,
 html.is-homepage .home-principles span {
-    color: var(--toto-navy);
+    color: #000000;
 }
 
 html.is-homepage .home-section--paper .home-eyebrow {
-    color: var(--toto-cloud);
+    color: #000000;
 }
 
 html.is-homepage .home-signal__node-dot {
@@ -387,10 +384,6 @@ html.is-homepage .home-signal__node-dot {
 }
 
 /* One reading size for body copy; headlines and hero copy keep their own scale. */
-:root {
-    --toto-body-size: 1rem;
-}
-
 html body {
     font-size: var(--toto-body-size);
 }
@@ -587,7 +580,7 @@ html.is-homepage .home-flow--cards .home-flow__card:last-child {
 }
 
 html.is-homepage .home-flow--cards strong {
-    color: var(--toto-ink);
+    color: #000000;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.15;
@@ -617,7 +610,7 @@ html.is-homepage .home-flow--cards strong {
 
 html.is-homepage .home-flow--cards p {
     align-self: start;
-    color: var(--toto-muted);
+    color: #000000;
     font-size: 0.94rem;
     line-height: 1.58;
     margin: 0;
@@ -736,14 +729,14 @@ html.is-homepage .home-principles article:last-child {
 }
 
 .home-section--open .home-eyebrow {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-open {
 }
 
 .home-open__copy > p {
-    color: var(--toto-muted);
+    color: #000000;
     font-size: 1rem;
     line-height: 1.62;
     margin: 0;
@@ -1138,7 +1131,7 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 
 .landing-kicker {
     margin: 0 0 0.75rem;
-    color: #B30B00;
+    color: #000000;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -1147,7 +1140,7 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 }
 
 .landing-section--dark .landing-kicker {
-    color: #B30B00;
+    color: #000000;
 }
 
 .landing-section--burgundy .landing-kicker,
@@ -1193,7 +1186,7 @@ html.is-document .md-header__topic[data-md-component="header-topic"] {
 .landing-section__grid--steps span {
     display: block;
     margin-bottom: 1.25rem;
-    color: #c64a24;
+    color: #000000;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.8rem;
     font-weight: 700;
@@ -1483,7 +1476,7 @@ html.is-document .md-sidebar--secondary .md-nav__link:hover {
 
 html.is-document .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(198, 74, 36, 0.12) !important;
-    color: #a23b1f !important;
+    color: #000000;
     font-weight: 700 !important;
 }
 
@@ -1497,7 +1490,7 @@ html.is-document .md-sidebar--secondary .md-nav__link {
 
 html.is-document .md-sidebar--secondary .md-nav__link--active {
     border-left-color: #c64a24;
-    color: #a23b1f !important;
+    color: #000000;
 }
 
 html.is-homepage .md-sidebar--primary .md-nav__link {
@@ -1511,7 +1504,7 @@ html.is-homepage .md-sidebar--primary .md-nav__link:hover {
 
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(198, 74, 36, 0.12) !important;
-    color: #a23b1f !important;
+    color: #000000;
     font-weight: 700 !important;
 }
 
@@ -1709,7 +1702,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-eyebrow {
-    color: #c6ff4d;
+    color: #000000;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -1832,7 +1825,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-signal__header b {
-    color: #c6ff4d;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -1955,7 +1948,7 @@ html.is-homepage .md-content__inner::before {
 .home-section--paper .home-eyebrow,
 .home-section--signal .home-eyebrow,
 .home-section--close .home-eyebrow {
-    color: #a8291d;
+    color: #000000;
 }
 
 .home-section h2 {
@@ -2004,7 +1997,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-principles span {
-    color: #a8291d;
+    color: #000000;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -2026,7 +2019,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .home-crm .home-eyebrow {
-    color: #c6ff4d;
+    color: #000000;
 }
 
 .home-crm__copy {
@@ -2176,11 +2169,7 @@ html.is-homepage .md-content__inner::before {
    10. PRODUCT PAGE EDITORIAL SYSTEM
    ========================================== */
 .product-page {
-    --product-ink: #151716;
-    --product-muted: #5b625f;
-    --product-line: rgba(21, 23, 22, 0.18);
-    --product-signal: #b53524;
-    color: var(--product-ink);
+    color: #000000;
     padding: 2rem 0 5.5rem;
 }
 
@@ -2191,7 +2180,7 @@ html.is-homepage .md-content__inner::before {
 
 .product-page__eyebrow,
 .product-page__kicker {
-    color: var(--product-signal);
+    color: #000000;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -2221,7 +2210,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-page__lead {
-    color: var(--product-muted);
+    color: #000000;
     font-size: clamp(1.08rem, 1.8vw, 1.35rem);
     line-height: 1.58;
     margin: 1.8rem 0 0;
@@ -2290,14 +2279,14 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-grid__item p {
-    color: var(--product-muted);
+    color: #000000;
     font-size: 0.94rem;
     line-height: 1.58;
     margin: 0;
 }
 
 .product-grid__number {
-    color: var(--product-signal);
+    color: #000000;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -2322,7 +2311,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-page__section--ink .product-page__kicker {
-    color: #c6ff4d;
+    color: #000000;
 }
 
 .product-page__section--ink .product-page__body {
@@ -2379,7 +2368,7 @@ html.is-homepage .md-content__inner::before {
 }
 
 .product-steps span {
-    color: var(--product-muted);
+    color: #000000;
     font-size: 0.94rem;
     line-height: 1.55;
 }
@@ -2407,7 +2396,7 @@ html.is-document .product-page .product-steps--cards > li:last-child {
 }
 
 html.is-document .product-page .product-steps--cards > li::before {
-    color: var(--product-signal);
+    color: #000000;
     content: counter(product-step, decimal-leading-zero);
     counter-increment: product-step;
     font-family: "IBM Plex Mono", monospace;
@@ -2420,7 +2409,7 @@ html.is-document .product-page .product-steps--cards > li::before {
 }
 
 .product-page__closing > p {
-    color: var(--product-muted);
+    color: #000000;
     font-size: 1.08rem;
     line-height: 1.65;
     margin: 1.5rem 0 0;
@@ -2436,7 +2425,7 @@ html.is-document .product-page .product-steps--cards > li::before {
 }
 
 .product-contact__email a {
-    color: var(--product-ink) !important;
+    color: #000000;
     text-decoration-color: var(--product-signal);
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.16em;
@@ -2546,12 +2535,12 @@ html.is-document .md-tabs {
 }
 
 html.is-document .md-tabs__link {
-    color: var(--toto-ink) !important;
+    color: #000000;
 }
 
 html.is-document .md-tabs__link--active,
 html.is-document .md-tabs__link:hover {
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 html.is-homepage .md-tabs {
@@ -2565,7 +2554,7 @@ html.is-homepage .md-tabs__link {
 
 html.is-homepage .md-tabs__link--active,
 html.is-homepage .md-tabs__link:hover {
-    color: var(--toto-sky) !important;
+    color: #000000;
 }
 
 html.is-homepage .md-tabs__item--active {
@@ -2575,12 +2564,12 @@ html.is-homepage .md-tabs__item--active {
 html.is-document .md-sidebar--primary .md-nav__link--active,
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
     background-color: rgba(43, 103, 172, 0.12) !important;
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 html.is-document .md-sidebar--secondary .md-nav__link--active {
     border-left-color: var(--toto-sky);
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 html.is-homepage,
@@ -2593,7 +2582,7 @@ html.is-homepage .md-header {
 }
 
 .home-product {
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-hero {
@@ -2601,12 +2590,12 @@ html.is-homepage .md-header {
 }
 
 .home-eyebrow {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-action--light {
     background: var(--toto-paper);
-    color: var(--toto-night) !important;
+    color: #000000;
 }
 
 .home-action--light:hover,
@@ -2634,7 +2623,7 @@ html.is-homepage .md-header {
 }
 
 .home-signal__header b {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .home-signal__node-dot {
@@ -2664,11 +2653,11 @@ html.is-homepage .md-header {
 .home-section--signal .home-eyebrow,
 .home-section--close .home-eyebrow,
 .home-principles span {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-crm .home-eyebrow {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .home-principles,
@@ -2676,13 +2665,6 @@ html.is-homepage .md-header {
 .home-flow,
 .home-flow li {
     border-color: var(--toto-line);
-}
-
-.product-page {
-    --product-ink: var(--toto-ink);
-    --product-muted: var(--toto-muted);
-    --product-line: var(--toto-line);
-    --product-signal: var(--toto-cobalt);
 }
 
 .product-page__section--tint {
@@ -2694,18 +2676,12 @@ html.is-homepage .md-header {
 }
 
 .product-page__section--ink .product-page__kicker {
-    color: var(--toto-sky);
+    color: #000000;
 }
 
 .product-contact__email a {
-    color: var(--toto-cobalt) !important;
+    color: #000000;
     text-decoration-color: var(--toto-sky);
-}
-
-/* Color-area hierarchy: light blue expands; darker blues concentrate in controls. */
-:root {
-    --toto-air: var(--toto-blue-light);
-    --toto-wash: var(--toto-blue-light);
 }
 
 html.is-homepage,
@@ -2715,11 +2691,11 @@ html.is-homepage body {
 
 .home-hero {
     background: var(--toto-wash);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-hero__lead {
-    color: var(--toto-muted);
+    color: #000000;
 }
 
 .home-action--light {
@@ -2745,12 +2721,12 @@ html.is-homepage body {
 .home-signal__header span,
 .home-signal__frame p,
 .home-signal__node small {
-    color: var(--toto-muted);
+    color: #000000;
 }
 
 .home-signal__header b,
 .home-signal__frame span {
-    color: var(--toto-cobalt);
+    color: #000000;
 }
 
 .home-signal__node-dot {
@@ -2773,11 +2749,11 @@ html.is-homepage body {
 
 .home-section--paper {
     background: var(--toto-navy);
-    color: var(--toto-paper);
+    color: #000000;
 }
 
 html.is-homepage .home-section--paper .home-eyebrow {
-    color: var(--toto-cloud);
+    color: #000000;
 }
 
 .home-section--signal,
@@ -2787,15 +2763,15 @@ html.is-homepage .home-section--paper .home-eyebrow {
 
 html.is-homepage .home-section--crm {
     background: var(--toto-paper);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-section--crm {
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-crm .home-eyebrow {
-    color: var(--toto-navy);
+    color: #000000;
 }
 
 .home-crm__copy,
@@ -2803,11 +2779,11 @@ html.is-homepage .home-section--crm {
     background: var(--toto-air);
     border: 0;
     box-shadow: 0 0.75rem 2rem rgba(23, 59, 95, 0.08);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .home-crm__copy .home-text-link {
-    color: var(--toto-navy) !important;
+    color: #000000;
 }
 
 html.is-homepage .home-principles article {
@@ -2817,13 +2793,13 @@ html.is-homepage .home-principles article {
 html.is-homepage .home-open__examples code {
     background: var(--toto-paper);
     border-color: var(--toto-line);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 html.is-homepage .home-flow__tokens code {
     background: var(--toto-wash);
     border-color: var(--toto-line);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .product-page__section--tint {
@@ -2832,16 +2808,16 @@ html.is-homepage .home-flow__tokens code {
 
 .product-page__section--ink {
     background: var(--toto-air);
-    color: var(--toto-ink);
+    color: #000000;
 }
 
 .product-page__section--ink .product-page__kicker,
 .product-page__section--ink .product-page__link {
-    color: var(--toto-cobalt) !important;
+    color: #000000;
 }
 
 .product-page__section--ink .product-page__body {
-    color: var(--product-muted);
+    color: #000000;
 }
 
 
