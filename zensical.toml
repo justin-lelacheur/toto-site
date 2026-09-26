@@ -29,7 +29,7 @@ nav = [
 [project.theme]
 name = "zensical"
 custom_dir = "overrides"
-logo = "images/toto-site-logo-black-med.webp"
+logo = "images/toto-site-logo-black-animated.svg"
 favicon = "images/toto-favicon-48.png"
 
 features = [

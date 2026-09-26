@@ -38,7 +38,7 @@ title: "Platform Overview"
 	<section class="product-page__section product-page__section--tint">
 		<p class="product-page__kicker">A governed path for change</p>
 		<h2>A business change follows a path you can inspect.</h2>
-		<ol class="product-steps">
+		<ol class="product-steps product-steps--cards">
 			<li><strong>Command</strong><span>An owned domain API validates an authorized request and updates its transactional source of truth.</span></li>
 			<li><strong>Event</strong><span>A versioned fact is published through a reliable outbox, retaining tenant, correlation, and classification context.</span></li>
 			<li><strong>Workflow</strong><span>Conductor OSS carries durable progress, waits, retries, compensation, and approval state across systems and time.</span></li>

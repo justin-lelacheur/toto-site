@@ -90,7 +90,7 @@ html.is-document .md-header {
 }
 
 html.is-document .md-logo img {
-    content: url("../images/toto-site-logo-white-med.webp") !important;
+    content: url("../images/toto-site-logo-white-animated.svg") !important;
 }
 
 html.is-document .md-tabs,
@@ -836,7 +836,7 @@ h6:hover .headerlink,
 
 /* Uses the white logo only against the landing page's red background */
 html.is-homepage .md-logo img {
-    content: url("../images/toto-site-logo-white-med.webp") !important;
+    content: url("../images/toto-site-logo-white-animated.svg") !important;
 }
 
 /* ==========================================
@@ -2366,6 +2366,37 @@ html.is-homepage .md-content__inner::before {
     line-height: 1.55;
 }
 
+html.is-document .product-page .product-steps--cards {
+    border: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 3.25rem 0 0;
+    padding: 0;
+}
+
+html.is-document .product-page .product-steps--cards > li,
+html.is-document .product-page .product-steps--cards > li:last-child {
+    background: var(--toto-paper);
+    border: 1px solid var(--product-line);
+    border-radius: var(--toto-shape-medium);
+    box-shadow: 0 0.65rem 1.5rem rgba(7, 59, 131, 0.08);
+    gap: 1.25rem;
+    min-height: 13rem;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+html.is-document .product-page .product-steps--cards > li::before {
+    color: var(--product-signal);
+    content: counter(product-step, decimal-leading-zero);
+    counter-increment: product-step;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
 .product-page__closing {
     padding: 4.5rem 0 0;
 }
@@ -2445,6 +2476,19 @@ html.is-homepage .md-content__inner::before {
         gap: 1.75rem;
     }
 
+    html.is-document .product-page .product-steps--cards {
+        grid-template-columns: 1fr;
+    }
+
+    html.is-document .product-page .product-steps--cards > li,
+    html.is-document .product-page .product-steps--cards > li:last-child {
+        border: 1px solid var(--product-line);
+        gap: 1rem;
+        min-height: auto;
+        margin: 0;
+        padding: 1.25rem;
+    }
+
     .product-page__section--tint,
     .product-page__section--ink {
         margin-left: -16px;
@@ -2468,7 +2512,14 @@ html.is-document .md-header {
 }
 
 html.is-document .md-logo img {
-    content: url("../images/toto-site-logo-white-med.webp") !important;
+    content: url("../images/toto-site-logo-white-animated.svg") !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html.is-document .md-logo img,
+    html.is-homepage .md-logo img {
+        content: url("../images/toto-site-logo-white-med.webp") !important;
+    }
 }
 
 html.is-document .md-tabs {
