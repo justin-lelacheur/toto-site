@@ -642,44 +642,6 @@ html.is-homepage.is-scrolled .md-tabs {
     backdrop-filter: blur(14px);
 }
 
-/* Final scroll-state chrome overrides. */
-html.is-scrolled .md-header {
-    background-color: rgba(0, 0, 0, 0.72) !important;
-    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.16);
-    transition: background-color 0.24s ease, box-shadow 0.24s ease;
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-}
-
-html.is-scrolled .md-tabs {
-    transition: background-color 0.24s ease, border-color 0.24s ease;
-}
-
-html.is-homepage.is-scrolled .md-tabs {
-    background-color: rgba(0, 0, 0, 0.72) !important;
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-}
-
-/* Let the black chrome recede slightly after the first scroll gesture. */
-html.is-scrolled .md-header {
-    background-color: rgba(0, 0, 0, 0.72) !important;
-    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.16);
-    transition: background-color 0.24s ease, box-shadow 0.24s ease;
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-}
-
-html.is-scrolled .md-tabs {
-    transition: background-color 0.24s ease, border-color 0.24s ease;
-}
-
-html.is-homepage.is-scrolled .md-tabs {
-    background-color: rgba(0, 0, 0, 0.72) !important;
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-}
-
 /* Final visual overrides: preserve high contrast in the navy header. */
 html.is-document .md-header__topic .md-ellipsis,
 html.is-document .md-header__topic[data-md-component="header-topic"] .md-ellipsis {
