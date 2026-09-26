@@ -2698,13 +2698,18 @@ html.is-homepage body {
     border-top-color: var(--toto-cobalt);
 }
 
-.home-section--signal,
-.home-section--close {
+.home-section--open,
+.home-section--paper {
     background: var(--toto-air);
 }
 
+.home-section--signal,
+html.is-homepage .home-section--crm,
+.home-section--close {
+    background: var(--toto-paper);
+}
+
 .home-section--crm {
-    background: var(--toto-air);
     color: var(--toto-ink);
 }
 
@@ -2714,7 +2719,7 @@ html.is-homepage body {
 
 .home-crm__copy,
 .home-section--crm .home-crm__copy {
-    background: var(--toto-paper);
+    background: var(--toto-air);
     border: 0;
     box-shadow: 0 0.75rem 2rem rgba(7, 59, 131, 0.08);
 }
