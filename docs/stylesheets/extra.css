@@ -50,16 +50,19 @@
    11. TOTO BLUE SYSTEM
    ========================================== */
 :root {
-    --toto-night: #073b83;
-    --toto-navy: #084ba8;
-    --toto-cobalt: #176ae8;
-    --toto-sky: #5a9bf5;
-    --toto-mist: #e8f0ff;
-    --toto-cloud: #f3f7ff;
+    --toto-blue-primary: #2B67AC;
+    --toto-blue-deep: #173B5F;
+    --toto-blue-light: #E6EFF8;
+    --toto-night: var(--toto-blue-deep);
+    --toto-navy: var(--toto-blue-primary);
+    --toto-cobalt: var(--toto-blue-primary);
+    --toto-sky: var(--toto-blue-primary);
+    --toto-mist: var(--toto-blue-light);
+    --toto-cloud: var(--toto-blue-light);
     --toto-paper: #ffffff;
-    --toto-ink: #0c2f64;
-    --toto-muted: #3d5c85;
-    --toto-line: rgba(7, 59, 131, 0.18);
+    --toto-ink: var(--toto-blue-deep);
+    --toto-muted: var(--toto-blue-deep);
+    --toto-line: rgba(23, 59, 95, 0.18);
     --toto-shape-small: 0.4rem;
     --toto-shape-medium: 0.6rem;
     --toto-shape-large: 0.8rem;
@@ -118,7 +121,7 @@ html.is-homepage .md-tabs__item--active {
 
 html.is-document .md-sidebar--primary .md-nav__link--active,
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
-    background-color: rgba(23, 106, 232, 0.12) !important;
+    background-color: rgba(43, 103, 172, 0.12) !important;
     color: var(--toto-cobalt) !important;
 }
 
@@ -172,13 +175,13 @@ html.is-homepage .md-header {
 }
 
 .home-hero__signal {
-    background-color: rgba(90, 155, 245, 0.06);
-    border-color: rgba(90, 155, 245, 0.45);
+    background-color: rgba(43, 103, 172, 0.06);
+    border-color: rgba(43, 103, 172, 0.45);
 }
 
 .home-signal__header,
 .home-signal__frame {
-    border-color: rgba(90, 155, 245, 0.36);
+    border-color: rgba(43, 103, 172, 0.36);
 }
 
 .home-signal__header b {
@@ -187,7 +190,7 @@ html.is-homepage .md-header {
 
 .home-signal__node-dot {
     background: var(--toto-sky);
-    border-color: rgba(90, 155, 245, 0.2);
+    border-color: rgba(43, 103, 172, 0.2);
 }
 
 .home-signal__path span {
@@ -252,8 +255,8 @@ html.is-homepage .md-header {
 
 /* Color-area hierarchy: light blue expands; darker blues concentrate in controls. */
 :root {
-    --toto-air: #d5e3ff;
-    --toto-wash: #f1f6ff;
+    --toto-air: var(--toto-blue-light);
+    --toto-wash: var(--toto-blue-light);
 }
 
 html.is-homepage,
@@ -275,8 +278,8 @@ html.is-homepage body {
 }
 
 .home-action--light {
-    border: 1px solid rgba(7, 59, 131, 0.16);
-    box-shadow: 0 0.5rem 1.4rem rgba(7, 59, 131, 0.08);
+    border: 1px solid rgba(23, 59, 95, 0.16);
+    box-shadow: 0 0.5rem 1.4rem rgba(23, 59, 95, 0.08);
 }
 
 .home-action--dark {
@@ -285,8 +288,8 @@ html.is-homepage body {
 
 .home-hero__signal {
     background-color: var(--toto-paper);
-    border-color: rgba(23, 106, 232, 0.24);
-    box-shadow: 0 1rem 2.75rem rgba(7, 59, 131, 0.1);
+    border-color: rgba(43, 103, 172, 0.24);
+    box-shadow: 0 1rem 2.75rem rgba(23, 59, 95, 0.1);
 }
 
 .home-signal__header,
@@ -307,7 +310,7 @@ html.is-homepage body {
 
 .home-signal__node-dot {
     background: var(--toto-cobalt);
-    border-color: rgba(23, 106, 232, 0.14);
+    border-color: rgba(43, 103, 172, 0.14);
 }
 
 .home-signal__path::before {
@@ -337,7 +340,7 @@ html.is-homepage .home-section--crm {
 .home-section--crm .home-crm__copy {
     background: var(--toto-paper);
     border: 0;
-    box-shadow: 0 0.75rem 2rem rgba(7, 59, 131, 0.08);
+    box-shadow: 0 0.75rem 2rem rgba(23, 59, 95, 0.08);
 }
 
 .home-crm__copy .home-text-link {
@@ -367,6 +370,20 @@ html.is-homepage .home-section--crm {
 
 .product-page__section--ink .product-page__body {
     color: var(--product-muted);
+}
+
+html.is-homepage .home-eyebrow,
+html.is-homepage .home-principles span {
+    color: var(--toto-navy);
+}
+
+html.is-homepage .home-section--paper .home-eyebrow {
+    color: var(--toto-cloud);
+}
+
+html.is-homepage .home-signal__node-dot {
+    background: var(--toto-navy);
+    border-color: rgba(43, 103, 172, 0.14);
 }
 
 /* One reading size for body copy; headlines and hero copy keep their own scale. */
@@ -560,7 +577,7 @@ html.is-homepage .home-flow--cards .home-flow__card:last-child {
     background: var(--toto-paper);
     border: 0;
     border-radius: var(--toto-shape-medium);
-    box-shadow: 0 0.8rem 2rem rgba(7, 59, 131, 0.08);
+    box-shadow: 0 0.8rem 2rem rgba(23, 59, 95, 0.08);
     display: grid;
     gap: 0.85rem;
     grid-template-rows: auto auto auto;
@@ -588,7 +605,7 @@ html.is-homepage .home-flow--cards strong {
     background: #edf0f2;
     border: 1px solid #d7dde1;
     border-radius: 0.25rem;
-    box-shadow: 0 0.18rem 0.55rem rgba(7, 59, 131, 0.06);
+    box-shadow: 0 0.18rem 0.55rem rgba(23, 59, 95, 0.06);
     color: #34414a;
     display: inline-flex !important;
     font-family: "IBM Plex Mono", monospace;
@@ -673,7 +690,7 @@ html.is-document .md-header .md-header__topic[data-md-component="header-topic"] 
 
 .home-principles article {
     background: var(--toto-paper);
-    box-shadow: 0 0.75rem 2.25rem rgba(7, 59, 131, 0.08);
+    box-shadow: 0 0.75rem 2.25rem rgba(23, 59, 95, 0.08);
     min-height: 13rem;
     padding: 1.25rem;
 }
@@ -684,7 +701,7 @@ html.is-document .md-header .md-header__topic[data-md-component="header-topic"] 
 
 .home-flow li {
     background: var(--toto-mist);
-    box-shadow: 0 0.5rem 1.75rem rgba(7, 59, 131, 0.06);
+    box-shadow: 0 0.5rem 1.75rem rgba(23, 59, 95, 0.06);
     min-height: 13rem;
     padding: 1.25rem;
 }
@@ -871,8 +888,9 @@ html.is-homepage .md-logo img {
     font-size: 0.225em;
     font-weight: 400;
     line-height: 1;
-    margin-left: 0;
-    vertical-align: super;
+    margin-left: -0.98em;
+    position: relative;
+    top: -0.65rem;
 }
 
 /* Keeps the current page name visually subordinate */
@@ -2381,7 +2399,7 @@ html.is-document .product-page .product-steps--cards > li:last-child {
     background: var(--toto-paper);
     border: 1px solid var(--product-line);
     border-radius: var(--toto-shape-medium);
-    box-shadow: 0 0.65rem 1.5rem rgba(7, 59, 131, 0.08);
+    box-shadow: 0 0.65rem 1.5rem rgba(23, 59, 95, 0.08);
     gap: 1.25rem;
     min-height: 13rem;
     margin: 0;
@@ -2556,7 +2574,7 @@ html.is-homepage .md-tabs__item--active {
 
 html.is-document .md-sidebar--primary .md-nav__link--active,
 html.is-homepage .md-sidebar--primary .md-nav__link--active {
-    background-color: rgba(23, 106, 232, 0.12) !important;
+    background-color: rgba(43, 103, 172, 0.12) !important;
     color: var(--toto-cobalt) !important;
 }
 
@@ -2606,13 +2624,13 @@ html.is-homepage .md-header {
 }
 
 .home-hero__signal {
-    background-color: rgba(90, 155, 245, 0.06);
-    border-color: rgba(90, 155, 245, 0.45);
+    background-color: rgba(43, 103, 172, 0.06);
+    border-color: rgba(43, 103, 172, 0.45);
 }
 
 .home-signal__header,
 .home-signal__frame {
-    border-color: rgba(90, 155, 245, 0.36);
+    border-color: rgba(43, 103, 172, 0.36);
 }
 
 .home-signal__header b {
@@ -2621,7 +2639,7 @@ html.is-homepage .md-header {
 
 .home-signal__node-dot {
     background: var(--toto-sky);
-    border-color: rgba(90, 155, 245, 0.2);
+    border-color: rgba(43, 103, 172, 0.2);
 }
 
 .home-signal__path span {
@@ -2686,8 +2704,8 @@ html.is-homepage .md-header {
 
 /* Color-area hierarchy: light blue expands; darker blues concentrate in controls. */
 :root {
-    --toto-air: #d5e3ff;
-    --toto-wash: #f1f6ff;
+    --toto-air: var(--toto-blue-light);
+    --toto-wash: var(--toto-blue-light);
 }
 
 html.is-homepage,
@@ -2705,8 +2723,8 @@ html.is-homepage body {
 }
 
 .home-action--light {
-    border: 1px solid rgba(7, 59, 131, 0.16);
-    box-shadow: 0 0.5rem 1.4rem rgba(7, 59, 131, 0.08);
+    border: 1px solid rgba(23, 59, 95, 0.16);
+    box-shadow: 0 0.5rem 1.4rem rgba(23, 59, 95, 0.08);
 }
 
 .home-action--dark {
@@ -2715,8 +2733,8 @@ html.is-homepage body {
 
 .home-hero__signal {
     background-color: var(--toto-paper);
-    border-color: rgba(23, 106, 232, 0.24);
-    box-shadow: 0 1rem 2.75rem rgba(7, 59, 131, 0.1);
+    border-color: rgba(43, 103, 172, 0.24);
+    box-shadow: 0 1rem 2.75rem rgba(23, 59, 95, 0.1);
 }
 
 .home-signal__header,
@@ -2737,7 +2755,7 @@ html.is-homepage body {
 
 .home-signal__node-dot {
     background: var(--toto-cobalt);
-    border-color: rgba(23, 106, 232, 0.14);
+    border-color: rgba(43, 103, 172, 0.14);
 }
 
 .home-signal__path::before {
@@ -2784,7 +2802,7 @@ html.is-homepage .home-section--crm {
 .home-section--crm .home-crm__copy {
     background: var(--toto-air);
     border: 0;
-    box-shadow: 0 0.75rem 2rem rgba(7, 59, 131, 0.08);
+    box-shadow: 0 0.75rem 2rem rgba(23, 59, 95, 0.08);
     color: var(--toto-ink);
 }
 
