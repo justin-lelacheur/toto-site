@@ -2716,7 +2716,7 @@ html.is-homepage .home-flow__tokens code {
 }
 
 html.is-homepage .home-action--dark {
-    background: var(--toto-blue-deep);
+    background: var(--toto-blue-primary);
     color: #ffffff !important;
 }
 
