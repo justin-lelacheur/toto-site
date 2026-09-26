@@ -941,6 +941,8 @@
     
   <script>
     document.documentElement.classList.add("is-document");
+      let documentTocHeadings = [];
+      let documentTocLinks = [];
       const buildDocumentToc = () => {
         if (!document.documentElement.classList.contains("is-document")) return;
         const toc = document.querySelector(".md-sidebar--secondary .md-nav--secondary");
@@ -975,8 +977,26 @@
           item.append(link);
           items.append(item);
         });
-        toc.replaceChildren(items);
+        const title = toc.querySelector(".md-nav__title") || document.createElement("div");
+        title.className = "md-nav__title";
+        title.textContent = "On this page";
+        toc.replaceChildren(title, items);
+        documentTocHeadings = headings;
+        documentTocLinks = Array.from(items.querySelectorAll(".md-nav__link"));
         toc.dataset.totoTocSignature = signature;
+        syncDocumentTocActive();
+      };
+      const syncDocumentTocActive = () => {
+        if (!documentTocHeadings.length) return;
+        const activeIndex = documentTocHeadings.reduce((index, heading, currentIndex) => {
+          return heading.getBoundingClientRect().top <= 140 ? currentIndex : index;
+        }, 0);
+        documentTocLinks.forEach((link, index) => {
+          const active = index === activeIndex;
+          link.classList.toggle("md-nav__link--active", active);
+          if (active) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
       };
       const expandSidebar = () => {
         document.querySelectorAll(".md-sidebar__scrollwrap, .md-sidebar__inner").forEach((element) => {
@@ -1025,6 +1045,7 @@
         if (scrollFrame) return;
         scrollFrame = window.requestAnimationFrame(() => {
           document.documentElement.classList.toggle("is-scrolled", window.scrollY > 24);
+          syncDocumentTocActive();
           scrollFrame = 0;
         });
       };
