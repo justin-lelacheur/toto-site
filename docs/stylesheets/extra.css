@@ -369,6 +369,24 @@ html.is-homepage .home-section--crm {
     color: var(--product-muted);
 }
 
+/* One reading size for body copy; headlines and hero copy keep their own scale. */
+:root {
+    --toto-body-size: 1rem;
+}
+
+html body {
+    font-size: var(--toto-body-size);
+}
+
+html body .md-content :where(p, li, td, th, dd, blockquote):not(.product-page__lead):not(.home-hero__lead),
+html body .home-product :where(p, li, td, th, dd, blockquote):not(.home-hero__lead),
+html body .product-page__body,
+html body .product-page__closing > p,
+html body .product-steps span,
+html body .home-copy {
+    font-size: var(--toto-body-size) !important;
+}
+
 html.is-document {
     --document-type-scale: 0.666667;
 }
